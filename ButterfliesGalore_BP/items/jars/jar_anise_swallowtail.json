@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:item": {
+    "description": {
+      "identifier": "butterflies:jar_anise_swallowtail",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "butterflies_jar_anise_swallowtail",
+      "minecraft:display_name": {
+        "value": "item.butterflies.jar_anise_swallowtail.name"
+      },
+      "minecraft:max_stack_size": 16,
+      "minecraft:entity_placer": {
+        "entity": "butterflies:anise_swallowtail"
+      }
+    }
+  }
+}

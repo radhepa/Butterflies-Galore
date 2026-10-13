@@ -1,0 +1,35 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "butterflies:goatweed_leafwing",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/butterflies/goatweed_leafwing"
+      },
+      "geometry": {
+        "default": "geometry.butterflies.butterfly"
+      },
+      "render_controllers": [
+        "controller.render.butterflies.default"
+      ],
+      "animations": {
+        "main": "animation.butterflies.butterfly.fly"
+      },
+      "scripts": {
+        "animate": [
+          "main"
+        ],
+        "initialize": [
+          "v.flap = 0.9;"
+        ]
+      },
+      "spawn_egg": {
+        "base_color": "#F76610",
+        "overlay_color": "#E95B0D"
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "butterflies:mangrove_tree_nymph_caterpillar",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/butterflies/larva/mangrove_tree_nymph"
+      },
+      "geometry": {
+        "default": "geometry.butterflies.caterpillar_spiky"
+      },
+      "render_controllers": [
+        "controller.render.butterflies.default"
+      ],
+      "animations": {
+        "main": "animation.butterflies.caterpillar.crawl"
+      },
+      "scripts": {
+        "animate": [
+          "main"
+        ]
+      },
+      "spawn_egg": {
+        "base_color": "#57534D",
+        "overlay_color": "#FAF9F0"
+      }
+    }
+  }
+}

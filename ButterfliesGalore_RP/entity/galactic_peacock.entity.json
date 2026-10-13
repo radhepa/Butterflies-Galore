@@ -1,0 +1,35 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "butterflies:galactic_peacock",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/butterflies/galactic_peacock"
+      },
+      "geometry": {
+        "default": "geometry.butterflies.butterfly"
+      },
+      "render_controllers": [
+        "controller.render.butterflies.default"
+      ],
+      "animations": {
+        "main": "animation.butterflies.butterfly.fly"
+      },
+      "scripts": {
+        "animate": [
+          "main"
+        ],
+        "initialize": [
+          "v.flap = 0.92;"
+        ]
+      },
+      "spawn_egg": {
+        "base_color": "#341A45",
+        "overlay_color": "#13061F"
+      }
+    }
+  }
+}

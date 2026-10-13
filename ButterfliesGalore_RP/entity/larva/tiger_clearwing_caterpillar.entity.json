@@ -1,0 +1,32 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "butterflies:tiger_clearwing_caterpillar",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/butterflies/larva/tiger_clearwing"
+      },
+      "geometry": {
+        "default": "geometry.butterflies.caterpillar_spiky"
+      },
+      "render_controllers": [
+        "controller.render.butterflies.default"
+      ],
+      "animations": {
+        "main": "animation.butterflies.caterpillar.crawl"
+      },
+      "scripts": {
+        "animate": [
+          "main"
+        ]
+      },
+      "spawn_egg": {
+        "base_color": "#50310E",
+        "overlay_color": "#F5A548"
+      }
+    }
+  }
+}

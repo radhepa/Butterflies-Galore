@@ -1,0 +1,32 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "butterflies:eyeblossom_caterpillar",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/butterflies/larva/eyeblossom"
+      },
+      "geometry": {
+        "default": "geometry.butterflies.caterpillar_smooth"
+      },
+      "render_controllers": [
+        "controller.render.butterflies.default"
+      ],
+      "animations": {
+        "main": "animation.butterflies.caterpillar.crawl"
+      },
+      "scripts": {
+        "animate": [
+          "main"
+        ]
+      },
+      "spawn_egg": {
+        "base_color": "#B06E1F",
+        "overlay_color": "#1C1C1A"
+      }
+    }
+  }
+}

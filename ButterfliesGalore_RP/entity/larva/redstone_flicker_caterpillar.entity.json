@@ -1,0 +1,32 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "butterflies:redstone_flicker_caterpillar",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/butterflies/larva/redstone_flicker"
+      },
+      "geometry": {
+        "default": "geometry.butterflies.caterpillar_filament"
+      },
+      "render_controllers": [
+        "controller.render.butterflies.default"
+      ],
+      "animations": {
+        "main": "animation.butterflies.caterpillar.crawl"
+      },
+      "scripts": {
+        "animate": [
+          "main"
+        ]
+      },
+      "spawn_egg": {
+        "base_color": "#990C04",
+        "overlay_color": "#D31104"
+      }
+    }
+  }
+}

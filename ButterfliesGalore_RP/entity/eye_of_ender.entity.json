@@ -1,0 +1,35 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "butterflies:eye_of_ender",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/butterflies/eye_of_ender"
+      },
+      "geometry": {
+        "default": "geometry.butterflies.butterfly"
+      },
+      "render_controllers": [
+        "controller.render.butterflies.default"
+      ],
+      "animations": {
+        "main": "animation.butterflies.butterfly.fly"
+      },
+      "scripts": {
+        "animate": [
+          "main"
+        ],
+        "initialize": [
+          "v.flap = 0.98;"
+        ]
+      },
+      "spawn_egg": {
+        "base_color": "#311E45",
+        "overlay_color": "#13061F"
+      }
+    }
+  }
+}

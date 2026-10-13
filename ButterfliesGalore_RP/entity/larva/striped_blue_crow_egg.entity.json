@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "butterflies:striped_blue_crow_egg",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/butterflies/larva/striped_blue_crow"
+      },
+      "geometry": {
+        "default": "geometry.butterflies.egg_cluster"
+      },
+      "render_controllers": [
+        "controller.render.butterflies.default"
+      ]
+    }
+  }
+}

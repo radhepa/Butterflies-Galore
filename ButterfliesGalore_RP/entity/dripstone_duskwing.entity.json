@@ -1,0 +1,35 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "butterflies:dripstone_duskwing",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/butterflies/dripstone_duskwing"
+      },
+      "geometry": {
+        "default": "geometry.butterflies.butterfly"
+      },
+      "render_controllers": [
+        "controller.render.butterflies.default"
+      ],
+      "animations": {
+        "main": "animation.butterflies.butterfly.fly"
+      },
+      "scripts": {
+        "animate": [
+          "main"
+        ],
+        "initialize": [
+          "v.flap = 1.89;"
+        ]
+      },
+      "spawn_egg": {
+        "base_color": "#DFB47F",
+        "overlay_color": "#936A49"
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:item": {
+    "description": {
+      "identifier": "butterflies:jar_great_southern_white",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "butterflies_jar_great_southern_white",
+      "minecraft:display_name": {
+        "value": "item.butterflies.jar_great_southern_white.name"
+      },
+      "minecraft:max_stack_size": 16,
+      "minecraft:entity_placer": {
+        "entity": "butterflies:great_southern_white"
+      }
+    }
+  }
+}

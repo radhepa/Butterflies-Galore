@@ -1,0 +1,38 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:spawn_rules": {
+    "description": {
+      "identifier": "butterflies:rusty_tipped_page",
+      "population_control": "ambient"
+    },
+    "conditions": [
+      {
+        "minecraft:weight": {
+          "default": 10
+        },
+        "minecraft:herd": {
+          "min_size": 1,
+          "max_size": 2
+        },
+        "minecraft:biome_filter": {
+          "any_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "jungle"
+            }
+          ]
+        },
+        "minecraft:spawns_on_surface": {},
+        "minecraft:brightness_filter": {
+          "min": 10,
+          "max": 15,
+          "adjust_for_weather": true
+        },
+        "minecraft:density_limit": {
+          "surface": 3
+        }
+      }
+    ]
+  }
+}

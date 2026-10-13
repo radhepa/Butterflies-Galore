@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "butterflies:sniffers_friend_egg",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/butterflies/larva/sniffers_friend"
+      },
+      "geometry": {
+        "default": "geometry.butterflies.egg_cluster"
+      },
+      "render_controllers": [
+        "controller.render.butterflies.default"
+      ]
+    }
+  }
+}

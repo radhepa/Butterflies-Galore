@@ -139,7 +139,13 @@
           "minecraft:flowering_azalea",
           "butterflies:butterfly_bush",
           "butterflies:milkweed",
-          "butterflies:coneflower"
+          "butterflies:coneflower",
+          "minecraft:crimson_fungus",
+          "minecraft:warped_fungus",
+          "minecraft:crimson_roots",
+          "minecraft:warped_roots",
+          "minecraft:shroomlight",
+          "minecraft:chorus_flower"
         ]
       },
       "minecraft:behavior.random_hover": {

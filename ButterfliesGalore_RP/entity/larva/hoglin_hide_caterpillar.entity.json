@@ -1,0 +1,32 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "butterflies:hoglin_hide_caterpillar",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/butterflies/larva/hoglin_hide"
+      },
+      "geometry": {
+        "default": "geometry.butterflies.caterpillar_spiky"
+      },
+      "render_controllers": [
+        "controller.render.butterflies.default"
+      ],
+      "animations": {
+        "main": "animation.butterflies.caterpillar.crawl"
+      },
+      "scripts": {
+        "animate": [
+          "main"
+        ]
+      },
+      "spawn_egg": {
+        "base_color": "#471A0B",
+        "overlay_color": "#8A604F"
+      }
+    }
+  }
+}

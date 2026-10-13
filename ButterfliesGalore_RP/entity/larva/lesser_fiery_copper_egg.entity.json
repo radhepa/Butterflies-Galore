@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "butterflies:lesser_fiery_copper_egg",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/butterflies/larva/lesser_fiery_copper"
+      },
+      "geometry": {
+        "default": "geometry.butterflies.egg_cluster"
+      },
+      "render_controllers": [
+        "controller.render.butterflies.default"
+      ]
+    }
+  }
+}

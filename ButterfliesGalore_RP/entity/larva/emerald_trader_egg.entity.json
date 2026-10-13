@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "butterflies:emerald_trader_egg",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/butterflies/larva/emerald_trader"
+      },
+      "geometry": {
+        "default": "geometry.butterflies.egg_cluster"
+      },
+      "render_controllers": [
+        "controller.render.butterflies.default"
+      ]
+    }
+  }
+}

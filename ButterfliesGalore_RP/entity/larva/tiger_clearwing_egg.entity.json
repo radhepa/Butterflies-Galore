@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "butterflies:tiger_clearwing_egg",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/butterflies/larva/tiger_clearwing"
+      },
+      "geometry": {
+        "default": "geometry.butterflies.egg_cluster"
+      },
+      "render_controllers": [
+        "controller.render.butterflies.default"
+      ]
+    }
+  }
+}

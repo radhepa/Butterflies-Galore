@@ -1,0 +1,80 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "butterflies:spanish_festoon_egg",
+      "is_spawnable": false,
+      "is_summonable": true
+    },
+    "component_groups": {
+      "butterflies:transform": {
+        "minecraft:transformation": {
+          "into": "butterflies:spanish_festoon_caterpillar"
+        }
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "butterfly_egg",
+          "butterfly_lifecycle",
+          "arthropod",
+          "mob"
+        ]
+      },
+      "minecraft:health": {
+        "value": 1,
+        "max": 1
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "fall",
+            "deals_damage": "no"
+          }
+        ]
+      },
+      "minecraft:nameable": {},
+      "minecraft:physics": {},
+      "minecraft:conditional_bandwidth_optimization": {},
+      "minecraft:collision_box": {
+        "width": 0.4,
+        "height": 0.15
+      },
+      "minecraft:scale": {
+        "value": 0.7
+      },
+      "minecraft:knockback_resistance": {
+        "value": 1.0
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:timer": {
+        "time": [
+          240,
+          360
+        ],
+        "looping": false,
+        "time_down_event": {
+          "event": "butterflies:hatch",
+          "target": "self"
+        }
+      }
+    },
+    "events": {
+      "butterflies:hatch": {
+        "add": {
+          "component_groups": [
+            "butterflies:transform"
+          ]
+        }
+      }
+    }
+  }
+}

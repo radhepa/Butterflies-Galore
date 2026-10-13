@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "butterflies:summer_azure_chrysalis",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/butterflies/larva/summer_azure"
+      },
+      "geometry": {
+        "default": "geometry.butterflies.chrysalis"
+      },
+      "render_controllers": [
+        "controller.render.butterflies.default"
+      ],
+      "animations": {
+        "main": "animation.butterflies.chrysalis.sway"
+      },
+      "scripts": {
+        "animate": [
+          "main"
+        ]
+      }
+    }
+  }
+}

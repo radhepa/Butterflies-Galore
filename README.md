@@ -1,19 +1,21 @@
 # Butterflies Galore
 
-A Minecraft Bedrock Edition add-on that fills the world with **100 unique butterflies**. Each one has its own vibrant, hand-designed wing pattern, wing shape, size, flight rhythm and home biome. Every species also has a complete life cycle, from egg to caterpillar to chrysalis to butterfly, and a **Butterfly Handbook** lets you record them all.
+A Minecraft Bedrock Edition add-on that fills the world with **500 unique butterflies**: 400 in the Overworld, 50 in the Nether and 50 in the End. Each one has its own vibrant, hand-designed wing pattern, wing shape, size, flight rhythm and home biome. Every species also has a complete life cycle, from egg to caterpillar to chrysalis to butterfly, and a **Butterfly Handbook** lets you record them all.
 
-![All 100 butterflies](docs/preview.png)
+![All 500 butterflies](docs/preview.png)
 
 ## Features
 
-- **100 butterfly species.** Real-world favorites like the Monarch, Blue Morpho, Peacock, Zebra Longwing and Queen Alexandra's Birdwing, plus Minecraft-native species: the Cherry Blossom Wing, Sculk Wisp, Crimson Ember, Warped Wanderer, Ender Wing and more.
+- **500 butterfly species in 12 groups.** Hundreds of real-world favorites like the Monarch, Blue Morpho, Peacock, Zebra Longwing, Apollo and Queen Alexandra's Birdwing, plus Minecraft-native species such as the Cherry Blossom Wing, Sculk Wisp and Pale Garden Ghost.
+  - **The Nether (50):** fire-proof butterflies of the crimson and warped forests, soul sand valleys, basalt deltas and Nether wastes, like the Blaze Monarch, Soulfire Wisp and Netherite Emperor.
+  - **The End (50):** void-drifting butterflies such as the Chorus Flutter, Shulker Glimmer, Elytra Glider and the legendary Ender Dragon Wing.
 - **Full life cycle for every species.**
   - **Eggs:** feed a butterfly a Bottle of Nectar and it lays a cluster of eggs on a leaf.
-  - **Caterpillars:** they hatch, crawl and munch. Feed them leaves, grass or the new flowers to help them grow. Each species has its own caterpillar: banded Monarchs, green swallowtails with eyespots, spiky brush-foots, fleshy birdwings and more.
+  - **Caterpillars:** they hatch, crawl and munch. Left alone they take about 40 minutes to grow up. **Seeds** (wheat, melon, pumpkin, beetroot, torchflower, pitcher pods) are their favourite food and speed growth up a lot; leaves, grass and flowers help a little. Nether caterpillars also eat fungus and Nether Wart, End caterpillars eat Chorus Fruit. Each species has its own caterpillar: banded Monarchs, green swallowtails with eyespots, spiky brush-foots, fleshy birdwings and more.
   - **Chrysalis:** a fully grown caterpillar hangs up as a chrysalis that sways and twitches before a new butterfly emerges.
   - Wild caterpillars also appear in each species' home biome.
-- **Butterfly Handbook.** Every player gets one on first join. Walk up to any egg, caterpillar, chrysalis or butterfly to record it. Browse 8 chapters of entries with habitat, rarity, wingspan, caterpillar food and a fun fact, and complete all four life stages of each species.
-- **Natural spawning by biome.** Meadows, forests, jungles, deserts, badlands, swamps, beaches, snowy biomes, lush caves, the deep dark, the Nether and the End all have their own species, from common to legendary.
+- **Butterfly Handbook.** Every player gets one on first join. Walk up to any egg, caterpillar, chrysalis or butterfly to record it. Browse 12 chapters of entries with habitat, rarity, wingspan, caterpillar food and a fun fact, and complete all four life stages of each species.
+- **Natural spawning by biome.** Meadows, forests, jungles, deserts, badlands, swamps, beaches, snowy biomes, mountains, the pale garden, lush caves, the deep dark, every Nether biome and the End all have their own species, from common to legendary.
 - **Lifelike flight.** Butterflies flutter, glide and bob through the air. They visit flowers, flee when hurt and never take fall damage.
 - **Catch & release.** Use a **Butterfly Jar** on a butterfly to catch it. Every species has its own jar. Use a filled jar on a block to release the butterfly.
 - **New flowers.** Butterfly Bush, Milkweed and Coneflower grow naturally, attract butterflies, feed caterpillars and craft into dye.
@@ -48,12 +50,13 @@ Requires Minecraft Bedrock **1.21.90** or newer.
 ButterfliesGalore_BP/   behavior pack (mobs, spawn rules, items, blocks, recipes, world features, handbook script)
 ButterfliesGalore_RP/   resource pack (models, animations, textures, language)
 tools/generate.py       builds both packs, the preview images and the .mcaddon
+tools/species_more.py   400 more species, one line each
 tools/handbook.js       source of the Butterfly Handbook script
 docs/                   preview images and field guide
 dist/                   ready-to-install .mcaddon
 ```
 
-All packs, textures and docs are generated from the species table in `tools/generate.py`. To add or change a butterfly, edit its entry and run:
+All packs, textures and docs are generated from the species tables in `tools/generate.py` and `tools/species_more.py`. To add or change a butterfly, edit its entry and run:
 
 ```
 pip install pillow

@@ -14,6 +14,7 @@ const SUFFIXES = [["_egg", 0], ["_caterpillar", 1], ["_chrysalis", 2]];
 const ADULT = 3;
 const ALL_STAGES = 0b1111;
 const SCAN_RADIUS = 6;
+const PAGE_SIZE = 24;
 const RARITY_COLOR = { Common: "§a", Uncommon: "§b", Rare: "§d", Legendary: "§6" };
 const INDEX = new Map(SPECIES.map((s, i) => [s.id, i]));
 
@@ -121,15 +122,18 @@ function openHome(player) {
   form.button("Life Cycle Guide", "textures/items/nectar_bottle");
   form.show(player).then((res) => {
     if (res.canceled || res.selection === undefined) return;
-    if (res.selection < CATEGORIES.length) openCategory(player, CATEGORIES[res.selection]);
+    if (res.selection < CATEGORIES.length) openCategory(player, CATEGORIES[res.selection], 0);
     else openGuide(player);
   });
 }
 
-function openCategory(player, cat) {
+function openCategory(player, cat, page) {
   const journal = loadJournal(player);
-  const list = SPECIES.filter((s) => s.category === cat.name);
-  const form = new ActionFormData().title(cat.name).body("§7Select an entry to read about it.");
+  const all = SPECIES.filter((s) => s.category === cat.name);
+  const pages = Math.max(1, Math.ceil(all.length / PAGE_SIZE));
+  const list = all.slice(page * PAGE_SIZE, (page + 1) * PAGE_SIZE);
+  const title = pages > 1 ? `${cat.name} (${page + 1}/${pages})` : cat.name;
+  const form = new ActionFormData().title(title).body("§7Select an entry to read about it.");
   for (const s of list) {
     const bits = journal[INDEX.get(s.id)];
     if (bits === 0) {
@@ -139,15 +143,25 @@ function openCategory(player, cat) {
       form.button(`${name}\n§8${stageCount(bits)}/4 life stages`, bits & (1 << ADULT) ? s.icon : UNKNOWN_ICON);
     }
   }
+  const nav = [];
+  if (page + 1 < pages) {
+    form.button("Next page >");
+    nav.push(() => openCategory(player, cat, page + 1));
+  }
+  if (page > 0) {
+    form.button("< Previous page");
+    nav.push(() => openCategory(player, cat, page - 1));
+  }
   form.button("< Back");
+  nav.push(() => openHome(player));
   form.show(player).then((res) => {
     if (res.canceled || res.selection === undefined) return;
-    if (res.selection >= list.length) openHome(player);
-    else openEntry(player, cat, list[res.selection]);
+    if (res.selection < list.length) openEntry(player, cat, page, list[res.selection]);
+    else nav[res.selection - list.length]();
   });
 }
 
-function openEntry(player, cat, s) {
+function openEntry(player, cat, page, s) {
   const bits = loadJournal(player)[INDEX.get(s.id)];
   const rarity = `${RARITY_COLOR[s.rarity] ?? "§f"}${s.rarity}`;
   let body;
@@ -171,7 +185,7 @@ function openEntry(player, cat, s) {
     .button("< Back")
     .show(player)
     .then((res) => {
-      if (!res.canceled) openCategory(player, cat);
+      if (!res.canceled) openCategory(player, cat, page);
     });
 }
 
@@ -180,11 +194,14 @@ function openGuide(player) {
     .title("Life Cycle Guide")
     .body(
       "§l1. Eggs§r\n§7Give a butterfly a §fBottle of Nectar§7 and it will lay a cluster of eggs. " +
-        "Eggs hatch after a couple of minutes.\n\n" +
-        "§l2. Caterpillar§r\n§7Caterpillars crawl around and munch. Feed them leaves, grass or flowers " +
-        "to help them grow faster. Wild caterpillars can also be found in each species' home biome.\n\n" +
-        "§l3. Chrysalis§r\n§7A full-grown caterpillar hangs up as a chrysalis. Inside, it changes completely. " +
-        "Keep it safe!\n\n" +
+        "Eggs hatch after about five minutes.\n\n" +
+        "§l2. Caterpillar§r\n§7Caterpillars take a long time to grow up on their own (about 40 minutes). " +
+        "Feed them §fseeds§7 to speed things up a lot: wheat, melon, pumpkin, beetroot and torchflower seeds " +
+        "and pitcher pods all work. Leaves, grass and flowers help a little too. Nether caterpillars also " +
+        "eat fungus and Nether Wart, and End caterpillars eat Chorus Fruit. Wild caterpillars can be found " +
+        "in each species' home biome.\n\n" +
+        "§l3. Chrysalis§r\n§7A full-grown caterpillar hangs up as a chrysalis. Inside, it changes completely " +
+        "over about ten minutes. Keep it safe!\n\n" +
         "§l4. Butterfly§r\n§7A brand new butterfly emerges and flies off to find flowers.\n\n" +
         "§lTips§r\n§7- Hold a Bottle of Nectar to make butterflies follow you.\n" +
         "§7- Use a §fButterfly Jar§7 on a butterfly to catch it, and on a block to release it.\n" +

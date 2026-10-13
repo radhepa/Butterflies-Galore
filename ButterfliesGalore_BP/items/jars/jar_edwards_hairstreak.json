@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:item": {
+    "description": {
+      "identifier": "butterflies:jar_edwards_hairstreak",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "butterflies_jar_edwards_hairstreak",
+      "minecraft:display_name": {
+        "value": "item.butterflies.jar_edwards_hairstreak.name"
+      },
+      "minecraft:max_stack_size": 16,
+      "minecraft:entity_placer": {
+        "entity": "butterflies:edwards_hairstreak"
+      }
+    }
+  }
+}

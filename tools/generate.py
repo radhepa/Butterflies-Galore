@@ -12,12 +12,15 @@ import json
 import math
 import os
 import random
+import re
 import shutil
 import uuid
 import zipfile
 from collections import deque
 
 from PIL import Image, ImageDraw
+
+import species_more
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BP = os.path.join(ROOT, "ButterfliesGalore_BP")
@@ -643,10 +646,10 @@ SPECIES += [
 
 SPECIES = [s for s in SPECIES if s is not None]
 assert len(SPECIES) == 100, len(SPECIES)
-assert len({s.id for s in SPECIES}) == 100
 
 CATEGORIES = ["Meadows & Fields", "Swallowtails", "Woodland", "Blues & Coppers", "Skippers", "Rainforest",
-              "Savanna & Desert", "Wonders of the World"]
+              "Savanna & Desert", "Mountains & Tundra", "Wetlands & Coasts", "Wonders of the World",
+              "The Nether", "The End"]
 
 INFO = {
     "monarch": "Famous for flying thousands of kilometres on its yearly migration. Its caterpillars eat only milkweed, which makes the adults taste terrible to birds.",
@@ -753,6 +756,233 @@ INFO = {
 assert set(INFO) == {s.id for s in SPECIES}, set(INFO) ^ {s.id for s in SPECIES}
 
 # ---------------------------------------------------------------------------
+# The second wave: pattern templates turn a one-line description into a wing
+# ---------------------------------------------------------------------------
+
+SHAPE_SCALE = {"classic": 0.42, "pointed": 0.48, "rounded": 0.32, "swallowtail": 0.56, "kite": 0.5,
+               "longwing": 0.44, "leaf": 0.5, "scalloped": 0.45, "skipper": 0.27, "birdwing": 0.75,
+               "hairstreak": 0.3}
+SHAPE_FLAP = {"skipper": 1.7, "rounded": 1.4, "hairstreak": 1.5, "birdwing": 0.7, "swallowtail": 0.85,
+              "kite": 0.9, "longwing": 0.8}
+RARITY_CODE = {"c": "common", "u": "uncommon", "r": "rare", "l": "legendary"}
+
+
+def light(c, t=0.35):
+    return hexc(mix(c, "#FFFFFF", t))
+
+
+def dark(c, t=0.45):
+    return hexc(shade(c, 1 - t))
+
+
+def pattern_feats(kind, cols, r):
+    a, b, c = cols[0], cols[1], cols[2] if len(cols) > 2 else W
+    d = cols[3] if len(cols) > 3 else K
+    bw = r.choice([1, 1, 2])
+    j = lambda lo, hi: round(r.uniform(lo, hi), 1)
+    if kind == "tiger":
+        return [fill(a), grad(light(a), 0.45), veins(b, j(0.8, 1.1)), border(b, 2), ring(c, 1),
+                spots(c, [(7, 1), (8, 2), (6, 1)][:r.randint(1, 3)])]
+    if kind == "eyes":
+        f = [fill(a), grad(light(a, 0.25), 0.4),
+             eye((j(5, 7), j(2, 3.5)), [(j(1.1, 1.5), c), (j(0.45, 0.6), d)])]
+        for _ in range(r.randint(1, 2)):
+            f.append(eye((j(3.5, 6.5), j(9, 11)), [(j(0.8, 1.2), c), (0.4, d)]))
+        return f + [border(b, bw)]
+    if kind == "band":
+        f = [fill(a), line(c, (j(4, 6.5), 0), (j(1, 3), j(6, 7.5)), j(0.9, 1.4))]
+        if r.random() < 0.6:
+            f.append(line(d if len(cols) > 3 else c, (0.5, j(8.5, 10)), (j(5, 7), j(9, 11)), j(0.7, 1.0)))
+        f += [border(b, bw), ring(c, 1, "all", r.random() < 0.7)]
+        return f
+    if kind == "tip":
+        f = [fill(a), grad(light(a, 0.3), 0.3), apex(b, j(2.5, 4.2)), border(b, 1, "fore")]
+        if r.random() < 0.6:
+            f.append(spots(b, [(j(3.5, 5), j(2.5, 3.5))]))
+        if c.upper() != a.upper():
+            f.append(basal(c, 1, "hind"))
+        return f
+    if kind == "checker":
+        return [fill(a), checker(b), ring(c, 1, "all", True), border(b, bw), basal(dark(a, 0.3), 1)]
+    if kind == "stripes":
+        return [fill(a), stripes(b, r.choice([3, 4]), r.randint(0, 2), "inner", r.choice([1, -1])),
+                border(b, 2), ring(c, 1, "hind", True), fill(b, "tail")]
+    if kind == "sheen":
+        return [fill(a), grad(c, j(0.35, 0.6)), sheen(c, 0.6), border(b, bw), ring(W, 0)]
+    if kind == "basal":
+        f = [fill(a), basal(b, r.choice([2, 3])), border(dark(a, 0.6), 1), ring(c, 0)]
+        if r.random() < 0.5:
+            f.append(spots(c, [(j(4, 6), j(9.5, 11)), (j(6, 8), j(9, 10.5))]))
+        return f
+    if kind == "spotted":
+        pts = [(j(1, 8), j(0.5, 12.5)) for _ in range(r.randint(5, 9))]
+        return [fill(a), spots(c, pts), border(b, bw), ring(c, 0, "all", True)]
+    if kind == "speckle":
+        f = [fill(a), speckle(b, j(0.22, 0.38), r.choice(["all", "inner", "hind"]), r.randint(1, 999)),
+             border(c, bw)]
+        if r.random() < 0.4:
+            f.append(apex(b, 1.8))
+        return f
+    if kind == "glass":
+        reg = r.choice(["all", "fore"])
+        return [fill(a), clear(reg), veins(b, 0.7, reg), border(b, 2), apex(c, j(1.5, 2.5)), ring(c, 1, "hind")]
+    if kind == "split":
+        return [fill(a, "fore"), fill(b, "hind"), grad(light(a), 0.3, "fore"), border(d, 1),
+                spots(c, [(j(6, 8), j(1, 3))]), ring(c, 1, "hind", True)]
+    if kind == "rays":
+        return [fill(a), veins(b, j(1.1, 1.5)), border(b, 2), ring(c, 1, "all", True)]
+    if kind == "patch":
+        return [fill(a), circle(c, (j(4, 6), j(2, 4)), j(1.4, 2.2), "fore"),
+                circle(d if len(cols) > 3 else c, (j(3, 5), j(9, 11)), j(1.2, 1.8), "hind"), border(b, bw)]
+    if kind == "longwing":
+        f = [fill(a), line(c, (j(3, 4), j(1, 2)), (j(7, 9), j(2, 3.5)), j(1.0, 1.4))]
+        hb = d if len(cols) > 3 else b
+        if r.random() < 0.5:
+            f.append(veins(hb, 1.0, "hind"))
+        else:
+            f.append(line(hb, (0.5, j(9, 10)), (j(5, 6), j(10, 11.5)), 0.9))
+        return f + [border(K if lum(rgb(a)) > 90 else dark(a, 0.5), 1), spots(W, [(8, 1)])]
+    if kind == "ocelli":
+        f = [fill(a), grad(light(a, 0.25), 0.4), border(b, 1)]
+        for k in range(r.randint(3, 5)):
+            f.append(eye((2.5 + k * 1.3, 10.5 + (k % 2) * 0.5), [(0.75, c), (0.35, d)]))
+        if r.random() < 0.6:
+            f.append(eye((j(5.5, 7), j(2, 3)), [(0.9, c), (0.4, d)]))
+        return f
+    if kind == "marble":
+        return [fill(a), speckle(b, j(0.4, 0.55), "hind", r.randint(1, 999)), apex(b, 2.0),
+                spots(c, [(j(3.5, 5), 3)]), border(b, 1)]
+    if kind == "gradient":
+        return [fill(a), grad(b, j(0.6, 0.9)), ring(c, 1, "all", r.random() < 0.6), border(d, 1)]
+    if kind == "dusk":
+        return [fill(a), grad(b, 0.4), speckle(c, 0.1, "all", r.randint(1, 999)),
+                eye((j(5.5, 7), j(2, 3)), [(0.8, c), (0.35, d)]), border(d, 1)]
+    if kind == "zebra":
+        return [fill(a), stripes(b, 2, r.randint(0, 1), "all", r.choice([1, -1])), border(b, 1),
+                ring(c, 1, "hind", True)]
+    if kind == "jewel":
+        return [fill(a), basal(b, r.choice([2, 3])), grad(c, 0.35), sheen(c, 0.7), border(d, 1), ring(c, 0)]
+    if kind == "flame":
+        return [fill(a), grad(b, j(0.7, 0.95)), stripes(c, 4, r.randint(0, 3), "inner", -1), border(d, 1)]
+    if kind == "crescent":
+        return [fill(a), ring(b, 1, "all", False), ring(c, 2, "all", True), border(dark(a, 0.5), 1)]
+    if kind == "edge":
+        return [fill(a), basal(dark(a, 0.25), 1), border(b, 2), ring(c, 1, "all", True)]
+    raise ValueError(kind)
+
+
+COLOUR_NAMES = [(0, "red"), (18, "orange"), (42, "golden"), (58, "yellow"), (80, "lime"), (150, "green"),
+                (175, "teal"), (195, "sky-blue"), (225, "blue"), (260, "violet"), (290, "purple"),
+                (320, "pink"), (345, "red")]
+
+
+def colour_name(c):
+    h, s, v = colorsys.rgb_to_hsv(*(x / 255 for x in rgb(c)))
+    if v < 0.22:
+        return "black"
+    if s < 0.12:
+        return "white" if v > 0.85 else ("grey" if v > 0.45 else "charcoal")
+    if s < 0.45 and v > 0.8 and 20 <= h * 360 <= 70:
+        return "cream"
+    if 15 <= h * 360 <= 45 and v < 0.6:
+        return "brown"
+    name = "red"
+    for deg, n in COLOUR_NAMES:
+        if h * 360 >= deg:
+            name = n
+    return name
+
+
+PATTERN_TEXT = {
+    "tiger": "{a} wings laced with {b} veins warn birds that it tastes awful",
+    "eyes": "{a} wings carry bold {c} eyespots that startle anything trying to eat it",
+    "band": "a bright {c} band slashes across its {a} wings",
+    "tip": "{a} wings are dipped in {b} at the tips",
+    "checker": "{a} wings are tiled with a {b} chequerboard",
+    "stripes": "{a} wings are striped with {b}",
+    "sheen": "{a} wings flash {c} when the light catches them",
+    "basal": "{a} wings glow {b} close to the body",
+    "spotted": "{a} wings are dotted with {c} spots",
+    "speckle": "{a} wings are dusted with {b} speckles",
+    "glass": "its wings are clear as glass, edged with {b}",
+    "split": "its forewings are {a} while its hindwings are {b}",
+    "rays": "{b} rays run through its {a} wings",
+    "patch": "{a} wings carry big {c} patches",
+    "longwing": "long {a} wings carry a {c} band",
+    "ocelli": "a row of little {c} eyespots lines its {a} hindwings",
+    "marble": "{b} marbling covers its {a} underside",
+    "gradient": "its wings fade from {a} to {b}",
+    "dusk": "its dusky {a} wings are freckled with {c}",
+    "zebra": "{a} and {b} stripes make it look like a tiny zebra",
+    "jewel": "{a} wings shimmer with {c} like a gemstone",
+    "flame": "{a} wings flicker into {b} like a flame",
+    "crescent": "{a} wings are edged with {b} crescents",
+    "edge": "{a} wings wear a wide {b} border",
+}
+REALM_TEXT = {
+    "The Nether": ["It shrugs off fire and drinks the heat rising from lava.",
+                   "Piglins have been seen chasing it, though nobody has seen one caught.",
+                   "Its eggs are laid where the ground stays warm, and the caterpillars nibble Nether fungus.",
+                   "It never needs to land on water, since there is none to be found where it lives.",
+                   "Its scales are said to be fireproof, which is why it can fly through flame unharmed."],
+    "The End": ["It seems to blink short distances when startled, much like an Enderman.",
+                "Its caterpillars feed on chorus plants and sometimes pop up somewhere unexpected.",
+                "It drifts over the void without fear, carried by currents nobody else can feel.",
+                "Shulkers ignore it completely, and it often rests on the walls of End cities.",
+                "It glows faintly in the dark, so it is easy to spot against the black sky."],
+    "": ["Males often gather at damp mud to sip minerals.",
+         "It basks in the morning sun to warm up before it can fly.",
+         "It folds its wings tight when it lands, hiding its colours from birds.",
+         "It is a fast, nervous flier that is hard to follow.",
+         "Its caterpillars spin small silk shelters in the leaves.",
+         "It patrols the same sunny spot day after day.",
+         "It sips nectar from almost any flower it can find.",
+         "It flies low and close to the ground.",
+         "In cool weather it can rest without moving for days.",
+         "Several of them often roost together in the same tree.",
+         "It is most active in the hottest hours of the day.",
+         "Females test each leaf with their feet before laying an egg on it."],
+}
+
+
+def describe(cat, name, kind, cols, habitat, r):
+    names = [colour_name(c) for c in cols] + ["black"]
+    first = PATTERN_TEXT[kind].format(a=names[0], b=names[1], c=names[2])
+    first = first[0].upper() + first[1:] + "."
+    where = HABITAT_LABEL[habitat[0]]
+    realm = cat if cat in ("The Nether", "The End") else ""
+    second = r.choice(REALM_TEXT[realm])
+    lead = r.choice([f"A {where} native. ", f"Found in the {where}. ", "", f"Look for it in the {where}. "])
+    return lead + first + " " + second
+
+
+def slug(name):
+    return re.sub(r"[^a-z0-9]+", "_", name.lower().replace("'", "")).strip("_")
+
+
+EXTRA_HABITATS = {
+    "grove": "Groves", "mega": "Old Growth Taiga", "pale_garden": "Pale Garden",
+    "soulsand_valley": "Soul Sand Valley", "basalt_deltas": "Basalt Deltas", "nether_wastes": "Nether Wastes",
+}
+
+
+def second_wave():
+    out = []
+    for cat, name, shape, habitat, kind, cols, code in species_more.rows():
+        sid = slug(name)
+        r = random.Random(sid)
+        rarity = RARITY_CODE[code]
+        scale = SHAPE_SCALE[shape] * r.uniform(0.9, 1.1) * (1.15 if rarity == "legendary" else 1.0)
+        flap = SHAPE_FLAP.get(shape, 1.0) * r.uniform(0.9, 1.15)
+        body = dark(min(cols, key=lambda c: lum(rgb(c))), 0.2)
+        sp = Species(sid, name, shape, habitat, round(scale, 3), round(flap, 2), rarity,
+                     pattern_feats(kind, cols, r), body=body, accent=cols[2] if len(cols) > 2 else None,
+                     category=cat)
+        INFO[sid] = describe(cat, name, kind, cols, habitat, r)
+        out.append(sp)
+    return out
+
+# ---------------------------------------------------------------------------
 # Habitats, life-cycle styles
 # ---------------------------------------------------------------------------
 UNDERGROUND = {"lush_caves", "deep_dark"}
@@ -765,6 +995,14 @@ HABITAT_LABEL = {
     "lush_caves": "Lush Caves", "deep_dark": "Deep Dark", "crimson_forest": "Crimson Forest",
     "warped_forest": "Warped Forest", "the_end": "The End", "frozen": "Snowy Biomes",
 }
+HABITAT_LABEL.update(EXTRA_HABITATS)
+NETHER |= {"soulsand_valley", "basalt_deltas", "nether_wastes"}
+
+SPECIES += second_wave()
+assert len(SPECIES) == 500, len(SPECIES)
+assert len({s.id for s in SPECIES}) == 500, [s.id for s in SPECIES if [t.id for t in SPECIES].count(s.id) > 1]
+assert set(INFO) == {s.id for s in SPECIES}
+assert all(s.category in CATEGORIES for s in SPECIES)
 
 # Caterpillar look by wing family.
 LARVA_STYLE = {
@@ -1451,7 +1689,26 @@ VANILLA_FLOWERS = [
 LEAVES = ["minecraft:oak_leaves", "minecraft:birch_leaves", "minecraft:jungle_leaves", "minecraft:spruce_leaves",
           "minecraft:acacia_leaves", "minecraft:dark_oak_leaves", "minecraft:mangrove_leaves",
           "minecraft:cherry_leaves", "minecraft:azalea_leaves"]
+SEEDS = ["minecraft:wheat_seeds", "minecraft:melon_seeds", "minecraft:pumpkin_seeds", "minecraft:beetroot_seeds",
+         "minecraft:torchflower_seeds", "minecraft:pitcher_pod"]
 CATERPILLAR_FOOD = LEAVES + [f"{NS}:{b}" for b in FLOWER_BLOCKS] + ["minecraft:short_grass", "minecraft:fern"]
+NETHER_FOOD = ["minecraft:nether_wart", "minecraft:crimson_fungus", "minecraft:warped_fungus",
+               "minecraft:crimson_roots", "minecraft:warped_roots", "minecraft:weeping_vines",
+               "minecraft:twisting_vines"]
+END_FOOD = ["minecraft:chorus_fruit", "minecraft:popped_chorus_fruit", "minecraft:chorus_flower"]
+# Seeds are the best food: each one is worth far more growth than a leaf.
+SEED_GROWTH, FOOD_GROWTH = 0.08, 0.03
+GROW_SECONDS = 2400
+
+
+def realm(sp):
+    if "the_end" in sp.habitat:
+        return "end"
+    return "nether" if any(h in NETHER for h in sp.habitat) else "overworld"
+
+
+def larva_food(sp):
+    return {"overworld": CATERPILLAR_FOOD, "nether": NETHER_FOOD, "end": END_FOOD}[realm(sp)]
 SOIL = ["minecraft:grass_block", "minecraft:dirt", "minecraft:coarse_dirt", "minecraft:podzol",
         "minecraft:rooted_dirt", "minecraft:moss_block", "minecraft:mycelium", "minecraft:farmland"]
 
@@ -1503,7 +1760,9 @@ def adult_behavior(sp):
         "minecraft:behavior.move_to_block": {
             "priority": 8, "tick_interval": 20, "start_chance": 0.4, "search_range": 10, "search_height": 4,
             "goal_radius": 1.2, "stay_duration": 60,
-            "target_blocks": VANILLA_FLOWERS + [f"{NS}:{b}" for b in FLOWER_BLOCKS],
+            "target_blocks": VANILLA_FLOWERS + [f"{NS}:{b}" for b in FLOWER_BLOCKS] + [
+                "minecraft:crimson_fungus", "minecraft:warped_fungus", "minecraft:crimson_roots",
+                "minecraft:warped_roots", "minecraft:shroomlight", "minecraft:chorus_flower"],
         },
         "minecraft:behavior.random_hover": {
             "priority": 12, "xz_dist": 8, "y_dist": 6, "y_offset": -1, "interval": 1, "hover_height": [1, 4],
@@ -1568,7 +1827,7 @@ def egg_behavior(sp):
         "minecraft:scale": {"value": 0.7},
         "minecraft:knockback_resistance": {"value": 1.0},
         "minecraft:pushable": {"is_pushable": False, "is_pushable_by_piston": True},
-        "minecraft:timer": {"time": [90, 150], "looping": False,
+        "minecraft:timer": {"time": [240, 360], "looping": False,
                             "time_down_event": {"event": f"{NS}:hatch", "target": "self"}},
     })
     return stage_entity(f"{NS}:{sp.id}_egg", comps, f"{NS}:{sp.id}_caterpillar", f"{NS}:hatch")
@@ -1586,16 +1845,18 @@ def caterpillar_behavior(sp):
         "minecraft:navigation.walk": {"avoid_water": True, "avoid_damage_blocks": True, "can_walk": True},
         "minecraft:behavior.float": {"priority": 0},
         "minecraft:behavior.tempt": {"priority": 3, "speed_multiplier": 1.3, "within_radius": 6,
-                                     "items": CATERPILLAR_FOOD},
+                                     "items": SEEDS + larva_food(sp)},
         "minecraft:behavior.random_stroll": {"priority": 6, "speed_multiplier": 1.0, "xz_dist": 4, "y_dist": 2},
         "minecraft:behavior.look_at_player": {"priority": 8, "look_distance": 4, "probability": 0.05},
         "minecraft:behavior.random_look_around": {"priority": 9},
         "minecraft:ageable": {
-            "duration": 420,
-            "feed_items": [{"item": i, "growth": 0.15} for i in CATERPILLAR_FOOD],
+            "duration": GROW_SECONDS,
+            "feed_items": [{"item": i, "growth": SEED_GROWTH} for i in SEEDS]
+                          + [{"item": i, "growth": FOOD_GROWTH} for i in larva_food(sp)],
             "grow_up": {"event": f"{NS}:pupate", "target": "self"},
         },
-        "minecraft:timer": {"time": [480, 600], "looping": False,
+        # Fallback in case feeding progress is ever lost: pupate on a timer that is longer than growing up.
+        "minecraft:timer": {"time": [GROW_SECONDS + 600, GROW_SECONDS + 1200], "looping": False,
                             "time_down_event": {"event": f"{NS}:pupate", "target": "self"}},
     })
     return stage_entity(f"{NS}:{sp.id}_caterpillar", comps, f"{NS}:{sp.id}_chrysalis", f"{NS}:pupate", True)
@@ -1608,7 +1869,7 @@ def chrysalis_behavior(sp):
         "minecraft:scale": {"value": round(larva_scale(sp) * 1.25, 3)},
         "minecraft:knockback_resistance": {"value": 1.0},
         "minecraft:pushable": {"is_pushable": False, "is_pushable_by_piston": True},
-        "minecraft:timer": {"time": [150, 240], "looping": False,
+        "minecraft:timer": {"time": [480, 720], "looping": False,
                             "time_down_event": {"event": f"{NS}:emerge", "target": "self"}},
     })
     return stage_entity(f"{NS}:{sp.id}_chrysalis", comps, f"{NS}:{sp.id}", f"{NS}:emerge")
@@ -1807,7 +2068,9 @@ def handbook_data(painted):
             "id": sp.id, "name": sp.name, "category": sp.category, "rarity": sp.rarity.title(),
             "habitat": ", ".join(HABITAT_LABEL[h] for h in sp.habitat),
             "wingspan": f"{35 * sp.scale / 16:.1f} blocks",
-            "food": FOOD[LARVA_STYLE[sp.shape]],
+            "food": {"overworld": FOOD[LARVA_STYLE[sp.shape]] + ", but seeds work best",
+                     "nether": "Nether Wart, crimson and warped fungus and roots, but seeds work best",
+                     "end": "Chorus Fruit and Chorus Flowers, but seeds work best"}[realm(sp)],
             "info": INFO[sp.id],
             "icon": f"textures/items/jars/jar_{sp.id}",
         })
@@ -1836,7 +2099,7 @@ def build():
     icon = pack_icon([by_id["monarch"], by_id["blue_morpho"], by_id["peacock"]])
     save_png(icon, os.path.join(BP, "pack_icon.png"))
     save_png(icon, os.path.join(RP, "pack_icon.png"))
-    desc = "100 butterflies to discover, raise from egg to wing, catch and record in your handbook."
+    desc = f"{len(SPECIES)} butterflies to discover, raise from egg to wing, catch and record in your handbook."
     for p, label in ((BP, "Behavior Pack"), (RP, "Resource Pack")):
         write_json(os.path.join(p, "texts", "languages.json"), ["en_US"])
         write_text(os.path.join(p, "texts", "en_US.lang"),
@@ -2046,24 +2309,32 @@ def render_model(geometry, tex, pose=None, yaw=200, pitch=30, size=240):
 
 
 def build_preview(painted):
-    cols, cell_w, cell_h = 10, 124, 112
-    rows = (len(painted) + cols - 1) // cols
-    img = Image.new("RGBA", (cols * cell_w, rows * cell_h), (*rgb("#EAF4E4"), 255))
+    cols, cell_w, cell_h = 20, 96, 92
+    head = 22
+    rows = sum((sum(1 for sp, _ in painted if sp.category == c) + cols - 1) // cols for c in CATEGORIES)
+    img = Image.new("RGBA", (cols * cell_w, rows * cell_h + head * len(CATEGORIES)), (*rgb("#EAF4E4"), 255))
     d = ImageDraw.Draw(img)
-    for i, (sp, wing) in enumerate(painted):
-        x0, y0 = (i % cols) * cell_w, (i // cols) * cell_h
-        if (i // cols + i % cols) % 2:
-            d.rectangle([x0, y0, x0 + cell_w - 1, y0 + cell_h - 1], fill=(*rgb("#DDEBD6"), 255))
-        v = top_view(wing, sp, 3)
-        img.alpha_composite(v, (x0 + (cell_w - v.width) // 2, y0 + 4))
-        label = sp.name if len(sp.name) <= 19 else sp.name[:18] + "."
-        d.text((x0 + (cell_w - d.textlength(label)) / 2, y0 + cell_h - 16), label, fill=(40, 48, 36, 255))
+    y = 0
+    for cat in CATEGORIES:
+        group = [(sp, w) for sp, w in painted if sp.category == cat]
+        d.rectangle([0, y, img.width, y + head - 1], fill=(*rgb("#3A5A3A"), 255))
+        d.text((8, y + 5), f"{cat} ({len(group)})", fill=(240, 248, 236, 255))
+        y += head
+        for i, (sp, wing) in enumerate(group):
+            x0, y0 = (i % cols) * cell_w, y + (i // cols) * cell_h
+            if (i // cols + i % cols) % 2:
+                d.rectangle([x0, y0, x0 + cell_w - 1, y0 + cell_h - 1], fill=(*rgb("#DDEBD6"), 255))
+            v = top_view(wing, sp, 2)
+            img.alpha_composite(v, (x0 + (cell_w - v.width) // 2, y0 + 4))
+            label = sp.name if len(sp.name) <= 15 else sp.name[:14] + "."
+            d.text((x0 + (cell_w - d.textlength(label)) / 2, y0 + cell_h - 15), label, fill=(40, 48, 36, 255))
+        y += (len(group) + cols - 1) // cols * cell_h
     os.makedirs(DOCS, exist_ok=True)
     img.convert("RGB").save(os.path.join(DOCS, "preview.png"))
 
 
 def build_lifecycle(by_id):
-    picks = ["monarch", "tiger_swallowtail", "blue_morpho", "peacock", "sculk_wisp"]
+    picks = ["monarch", "tiger_swallowtail", "blue_morpho", "blaze_monarch", "ender_dragon_wing"]
     cell = 220
     img = Image.new("RGBA", (cell * 4, 30 + cell * len(picks)), (*rgb("#E4F2FA"), 255))
     d = ImageDraw.Draw(img)

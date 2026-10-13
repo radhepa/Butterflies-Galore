@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:item": {
+    "description": {
+      "identifier": "butterflies:jar_mechanitis_tigerwing",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "butterflies_jar_mechanitis_tigerwing",
+      "minecraft:display_name": {
+        "value": "item.butterflies.jar_mechanitis_tigerwing.name"
+      },
+      "minecraft:max_stack_size": 16,
+      "minecraft:entity_placer": {
+        "entity": "butterflies:mechanitis_tigerwing"
+      }
+    }
+  }
+}

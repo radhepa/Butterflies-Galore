@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:item": {
+    "description": {
+      "identifier": "butterflies:jar_rusty_clearwing",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "butterflies_jar_rusty_clearwing",
+      "minecraft:display_name": {
+        "value": "item.butterflies.jar_rusty_clearwing.name"
+      },
+      "minecraft:max_stack_size": 16,
+      "minecraft:entity_placer": {
+        "entity": "butterflies:rusty_clearwing"
+      }
+    }
+  }
+}
