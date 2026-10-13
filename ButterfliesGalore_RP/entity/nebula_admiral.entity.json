@@ -7,20 +7,25 @@
         "default": "entity_alphatest"
       },
       "textures": {
-        "default": "textures/entity/butterflies/nebula_admiral"
+        "default": "textures/entity/butterflies/nebula_admiral",
+        "shiny": "textures/entity/butterflies/nebula_admiral_shiny"
       },
       "geometry": {
         "default": "geometry.butterflies.butterfly"
       },
       "render_controllers": [
-        "controller.render.butterflies.default"
+        "controller.render.butterflies.adult"
       ],
       "animations": {
-        "main": "animation.butterflies.butterfly.fly"
+        "main": "animation.butterflies.butterfly.fly",
+        "sparkle": "animation.butterflies.butterfly.sparkle"
       },
       "scripts": {
         "animate": [
-          "main"
+          "main",
+          {
+            "sparkle": "q.mark_variant == 1"
+          }
         ],
         "initialize": [
           "v.flap = 1.12;"
@@ -29,6 +34,9 @@
       "spawn_egg": {
         "base_color": "#150D39",
         "overlay_color": "#0A071D"
+      },
+      "particle_effects": {
+        "sparkle": "minecraft:villager_happy"
       }
     }
   }

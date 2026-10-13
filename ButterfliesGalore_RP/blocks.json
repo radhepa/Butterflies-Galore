@@ -8,5 +8,11 @@
   },
   "butterflies:coneflower": {
     "sound": "grass"
+  },
+  "butterflies:display_jar": {
+    "sound": "glass"
+  },
+  "butterflies:terrarium": {
+    "sound": "glass"
   }
 }

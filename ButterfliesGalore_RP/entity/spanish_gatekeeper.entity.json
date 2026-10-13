@@ -7,20 +7,25 @@
         "default": "entity_alphatest"
       },
       "textures": {
-        "default": "textures/entity/butterflies/spanish_gatekeeper"
+        "default": "textures/entity/butterflies/spanish_gatekeeper",
+        "shiny": "textures/entity/butterflies/spanish_gatekeeper_shiny"
       },
       "geometry": {
         "default": "geometry.butterflies.butterfly"
       },
       "render_controllers": [
-        "controller.render.butterflies.default"
+        "controller.render.butterflies.adult"
       ],
       "animations": {
-        "main": "animation.butterflies.butterfly.fly"
+        "main": "animation.butterflies.butterfly.fly",
+        "sparkle": "animation.butterflies.butterfly.sparkle"
       },
       "scripts": {
         "animate": [
-          "main"
+          "main",
+          {
+            "sparkle": "q.mark_variant == 1"
+          }
         ],
         "initialize": [
           "v.flap = 1.05;"
@@ -29,6 +34,9 @@
       "spawn_egg": {
         "base_color": "#F98111",
         "overlay_color": "#6E461E"
+      },
+      "particle_effects": {
+        "sparkle": "minecraft:villager_happy"
       }
     }
   }

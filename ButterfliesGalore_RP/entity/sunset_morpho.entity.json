@@ -7,20 +7,25 @@
         "default": "entity_alphatest"
       },
       "textures": {
-        "default": "textures/entity/butterflies/sunset_morpho"
+        "default": "textures/entity/butterflies/sunset_morpho",
+        "shiny": "textures/entity/butterflies/sunset_morpho_shiny"
       },
       "geometry": {
         "default": "geometry.butterflies.butterfly"
       },
       "render_controllers": [
-        "controller.render.butterflies.default"
+        "controller.render.butterflies.adult"
       ],
       "animations": {
-        "main": "animation.butterflies.butterfly.fly"
+        "main": "animation.butterflies.butterfly.fly",
+        "sparkle": "animation.butterflies.butterfly.sparkle"
       },
       "scripts": {
         "animate": [
-          "main"
+          "main",
+          {
+            "sparkle": "q.mark_variant == 1"
+          }
         ],
         "initialize": [
           "v.flap = 0.55;"
@@ -29,6 +34,9 @@
       "spawn_egg": {
         "base_color": "#E67D1D",
         "overlay_color": "#2D180B"
+      },
+      "particle_effects": {
+        "sparkle": "minecraft:villager_happy"
       }
     }
   }

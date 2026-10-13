@@ -7,20 +7,25 @@
         "default": "entity_alphatest"
       },
       "textures": {
-        "default": "textures/entity/butterflies/clearwing_acraea"
+        "default": "textures/entity/butterflies/clearwing_acraea",
+        "shiny": "textures/entity/butterflies/clearwing_acraea_shiny"
       },
       "geometry": {
         "default": "geometry.butterflies.butterfly"
       },
       "render_controllers": [
-        "controller.render.butterflies.default"
+        "controller.render.butterflies.adult"
       ],
       "animations": {
-        "main": "animation.butterflies.butterfly.fly"
+        "main": "animation.butterflies.butterfly.fly",
+        "sparkle": "animation.butterflies.butterfly.sparkle"
       },
       "scripts": {
         "animate": [
-          "main"
+          "main",
+          {
+            "sparkle": "q.mark_variant == 1"
+          }
         ],
         "initialize": [
           "v.flap = 0.91;"
@@ -29,6 +34,9 @@
       "spawn_egg": {
         "base_color": "#3E2A15",
         "overlay_color": "#362412"
+      },
+      "particle_effects": {
+        "sparkle": "minecraft:villager_happy"
       }
     }
   }

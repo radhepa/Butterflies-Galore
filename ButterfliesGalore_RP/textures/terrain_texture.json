@@ -12,6 +12,12 @@
     },
     "butterflies_coneflower": {
       "textures": "textures/blocks/coneflower"
+    },
+    "butterflies_display_jar": {
+      "textures": "textures/blocks/display_jar"
+    },
+    "butterflies_terrarium": {
+      "textures": "textures/blocks/terrarium"
     }
   }
 }

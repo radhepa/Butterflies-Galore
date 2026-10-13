@@ -1,0 +1,22 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:item": {
+    "description": {
+      "identifier": "butterflies:field_notes",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "butterflies_field_notes",
+      "minecraft:display_name": {
+        "value": "item.butterflies.field_notes.name"
+      },
+      "minecraft:max_stack_size": 16,
+      "minecraft:cooldown": {
+        "category": "butterflies_field_notes",
+        "duration": 1.0
+      }
+    }
+  }
+}

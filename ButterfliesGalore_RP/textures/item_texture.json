@@ -3010,6 +3010,60 @@
     },
     "butterflies_handbook": {
       "textures": "textures/items/handbook"
+    },
+    "butterflies_wings_meadows": {
+      "textures": "textures/items/wings/wings_meadows"
+    },
+    "butterflies_wings_swallowtails": {
+      "textures": "textures/items/wings/wings_swallowtails"
+    },
+    "butterflies_wings_woodland": {
+      "textures": "textures/items/wings/wings_woodland"
+    },
+    "butterflies_wings_blues": {
+      "textures": "textures/items/wings/wings_blues"
+    },
+    "butterflies_wings_whites": {
+      "textures": "textures/items/wings/wings_whites"
+    },
+    "butterflies_wings_hairstreaks": {
+      "textures": "textures/items/wings/wings_hairstreaks"
+    },
+    "butterflies_wings_skippers": {
+      "textures": "textures/items/wings/wings_skippers"
+    },
+    "butterflies_wings_rainforest": {
+      "textures": "textures/items/wings/wings_rainforest"
+    },
+    "butterflies_wings_savanna": {
+      "textures": "textures/items/wings/wings_savanna"
+    },
+    "butterflies_wings_mountains": {
+      "textures": "textures/items/wings/wings_mountains"
+    },
+    "butterflies_wings_wetlands": {
+      "textures": "textures/items/wings/wings_wetlands"
+    },
+    "butterflies_wings_wonders": {
+      "textures": "textures/items/wings/wings_wonders"
+    },
+    "butterflies_wings_nether": {
+      "textures": "textures/items/wings/wings_nether"
+    },
+    "butterflies_wings_end": {
+      "textures": "textures/items/wings/wings_end"
+    },
+    "butterflies_wings_rainbow": {
+      "textures": "textures/items/wings/wings_rainbow"
+    },
+    "butterflies_wings_golden": {
+      "textures": "textures/items/wings/wings_golden"
+    },
+    "butterflies_field_notes": {
+      "textures": "textures/items/field_notes"
+    },
+    "butterflies_shiny_charm": {
+      "textures": "textures/items/shiny_charm"
     }
   }
 }

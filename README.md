@@ -15,12 +15,19 @@ A Minecraft Bedrock Edition add-on that fills the world with **1,000 unique butt
   - **Chrysalis:** a fully grown caterpillar hangs up as a chrysalis that sways and twitches before a new butterfly emerges.
   - Wild caterpillars also appear in each species' home biome.
 - **Butterfly Handbook.** Every player gets one on first join. Walk up to any egg, caterpillar, chrysalis or butterfly to record it. Browse 14 chapters of entries with habitat, rarity, wingspan, caterpillar food and a fun fact, and complete all four life stages of each species.
+- **Shiny butterflies.** About 1 in 256 butterflies is a rare, sparkling colour form. Butterflies you raise yourself are shiny 1 in 64 times, and a **Shiny Charm** triples your luck. Shiny butterflies stay shiny in a jar and get their own star in the handbook.
+- **Wearable wings.** Discover half the butterflies in a chapter to earn its wings, such as Monarch Wings or Blue Morpho Wings (14 pairs). Rainbow Wings unlock at 500 discoveries and Golden Wings at 1,000. Wear them in the chest slot to glide, and jump in mid-air to flap.
+- **Milestones and ranks.** Rewards at 10, 25, 50, 100, 250, 500, 750 and 1,000 discoveries, and ranks from Beginner to Butterfly Master.
+- **Display Jars and Terrariums.** Show off a living butterfly in a glowing Display Jar or a mossy Terrarium. Use an empty hand to take it back out.
+- **Field Notes.** Read them to learn where an undiscovered butterfly lives.
 - **Natural spawning by biome.** Meadows, forests, jungles, deserts, badlands, swamps, beaches, snowy biomes, mountains, the pale garden, lush caves, the deep dark, every Nether biome and the End all have their own species, from common to legendary.
 - **Lifelike flight.** Butterflies flutter, glide and bob through the air. They visit flowers, flee when hurt and never take fall damage.
 - **Catch & release.** Use a **Butterfly Jar** on a butterfly to catch it. Every species has its own jar. Use a filled jar on a block to release the butterfly.
 - **New flowers.** Butterfly Bush, Milkweed and Coneflower grow naturally, attract butterflies, feed caterpillars and craft into dye.
 
 ![The life cycle](docs/lifecycle.png)
+
+![Wings, display blocks and a shiny Monarch](docs/extras.png)
 
 See the full [Butterfly Field Guide](docs/species.md) for every species, where it lives and how rare it is.
 
@@ -30,6 +37,10 @@ See the full [Butterfly Field Guide](docs/species.md) for every species, where i
 |---|---|
 | Butterfly Jar ×3 | 5 Glass + 1 Planks (shaped: planks on top, glass cup below) |
 | Butterfly Handbook | Book + Butterfly Jar |
+| Display Jar | Butterfly Jar + Glowstone Dust |
+| Butterfly Terrarium | 5 Glass + Butterfly Bush (middle) + 2 Planks and Moss Block (bottom row: planks, moss, planks) |
+| Field Notes | Paper + Ink Sac + Bottle of Nectar |
+| Shiny Charm | 3 Gold Ingots + Diamond + Bottle of Nectar (gold above and on both sides of the diamond, nectar below) |
 | Bottle of Nectar | Glass Bottle + Sugar + Dandelion, Butterfly Bush or Milkweed |
 | Butterfly Bush | Oak Sapling + 2 Purple Dye |
 | Milkweed | Wheat Seeds + Pink Dye + White Dye |

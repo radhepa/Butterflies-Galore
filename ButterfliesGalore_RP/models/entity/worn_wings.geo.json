@@ -1,0 +1,92 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.butterflies.worn_wings",
+        "texture_width": 64,
+        "texture_height": 64,
+        "visible_bounds_width": 3,
+        "visible_bounds_height": 3,
+        "visible_bounds_offset": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "body",
+          "pivot": [
+            0,
+            24,
+            0
+          ]
+        },
+        {
+          "name": "wings",
+          "parent": "body",
+          "pivot": [
+            0,
+            20,
+            2.6
+          ]
+        },
+        {
+          "name": "wing_a",
+          "parent": "wings",
+          "pivot": [
+            -1,
+            20,
+            2.6
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -17,
+                8,
+                2.6
+              ],
+              "size": [
+                16,
+                22,
+                0
+              ],
+              "uv": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "wing_b",
+          "parent": "wings",
+          "pivot": [
+            1,
+            20,
+            2.6
+          ],
+          "cubes": [
+            {
+              "origin": [
+                1,
+                8,
+                2.6
+              ],
+              "size": [
+                16,
+                22,
+                0
+              ],
+              "uv": [
+                0,
+                22
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

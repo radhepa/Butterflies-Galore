@@ -93,6 +93,15 @@
         }
       }
     },
+    "animation.butterflies.butterfly.sparkle": {
+      "loop": true,
+      "animation_length": 0.5,
+      "particle_effects": {
+        "0.0": {
+          "effect": "sparkle"
+        }
+      }
+    },
     "animation.butterflies.chrysalis.sway": {
       "loop": true,
       "bones": {
@@ -101,6 +110,28 @@
             "math.sin(q.life_time * 33) * 2",
             0,
             "math.sin(q.life_time * 45) * 4 + (math.sin(q.life_time * 7) > 0.97 ? math.sin(q.life_time * 900) * 6 : 0)"
+          ]
+        }
+      }
+    },
+    "animation.butterflies.wings.flutter": {
+      "loop": true,
+      "bones": {
+        "wings": {
+          "scale": 0.6
+        },
+        "wing_a": {
+          "rotation": [
+            0,
+            "math.sin(q.anim_time * 220) * 14",
+            0
+          ]
+        },
+        "wing_b": {
+          "rotation": [
+            0,
+            "-math.sin(q.anim_time * 220) * 14",
+            0
           ]
         }
       }

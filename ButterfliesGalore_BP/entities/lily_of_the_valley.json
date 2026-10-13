@@ -10,6 +10,59 @@
       "butterflies:caught": {
         "minecraft:instant_despawn": {}
       },
+      "butterflies:shiny": {
+        "minecraft:mark_variant": {
+          "value": 1
+        }
+      },
+      "butterflies:display": {
+        "minecraft:movement": {
+          "value": 0
+        },
+        "minecraft:flying_speed": {
+          "value": 0
+        },
+        "minecraft:physics": {
+          "has_gravity": false,
+          "has_collision": false
+        },
+        "minecraft:collision_box": {
+          "width": 0.2,
+          "height": 0.2
+        },
+        "minecraft:pushable": {
+          "is_pushable": false,
+          "is_pushable_by_piston": false
+        },
+        "minecraft:knockback_resistance": {
+          "value": 1.0
+        },
+        "minecraft:damage_sensor": {
+          "triggers": [
+            {
+              "cause": "all",
+              "deals_damage": "no"
+            }
+          ]
+        },
+        "minecraft:despawn": {
+          "filters": {
+            "test": "has_tag",
+            "subject": "self",
+            "value": "butterflies:never"
+          }
+        }
+      },
+      "butterflies:display_jar": {
+        "minecraft:scale": {
+          "value": 0.2
+        }
+      },
+      "butterflies:display_terrarium": {
+        "minecraft:scale": {
+          "value": 0.32
+        }
+      },
       "butterflies:laying": {
         "minecraft:spawn_entity": {
           "entities": [
@@ -67,6 +120,9 @@
       },
       "minecraft:scale": {
         "value": 0.299
+      },
+      "minecraft:mark_variant": {
+        "value": 0
       },
       "minecraft:pushable": {
         "is_pushable": true,
@@ -234,6 +290,38 @@
         "remove": {
           "component_groups": [
             "butterflies:laying"
+          ]
+        }
+      },
+      "butterflies:make_shiny": {
+        "add": {
+          "component_groups": [
+            "butterflies:shiny"
+          ]
+        }
+      },
+      "butterflies:show_in_jar": {
+        "add": {
+          "component_groups": [
+            "butterflies:display",
+            "butterflies:display_jar"
+          ]
+        }
+      },
+      "butterflies:show_in_terrarium": {
+        "add": {
+          "component_groups": [
+            "butterflies:display",
+            "butterflies:display_terrarium"
+          ]
+        }
+      },
+      "butterflies:release": {
+        "remove": {
+          "component_groups": [
+            "butterflies:display",
+            "butterflies:display_jar",
+            "butterflies:display_terrarium"
           ]
         }
       }

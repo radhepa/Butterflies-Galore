@@ -1,6 +1,25 @@
 {
   "format_version": "1.8.0",
   "render_controllers": {
+    "controller.render.butterflies.adult": {
+      "arrays": {
+        "textures": {
+          "Array.skins": [
+            "Texture.default",
+            "Texture.shiny"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Array.skins[q.mark_variant]"
+      ]
+    },
     "controller.render.butterflies.default": {
       "geometry": "Geometry.default",
       "materials": [

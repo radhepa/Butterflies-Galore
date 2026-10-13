@@ -9,7 +9,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "Milkweed, Butterfly Bush and leaves, but seeds work best",
   "info": "Famous for flying thousands of kilometres on its yearly migration. Its caterpillars eat only milkweed, which makes the adults taste terrible to birds.",
-  "icon": "textures/items/jars/jar_monarch"
+  "icon": "textures/items/jars/jar_monarch",
+  "realm": "overworld"
  },
  {
   "id": "viceroy",
@@ -20,7 +21,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Looks almost exactly like a Monarch, but the black line across its hindwings gives it away.",
-  "icon": "textures/items/jars/jar_viceroy"
+  "icon": "textures/items/jars/jar_viceroy",
+  "realm": "overworld"
  },
  {
   "id": "painted_lady",
@@ -31,7 +33,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "One of the most widespread butterflies on Earth. Huge swarms migrate between continents every year.",
-  "icon": "textures/items/jars/jar_painted_lady"
+  "icon": "textures/items/jars/jar_painted_lady",
+  "realm": "overworld"
  },
  {
   "id": "red_admiral",
@@ -42,7 +45,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A bold black-and-red flier that loves sipping juice from fallen, overripe fruit.",
-  "icon": "textures/items/jars/jar_red_admiral"
+  "icon": "textures/items/jars/jar_red_admiral",
+  "realm": "overworld"
  },
  {
   "id": "peacock",
@@ -53,7 +57,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Flashes the big eyespots on its wings to startle hungry birds, and can even hiss by rubbing its wings together.",
-  "icon": "textures/items/jars/jar_peacock"
+  "icon": "textures/items/jars/jar_peacock",
+  "realm": "overworld"
  },
  {
   "id": "common_buckeye",
@@ -64,7 +69,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Its eyespots stare back at predators. Males perch on bare ground and chase anything that flies past.",
-  "icon": "textures/items/jars/jar_common_buckeye"
+  "icon": "textures/items/jars/jar_common_buckeye",
+  "realm": "overworld"
  },
  {
   "id": "cabbage_white",
@@ -75,7 +81,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "One of the most common garden butterflies. Its caterpillars love cabbage leaves.",
-  "icon": "textures/items/jars/jar_cabbage_white"
+  "icon": "textures/items/jars/jar_cabbage_white",
+  "realm": "overworld"
  },
  {
   "id": "orange_tip",
@@ -86,7 +93,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Only the males have bright orange wing tips. Its mottled green underside hides it among flowers.",
-  "icon": "textures/items/jars/jar_orange_tip"
+  "icon": "textures/items/jars/jar_orange_tip",
+  "realm": "overworld"
  },
  {
   "id": "brimstone",
@@ -97,7 +105,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Its butter-yellow, leaf-shaped wings may be where the word 'butterfly' comes from.",
-  "icon": "textures/items/jars/jar_brimstone"
+  "icon": "textures/items/jars/jar_brimstone",
+  "realm": "overworld"
  },
  {
   "id": "clouded_yellow",
@@ -108,7 +117,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A strong migrant that arrives from the south in warm summers and races over clover fields.",
-  "icon": "textures/items/jars/jar_clouded_yellow"
+  "icon": "textures/items/jars/jar_clouded_yellow",
+  "realm": "overworld"
  },
  {
   "id": "tiger_swallowtail",
@@ -119,7 +129,8 @@ export const SPECIES = [
   "wingspan": "1.0 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "A large yellow swallowtail with tiger stripes. Its caterpillars have fake eyespots that look like a snake's eyes.",
-  "icon": "textures/items/jars/jar_tiger_swallowtail"
+  "icon": "textures/items/jars/jar_tiger_swallowtail",
+  "realm": "overworld"
  },
  {
   "id": "black_swallowtail",
@@ -130,7 +141,8 @@ export const SPECIES = [
   "wingspan": "1.0 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "Its caterpillars eat carrot, parsley and dill, and push out a smelly orange 'horn' when threatened.",
-  "icon": "textures/items/jars/jar_black_swallowtail"
+  "icon": "textures/items/jars/jar_black_swallowtail",
+  "realm": "overworld"
  },
  {
   "id": "zebra_swallowtail",
@@ -141,7 +153,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "Its long, sword-like tails and zebra stripes make it one of the most elegant butterflies.",
-  "icon": "textures/items/jars/jar_zebra_swallowtail"
+  "icon": "textures/items/jars/jar_zebra_swallowtail",
+  "realm": "overworld"
  },
  {
   "id": "pipevine_swallowtail",
@@ -152,7 +165,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "Its caterpillars eat poisonous pipevine plants, so the shimmering blue adults are toxic to predators.",
-  "icon": "textures/items/jars/jar_pipevine_swallowtail"
+  "icon": "textures/items/jars/jar_pipevine_swallowtail",
+  "realm": "overworld"
  },
  {
   "id": "giant_swallowtail",
@@ -163,7 +177,8 @@ export const SPECIES = [
   "wingspan": "1.1 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "One of the largest butterflies in North America. Its caterpillars look just like bird droppings!",
-  "icon": "textures/items/jars/jar_giant_swallowtail"
+  "icon": "textures/items/jars/jar_giant_swallowtail",
+  "realm": "overworld"
  },
  {
   "id": "old_world_swallowtail",
@@ -174,7 +189,8 @@ export const SPECIES = [
   "wingspan": "1.0 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "A striking yellow-and-black swallowtail found from Europe to Japan, often gliding over mountain tops.",
-  "icon": "textures/items/jars/jar_old_world_swallowtail"
+  "icon": "textures/items/jars/jar_old_world_swallowtail",
+  "realm": "overworld"
  },
  {
   "id": "scarce_swallowtail",
@@ -185,7 +201,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "Despite its name it is fairly widespread. It glides gracefully with its long tails trailing behind.",
-  "icon": "textures/items/jars/jar_scarce_swallowtail"
+  "icon": "textures/items/jars/jar_scarce_swallowtail",
+  "realm": "overworld"
  },
  {
   "id": "spicebush_swallowtail",
@@ -196,7 +213,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "Its hindwings shimmer blue-green. The caterpillars hide inside rolled-up leaves during the day.",
-  "icon": "textures/items/jars/jar_spicebush_swallowtail"
+  "icon": "textures/items/jars/jar_spicebush_swallowtail",
+  "realm": "overworld"
  },
  {
   "id": "mourning_cloak",
@@ -207,7 +225,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "One of the longest-lived butterflies, surviving up to a year by hibernating through winter.",
-  "icon": "textures/items/jars/jar_mourning_cloak"
+  "icon": "textures/items/jars/jar_mourning_cloak",
+  "realm": "overworld"
  },
  {
   "id": "question_mark",
@@ -218,7 +237,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Named after the tiny silver question mark on the underside of its hindwings.",
-  "icon": "textures/items/jars/jar_question_mark"
+  "icon": "textures/items/jars/jar_question_mark",
+  "realm": "overworld"
  },
  {
   "id": "comma",
@@ -229,7 +249,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Its ragged wings look like a dead leaf when closed, marked with a small white comma.",
-  "icon": "textures/items/jars/jar_comma"
+  "icon": "textures/items/jars/jar_comma",
+  "realm": "overworld"
  },
  {
   "id": "small_tortoiseshell",
@@ -240,7 +261,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A cheerful garden butterfly that often wanders into houses to spend the winter.",
-  "icon": "textures/items/jars/jar_small_tortoiseshell"
+  "icon": "textures/items/jars/jar_small_tortoiseshell",
+  "realm": "overworld"
  },
  {
   "id": "red_spotted_purple",
@@ -251,7 +273,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "It copies the colours of the toxic Pipevine Swallowtail to fool predators.",
-  "icon": "textures/items/jars/jar_red_spotted_purple"
+  "icon": "textures/items/jars/jar_red_spotted_purple",
+  "realm": "overworld"
  },
  {
   "id": "white_admiral",
@@ -262,7 +285,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A graceful woodland glider with a bold white band across its dark wings.",
-  "icon": "textures/items/jars/jar_white_admiral"
+  "icon": "textures/items/jars/jar_white_admiral",
+  "realm": "overworld"
  },
  {
   "id": "great_spangled_fritillary",
@@ -273,7 +297,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Its underside is decorated with shiny silver spots, like spangles on a costume.",
-  "icon": "textures/items/jars/jar_great_spangled_fritillary"
+  "icon": "textures/items/jars/jar_great_spangled_fritillary",
+  "realm": "overworld"
  },
  {
   "id": "pearl_bordered_fritillary",
@@ -284,7 +309,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A small fritillary named for the row of pearl-white spots along its wing edges.",
-  "icon": "textures/items/jars/jar_pearl_bordered_fritillary"
+  "icon": "textures/items/jars/jar_pearl_bordered_fritillary",
+  "realm": "overworld"
  },
  {
   "id": "gulf_fritillary",
@@ -295,7 +321,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Bright orange above with brilliant silver patches underneath. Its caterpillars feed on passion vines.",
-  "icon": "textures/items/jars/jar_gulf_fritillary"
+  "icon": "textures/items/jars/jar_gulf_fritillary",
+  "realm": "overworld"
  },
  {
   "id": "baltimore_checkerspot",
@@ -306,7 +333,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Wears the orange and black colours of Lord Baltimore's coat of arms.",
-  "icon": "textures/items/jars/jar_baltimore_checkerspot"
+  "icon": "textures/items/jars/jar_baltimore_checkerspot",
+  "realm": "overworld"
  },
  {
   "id": "marsh_fritillary",
@@ -317,7 +345,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Its caterpillars live together in silk webs, basking in the sun in big black clusters.",
-  "icon": "textures/items/jars/jar_marsh_fritillary"
+  "icon": "textures/items/jars/jar_marsh_fritillary",
+  "realm": "overworld"
  },
  {
   "id": "common_blue",
@@ -328,7 +357,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Males are bright sky blue while females are mostly brown. Ants guard its caterpillars.",
-  "icon": "textures/items/jars/jar_common_blue"
+  "icon": "textures/items/jars/jar_common_blue",
+  "realm": "overworld"
  },
  {
   "id": "adonis_blue",
@@ -339,7 +369,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Possibly the brightest blue butterfly in Europe, found on sunny chalk grassland.",
-  "icon": "textures/items/jars/jar_adonis_blue"
+  "icon": "textures/items/jars/jar_adonis_blue",
+  "realm": "overworld"
  },
  {
   "id": "holly_blue",
@@ -350,7 +381,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Usually the first blue butterfly of spring, fluttering high around holly and ivy.",
-  "icon": "textures/items/jars/jar_holly_blue"
+  "icon": "textures/items/jars/jar_holly_blue",
+  "realm": "overworld"
  },
  {
   "id": "karner_blue",
@@ -361,7 +393,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A tiny, endangered blue that depends on wild lupine plants to survive.",
-  "icon": "textures/items/jars/jar_karner_blue"
+  "icon": "textures/items/jars/jar_karner_blue",
+  "realm": "overworld"
  },
  {
   "id": "small_copper",
@@ -372,7 +405,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A feisty little butterfly that defends its sunny patch against much bigger insects.",
-  "icon": "textures/items/jars/jar_small_copper"
+  "icon": "textures/items/jars/jar_small_copper",
+  "realm": "overworld"
  },
  {
   "id": "large_copper",
@@ -383,7 +417,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A glowing copper-orange butterfly of wetlands that has become very rare in the wild.",
-  "icon": "textures/items/jars/jar_large_copper"
+  "icon": "textures/items/jars/jar_large_copper",
+  "realm": "overworld"
  },
  {
   "id": "purple_hairstreak",
@@ -394,7 +429,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Lives high in oak treetops and drinks sweet honeydew instead of nectar.",
-  "icon": "textures/items/jars/jar_purple_hairstreak"
+  "icon": "textures/items/jars/jar_purple_hairstreak",
+  "realm": "overworld"
  },
  {
   "id": "green_hairstreak",
@@ -405,7 +441,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "The underside of its wings is bright green, so it vanishes when it lands on a leaf.",
-  "icon": "textures/items/jars/jar_green_hairstreak"
+  "icon": "textures/items/jars/jar_green_hairstreak",
+  "realm": "overworld"
  },
  {
   "id": "apollo",
@@ -416,7 +453,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A mountain butterfly with red eyespots and almost see-through wings, built for cold, thin air.",
-  "icon": "textures/items/jars/jar_apollo"
+  "icon": "textures/items/jars/jar_apollo",
+  "realm": "overworld"
  },
  {
   "id": "silver_spotted_skipper",
@@ -427,7 +465,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "A speedy skipper with a bold silver patch on its hindwing.",
-  "icon": "textures/items/jars/jar_silver_spotted_skipper"
+  "icon": "textures/items/jars/jar_silver_spotted_skipper",
+  "realm": "overworld"
  },
  {
   "id": "large_skipper",
@@ -438,7 +477,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Basks with its wings held like a tiny fighter jet, then zips away in a flash.",
-  "icon": "textures/items/jars/jar_large_skipper"
+  "icon": "textures/items/jars/jar_large_skipper",
+  "realm": "overworld"
  },
  {
   "id": "fiery_skipper",
@@ -449,7 +489,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "A bright orange skipper common on lawns. Its caterpillars eat grass.",
-  "icon": "textures/items/jars/jar_fiery_skipper"
+  "icon": "textures/items/jars/jar_fiery_skipper",
+  "realm": "overworld"
  },
  {
   "id": "long_tailed_skipper",
@@ -460,7 +501,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "A skipper with long tails and a shimmering blue-green body.",
-  "icon": "textures/items/jars/jar_long_tailed_skipper"
+  "icon": "textures/items/jars/jar_long_tailed_skipper",
+  "realm": "overworld"
  },
  {
   "id": "checkered_skipper",
@@ -471,7 +513,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Covered in a checkerboard of white spots, it darts low over open ground.",
-  "icon": "textures/items/jars/jar_checkered_skipper"
+  "icon": "textures/items/jars/jar_checkered_skipper",
+  "realm": "overworld"
  },
  {
   "id": "blue_morpho",
@@ -482,7 +525,8 @@ export const SPECIES = [
   "wingspan": "1.1 blocks",
   "food": "jungle leaves, but seeds work best",
   "info": "Its wings are not actually blue: tiny scales bend the light to create the dazzling colour.",
-  "icon": "textures/items/jars/jar_blue_morpho"
+  "icon": "textures/items/jars/jar_blue_morpho",
+  "realm": "overworld"
  },
  {
   "id": "sunset_morpho",
@@ -493,7 +537,8 @@ export const SPECIES = [
   "wingspan": "1.1 blocks",
   "food": "jungle leaves, but seeds work best",
   "info": "A giant morpho with warm amber wings that glides slowly through the rainforest canopy.",
-  "icon": "textures/items/jars/jar_sunset_morpho"
+  "icon": "textures/items/jars/jar_sunset_morpho",
+  "realm": "overworld"
  },
  {
   "id": "white_morpho",
@@ -504,7 +549,8 @@ export const SPECIES = [
   "wingspan": "1.0 blocks",
   "food": "jungle leaves, but seeds work best",
   "info": "A ghostly pearl-white morpho that drifts through jungle clearings.",
-  "icon": "textures/items/jars/jar_white_morpho"
+  "icon": "textures/items/jars/jar_white_morpho",
+  "realm": "overworld"
  },
  {
   "id": "owl_butterfly",
@@ -515,7 +561,8 @@ export const SPECIES = [
   "wingspan": "1.0 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "The huge eyespots on its hindwings look just like an owl's eyes.",
-  "icon": "textures/items/jars/jar_owl_butterfly"
+  "icon": "textures/items/jars/jar_owl_butterfly",
+  "realm": "overworld"
  },
  {
   "id": "glasswing",
@@ -526,7 +573,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Its wings are clear like glass, making it nearly invisible in flight.",
-  "icon": "textures/items/jars/jar_glasswing"
+  "icon": "textures/items/jars/jar_glasswing",
+  "realm": "overworld"
  },
  {
   "id": "postman",
@@ -537,7 +585,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "It visits the same flowers every day along a set route, just like a postman.",
-  "icon": "textures/items/jars/jar_postman"
+  "icon": "textures/items/jars/jar_postman",
+  "realm": "overworld"
  },
  {
   "id": "zebra_longwing",
@@ -548,7 +597,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Sleeps in groups, returning to the same roost every evening. It can live for months.",
-  "icon": "textures/items/jars/jar_zebra_longwing"
+  "icon": "textures/items/jars/jar_zebra_longwing",
+  "realm": "overworld"
  },
  {
   "id": "julia",
@@ -559,7 +609,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A fast, bright orange flier that sometimes drinks the tears of caimans for salt!",
-  "icon": "textures/items/jars/jar_julia"
+  "icon": "textures/items/jars/jar_julia",
+  "realm": "overworld"
  },
  {
   "id": "tiger_longwing",
@@ -570,7 +621,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Its tiger pattern warns birds that it is poisonous to eat.",
-  "icon": "textures/items/jars/jar_tiger_longwing"
+  "icon": "textures/items/jars/jar_tiger_longwing",
+  "realm": "overworld"
  },
  {
   "id": "doris_longwing",
@@ -581,7 +633,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Its hindwings can have blue, green or red rays depending on where it lives.",
-  "icon": "textures/items/jars/jar_doris_longwing"
+  "icon": "textures/items/jars/jar_doris_longwing",
+  "realm": "overworld"
  },
  {
   "id": "sara_longwing",
@@ -592,7 +645,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A small longwing with a blue sheen that lays its eggs in neat clusters.",
-  "icon": "textures/items/jars/jar_sara_longwing"
+  "icon": "textures/items/jars/jar_sara_longwing",
+  "realm": "overworld"
  },
  {
   "id": "malachite",
@@ -603,7 +657,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Named after the green gemstone because of its bright green wing windows.",
-  "icon": "textures/items/jars/jar_malachite"
+  "icon": "textures/items/jars/jar_malachite",
+  "realm": "overworld"
  },
  {
   "id": "rajah_brooke_birdwing",
@@ -614,7 +669,8 @@ export const SPECIES = [
   "wingspan": "1.1 blocks",
   "food": "jungle leaves, but seeds work best",
   "info": "Named after Rajah James Brooke. Its emerald bands look like the feathers of a bird.",
-  "icon": "textures/items/jars/jar_rajah_brooke_birdwing"
+  "icon": "textures/items/jars/jar_rajah_brooke_birdwing",
+  "realm": "overworld"
  },
  {
   "id": "queen_alexandra_birdwing",
@@ -625,7 +681,8 @@ export const SPECIES = [
   "wingspan": "1.3 blocks",
   "food": "jungle leaves, but seeds work best",
   "info": "The largest butterfly in the world, with wings up to 28 cm (11 inches) across!",
-  "icon": "textures/items/jars/jar_queen_alexandra_birdwing"
+  "icon": "textures/items/jars/jar_queen_alexandra_birdwing",
+  "realm": "overworld"
  },
  {
   "id": "golden_birdwing",
@@ -636,7 +693,8 @@ export const SPECIES = [
   "wingspan": "1.2 blocks",
   "food": "jungle leaves, but seeds work best",
   "info": "A giant whose glowing golden hindwings shine in the sunlight.",
-  "icon": "textures/items/jars/jar_golden_birdwing"
+  "icon": "textures/items/jars/jar_golden_birdwing",
+  "realm": "overworld"
  },
  {
   "id": "great_mormon",
@@ -647,7 +705,8 @@ export const SPECIES = [
   "wingspan": "1.0 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "Females come in many different colour forms, some copying poisonous butterflies.",
-  "icon": "textures/items/jars/jar_great_mormon"
+  "icon": "textures/items/jars/jar_great_mormon",
+  "realm": "overworld"
  },
  {
   "id": "emerald_swallowtail",
@@ -658,7 +717,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "Its glittering green bands are made by tiny bowl-shaped scales that mix light.",
-  "icon": "textures/items/jars/jar_emerald_swallowtail"
+  "icon": "textures/items/jars/jar_emerald_swallowtail",
+  "realm": "overworld"
  },
  {
   "id": "ulysses",
@@ -669,7 +729,8 @@ export const SPECIES = [
   "wingspan": "1.0 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "Its electric blue wings can be seen flashing from far across the forest.",
-  "icon": "textures/items/jars/jar_ulysses"
+  "icon": "textures/items/jars/jar_ulysses",
+  "realm": "overworld"
  },
  {
   "id": "common_rose",
@@ -680,7 +741,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "Its bright red body warns predators that it is poisonous to eat.",
-  "icon": "textures/items/jars/jar_common_rose"
+  "icon": "textures/items/jars/jar_common_rose",
+  "realm": "overworld"
  },
  {
   "id": "five_bar_swordtail",
@@ -691,7 +753,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "Has incredibly long tails and black bars like a striped flag.",
-  "icon": "textures/items/jars/jar_five_bar_swordtail"
+  "icon": "textures/items/jars/jar_five_bar_swordtail",
+  "realm": "overworld"
  },
  {
   "id": "tailed_jay",
@@ -702,7 +765,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A fast, restless flier covered in bright green spots.",
-  "icon": "textures/items/jars/jar_tailed_jay"
+  "icon": "textures/items/jars/jar_tailed_jay",
+  "realm": "overworld"
  },
  {
   "id": "common_bluebottle",
@@ -713,7 +777,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "Milkweed, Butterfly Bush and leaves, but seeds work best",
   "info": "A speedy swallowtail with a glowing blue-green band. Males gather at puddles to drink.",
-  "icon": "textures/items/jars/jar_common_bluebottle"
+  "icon": "textures/items/jars/jar_common_bluebottle",
+  "realm": "overworld"
  },
  {
   "id": "leopard_lacewing",
@@ -724,7 +789,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Spotted like a leopard on top, with delicate lace patterns underneath.",
-  "icon": "textures/items/jars/jar_leopard_lacewing"
+  "icon": "textures/items/jars/jar_leopard_lacewing",
+  "realm": "overworld"
  },
  {
   "id": "purple_emperor",
@@ -735,7 +801,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Its wings flash purple only at certain angles. It prefers tree sap to flowers.",
-  "icon": "textures/items/jars/jar_purple_emperor"
+  "icon": "textures/items/jars/jar_purple_emperor",
+  "realm": "overworld"
  },
  {
   "id": "dead_leaf",
@@ -746,7 +813,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "With its wings closed it looks exactly like a dry dead leaf, complete with vein and stalk.",
-  "icon": "textures/items/jars/jar_dead_leaf"
+  "icon": "textures/items/jars/jar_dead_leaf",
+  "realm": "overworld"
  },
  {
   "id": "great_eggfly",
@@ -757,7 +825,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Males have glowing white-and-violet patches like eggs on their dark wings.",
-  "icon": "textures/items/jars/jar_great_eggfly"
+  "icon": "textures/items/jars/jar_great_eggfly",
+  "realm": "overworld"
  },
  {
   "id": "plain_tiger",
@@ -768,7 +837,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "Milkweed, Butterfly Bush and leaves, but seeds work best",
   "info": "Also called the African Monarch. It is toxic to predators, and other butterflies copy its colours.",
-  "icon": "textures/items/jars/jar_plain_tiger"
+  "icon": "textures/items/jars/jar_plain_tiger",
+  "realm": "overworld"
  },
  {
   "id": "blue_tiger",
@@ -779,7 +849,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "Milkweed, Butterfly Bush and leaves, but seeds work best",
   "info": "Its pale blue streaks are a warning sign. It migrates in huge swarms.",
-  "icon": "textures/items/jars/jar_blue_tiger"
+  "icon": "textures/items/jars/jar_blue_tiger",
+  "realm": "overworld"
  },
  {
   "id": "common_jezebel",
@@ -790,7 +861,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Its bright red and yellow markings warn birds that it tastes bad.",
-  "icon": "textures/items/jars/jar_common_jezebel"
+  "icon": "textures/items/jars/jar_common_jezebel",
+  "realm": "overworld"
  },
  {
   "id": "yellow_pansy",
@@ -801,7 +873,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Big yellow patches and a small blue spot make it easy to recognise.",
-  "icon": "textures/items/jars/jar_yellow_pansy"
+  "icon": "textures/items/jars/jar_yellow_pansy",
+  "realm": "overworld"
  },
  {
   "id": "blue_pansy",
@@ -812,7 +885,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Males have shining blue hindwings and love to bask on bare, sunny ground.",
-  "icon": "textures/items/jars/jar_blue_pansy"
+  "icon": "textures/items/jars/jar_blue_pansy",
+  "realm": "overworld"
  },
  {
   "id": "lime_swallowtail",
@@ -823,7 +897,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A speckled swallowtail with no tails, often found in citrus orchards.",
-  "icon": "textures/items/jars/jar_lime_swallowtail"
+  "icon": "textures/items/jars/jar_lime_swallowtail",
+  "realm": "overworld"
  },
  {
   "id": "cloudless_sulphur",
@@ -834,7 +909,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A big lemon-yellow butterfly that flies fast and straight across open fields.",
-  "icon": "textures/items/jars/jar_cloudless_sulphur"
+  "icon": "textures/items/jars/jar_cloudless_sulphur",
+  "realm": "overworld"
  },
  {
   "id": "dogface",
@@ -845,7 +921,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "The yellow pattern on each forewing looks like the head of a poodle.",
-  "icon": "textures/items/jars/jar_dogface"
+  "icon": "textures/items/jars/jar_dogface",
+  "realm": "overworld"
  },
  {
   "id": "desert_marble",
@@ -856,7 +933,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Its marbled green underside helps it hide among desert plants.",
-  "icon": "textures/items/jars/jar_desert_marble"
+  "icon": "textures/items/jars/jar_desert_marble",
+  "realm": "overworld"
  },
  {
   "id": "pygmy_blue",
@@ -867,7 +945,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "One of the smallest butterflies in the world, barely 1.5 cm across.",
-  "icon": "textures/items/jars/jar_pygmy_blue"
+  "icon": "textures/items/jars/jar_pygmy_blue",
+  "realm": "overworld"
  },
  {
   "id": "two_tailed_pasha",
@@ -878,7 +957,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "A powerful flier with two tails on each hindwing that loves fermenting fruit.",
-  "icon": "textures/items/jars/jar_two_tailed_pasha"
+  "icon": "textures/items/jars/jar_two_tailed_pasha",
+  "realm": "overworld"
  },
  {
   "id": "cherry_blossom",
@@ -889,7 +969,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found only in Cherry Groves, where its pink wings blend into the falling petals.",
-  "icon": "textures/items/jars/jar_cherry_blossom"
+  "icon": "textures/items/jars/jar_cherry_blossom",
+  "realm": "overworld"
  },
  {
   "id": "azalea_flutter",
@@ -900,7 +981,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Lives in Lush Caves and sips nectar from flowering azalea.",
-  "icon": "textures/items/jars/jar_azalea_flutter"
+  "icon": "textures/items/jars/jar_azalea_flutter",
+  "realm": "overworld"
  },
  {
   "id": "glowberry",
@@ -911,7 +993,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Its spots glow like the glow berries that hang in Lush Caves.",
-  "icon": "textures/items/jars/jar_glowberry"
+  "icon": "textures/items/jars/jar_glowberry",
+  "realm": "overworld"
  },
  {
   "id": "sculk_wisp",
@@ -922,7 +1005,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A silent flier of the Deep Dark. Its glowing veins pulse like sculk.",
-  "icon": "textures/items/jars/jar_sculk_wisp"
+  "icon": "textures/items/jars/jar_sculk_wisp",
+  "realm": "overworld"
  },
  {
   "id": "crimson_ember",
@@ -933,7 +1017,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "Nether Wart, crimson and warped fungus and roots, but seeds work best",
   "info": "Born in the Crimson Forest. Its wings shimmer like embers and it never burns.",
-  "icon": "textures/items/jars/jar_crimson_ember"
+  "icon": "textures/items/jars/jar_crimson_ember",
+  "realm": "nether"
  },
  {
   "id": "warped_wanderer",
@@ -944,7 +1029,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "Nether Wart, crimson and warped fungus and roots, but seeds work best",
   "info": "Drifts through Warped Forests, unbothered by the Nether's heat.",
-  "icon": "textures/items/jars/jar_warped_wanderer"
+  "icon": "textures/items/jars/jar_warped_wanderer",
+  "realm": "nether"
  },
  {
   "id": "ender_wing",
@@ -955,7 +1041,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "Chorus Fruit and Chorus Flowers, but seeds work best",
   "info": "A mysterious butterfly of the End, speckled like the night sky.",
-  "icon": "textures/items/jars/jar_ender_wing"
+  "icon": "textures/items/jars/jar_ender_wing",
+  "realm": "end"
  },
  {
   "id": "amethyst_wing",
@@ -966,7 +1053,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Its wings sparkle like amethyst crystals. It is rarely seen in mountain meadows.",
-  "icon": "textures/items/jars/jar_amethyst_wing"
+  "icon": "textures/items/jars/jar_amethyst_wing",
+  "realm": "overworld"
  },
  {
   "id": "prismarine_flutter",
@@ -977,7 +1065,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found along beaches, its scales shine like prismarine.",
-  "icon": "textures/items/jars/jar_prismarine_flutter"
+  "icon": "textures/items/jars/jar_prismarine_flutter",
+  "realm": "overworld"
  },
  {
   "id": "frost_wing",
@@ -988,7 +1077,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Survives the coldest snowy biomes, with icy veins that glitter in the sun.",
-  "icon": "textures/items/jars/jar_frost_wing"
+  "icon": "textures/items/jars/jar_frost_wing",
+  "realm": "overworld"
  },
  {
   "id": "marbled_white",
@@ -999,7 +1089,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Despite looking like a white, it is actually a member of the brown butterfly family.",
-  "icon": "textures/items/jars/jar_marbled_white"
+  "icon": "textures/items/jars/jar_marbled_white",
+  "realm": "overworld"
  },
  {
   "id": "ringlet",
@@ -1010,7 +1101,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Named for the small rings on its wings. It even flies on cloudy, drizzly days.",
-  "icon": "textures/items/jars/jar_ringlet"
+  "icon": "textures/items/jars/jar_ringlet",
+  "realm": "overworld"
  },
  {
   "id": "meadow_brown",
@@ -1021,7 +1113,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "One of the most common grassland butterflies, flying even in dull weather.",
-  "icon": "textures/items/jars/jar_meadow_brown"
+  "icon": "textures/items/jars/jar_meadow_brown",
+  "realm": "overworld"
  },
  {
   "id": "speckled_wood",
@@ -1032,7 +1125,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Loves dappled sunlight in woods, where its spots match the light on the ground.",
-  "icon": "textures/items/jars/jar_speckled_wood"
+  "icon": "textures/items/jars/jar_speckled_wood",
+  "realm": "overworld"
  },
  {
   "id": "wall_brown",
@@ -1043,7 +1137,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Loves to bask on walls and stony paths, soaking up the warmth.",
-  "icon": "textures/items/jars/jar_wall_brown"
+  "icon": "textures/items/jars/jar_wall_brown",
+  "realm": "overworld"
  },
  {
   "id": "camberwell_beauty",
@@ -1054,7 +1149,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A rare visitor with deep maroon wings and a creamy border.",
-  "icon": "textures/items/jars/jar_camberwell_beauty"
+  "icon": "textures/items/jars/jar_camberwell_beauty",
+  "realm": "overworld"
  },
  {
   "id": "map_butterfly",
@@ -1065,7 +1161,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "The lines on its underside look like a map. Its spring and summer forms look completely different.",
-  "icon": "textures/items/jars/jar_map_butterfly"
+  "icon": "textures/items/jars/jar_map_butterfly",
+  "realm": "overworld"
  },
  {
   "id": "chequered_skipper",
@@ -1076,7 +1173,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "A tiny dark skipper covered in golden chequers.",
-  "icon": "textures/items/jars/jar_chequered_skipper"
+  "icon": "textures/items/jars/jar_chequered_skipper",
+  "realm": "overworld"
  },
  {
   "id": "palamedes_swallowtail",
@@ -1087,7 +1185,8 @@ export const SPECIES = [
   "wingspan": "1.0 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "A large swamp swallowtail that lives where red bay trees grow.",
-  "icon": "textures/items/jars/jar_palamedes_swallowtail"
+  "icon": "textures/items/jars/jar_palamedes_swallowtail",
+  "realm": "overworld"
  },
  {
   "id": "banded_orange",
@@ -1098,7 +1197,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A bright orange longwing with dark bands, common in tropical forests.",
-  "icon": "textures/items/jars/jar_banded_orange"
+  "icon": "textures/items/jars/jar_banded_orange",
+  "realm": "overworld"
  },
  {
   "id": "small_white",
@@ -1109,7 +1209,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "White wings are dipped in charcoal at the tips. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_small_white"
+  "icon": "textures/items/jars/jar_small_white",
+  "realm": "overworld"
  },
  {
   "id": "green_veined_white",
@@ -1120,7 +1221,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Meadow native. Yellow rays run through its white wings. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_green_veined_white"
+  "icon": "textures/items/jars/jar_green_veined_white",
+  "realm": "overworld"
  },
  {
   "id": "wood_white",
@@ -1131,7 +1233,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Forest. White wings are dipped in grey at the tips. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_wood_white"
+  "icon": "textures/items/jars/jar_wood_white",
+  "realm": "overworld"
  },
  {
   "id": "large_white",
@@ -1142,7 +1245,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "White wings are dipped in black at the tips. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_large_white"
+  "icon": "textures/items/jars/jar_large_white",
+  "realm": "overworld"
  },
  {
   "id": "black_veined_white",
@@ -1153,7 +1257,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Meadow native. Black rays run through its white wings. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_black_veined_white"
+  "icon": "textures/items/jars/jar_black_veined_white",
+  "realm": "overworld"
  },
  {
   "id": "pale_clouded_yellow",
@@ -1164,7 +1269,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Plains. Cream wings are dipped in brown at the tips. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_pale_clouded_yellow"
+  "icon": "textures/items/jars/jar_pale_clouded_yellow",
+  "realm": "overworld"
  },
  {
   "id": "orange_sulphur",
@@ -1175,7 +1281,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Plains native. Orange wings are dipped in brown at the tips. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_orange_sulphur"
+  "icon": "textures/items/jars/jar_orange_sulphur",
+  "realm": "overworld"
  },
  {
   "id": "little_yellow",
@@ -1186,7 +1293,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Plains. Golden wings are dipped in black at the tips. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_little_yellow"
+  "icon": "textures/items/jars/jar_little_yellow",
+  "realm": "overworld"
  },
  {
   "id": "sleepy_orange",
@@ -1197,7 +1305,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Plains native. Orange wings wear a wide brown border. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_sleepy_orange"
+  "icon": "textures/items/jars/jar_sleepy_orange",
+  "realm": "overworld"
  },
  {
   "id": "dainty_sulphur",
@@ -1208,7 +1317,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Desert. Its forewings are golden while its hindwings are black. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_dainty_sulphur"
+  "icon": "textures/items/jars/jar_dainty_sulphur",
+  "realm": "overworld"
  },
  {
   "id": "dark_green_fritillary",
@@ -1219,7 +1329,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Meadow. Orange wings are tiled with a brown chequerboard. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_dark_green_fritillary"
+  "icon": "textures/items/jars/jar_dark_green_fritillary",
+  "realm": "overworld"
  },
  {
   "id": "high_brown_fritillary",
@@ -1230,7 +1341,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Meadow. Orange wings are tiled with a black chequerboard. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_high_brown_fritillary"
+  "icon": "textures/items/jars/jar_high_brown_fritillary",
+  "realm": "overworld"
  },
  {
   "id": "queen_of_spain_fritillary",
@@ -1241,7 +1353,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "Milkweed, Butterfly Bush and leaves, but seeds work best",
   "info": "Look for it in the Plains. Orange wings are tiled with a black chequerboard. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_queen_of_spain_fritillary"
+  "icon": "textures/items/jars/jar_queen_of_spain_fritillary",
+  "realm": "overworld"
  },
  {
   "id": "heath_fritillary",
@@ -1252,7 +1365,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Meadow. Orange wings are tiled with a black chequerboard. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_heath_fritillary"
+  "icon": "textures/items/jars/jar_heath_fritillary",
+  "realm": "overworld"
  },
  {
   "id": "glanville_fritillary",
@@ -1263,7 +1377,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Beach. Orange wings are tiled with a black chequerboard. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_glanville_fritillary"
+  "icon": "textures/items/jars/jar_glanville_fritillary",
+  "realm": "overworld"
  },
  {
   "id": "variable_checkerspot",
@@ -1274,7 +1389,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Mountains. Black wings are tiled with a orange chequerboard. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_variable_checkerspot"
+  "icon": "textures/items/jars/jar_variable_checkerspot",
+  "realm": "overworld"
  },
  {
   "id": "silvery_checkerspot",
@@ -1285,7 +1401,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the River. Orange wings wear a wide black border. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_silvery_checkerspot"
+  "icon": "textures/items/jars/jar_silvery_checkerspot",
+  "realm": "overworld"
  },
  {
   "id": "northern_crescent",
@@ -1296,7 +1413,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Meadow. Orange wings are edged with black crescents. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_northern_crescent"
+  "icon": "textures/items/jars/jar_northern_crescent",
+  "realm": "overworld"
  },
  {
   "id": "phaon_crescent",
@@ -1307,7 +1425,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Plains native. A bright white band slashes across its orange wings. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_phaon_crescent"
+  "icon": "textures/items/jars/jar_phaon_crescent",
+  "realm": "overworld"
  },
  {
   "id": "small_heath",
@@ -1318,7 +1437,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Plains. Orange wings carry bold cream eyespots that startle anything trying to eat it. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_small_heath"
+  "icon": "textures/items/jars/jar_small_heath",
+  "realm": "overworld"
  },
  {
   "id": "gatekeeper",
@@ -1329,7 +1449,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Meadow native. Orange wings carry bold black eyespots that startle anything trying to eat it. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_gatekeeper"
+  "icon": "textures/items/jars/jar_gatekeeper",
+  "realm": "overworld"
  },
  {
   "id": "large_heath",
@@ -1340,7 +1461,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A row of little cream eyespots lines its orange hindwings. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_large_heath"
+  "icon": "textures/items/jars/jar_large_heath",
+  "realm": "overworld"
  },
  {
   "id": "common_wood_nymph",
@@ -1351,7 +1473,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Meadow. Brown wings carry big golden patches. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_common_wood_nymph"
+  "icon": "textures/items/jars/jar_common_wood_nymph",
+  "realm": "overworld"
  },
  {
   "id": "grayling",
@@ -1362,7 +1485,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Beach. Brown wings carry bold orange eyespots that startle anything trying to eat it. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_grayling"
+  "icon": "textures/items/jars/jar_grayling",
+  "realm": "overworld"
  },
  {
   "id": "common_ringlet",
@@ -1373,7 +1497,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Meadow. Its wings fade from orange to cream. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_common_ringlet"
+  "icon": "textures/items/jars/jar_common_ringlet",
+  "realm": "overworld"
  },
  {
   "id": "duke_of_burgundy",
@@ -1384,7 +1509,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Meadow. Brown wings are tiled with a orange chequerboard. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_duke_of_burgundy"
+  "icon": "textures/items/jars/jar_duke_of_burgundy",
+  "realm": "overworld"
  },
  {
   "id": "small_pearl_bordered_fritillary",
@@ -1395,7 +1521,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Meadow native. Orange wings are tiled with a black chequerboard. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_small_pearl_bordered_fritillary"
+  "icon": "textures/items/jars/jar_small_pearl_bordered_fritillary",
+  "realm": "overworld"
  },
  {
   "id": "field_crescent",
@@ -1406,7 +1533,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Black wings are striped with orange. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_field_crescent"
+  "icon": "textures/items/jars/jar_field_crescent",
+  "realm": "overworld"
  },
  {
   "id": "mexican_yellow",
@@ -1417,7 +1545,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Plains. Golden wings are dipped in black at the tips. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_mexican_yellow"
+  "icon": "textures/items/jars/jar_mexican_yellow",
+  "realm": "overworld"
  },
  {
   "id": "clouded_sulphur",
@@ -1428,7 +1557,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Plains. Golden wings wear a wide yellow border. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_clouded_sulphur"
+  "icon": "textures/items/jars/jar_clouded_sulphur",
+  "realm": "overworld"
  },
  {
   "id": "bergers_clouded_yellow",
@@ -1439,7 +1569,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Meadow. Cream wings are dipped in yellow at the tips. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_bergers_clouded_yellow"
+  "icon": "textures/items/jars/jar_bergers_clouded_yellow",
+  "realm": "overworld"
  },
  {
   "id": "american_snout",
@@ -1450,7 +1581,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Plains native. Brown wings carry big orange patches. It is most active in the hottest hours of the day.",
-  "icon": "textures/items/jars/jar_american_snout"
+  "icon": "textures/items/jars/jar_american_snout",
+  "realm": "overworld"
  },
  {
   "id": "lesser_marbled_fritillary",
@@ -1461,7 +1593,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Orange wings are tiled with a black chequerboard. It is most active in the hottest hours of the day.",
-  "icon": "textures/items/jars/jar_lesser_marbled_fritillary"
+  "icon": "textures/items/jars/jar_lesser_marbled_fritillary",
+  "realm": "overworld"
  },
  {
   "id": "cardinal",
@@ -1472,7 +1605,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "Milkweed, Butterfly Bush and leaves, but seeds work best",
   "info": "Its wings fade from orange to lime. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_cardinal"
+  "icon": "textures/items/jars/jar_cardinal",
+  "realm": "overworld"
  },
  {
   "id": "southern_small_white",
@@ -1483,7 +1617,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Plains. White wings are dipped in charcoal at the tips. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_southern_small_white"
+  "icon": "textures/items/jars/jar_southern_small_white",
+  "realm": "overworld"
  },
  {
   "id": "west_coast_lady",
@@ -1494,7 +1629,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Meadow. Orange wings wear a wide black border. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_west_coast_lady"
+  "icon": "textures/items/jars/jar_west_coast_lady",
+  "realm": "overworld"
  },
  {
   "id": "grey_pansy",
@@ -1505,7 +1641,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Plains native. A row of little orange eyespots lines its grey hindwings. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_grey_pansy"
+  "icon": "textures/items/jars/jar_grey_pansy",
+  "realm": "overworld"
  },
  {
   "id": "lemon_pansy",
@@ -1516,7 +1653,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Plains. A row of little orange eyespots lines its golden hindwings. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_lemon_pansy"
+  "icon": "textures/items/jars/jar_lemon_pansy",
+  "realm": "overworld"
  },
  {
   "id": "peacock_pansy",
@@ -1527,7 +1665,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Orange wings carry bold sky-blue eyespots that startle anything trying to eat it. It is most active in the hottest hours of the day.",
-  "icon": "textures/items/jars/jar_peacock_pansy"
+  "icon": "textures/items/jars/jar_peacock_pansy",
+  "realm": "overworld"
  },
  {
   "id": "chocolate_pansy",
@@ -1538,7 +1677,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Plains native. A row of little orange eyespots lines its brown hindwings. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_chocolate_pansy"
+  "icon": "textures/items/jars/jar_chocolate_pansy",
+  "realm": "overworld"
  },
  {
   "id": "anise_swallowtail",
@@ -1549,7 +1689,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "Found in the Meadow. A bright golden band slashes across its black wings. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_anise_swallowtail"
+  "icon": "textures/items/jars/jar_anise_swallowtail",
+  "realm": "overworld"
  },
  {
   "id": "western_tiger_swallowtail",
@@ -1560,7 +1701,8 @@ export const SPECIES = [
   "wingspan": "1.0 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "Found in the Forest. Golden wings are striped with black. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_western_tiger_swallowtail"
+  "icon": "textures/items/jars/jar_western_tiger_swallowtail",
+  "realm": "overworld"
  },
  {
   "id": "two_tailed_swallowtail",
@@ -1571,7 +1713,8 @@ export const SPECIES = [
   "wingspan": "1.0 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "A Mountains native. Golden wings are striped with black. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_two_tailed_swallowtail"
+  "icon": "textures/items/jars/jar_two_tailed_swallowtail",
+  "realm": "overworld"
  },
  {
   "id": "pale_swallowtail",
@@ -1582,7 +1725,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "Look for it in the Mountains. White wings are striped with black. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_pale_swallowtail"
+  "icon": "textures/items/jars/jar_pale_swallowtail",
+  "realm": "overworld"
  },
  {
   "id": "indra_swallowtail",
@@ -1593,7 +1737,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "Found in the Mountains. A bright cream band slashes across its black wings. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_indra_swallowtail"
+  "icon": "textures/items/jars/jar_indra_swallowtail",
+  "realm": "overworld"
  },
  {
   "id": "thoas_swallowtail",
@@ -1604,7 +1749,8 @@ export const SPECIES = [
   "wingspan": "1.0 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "Found in the Jungle. A bright golden band slashes across its black wings. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_thoas_swallowtail"
+  "icon": "textures/items/jars/jar_thoas_swallowtail",
+  "realm": "overworld"
  },
  {
   "id": "gold_rim_swallowtail",
@@ -1615,7 +1761,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Black wings wear a wide black border. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_gold_rim_swallowtail"
+  "icon": "textures/items/jars/jar_gold_rim_swallowtail",
+  "realm": "overworld"
  },
  {
   "id": "ruby_spotted_swallowtail",
@@ -1626,7 +1773,8 @@ export const SPECIES = [
   "wingspan": "1.0 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "Look for it in the Jungle. Black wings carry big red patches. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_ruby_spotted_swallowtail"
+  "icon": "textures/items/jars/jar_ruby_spotted_swallowtail",
+  "realm": "overworld"
  },
  {
   "id": "fluminense_swallowtail",
@@ -1637,7 +1785,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "Look for it in the Swamp. A bright white band slashes across its black wings. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_fluminense_swallowtail"
+  "icon": "textures/items/jars/jar_fluminense_swallowtail",
+  "realm": "overworld"
  },
  {
   "id": "paris_peacock",
@@ -1648,7 +1797,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "Found in the Jungle. Black wings shimmer with green like a gemstone. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_paris_peacock"
+  "icon": "textures/items/jars/jar_paris_peacock",
+  "realm": "overworld"
  },
  {
   "id": "blue_mormon",
@@ -1659,7 +1809,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Jungle native. Black wings flash sky-blue when the light catches them. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_blue_mormon"
+  "icon": "textures/items/jars/jar_blue_mormon",
+  "realm": "overworld"
  },
  {
   "id": "common_mormon",
@@ -1670,7 +1821,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "Found in the Jungle. A bright white band slashes across its black wings. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_common_mormon"
+  "icon": "textures/items/jars/jar_common_mormon",
+  "realm": "overworld"
  },
  {
   "id": "red_helen",
@@ -1681,7 +1833,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Black wings carry big white patches. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_red_helen"
+  "icon": "textures/items/jars/jar_red_helen",
+  "realm": "overworld"
  },
  {
   "id": "common_mime",
@@ -1692,7 +1845,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Jungle native. Black wings are dotted with white spots. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_common_mime"
+  "icon": "textures/items/jars/jar_common_mime",
+  "realm": "overworld"
  },
  {
   "id": "citrus_swallowtail",
@@ -1703,7 +1857,8 @@ export const SPECIES = [
   "wingspan": "1.0 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "Black wings are dotted with golden spots. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_citrus_swallowtail"
+  "icon": "textures/items/jars/jar_citrus_swallowtail",
+  "realm": "overworld"
  },
  {
   "id": "mocker_swallowtail",
@@ -1714,7 +1869,8 @@ export const SPECIES = [
   "wingspan": "1.0 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "A Savanna native. Its forewings are white while its hindwings are black. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_mocker_swallowtail"
+  "icon": "textures/items/jars/jar_mocker_swallowtail",
+  "realm": "overworld"
  },
  {
   "id": "green_banded_swallowtail",
@@ -1725,7 +1881,8 @@ export const SPECIES = [
   "wingspan": "1.0 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "Look for it in the Savanna. A bright lime band slashes across its black wings. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_green_banded_swallowtail"
+  "icon": "textures/items/jars/jar_green_banded_swallowtail",
+  "realm": "overworld"
  },
  {
   "id": "glassy_bluebottle",
@@ -1736,7 +1893,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Jungle native. Its wings are clear as glass, edged with black. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_glassy_bluebottle"
+  "icon": "textures/items/jars/jar_glassy_bluebottle",
+  "realm": "overworld"
  },
  {
   "id": "spot_swordtail",
@@ -1747,7 +1905,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "Found in the Jungle. White wings are striped with black. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_spot_swordtail"
+  "icon": "textures/items/jars/jar_spot_swordtail",
+  "realm": "overworld"
  },
  {
   "id": "fourbar_swordtail",
@@ -1758,7 +1917,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "A Jungle native. White wings are striped with black. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_fourbar_swordtail"
+  "icon": "textures/items/jars/jar_fourbar_swordtail",
+  "realm": "overworld"
  },
  {
   "id": "scarlet_swallowtail",
@@ -1769,7 +1929,8 @@ export const SPECIES = [
   "wingspan": "1.0 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "A Jungle native. Black wings carry big red patches. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_scarlet_swallowtail"
+  "icon": "textures/items/jars/jar_scarlet_swallowtail",
+  "realm": "overworld"
  },
  {
   "id": "chinese_peacock",
@@ -1780,7 +1941,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "Found in the Bamboo Jungle. Black wings shimmer with green like a gemstone. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_chinese_peacock"
+  "icon": "textures/items/jars/jar_chinese_peacock",
+  "realm": "overworld"
  },
  {
   "id": "japanese_luehdorfia",
@@ -1791,7 +1953,8 @@ export const SPECIES = [
   "wingspan": "1.0 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "Golden wings are striped with black. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_japanese_luehdorfia"
+  "icon": "textures/items/jars/jar_japanese_luehdorfia",
+  "realm": "overworld"
  },
  {
   "id": "krishna_peacock",
@@ -1802,7 +1965,8 @@ export const SPECIES = [
   "wingspan": "1.1 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "Black wings shimmer with green like a gemstone. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_krishna_peacock"
+  "icon": "textures/items/jars/jar_krishna_peacock",
+  "realm": "overworld"
  },
  {
   "id": "short_tailed_swallowtail",
@@ -1813,7 +1977,8 @@ export const SPECIES = [
   "wingspan": "1.0 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "A bright golden band slashes across its black wings. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_short_tailed_swallowtail"
+  "icon": "textures/items/jars/jar_short_tailed_swallowtail",
+  "realm": "overworld"
  },
  {
   "id": "schaus_swallowtail",
@@ -1824,7 +1989,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "A Mangrove Swamp native. A bright golden band slashes across its black wings. It is most active in the hottest hours of the day.",
-  "icon": "textures/items/jars/jar_schaus_swallowtail"
+  "icon": "textures/items/jars/jar_schaus_swallowtail",
+  "realm": "overworld"
  },
  {
   "id": "bahamian_swallowtail",
@@ -1835,7 +2001,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "A Beach native. A bright golden band slashes across its black wings. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_bahamian_swallowtail"
+  "icon": "textures/items/jars/jar_bahamian_swallowtail",
+  "realm": "overworld"
  },
  {
   "id": "androgeus_swallowtail",
@@ -1846,7 +2013,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "Look for it in the Savanna. Its forewings are golden while its hindwings are black. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_androgeus_swallowtail"
+  "icon": "textures/items/jars/jar_androgeus_swallowtail",
+  "realm": "overworld"
  },
  {
   "id": "dusky_swallowtail",
@@ -1857,7 +2025,8 @@ export const SPECIES = [
   "wingspan": "1.0 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "A Jungle native. Its dusky yellow wings are freckled with orange. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_dusky_swallowtail"
+  "icon": "textures/items/jars/jar_dusky_swallowtail",
+  "realm": "overworld"
  },
  {
   "id": "white_dragontail",
@@ -1868,7 +2037,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "A Jungle native. Its wings are clear as glass, edged with black. It is most active in the hottest hours of the day.",
-  "icon": "textures/items/jars/jar_white_dragontail"
+  "icon": "textures/items/jars/jar_white_dragontail",
+  "realm": "overworld"
  },
  {
   "id": "white_letter_hairstreak",
@@ -1879,7 +2049,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Forest. Brown wings are edged with white crescents. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_white_letter_hairstreak"
+  "icon": "textures/items/jars/jar_white_letter_hairstreak",
+  "realm": "overworld"
  },
  {
   "id": "brown_hairstreak",
@@ -1890,7 +2061,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Brown wings carry big orange patches. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_brown_hairstreak"
+  "icon": "textures/items/jars/jar_brown_hairstreak",
+  "realm": "overworld"
  },
  {
   "id": "black_hairstreak",
@@ -1901,7 +2073,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Forest native. Brown wings are edged with orange crescents. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_black_hairstreak"
+  "icon": "textures/items/jars/jar_black_hairstreak",
+  "realm": "overworld"
  },
  {
   "id": "banded_hairstreak",
@@ -1912,7 +2085,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Brown wings are striped with black. It is most active in the hottest hours of the day.",
-  "icon": "textures/items/jars/jar_banded_hairstreak"
+  "icon": "textures/items/jars/jar_banded_hairstreak",
+  "realm": "overworld"
  },
  {
   "id": "striped_hairstreak",
@@ -1923,7 +2097,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Forest. Brown wings are striped with black. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_striped_hairstreak"
+  "icon": "textures/items/jars/jar_striped_hairstreak",
+  "realm": "overworld"
  },
  {
   "id": "lesser_purple_emperor",
@@ -1934,7 +2109,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Forest native. Brown wings flash violet when the light catches them. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_lesser_purple_emperor"
+  "icon": "textures/items/jars/jar_lesser_purple_emperor",
+  "realm": "overworld"
  },
  {
   "id": "poplar_admiral",
@@ -1945,7 +2121,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Forest native. A bright white band slashes across its black wings. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_poplar_admiral"
+  "icon": "textures/items/jars/jar_poplar_admiral",
+  "realm": "overworld"
  },
  {
   "id": "southern_white_admiral",
@@ -1956,7 +2133,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Forest. A bright white band slashes across its black wings. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_southern_white_admiral"
+  "icon": "textures/items/jars/jar_southern_white_admiral",
+  "realm": "overworld"
  },
  {
   "id": "hungarian_glider",
@@ -1967,7 +2145,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Forest. A bright white band slashes across its black wings. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_hungarian_glider"
+  "icon": "textures/items/jars/jar_hungarian_glider",
+  "realm": "overworld"
  },
  {
   "id": "common_glider",
@@ -1978,7 +2157,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Forest. Black wings are striped with white. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_common_glider"
+  "icon": "textures/items/jars/jar_common_glider",
+  "realm": "overworld"
  },
  {
   "id": "hackberry_emperor",
@@ -1989,7 +2169,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Forest native. Brown wings are dotted with white spots. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_hackberry_emperor"
+  "icon": "textures/items/jars/jar_hackberry_emperor",
+  "realm": "overworld"
  },
  {
   "id": "tawny_emperor",
@@ -2000,7 +2181,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Forest. Orange wings wear a wide brown border. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_tawny_emperor"
+  "icon": "textures/items/jars/jar_tawny_emperor",
+  "realm": "overworld"
  },
  {
   "id": "goatweed_leafwing",
@@ -2011,7 +2193,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Forest. Its wings fade from orange to orange. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_goatweed_leafwing"
+  "icon": "textures/items/jars/jar_goatweed_leafwing",
+  "realm": "overworld"
  },
  {
   "id": "eastern_comma",
@@ -2022,7 +2205,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Forest. Orange wings are dusted with brown speckles. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_eastern_comma"
+  "icon": "textures/items/jars/jar_eastern_comma",
+  "realm": "overworld"
  },
  {
   "id": "grey_comma",
@@ -2033,7 +2217,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Forest. Orange wings are dusted with brown speckles. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_grey_comma"
+  "icon": "textures/items/jars/jar_grey_comma",
+  "realm": "overworld"
  },
  {
   "id": "green_comma",
@@ -2044,7 +2229,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Taiga. Orange wings are dusted with black speckles. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_green_comma"
+  "icon": "textures/items/jars/jar_green_comma",
+  "realm": "overworld"
  },
  {
   "id": "compton_tortoiseshell",
@@ -2055,7 +2241,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Taiga native. Orange wings wear a wide black border. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_compton_tortoiseshell"
+  "icon": "textures/items/jars/jar_compton_tortoiseshell",
+  "realm": "overworld"
  },
  {
   "id": "milberts_tortoiseshell",
@@ -2066,7 +2253,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A bright orange band slashes across its brown wings. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_milberts_tortoiseshell"
+  "icon": "textures/items/jars/jar_milberts_tortoiseshell",
+  "realm": "overworld"
  },
  {
   "id": "large_tortoiseshell",
@@ -2077,7 +2265,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Forest native. Orange wings wear a wide black border. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_large_tortoiseshell"
+  "icon": "textures/items/jars/jar_large_tortoiseshell",
+  "realm": "overworld"
  },
  {
   "id": "southern_festoon",
@@ -2088,7 +2277,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Meadow. Golden and black stripes make it look like a tiny zebra. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_southern_festoon"
+  "icon": "textures/items/jars/jar_southern_festoon",
+  "realm": "overworld"
  },
  {
   "id": "spanish_festoon",
@@ -2099,7 +2289,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Badlands. Golden and black stripes make it look like a tiny zebra. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_spanish_festoon"
+  "icon": "textures/items/jars/jar_spanish_festoon",
+  "realm": "overworld"
  },
  {
   "id": "woodland_ringlet",
@@ -2110,7 +2301,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Forest native. A row of little orange eyespots lines its brown hindwings. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_woodland_ringlet"
+  "icon": "textures/items/jars/jar_woodland_ringlet",
+  "realm": "overworld"
  },
  {
   "id": "northern_pearly_eye",
@@ -2121,7 +2313,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Forest native. A row of little cream eyespots lines its orange hindwings. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_northern_pearly_eye"
+  "icon": "textures/items/jars/jar_northern_pearly_eye",
+  "realm": "overworld"
  },
  {
   "id": "little_wood_satyr",
@@ -2132,7 +2325,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Forest. Brown wings carry bold golden eyespots that startle anything trying to eat it. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_little_wood_satyr"
+  "icon": "textures/items/jars/jar_little_wood_satyr",
+  "realm": "overworld"
  },
  {
   "id": "woodland_brown",
@@ -2143,7 +2337,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Forest. A row of little golden eyespots lines its brown hindwings. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_woodland_brown"
+  "icon": "textures/items/jars/jar_woodland_brown",
+  "realm": "overworld"
  },
  {
   "id": "scarce_heath",
@@ -2154,7 +2349,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A row of little golden eyespots lines its orange hindwings. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_scarce_heath"
+  "icon": "textures/items/jars/jar_scarce_heath",
+  "realm": "overworld"
  },
  {
   "id": "freyers_purple_emperor",
@@ -2165,7 +2361,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Black wings flash violet when the light catches them. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_freyers_purple_emperor"
+  "icon": "textures/items/jars/jar_freyers_purple_emperor",
+  "realm": "overworld"
  },
  {
   "id": "nettle_tree_butterfly",
@@ -2176,7 +2373,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Brown wings are dusted with brown speckles. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_nettle_tree_butterfly"
+  "icon": "textures/items/jars/jar_nettle_tree_butterfly",
+  "realm": "overworld"
  },
  {
   "id": "woodland_grayling",
@@ -2187,7 +2385,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Forest native. Its dusky brown wings are freckled with cream. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_woodland_grayling"
+  "icon": "textures/items/jars/jar_woodland_grayling",
+  "realm": "overworld"
  },
  {
   "id": "eastern_pine_elfin",
@@ -2198,7 +2397,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Taiga. Brown wings are striped with brown. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_eastern_pine_elfin"
+  "icon": "textures/items/jars/jar_eastern_pine_elfin",
+  "realm": "overworld"
  },
  {
   "id": "henrys_elfin",
@@ -2209,7 +2409,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Forest. Its wings fade from brown to orange. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_henrys_elfin"
+  "icon": "textures/items/jars/jar_henrys_elfin",
+  "realm": "overworld"
  },
  {
   "id": "juniper_hairstreak",
@@ -2220,7 +2421,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Its wings fade from lime to lime. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_juniper_hairstreak"
+  "icon": "textures/items/jars/jar_juniper_hairstreak",
+  "realm": "overworld"
  },
  {
   "id": "early_hairstreak",
@@ -2231,7 +2433,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Birch Forest. A row of little orange eyespots lines its sky-blue hindwings. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_early_hairstreak"
+  "icon": "textures/items/jars/jar_early_hairstreak",
+  "realm": "overworld"
  },
  {
   "id": "coral_hairstreak",
@@ -2242,7 +2445,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Brown wings are edged with orange crescents. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_coral_hairstreak"
+  "icon": "textures/items/jars/jar_coral_hairstreak",
+  "realm": "overworld"
  },
  {
   "id": "edwards_hairstreak",
@@ -2253,7 +2457,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Forest. Brown wings are edged with orange crescents. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_edwards_hairstreak"
+  "icon": "textures/items/jars/jar_edwards_hairstreak",
+  "realm": "overworld"
  },
  {
   "id": "chalkhill_blue",
@@ -2264,7 +2469,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Sky-blue wings wear a wide charcoal border. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_chalkhill_blue"
+  "icon": "textures/items/jars/jar_chalkhill_blue",
+  "realm": "overworld"
  },
  {
   "id": "silver_studded_blue",
@@ -2275,7 +2481,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Meadow native. Sky-blue wings glow blue close to the body. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_silver_studded_blue"
+  "icon": "textures/items/jars/jar_silver_studded_blue",
+  "realm": "overworld"
  },
  {
   "id": "small_blue",
@@ -2286,7 +2493,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Charcoal wings glow sky-blue close to the body. It is most active in the hottest hours of the day.",
-  "icon": "textures/items/jars/jar_small_blue"
+  "icon": "textures/items/jars/jar_small_blue",
+  "realm": "overworld"
  },
  {
   "id": "large_blue",
@@ -2297,7 +2505,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Meadow. Sky-blue wings are dotted with sky-blue spots. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_large_blue"
+  "icon": "textures/items/jars/jar_large_blue",
+  "realm": "overworld"
  },
  {
   "id": "brown_argus",
@@ -2308,7 +2517,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Meadow native. Brown wings are edged with orange crescents. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_brown_argus"
+  "icon": "textures/items/jars/jar_brown_argus",
+  "realm": "overworld"
  },
  {
   "id": "northern_brown_argus",
@@ -2319,7 +2529,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Mountains native. A row of little white eyespots lines its brown hindwings. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_northern_brown_argus"
+  "icon": "textures/items/jars/jar_northern_brown_argus",
+  "realm": "overworld"
  },
  {
   "id": "mazarine_blue",
@@ -2330,7 +2541,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Its wings fade from sky-blue to sky-blue. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_mazarine_blue"
+  "icon": "textures/items/jars/jar_mazarine_blue",
+  "realm": "overworld"
  },
  {
   "id": "eastern_tailed_blue",
@@ -2341,7 +2553,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Plains native. Blue wings glow blue close to the body. It is most active in the hottest hours of the day.",
-  "icon": "textures/items/jars/jar_eastern_tailed_blue"
+  "icon": "textures/items/jars/jar_eastern_tailed_blue",
+  "realm": "overworld"
  },
  {
   "id": "western_tailed_blue",
@@ -2352,7 +2565,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Mountains. Blue wings glow blue close to the body. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_western_tailed_blue"
+  "icon": "textures/items/jars/jar_western_tailed_blue",
+  "realm": "overworld"
  },
  {
   "id": "silvery_blue",
@@ -2363,7 +2577,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Sky-blue wings flash sky-blue when the light catches them. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_silvery_blue"
+  "icon": "textures/items/jars/jar_silvery_blue",
+  "realm": "overworld"
  },
  {
   "id": "cranberry_blue",
@@ -2374,7 +2589,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Swamp native. Blue wings glow violet close to the body. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_cranberry_blue"
+  "icon": "textures/items/jars/jar_cranberry_blue",
+  "realm": "overworld"
  },
  {
   "id": "long_tailed_blue",
@@ -2385,7 +2601,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Plains native. Blue wings flash blue when the light catches them. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_long_tailed_blue"
+  "icon": "textures/items/jars/jar_long_tailed_blue",
+  "realm": "overworld"
  },
  {
   "id": "langs_short_tailed_blue",
@@ -2396,7 +2613,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Beach. Violet wings are striped with violet. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_langs_short_tailed_blue"
+  "icon": "textures/items/jars/jar_langs_short_tailed_blue",
+  "realm": "overworld"
  },
  {
   "id": "turquoise_blue",
@@ -2407,7 +2625,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Meadow. Sky-blue wings flash teal when the light catches them. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_turquoise_blue"
+  "icon": "textures/items/jars/jar_turquoise_blue",
+  "realm": "overworld"
  },
  {
   "id": "zephyr_blue",
@@ -2418,7 +2637,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Mountains. Sky-blue wings wear a wide blue border. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_zephyr_blue"
+  "icon": "textures/items/jars/jar_zephyr_blue",
+  "realm": "overworld"
  },
  {
   "id": "idas_blue",
@@ -2429,7 +2649,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Taiga. Sky-blue wings glow sky-blue close to the body. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_idas_blue"
+  "icon": "textures/items/jars/jar_idas_blue",
+  "realm": "overworld"
  },
  {
   "id": "glandon_blue",
@@ -2440,7 +2661,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Mountains. Its wings fade from sky-blue to sky-blue. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_glandon_blue"
+  "icon": "textures/items/jars/jar_glandon_blue",
+  "realm": "overworld"
  },
  {
   "id": "purple_shot_copper",
@@ -2451,7 +2673,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Meadow. Orange wings flash violet when the light catches them. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_purple_shot_copper"
+  "icon": "textures/items/jars/jar_purple_shot_copper",
+  "realm": "overworld"
  },
  {
   "id": "scarce_copper",
@@ -2462,7 +2685,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Meadow. Orange wings wear a wide brown border. It is most active in the hottest hours of the day.",
-  "icon": "textures/items/jars/jar_scarce_copper"
+  "icon": "textures/items/jars/jar_scarce_copper",
+  "realm": "overworld"
  },
  {
   "id": "sooty_copper",
@@ -2473,7 +2697,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Meadow. Brown wings are dusted with black speckles. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_sooty_copper"
+  "icon": "textures/items/jars/jar_sooty_copper",
+  "realm": "overworld"
  },
  {
   "id": "purple_edged_copper",
@@ -2484,7 +2709,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Swamp. Orange wings glow violet close to the body. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_purple_edged_copper"
+  "icon": "textures/items/jars/jar_purple_edged_copper",
+  "realm": "overworld"
  },
  {
   "id": "lesser_fiery_copper",
@@ -2495,7 +2721,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Orange wings are dotted with black spots. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_lesser_fiery_copper"
+  "icon": "textures/items/jars/jar_lesser_fiery_copper",
+  "realm": "overworld"
  },
  {
   "id": "bronze_copper",
@@ -2506,7 +2733,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Swamp native. Orange wings are edged with orange crescents. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_bronze_copper"
+  "icon": "textures/items/jars/jar_bronze_copper",
+  "realm": "overworld"
  },
  {
   "id": "purplish_copper",
@@ -2517,7 +2745,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Mountains. Orange wings flash violet when the light catches them. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_purplish_copper"
+  "icon": "textures/items/jars/jar_purplish_copper",
+  "realm": "overworld"
  },
  {
   "id": "american_copper",
@@ -2528,7 +2757,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Plains native. Its forewings are orange while its hindwings are charcoal. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_american_copper"
+  "icon": "textures/items/jars/jar_american_copper",
+  "realm": "overworld"
  },
  {
   "id": "tailed_copper",
@@ -2539,7 +2769,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Mountains native. Brown wings are edged with orange crescents. It is most active in the hottest hours of the day.",
-  "icon": "textures/items/jars/jar_tailed_copper"
+  "icon": "textures/items/jars/jar_tailed_copper",
+  "realm": "overworld"
  },
  {
   "id": "green_underside_blue",
@@ -2550,7 +2781,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Meadow native. Sky-blue wings glow lime close to the body. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_green_underside_blue"
+  "icon": "textures/items/jars/jar_green_underside_blue",
+  "realm": "overworld"
  },
  {
   "id": "baton_blue",
@@ -2561,7 +2793,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Badlands. Sky-blue wings are striped with blue. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_baton_blue"
+  "icon": "textures/items/jars/jar_baton_blue",
+  "realm": "overworld"
  },
  {
   "id": "amandas_blue",
@@ -2572,7 +2805,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Meadow. Its wings fade from sky-blue to sky-blue. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_amandas_blue"
+  "icon": "textures/items/jars/jar_amandas_blue",
+  "realm": "overworld"
  },
  {
   "id": "summer_azure",
@@ -2583,7 +2817,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Forest. Its wings fade from sky-blue to sky-blue. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_summer_azure"
+  "icon": "textures/items/jars/jar_summer_azure",
+  "realm": "overworld"
  },
  {
   "id": "small_skipper",
@@ -2594,7 +2829,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "A Meadow native. Orange wings wear a wide brown border. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_small_skipper"
+  "icon": "textures/items/jars/jar_small_skipper",
+  "realm": "overworld"
  },
  {
   "id": "essex_skipper",
@@ -2605,7 +2841,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Look for it in the Meadow. Orange wings wear a wide brown border. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_essex_skipper"
+  "icon": "textures/items/jars/jar_essex_skipper",
+  "realm": "overworld"
  },
  {
   "id": "lulworth_skipper",
@@ -2616,7 +2853,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Look for it in the Beach. Orange wings are edged with golden crescents. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_lulworth_skipper"
+  "icon": "textures/items/jars/jar_lulworth_skipper",
+  "realm": "overworld"
  },
  {
   "id": "grizzled_skipper",
@@ -2627,7 +2865,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Found in the Meadow. Charcoal wings are tiled with a white chequerboard. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_grizzled_skipper"
+  "icon": "textures/items/jars/jar_grizzled_skipper",
+  "realm": "overworld"
  },
  {
   "id": "mallow_skipper",
@@ -2638,7 +2877,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Brown wings are dusted with brown speckles. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_mallow_skipper"
+  "icon": "textures/items/jars/jar_mallow_skipper",
+  "realm": "overworld"
  },
  {
   "id": "common_sootywing",
@@ -2649,7 +2889,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Found in the Plains. Black wings are dotted with white spots. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_common_sootywing"
+  "icon": "textures/items/jars/jar_common_sootywing",
+  "realm": "overworld"
  },
  {
   "id": "hobomok_skipper",
@@ -2660,7 +2901,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "A Forest native. Orange wings carry big orange patches. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_hobomok_skipper"
+  "icon": "textures/items/jars/jar_hobomok_skipper",
+  "realm": "overworld"
  },
  {
   "id": "pecks_skipper",
@@ -2671,7 +2913,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Found in the Plains. Brown wings are dotted with orange spots. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_pecks_skipper"
+  "icon": "textures/items/jars/jar_pecks_skipper",
+  "realm": "overworld"
  },
  {
   "id": "tawny_edged_skipper",
@@ -2682,7 +2925,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Found in the Meadow. Brown wings wear a wide black border. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_tawny_edged_skipper"
+  "icon": "textures/items/jars/jar_tawny_edged_skipper",
+  "realm": "overworld"
  },
  {
   "id": "zabulon_skipper",
@@ -2693,7 +2937,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Its forewings are orange while its hindwings are brown. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_zabulon_skipper"
+  "icon": "textures/items/jars/jar_zabulon_skipper",
+  "realm": "overworld"
  },
  {
   "id": "sachem",
@@ -2704,7 +2949,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Found in the Plains. Brown marbling covers its orange underside. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_sachem"
+  "icon": "textures/items/jars/jar_sachem",
+  "realm": "overworld"
  },
  {
   "id": "ocola_skipper",
@@ -2715,7 +2961,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Look for it in the Swamp. Brown wings are dotted with white spots. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_ocola_skipper"
+  "icon": "textures/items/jars/jar_ocola_skipper",
+  "realm": "overworld"
  },
  {
   "id": "hoary_edge",
@@ -2726,7 +2973,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Look for it in the Forest. Brown wings carry big white patches. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_hoary_edge"
+  "icon": "textures/items/jars/jar_hoary_edge",
+  "realm": "overworld"
  },
  {
   "id": "golden_banded_skipper",
@@ -2737,7 +2985,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "A Forest native. A bright golden band slashes across its brown wings. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_golden_banded_skipper"
+  "icon": "textures/items/jars/jar_golden_banded_skipper",
+  "realm": "overworld"
  },
  {
   "id": "northern_cloudywing",
@@ -2748,7 +2997,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Brown wings are dotted with white spots. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_northern_cloudywing"
+  "icon": "textures/items/jars/jar_northern_cloudywing",
+  "realm": "overworld"
  },
  {
   "id": "wild_indigo_duskywing",
@@ -2759,7 +3009,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Its dusky brown wings are freckled with orange. It is most active in the hottest hours of the day.",
-  "icon": "textures/items/jars/jar_wild_indigo_duskywing"
+  "icon": "textures/items/jars/jar_wild_indigo_duskywing",
+  "realm": "overworld"
  },
  {
   "id": "arctic_skipper",
@@ -2770,7 +3021,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "A Taiga native. Brown wings are tiled with a orange chequerboard. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_arctic_skipper"
+  "icon": "textures/items/jars/jar_arctic_skipper",
+  "realm": "overworld"
  },
  {
   "id": "mangrove_skipper",
@@ -2781,7 +3033,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Found in the Mangrove Swamp. Blue wings flash sky-blue when the light catches them. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_mangrove_skipper"
+  "icon": "textures/items/jars/jar_mangrove_skipper",
+  "realm": "overworld"
  },
  {
   "id": "brazilian_skipper",
@@ -2792,7 +3045,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Look for it in the Swamp. Brown wings are dotted with white spots. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_brazilian_skipper"
+  "icon": "textures/items/jars/jar_brazilian_skipper",
+  "realm": "overworld"
  },
  {
   "id": "guava_skipper",
@@ -2803,7 +3057,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Found in the Jungle. Brown wings shimmer with golden like a gemstone. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_guava_skipper"
+  "icon": "textures/items/jars/jar_guava_skipper",
+  "realm": "overworld"
  },
  {
   "id": "menelaus_blue_morpho",
@@ -2814,7 +3069,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Jungle. Sky-blue wings flash sky-blue when the light catches them. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_menelaus_blue_morpho"
+  "icon": "textures/items/jars/jar_menelaus_blue_morpho",
+  "realm": "overworld"
  },
  {
   "id": "achilles_morpho",
@@ -2825,7 +3081,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Jungle. A bright sky-blue band slashes across its black wings. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_achilles_morpho"
+  "icon": "textures/items/jars/jar_achilles_morpho",
+  "realm": "overworld"
  },
  {
   "id": "cypris_morpho",
@@ -2836,7 +3093,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Jungle. Sky-blue wings are striped with blue. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_cypris_morpho"
+  "icon": "textures/items/jars/jar_cypris_morpho",
+  "realm": "overworld"
  },
  {
   "id": "rhetenor_morpho",
@@ -2847,7 +3105,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Jungle. Sky-blue wings shimmer with teal like a gemstone. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_rhetenor_morpho"
+  "icon": "textures/items/jars/jar_rhetenor_morpho",
+  "realm": "overworld"
  },
  {
   "id": "peleides_morpho",
@@ -2858,7 +3117,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Jungle native. A bright sky-blue band slashes across its black wings. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_peleides_morpho"
+  "icon": "textures/items/jars/jar_peleides_morpho",
+  "realm": "overworld"
  },
  {
   "id": "giant_owl",
@@ -2869,7 +3129,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Jungle. A row of little golden eyespots lines its brown hindwings. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_giant_owl"
+  "icon": "textures/items/jars/jar_giant_owl",
+  "realm": "overworld"
  },
  {
   "id": "forest_giant_owl",
@@ -2880,7 +3141,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Jungle native. Brown wings carry bold golden eyespots that startle anything trying to eat it. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_forest_giant_owl"
+  "icon": "textures/items/jars/jar_forest_giant_owl",
+  "realm": "overworld"
  },
  {
   "id": "cracker",
@@ -2891,7 +3153,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Jungle. Sky-blue wings are dusted with black speckles. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_cracker"
+  "icon": "textures/items/jars/jar_cracker",
+  "realm": "overworld"
  },
  {
   "id": "blue_cracker",
@@ -2902,7 +3165,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Jungle native. Sky-blue wings are dusted with black speckles. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_blue_cracker"
+  "icon": "textures/items/jars/jar_blue_cracker",
+  "realm": "overworld"
  },
  {
   "id": "red_cracker",
@@ -2913,7 +3177,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Jungle. Violet wings are dusted with red speckles. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_red_cracker"
+  "icon": "textures/items/jars/jar_red_cracker",
+  "realm": "overworld"
  },
  {
   "id": "mexican_bluewing",
@@ -2924,7 +3189,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Jungle native. A bright sky-blue band slashes across its black wings. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_mexican_bluewing"
+  "icon": "textures/items/jars/jar_mexican_bluewing",
+  "realm": "overworld"
  },
  {
   "id": "common_banner",
@@ -2935,7 +3201,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Jungle. A bright orange band slashes across its black wings. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_common_banner"
+  "icon": "textures/items/jars/jar_common_banner",
+  "realm": "overworld"
  },
  {
   "id": "red_rim",
@@ -2946,7 +3213,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Black wings wear a wide black border. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_red_rim"
+  "icon": "textures/items/jars/jar_red_rim",
+  "realm": "overworld"
  },
  {
   "id": "eighty_eight",
@@ -2957,7 +3225,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Jungle native. Its forewings are red while its hindwings are black. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_eighty_eight"
+  "icon": "textures/items/jars/jar_eighty_eight",
+  "realm": "overworld"
  },
  {
   "id": "cramers_eighty_eight",
@@ -2968,7 +3237,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Jungle. Black wings carry big red patches. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_cramers_eighty_eight"
+  "icon": "textures/items/jars/jar_cramers_eighty_eight",
+  "realm": "overworld"
  },
  {
   "id": "rusty_tipped_page",
@@ -2979,7 +3249,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "Milkweed, Butterfly Bush and leaves, but seeds work best",
   "info": "Orange wings are dipped in black at the tips. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_rusty_tipped_page"
+  "icon": "textures/items/jars/jar_rusty_tipped_page",
+  "realm": "overworld"
  },
  {
   "id": "scarlet_peacock",
@@ -2990,7 +3261,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A row of little white eyespots lines its red hindwings. It is most active in the hottest hours of the day.",
-  "icon": "textures/items/jars/jar_scarlet_peacock"
+  "icon": "textures/items/jars/jar_scarlet_peacock",
+  "realm": "overworld"
  },
  {
   "id": "white_peacock",
@@ -3001,7 +3273,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Jungle native. A row of little orange eyespots lines its white hindwings. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_white_peacock"
+  "icon": "textures/items/jars/jar_white_peacock",
+  "realm": "overworld"
  },
  {
   "id": "banded_peacock",
@@ -3012,7 +3285,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Jungle native. A bright orange band slashes across its black wings. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_banded_peacock"
+  "icon": "textures/items/jars/jar_banded_peacock",
+  "realm": "overworld"
  },
  {
   "id": "pink_tipped_satyr",
@@ -3023,7 +3297,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Jungle. Its wings are clear as glass, edged with pink. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_pink_tipped_satyr"
+  "icon": "textures/items/jars/jar_pink_tipped_satyr",
+  "realm": "overworld"
  },
  {
   "id": "rusty_clearwing",
@@ -3034,7 +3309,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Jungle native. Its wings are clear as glass, edged with brown. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_rusty_clearwing"
+  "icon": "textures/items/jars/jar_rusty_clearwing",
+  "realm": "overworld"
  },
  {
   "id": "tiger_clearwing",
@@ -3045,7 +3321,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Jungle. Long black wings carry a golden band. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_tiger_clearwing"
+  "icon": "textures/items/jars/jar_tiger_clearwing",
+  "realm": "overworld"
  },
  {
   "id": "hecale_longwing",
@@ -3056,7 +3333,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Jungle native. Long orange wings carry a golden band. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_hecale_longwing"
+  "icon": "textures/items/jars/jar_hecale_longwing",
+  "realm": "overworld"
  },
  {
   "id": "red_postman",
@@ -3067,7 +3345,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Long black wings carry a red band. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_red_postman"
+  "icon": "textures/items/jars/jar_red_postman",
+  "realm": "overworld"
  },
  {
   "id": "cydno_longwing",
@@ -3078,7 +3357,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Jungle native. Long black wings carry a white band. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_cydno_longwing"
+  "icon": "textures/items/jars/jar_cydno_longwing",
+  "realm": "overworld"
  },
  {
   "id": "blue_and_white_longwing",
@@ -3089,7 +3369,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Jungle. Long black wings carry a white band. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_blue_and_white_longwing"
+  "icon": "textures/items/jars/jar_blue_and_white_longwing",
+  "realm": "overworld"
  },
  {
   "id": "melpomene_longwing",
@@ -3100,7 +3381,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Jungle. Orange rays run through its black wings. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_melpomene_longwing"
+  "icon": "textures/items/jars/jar_melpomene_longwing",
+  "realm": "overworld"
  },
  {
   "id": "isabellas_longwing",
@@ -3111,7 +3393,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Jungle. Orange wings laced with black veins warn birds that it tastes awful. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_isabellas_longwing"
+  "icon": "textures/items/jars/jar_isabellas_longwing",
+  "realm": "overworld"
  },
  {
   "id": "mechanitis_tigerwing",
@@ -3122,7 +3405,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Jungle native. Orange wings laced with black veins warn birds that it tastes awful. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_mechanitis_tigerwing"
+  "icon": "textures/items/jars/jar_mechanitis_tigerwing",
+  "realm": "overworld"
  },
  {
   "id": "clearwing_mimic",
@@ -3133,7 +3417,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Jungle native. Its wings are clear as glass, edged with black. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_clearwing_mimic"
+  "icon": "textures/items/jars/jar_clearwing_mimic",
+  "realm": "overworld"
  },
  {
   "id": "crimson_patch",
@@ -3144,7 +3429,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Jungle. Black wings carry big red patches. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_crimson_patch"
+  "icon": "textures/items/jars/jar_crimson_patch",
+  "realm": "overworld"
  },
  {
   "id": "red_lacewing",
@@ -3155,7 +3441,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Jungle. Red wings wear a wide black border. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_red_lacewing"
+  "icon": "textures/items/jars/jar_red_lacewing",
+  "realm": "overworld"
  },
  {
   "id": "cruiser",
@@ -3166,7 +3453,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Jungle native. Its wings fade from orange to orange. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_cruiser"
+  "icon": "textures/items/jars/jar_cruiser",
+  "realm": "overworld"
  },
  {
   "id": "clipper",
@@ -3177,7 +3465,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Jungle. Sky-blue wings are dotted with white spots. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_clipper"
+  "icon": "textures/items/jars/jar_clipper",
+  "realm": "overworld"
  },
  {
   "id": "blue_glassy_tiger",
@@ -3188,7 +3477,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Jungle. Black rays run through its sky-blue wings. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_blue_glassy_tiger"
+  "icon": "textures/items/jars/jar_blue_glassy_tiger",
+  "realm": "overworld"
  },
  {
   "id": "chestnut_tiger",
@@ -3199,7 +3489,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Jungle native. Black rays run through its brown wings. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_chestnut_tiger"
+  "icon": "textures/items/jars/jar_chestnut_tiger",
+  "realm": "overworld"
  },
  {
   "id": "tree_nymph",
@@ -3210,7 +3501,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Jungle. White wings are dotted with black spots. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_tree_nymph"
+  "icon": "textures/items/jars/jar_tree_nymph",
+  "realm": "overworld"
  },
  {
   "id": "common_crow",
@@ -3221,7 +3513,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Jungle native. Brown wings are dotted with white spots. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_common_crow"
+  "icon": "textures/items/jars/jar_common_crow",
+  "realm": "overworld"
  },
  {
   "id": "striped_blue_crow",
@@ -3232,7 +3525,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Jungle. Blue wings flash sky-blue when the light catches them. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_striped_blue_crow"
+  "icon": "textures/items/jars/jar_striped_blue_crow",
+  "realm": "overworld"
  },
  {
   "id": "autumn_leaf",
@@ -3243,7 +3537,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Its wings fade from orange to orange. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_autumn_leaf"
+  "icon": "textures/items/jars/jar_autumn_leaf",
+  "realm": "overworld"
  },
  {
   "id": "orange_oakleaf",
@@ -3254,7 +3549,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Jungle. A bright orange band slashes across its blue wings. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_orange_oakleaf"
+  "icon": "textures/items/jars/jar_orange_oakleaf",
+  "realm": "overworld"
  },
  {
   "id": "common_sailer",
@@ -3265,7 +3561,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Jungle. Black wings are striped with white. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_common_sailer"
+  "icon": "textures/items/jars/jar_common_sailer",
+  "realm": "overworld"
  },
  {
   "id": "archduke",
@@ -3276,7 +3573,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Jungle. Yellow wings flash green when the light catches them. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_archduke"
+  "icon": "textures/items/jars/jar_archduke",
+  "realm": "overworld"
  },
  {
   "id": "common_lascar",
@@ -3287,7 +3585,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Jungle. Black wings are striped with orange. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_common_lascar"
+  "icon": "textures/items/jars/jar_common_lascar",
+  "realm": "overworld"
  },
  {
   "id": "malay_lacewing",
@@ -3298,7 +3597,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Jungle. Orange and black stripes make it look like a tiny zebra. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_malay_lacewing"
+  "icon": "textures/items/jars/jar_malay_lacewing",
+  "realm": "overworld"
  },
  {
   "id": "green_imperial",
@@ -3309,7 +3609,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Jungle. Its wings fade from lime to lime. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_green_imperial"
+  "icon": "textures/items/jars/jar_green_imperial",
+  "realm": "overworld"
  },
  {
   "id": "moonbeam",
@@ -3320,7 +3621,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Jungle native. Its forewings are white while its hindwings are orange. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_moonbeam"
+  "icon": "textures/items/jars/jar_moonbeam",
+  "realm": "overworld"
  },
  {
   "id": "common_imperial",
@@ -3331,7 +3633,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Black wings glow sky-blue close to the body. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_common_imperial"
+  "icon": "textures/items/jars/jar_common_imperial",
+  "realm": "overworld"
  },
  {
   "id": "wallaces_golden_birdwing",
@@ -3342,7 +3645,8 @@ export const SPECIES = [
   "wingspan": "1.4 blocks",
   "food": "jungle leaves, but seeds work best",
   "info": "Its forewings are black while its hindwings are golden. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_wallaces_golden_birdwing"
+  "icon": "textures/items/jars/jar_wallaces_golden_birdwing",
+  "realm": "overworld"
  },
  {
   "id": "cairns_birdwing",
@@ -3353,7 +3657,8 @@ export const SPECIES = [
   "wingspan": "1.4 blocks",
   "food": "jungle leaves, but seeds work best",
   "info": "Its forewings are black while its hindwings are lime. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_cairns_birdwing"
+  "icon": "textures/items/jars/jar_cairns_birdwing",
+  "realm": "overworld"
  },
  {
   "id": "african_monarch",
@@ -3364,7 +3669,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "Milkweed, Butterfly Bush and leaves, but seeds work best",
   "info": "A Savanna native. Orange wings laced with black veins warn birds that it tastes awful. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_african_monarch"
+  "icon": "textures/items/jars/jar_african_monarch",
+  "realm": "overworld"
  },
  {
   "id": "gaudy_commodore",
@@ -3375,7 +3681,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Savanna. A row of little sky-blue eyespots lines its red hindwings. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_gaudy_commodore"
+  "icon": "textures/items/jars/jar_gaudy_commodore",
+  "realm": "overworld"
  },
  {
   "id": "garden_commodore",
@@ -3386,7 +3693,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Orange wings carry bold sky-blue eyespots that startle anything trying to eat it. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_garden_commodore"
+  "icon": "textures/items/jars/jar_garden_commodore",
+  "realm": "overworld"
  },
  {
   "id": "african_leopard",
@@ -3397,7 +3705,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Savanna. Orange wings are dotted with black spots. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_african_leopard"
+  "icon": "textures/items/jars/jar_african_leopard",
+  "realm": "overworld"
  },
  {
   "id": "foxy_charaxes",
@@ -3408,7 +3717,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Savanna. Its wings fade from orange to orange. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_foxy_charaxes"
+  "icon": "textures/items/jars/jar_foxy_charaxes",
+  "realm": "overworld"
  },
  {
   "id": "green_veined_charaxes",
@@ -3419,7 +3729,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Savanna. Lime rays run through its cream wings. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_green_veined_charaxes"
+  "icon": "textures/items/jars/jar_green_veined_charaxes",
+  "realm": "overworld"
  },
  {
   "id": "pearl_charaxes",
@@ -3430,7 +3741,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Savanna native. Cream wings are edged with orange crescents. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_pearl_charaxes"
+  "icon": "textures/items/jars/jar_pearl_charaxes",
+  "realm": "overworld"
  },
  {
   "id": "african_migrant",
@@ -3441,7 +3753,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Savanna. White wings wear a wide yellow border. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_african_migrant"
+  "icon": "textures/items/jars/jar_african_migrant",
+  "realm": "overworld"
  },
  {
   "id": "scarlet_tip",
@@ -3452,7 +3765,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "Milkweed, Butterfly Bush and leaves, but seeds work best",
   "info": "White wings are dipped in red at the tips. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_scarlet_tip"
+  "icon": "textures/items/jars/jar_scarlet_tip",
+  "realm": "overworld"
  },
  {
   "id": "purple_tip",
@@ -3463,7 +3777,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "Milkweed, Butterfly Bush and leaves, but seeds work best",
   "info": "White wings are dipped in violet at the tips. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_purple_tip"
+  "icon": "textures/items/jars/jar_purple_tip",
+  "realm": "overworld"
  },
  {
   "id": "desert_orange_tip",
@@ -3474,7 +3789,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Desert. White wings are dipped in orange at the tips. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_desert_orange_tip"
+  "icon": "textures/items/jars/jar_desert_orange_tip",
+  "realm": "overworld"
  },
  {
   "id": "sara_orangetip",
@@ -3485,7 +3801,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Desert. White wings are dipped in orange at the tips. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_sara_orangetip"
+  "icon": "textures/items/jars/jar_sara_orangetip",
+  "realm": "overworld"
  },
  {
   "id": "desert_black_swallowtail",
@@ -3496,7 +3813,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "Found in the Desert. A bright golden band slashes across its black wings. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_desert_black_swallowtail"
+  "icon": "textures/items/jars/jar_desert_black_swallowtail",
+  "realm": "overworld"
  },
  {
   "id": "mormon_metalmark",
@@ -3507,7 +3825,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Desert. Black wings are dotted with white spots. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_mormon_metalmark"
+  "icon": "textures/items/jars/jar_mormon_metalmark",
+  "realm": "overworld"
  },
  {
   "id": "fatal_metalmark",
@@ -3518,7 +3837,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Desert. Brown wings are tiled with a black chequerboard. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_fatal_metalmark"
+  "icon": "textures/items/jars/jar_fatal_metalmark",
+  "realm": "overworld"
  },
  {
   "id": "palmers_metalmark",
@@ -3529,7 +3849,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Desert. Orange wings are dotted with white spots. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_palmers_metalmark"
+  "icon": "textures/items/jars/jar_palmers_metalmark",
+  "realm": "overworld"
  },
  {
   "id": "arizona_sister",
@@ -3540,7 +3861,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Desert. Brown wings carry big orange patches. It is most active in the hottest hours of the day.",
-  "icon": "textures/items/jars/jar_arizona_sister"
+  "icon": "textures/items/jars/jar_arizona_sister",
+  "realm": "overworld"
  },
  {
   "id": "empress_leilia",
@@ -3551,7 +3873,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Desert. A row of little white eyespots lines its orange hindwings. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_empress_leilia"
+  "icon": "textures/items/jars/jar_empress_leilia",
+  "realm": "overworld"
  },
  {
   "id": "texan_crescent",
@@ -3562,7 +3885,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Desert. A bright white band slashes across its black wings. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_texan_crescent"
+  "icon": "textures/items/jars/jar_texan_crescent",
+  "realm": "overworld"
  },
  {
   "id": "sandhill_skipper",
@@ -3573,7 +3897,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "A Desert native. Orange wings wear a wide brown border. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_sandhill_skipper"
+  "icon": "textures/items/jars/jar_sandhill_skipper",
+  "realm": "overworld"
  },
  {
   "id": "leda_ministreak",
@@ -3584,7 +3909,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Desert. Grey wings are edged with orange crescents. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_leda_ministreak"
+  "icon": "textures/items/jars/jar_leda_ministreak",
+  "realm": "overworld"
  },
  {
   "id": "great_purple_hairstreak",
@@ -3595,7 +3921,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Desert. Sky-blue wings flash sky-blue when the light catches them. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_great_purple_hairstreak"
+  "icon": "textures/items/jars/jar_great_purple_hairstreak",
+  "realm": "overworld"
  },
  {
   "id": "marine_blue",
@@ -3606,7 +3933,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Desert. Blue wings are striped with violet. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_marine_blue"
+  "icon": "textures/items/jars/jar_marine_blue",
+  "realm": "overworld"
  },
  {
   "id": "cassius_blue",
@@ -3617,7 +3945,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Savanna native. Sky-blue wings are striped with blue. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_cassius_blue"
+  "icon": "textures/items/jars/jar_cassius_blue",
+  "realm": "overworld"
  },
  {
   "id": "atala",
@@ -3628,7 +3957,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Black wings shimmer with orange like a gemstone. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_atala"
+  "icon": "textures/items/jars/jar_atala",
+  "realm": "overworld"
  },
  {
   "id": "small_apollo",
@@ -3639,7 +3969,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Mountains native. White wings are dotted with red spots. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_small_apollo"
+  "icon": "textures/items/jars/jar_small_apollo",
+  "realm": "overworld"
  },
  {
   "id": "clouded_apollo",
@@ -3650,7 +3981,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Mountains. White wings are dotted with black spots. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_clouded_apollo"
+  "icon": "textures/items/jars/jar_clouded_apollo",
+  "realm": "overworld"
  },
  {
   "id": "phoebus_apollo",
@@ -3661,7 +3993,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Mountains native. White wings carry bold red eyespots that startle anything trying to eat it. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_phoebus_apollo"
+  "icon": "textures/items/jars/jar_phoebus_apollo",
+  "realm": "overworld"
  },
  {
   "id": "mountain_ringlet",
@@ -3672,7 +4005,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Mountains. A row of little orange eyespots lines its brown hindwings. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_mountain_ringlet"
+  "icon": "textures/items/jars/jar_mountain_ringlet",
+  "realm": "overworld"
  },
  {
   "id": "scotch_argus",
@@ -3683,7 +4017,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Mountains native. A row of little orange eyespots lines its brown hindwings. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_scotch_argus"
+  "icon": "textures/items/jars/jar_scotch_argus",
+  "realm": "overworld"
  },
  {
   "id": "arran_brown",
@@ -3694,7 +4029,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Mountains native. A row of little orange eyespots lines its brown hindwings. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_arran_brown"
+  "icon": "textures/items/jars/jar_arran_brown",
+  "realm": "overworld"
  },
  {
   "id": "mountain_fritillary",
@@ -3705,7 +4041,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Orange wings are tiled with a black chequerboard. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_mountain_fritillary"
+  "icon": "textures/items/jars/jar_mountain_fritillary",
+  "realm": "overworld"
  },
  {
   "id": "arctic_fritillary",
@@ -3716,7 +4053,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Snowy Biomes. Orange wings are tiled with a black chequerboard. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_arctic_fritillary"
+  "icon": "textures/items/jars/jar_arctic_fritillary",
+  "realm": "overworld"
  },
  {
   "id": "freija_fritillary",
@@ -3727,7 +4065,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Snowy Biomes. Orange wings wear a wide black border. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_freija_fritillary"
+  "icon": "textures/items/jars/jar_freija_fritillary",
+  "realm": "overworld"
  },
  {
   "id": "polaris_fritillary",
@@ -3738,7 +4077,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Snowy Biomes. Orange wings are edged with black crescents. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_polaris_fritillary"
+  "icon": "textures/items/jars/jar_polaris_fritillary",
+  "realm": "overworld"
  },
  {
   "id": "arctic_blue",
@@ -3749,7 +4089,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Snowy Biomes. Its wings fade from sky-blue to sky-blue. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_arctic_blue"
+  "icon": "textures/items/jars/jar_arctic_blue",
+  "realm": "overworld"
  },
  {
   "id": "arctic_ringlet",
@@ -3760,7 +4101,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Brown wings carry bold orange eyespots that startle anything trying to eat it. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_arctic_ringlet"
+  "icon": "textures/items/jars/jar_arctic_ringlet",
+  "realm": "overworld"
  },
  {
   "id": "melissa_arctic",
@@ -3771,7 +4113,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Orange wings are dusted with brown speckles. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_melissa_arctic"
+  "icon": "textures/items/jars/jar_melissa_arctic",
+  "realm": "overworld"
  },
  {
   "id": "chryxus_arctic",
@@ -3782,7 +4125,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Mountains native. Orange wings carry bold white eyespots that startle anything trying to eat it. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_chryxus_arctic"
+  "icon": "textures/items/jars/jar_chryxus_arctic",
+  "realm": "overworld"
  },
  {
   "id": "polixenes_arctic",
@@ -3793,7 +4137,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Snowy Biomes. Orange wings are dusted with brown speckles. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_polixenes_arctic"
+  "icon": "textures/items/jars/jar_polixenes_arctic",
+  "realm": "overworld"
  },
  {
   "id": "labrador_sulphur",
@@ -3804,7 +4149,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Snowy Biomes. Cream wings wear a wide lime border. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_labrador_sulphur"
+  "icon": "textures/items/jars/jar_labrador_sulphur",
+  "realm": "overworld"
  },
  {
   "id": "hecla_sulphur",
@@ -3815,7 +4161,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Snowy Biomes. Golden wings wear a wide brown border. It is most active in the hottest hours of the day.",
-  "icon": "textures/items/jars/jar_hecla_sulphur"
+  "icon": "textures/items/jars/jar_hecla_sulphur",
+  "realm": "overworld"
  },
  {
   "id": "pale_arctic_clouded_yellow",
@@ -3826,7 +4173,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Snowy Biomes native. Cream wings are dipped in yellow at the tips. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_pale_arctic_clouded_yellow"
+  "icon": "textures/items/jars/jar_pale_arctic_clouded_yellow",
+  "realm": "overworld"
  },
  {
   "id": "mountain_clouded_yellow",
@@ -3837,7 +4185,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Mountains. Its wings fade from golden to cream. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_mountain_clouded_yellow"
+  "icon": "textures/items/jars/jar_mountain_clouded_yellow",
+  "realm": "overworld"
  },
  {
   "id": "glacial_apollo",
@@ -3848,7 +4197,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Snowy Biomes. Its wings are clear as glass, edged with charcoal. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_glacial_apollo"
+  "icon": "textures/items/jars/jar_glacial_apollo",
+  "realm": "overworld"
  },
  {
   "id": "alpine_grizzled_skipper",
@@ -3859,7 +4209,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "A Mountains native. Charcoal wings are tiled with a white chequerboard. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_alpine_grizzled_skipper"
+  "icon": "textures/items/jars/jar_alpine_grizzled_skipper",
+  "realm": "overworld"
  },
  {
   "id": "mountain_alcon_blue",
@@ -3870,7 +4221,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Mountains. Sky-blue wings are dotted with sky-blue spots. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_mountain_alcon_blue"
+  "icon": "textures/items/jars/jar_mountain_alcon_blue",
+  "realm": "overworld"
  },
  {
   "id": "shepherds_fritillary",
@@ -3881,7 +4233,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Mountains. Orange wings are tiled with a brown chequerboard. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_shepherds_fritillary"
+  "icon": "textures/items/jars/jar_shepherds_fritillary",
+  "realm": "overworld"
  },
  {
   "id": "bog_fritillary",
@@ -3892,7 +4245,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Swamp. Orange wings are tiled with a brown chequerboard. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_bog_fritillary"
+  "icon": "textures/items/jars/jar_bog_fritillary",
+  "realm": "overworld"
  },
  {
   "id": "old_growth_ringlet",
@@ -3903,7 +4257,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Old Growth Taiga native. A row of little orange eyespots lines its brown hindwings. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_old_growth_ringlet"
+  "icon": "textures/items/jars/jar_old_growth_ringlet",
+  "realm": "overworld"
  },
  {
   "id": "mangrove_buckeye",
@@ -3914,7 +4269,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Mangrove Swamp native. Brown wings carry bold orange eyespots that startle anything trying to eat it. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_mangrove_buckeye"
+  "icon": "textures/items/jars/jar_mangrove_buckeye",
+  "realm": "overworld"
  },
  {
   "id": "great_southern_white",
@@ -3925,7 +4281,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Beach. White wings are dipped in black at the tips. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_great_southern_white"
+  "icon": "textures/items/jars/jar_great_southern_white",
+  "realm": "overworld"
  },
  {
   "id": "florida_white",
@@ -3936,7 +4293,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Mangrove Swamp native. White wings are dipped in charcoal at the tips. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_florida_white"
+  "icon": "textures/items/jars/jar_florida_white",
+  "realm": "overworld"
  },
  {
   "id": "swamp_metalmark",
@@ -3947,7 +4305,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Swamp. Orange wings are tiled with a brown chequerboard. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_swamp_metalmark"
+  "icon": "textures/items/jars/jar_swamp_metalmark",
+  "realm": "overworld"
  },
  {
   "id": "georgia_satyr",
@@ -3958,7 +4317,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Swamp native. A row of little golden eyespots lines its orange hindwings. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_georgia_satyr"
+  "icon": "textures/items/jars/jar_georgia_satyr",
+  "realm": "overworld"
  },
  {
   "id": "appalachian_brown",
@@ -3969,7 +4329,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A row of little golden eyespots lines its brown hindwings. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_appalachian_brown"
+  "icon": "textures/items/jars/jar_appalachian_brown",
+  "realm": "overworld"
  },
  {
   "id": "dion_skipper",
@@ -3980,7 +4341,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Look for it in the Swamp. A bright golden band slashes across its orange wings. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_dion_skipper"
+  "icon": "textures/items/jars/jar_dion_skipper",
+  "realm": "overworld"
  },
  {
   "id": "broad_winged_skipper",
@@ -3991,7 +4353,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Brown wings wear a wide brown border. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_broad_winged_skipper"
+  "icon": "textures/items/jars/jar_broad_winged_skipper",
+  "realm": "overworld"
  },
  {
   "id": "aarons_skipper",
@@ -4002,7 +4365,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Orange wings wear a wide brown border. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_aarons_skipper"
+  "icon": "textures/items/jars/jar_aarons_skipper",
+  "realm": "overworld"
  },
  {
   "id": "saltmarsh_skipper",
@@ -4013,7 +4377,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "A Beach native. Orange wings are dusted with brown speckles. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_saltmarsh_skipper"
+  "icon": "textures/items/jars/jar_saltmarsh_skipper",
+  "realm": "overworld"
  },
  {
   "id": "mangrove_tree_nymph",
@@ -4024,7 +4389,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Mangrove Swamp. White wings are dotted with black spots. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_mangrove_tree_nymph"
+  "icon": "textures/items/jars/jar_mangrove_tree_nymph",
+  "realm": "overworld"
  },
  {
   "id": "statira_sulphur",
@@ -4035,7 +4401,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Its forewings are golden while its hindwings are golden. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_statira_sulphur"
+  "icon": "textures/items/jars/jar_statira_sulphur",
+  "realm": "overworld"
  },
  {
   "id": "large_orange_sulphur",
@@ -4046,7 +4413,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Beach native. Its wings fade from orange to orange. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_large_orange_sulphur"
+  "icon": "textures/items/jars/jar_large_orange_sulphur",
+  "realm": "overworld"
  },
  {
   "id": "dina_yellow",
@@ -4057,7 +4425,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Beach. Golden wings are dipped in brown at the tips. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_dina_yellow"
+  "icon": "textures/items/jars/jar_dina_yellow",
+  "realm": "overworld"
  },
  {
   "id": "eastern_pygmy_blue",
@@ -4068,7 +4437,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Beach native. Brown wings glow sky-blue close to the body. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_eastern_pygmy_blue"
+  "icon": "textures/items/jars/jar_eastern_pygmy_blue",
+  "realm": "overworld"
  },
  {
   "id": "cuban_crescent",
@@ -4079,7 +4449,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Mangrove Swamp. A bright orange band slashes across its black wings. It is most active in the hottest hours of the day.",
-  "icon": "textures/items/jars/jar_cuban_crescent"
+  "icon": "textures/items/jars/jar_cuban_crescent",
+  "realm": "overworld"
  },
  {
   "id": "ruddy_daggerwing",
@@ -4090,7 +4461,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Mangrove Swamp. Orange wings are striped with brown. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_ruddy_daggerwing"
+  "icon": "textures/items/jars/jar_ruddy_daggerwing",
+  "realm": "overworld"
  },
  {
   "id": "many_banded_daggerwing",
@@ -4101,7 +4473,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Orange wings are striped with black. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_many_banded_daggerwing"
+  "icon": "textures/items/jars/jar_many_banded_daggerwing",
+  "realm": "overworld"
  },
  {
   "id": "martial_scrub_hairstreak",
@@ -4112,7 +4485,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Beach. Sky-blue wings are edged with orange crescents. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_martial_scrub_hairstreak"
+  "icon": "textures/items/jars/jar_martial_scrub_hairstreak",
+  "realm": "overworld"
  },
  {
   "id": "marsh_ringlet",
@@ -4123,7 +4497,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Its wings fade from orange to cream. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_marsh_ringlet"
+  "icon": "textures/items/jars/jar_marsh_ringlet",
+  "realm": "overworld"
  },
  {
   "id": "reedbed_skipper",
@@ -4134,7 +4509,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "A River native. Brown marbling covers its orange underside. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_reedbed_skipper"
+  "icon": "textures/items/jars/jar_reedbed_skipper",
+  "realm": "overworld"
  },
  {
   "id": "bog_copper",
@@ -4145,7 +4521,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Swamp native. Violet wings are edged with orange crescents. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_bog_copper"
+  "icon": "textures/items/jars/jar_bog_copper",
+  "realm": "overworld"
  },
  {
   "id": "bay_checkerspot",
@@ -4156,7 +4533,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Black wings are tiled with a orange chequerboard. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_bay_checkerspot"
+  "icon": "textures/items/jars/jar_bay_checkerspot",
+  "realm": "overworld"
  },
  {
   "id": "tidewater_admiral",
@@ -4167,7 +4545,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A bright red band slashes across its black wings. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_tidewater_admiral"
+  "icon": "textures/items/jars/jar_tidewater_admiral",
+  "realm": "overworld"
  },
  {
   "id": "coastal_lady",
@@ -4178,7 +4557,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Orange wings wear a wide black border. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_coastal_lady"
+  "icon": "textures/items/jars/jar_coastal_lady",
+  "realm": "overworld"
  },
  {
   "id": "pale_garden_ghost",
@@ -4189,7 +4569,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Its wings are clear as glass, edged with charcoal. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_pale_garden_ghost"
+  "icon": "textures/items/jars/jar_pale_garden_ghost",
+  "realm": "overworld"
  },
  {
   "id": "creaking_wing",
@@ -4200,7 +4581,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Pale Garden native. Grey wings carry bold orange eyespots that startle anything trying to eat it. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_creaking_wing"
+  "icon": "textures/items/jars/jar_creaking_wing",
+  "realm": "overworld"
  },
  {
   "id": "eyeblossom",
@@ -4211,7 +4593,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Pale Garden. Charcoal wings carry big orange patches. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_eyeblossom"
+  "icon": "textures/items/jars/jar_eyeblossom",
+  "realm": "overworld"
  },
  {
   "id": "pale_moss_flutter",
@@ -4222,7 +4605,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Grey wings are dusted with grey speckles. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_pale_moss_flutter"
+  "icon": "textures/items/jars/jar_pale_moss_flutter",
+  "realm": "overworld"
  },
  {
   "id": "dripstone_duskwing",
@@ -4233,7 +4617,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "A Lush Caves native. Brown wings are dusted with brown speckles. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_dripstone_duskwing"
+  "icon": "textures/items/jars/jar_dripstone_duskwing",
+  "realm": "overworld"
  },
  {
   "id": "spore_blossom",
@@ -4244,7 +4629,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Lush Caves. Lime wings carry big pink patches. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_spore_blossom"
+  "icon": "textures/items/jars/jar_spore_blossom",
+  "realm": "overworld"
  },
  {
   "id": "moss_carpet",
@@ -4255,7 +4641,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Lush Caves. Lime wings are dusted with lime speckles. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_moss_carpet"
+  "icon": "textures/items/jars/jar_moss_carpet",
+  "realm": "overworld"
  },
  {
   "id": "geode_glimmer",
@@ -4266,7 +4653,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Lush Caves native. Violet wings shimmer with violet like a gemstone. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_geode_glimmer"
+  "icon": "textures/items/jars/jar_geode_glimmer",
+  "realm": "overworld"
  },
  {
   "id": "wardens_shadow",
@@ -4277,7 +4665,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Deep Dark native. Teal rays run through its black wings. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_wardens_shadow"
+  "icon": "textures/items/jars/jar_wardens_shadow",
+  "realm": "overworld"
  },
  {
   "id": "sculk_shrieker_wing",
@@ -4288,7 +4677,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Deep Dark. Black wings are edged with teal crescents. It is most active in the hottest hours of the day.",
-  "icon": "textures/items/jars/jar_sculk_shrieker_wing"
+  "icon": "textures/items/jars/jar_sculk_shrieker_wing",
+  "realm": "overworld"
  },
  {
   "id": "copper_patina",
@@ -4299,7 +4689,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Mountains. Its wings fade from orange to green. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_copper_patina"
+  "icon": "textures/items/jars/jar_copper_patina",
+  "realm": "overworld"
  },
  {
   "id": "redstone_flicker",
@@ -4310,7 +4701,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "Milkweed, Butterfly Bush and leaves, but seeds work best",
   "info": "Red wings flicker into red like a flame. It is most active in the hottest hours of the day.",
-  "icon": "textures/items/jars/jar_redstone_flicker"
+  "icon": "textures/items/jars/jar_redstone_flicker",
+  "realm": "overworld"
  },
  {
   "id": "lapis_courier",
@@ -4321,7 +4713,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Blue wings are dusted with golden speckles. It is most active in the hottest hours of the day.",
-  "icon": "textures/items/jars/jar_lapis_courier"
+  "icon": "textures/items/jars/jar_lapis_courier",
+  "realm": "overworld"
  },
  {
   "id": "emerald_trader",
@@ -4332,7 +4725,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "Look for it in the Mountains. Lime wings shimmer with lime like a gemstone. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_emerald_trader"
+  "icon": "textures/items/jars/jar_emerald_trader",
+  "realm": "overworld"
  },
  {
   "id": "honeycomb_wing",
@@ -4343,7 +4737,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Flower Forest. Orange wings are tiled with a brown chequerboard. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_honeycomb_wing"
+  "icon": "textures/items/jars/jar_honeycomb_wing",
+  "realm": "overworld"
  },
  {
   "id": "torchflower_flame",
@@ -4354,7 +4749,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "Milkweed, Butterfly Bush and leaves, but seeds work best",
   "info": "Found in the Plains. Orange wings flicker into orange like a flame. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_torchflower_flame"
+  "icon": "textures/items/jars/jar_torchflower_flame",
+  "realm": "overworld"
  },
  {
   "id": "pitcher_plant_swallowtail",
@@ -4365,7 +4761,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "Its wings fade from sky-blue to sky-blue. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_pitcher_plant_swallowtail"
+  "icon": "textures/items/jars/jar_pitcher_plant_swallowtail",
+  "realm": "overworld"
  },
  {
   "id": "sniffers_friend",
@@ -4376,7 +4773,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Flower Forest. Lime marbling covers its cream underside. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_sniffers_friend"
+  "icon": "textures/items/jars/jar_sniffers_friend",
+  "realm": "overworld"
  },
  {
   "id": "mossy_cobble_skipper",
@@ -4387,7 +4785,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Grey wings are dusted with lime speckles. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_mossy_cobble_skipper"
+  "icon": "textures/items/jars/jar_mossy_cobble_skipper",
+  "realm": "overworld"
  },
  {
   "id": "bamboo_panda_wing",
@@ -4398,7 +4797,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Its forewings are white while its hindwings are black. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_bamboo_panda_wing"
+  "icon": "textures/items/jars/jar_bamboo_panda_wing",
+  "realm": "overworld"
  },
  {
   "id": "blaze_monarch",
@@ -4409,7 +4809,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "Nether Wart, crimson and warped fungus and roots, but seeds work best",
   "info": "A Nether Wastes native. Orange wings laced with black veins warn birds that it tastes awful. Its eggs are laid where the ground stays warm, and the caterpillars nibble Nether fungus.",
-  "icon": "textures/items/jars/jar_blaze_monarch"
+  "icon": "textures/items/jars/jar_blaze_monarch",
+  "realm": "nether"
  },
  {
   "id": "magma_swallowtail",
@@ -4420,7 +4821,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "Nether Wart, crimson and warped fungus and roots, but seeds work best",
   "info": "Black wings flicker into orange like a flame. It never needs to land on water, since there is none to be found where it lives.",
-  "icon": "textures/items/jars/jar_magma_swallowtail"
+  "icon": "textures/items/jars/jar_magma_swallowtail",
+  "realm": "nether"
  },
  {
   "id": "soulfire_wisp",
@@ -4431,7 +4833,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "Nether Wart, crimson and warped fungus and roots, but seeds work best",
   "info": "Found in the Soul Sand Valley. Teal rays run through its black wings. Its eggs are laid where the ground stays warm, and the caterpillars nibble Nether fungus.",
-  "icon": "textures/items/jars/jar_soulfire_wisp"
+  "icon": "textures/items/jars/jar_soulfire_wisp",
+  "realm": "nether"
  },
  {
   "id": "ghast_tear",
@@ -4442,7 +4845,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "Nether Wart, crimson and warped fungus and roots, but seeds work best",
   "info": "Its wings are clear as glass, edged with grey. Its eggs are laid where the ground stays warm, and the caterpillars nibble Nether fungus.",
-  "icon": "textures/items/jars/jar_ghast_tear"
+  "icon": "textures/items/jars/jar_ghast_tear",
+  "realm": "nether"
  },
  {
   "id": "wither_rose_wing",
@@ -4453,7 +4857,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "Nether Wart, crimson and warped fungus and roots, but seeds work best",
   "info": "Found in the Soul Sand Valley. Black wings carry big red patches. It shrugs off fire and drinks the heat rising from lava.",
-  "icon": "textures/items/jars/jar_wither_rose_wing"
+  "icon": "textures/items/jars/jar_wither_rose_wing",
+  "realm": "nether"
  },
  {
   "id": "shroomlight_glow",
@@ -4464,7 +4869,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "Nether Wart, crimson and warped fungus and roots, but seeds work best",
   "info": "A Crimson Forest native. Red wings are dotted with orange spots. It shrugs off fire and drinks the heat rising from lava.",
-  "icon": "textures/items/jars/jar_shroomlight_glow"
+  "icon": "textures/items/jars/jar_shroomlight_glow",
+  "realm": "nether"
  },
  {
   "id": "weeping_vine_flutter",
@@ -4475,7 +4881,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "Nether Wart, crimson and warped fungus and roots, but seeds work best",
   "info": "Look for it in the Crimson Forest. Long red wings carry a red band. Its scales are said to be fireproof, which is why it can fly through flame unharmed.",
-  "icon": "textures/items/jars/jar_weeping_vine_flutter"
+  "icon": "textures/items/jars/jar_weeping_vine_flutter",
+  "realm": "nether"
  },
  {
   "id": "twisting_vine_flutter",
@@ -4486,7 +4893,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "Nether Wart, crimson and warped fungus and roots, but seeds work best",
   "info": "Look for it in the Warped Forest. Long teal wings carry a green band. Its scales are said to be fireproof, which is why it can fly through flame unharmed.",
-  "icon": "textures/items/jars/jar_twisting_vine_flutter"
+  "icon": "textures/items/jars/jar_twisting_vine_flutter",
+  "realm": "nether"
  },
  {
   "id": "netherrack_skipper",
@@ -4497,7 +4905,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "Nether Wart, crimson and warped fungus and roots, but seeds work best",
   "info": "Red wings are dusted with red speckles. Piglins have been seen chasing it, though nobody has seen one caught.",
-  "icon": "textures/items/jars/jar_netherrack_skipper"
+  "icon": "textures/items/jars/jar_netherrack_skipper",
+  "realm": "nether"
  },
  {
   "id": "quartz_admiral",
@@ -4508,7 +4917,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "Nether Wart, crimson and warped fungus and roots, but seeds work best",
   "info": "Look for it in the Nether Wastes. A bright white band slashes across its red wings. Its scales are said to be fireproof, which is why it can fly through flame unharmed.",
-  "icon": "textures/items/jars/jar_quartz_admiral"
+  "icon": "textures/items/jars/jar_quartz_admiral",
+  "realm": "nether"
  },
  {
   "id": "gilded_piglin_wing",
@@ -4519,7 +4929,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "Nether Wart, crimson and warped fungus and roots, but seeds work best",
   "info": "Golden wings wear a wide brown border. It never needs to land on water, since there is none to be found where it lives.",
-  "icon": "textures/items/jars/jar_gilded_piglin_wing"
+  "icon": "textures/items/jars/jar_gilded_piglin_wing",
+  "realm": "nether"
  },
  {
   "id": "hoglin_hide",
@@ -4530,7 +4941,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "Nether Wart, crimson and warped fungus and roots, but seeds work best",
   "info": "A Crimson Forest native. Red marbling covers its red underside. It never needs to land on water, since there is none to be found where it lives.",
-  "icon": "textures/items/jars/jar_hoglin_hide"
+  "icon": "textures/items/jars/jar_hoglin_hide",
+  "realm": "nether"
  },
  {
   "id": "strider_swallowtail",
@@ -4541,7 +4953,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "Nether Wart, crimson and warped fungus and roots, but seeds work best",
   "info": "Red wings are striped with red. Its scales are said to be fireproof, which is why it can fly through flame unharmed.",
-  "icon": "textures/items/jars/jar_strider_swallowtail"
+  "icon": "textures/items/jars/jar_strider_swallowtail",
+  "realm": "nether"
  },
  {
   "id": "basalt_duskwing",
@@ -4552,7 +4965,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "Nether Wart, crimson and warped fungus and roots, but seeds work best",
   "info": "Look for it in the Basalt Deltas. Charcoal wings are tiled with a black chequerboard. Piglins have been seen chasing it, though nobody has seen one caught.",
-  "icon": "textures/items/jars/jar_basalt_duskwing"
+  "icon": "textures/items/jars/jar_basalt_duskwing",
+  "realm": "nether"
  },
  {
   "id": "blackstone_gilded",
@@ -4563,7 +4977,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "Nether Wart, crimson and warped fungus and roots, but seeds work best",
   "info": "Found in the Basalt Deltas. Black wings shimmer with golden like a gemstone. Piglins have been seen chasing it, though nobody has seen one caught.",
-  "icon": "textures/items/jars/jar_blackstone_gilded"
+  "icon": "textures/items/jars/jar_blackstone_gilded",
+  "realm": "nether"
  },
  {
   "id": "ancient_debris_wing",
@@ -4574,7 +4989,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "Nether Wart, crimson and warped fungus and roots, but seeds work best",
   "info": "A Basalt Deltas native. A row of little orange eyespots lines its red hindwings. It shrugs off fire and drinks the heat rising from lava.",
-  "icon": "textures/items/jars/jar_ancient_debris_wing"
+  "icon": "textures/items/jars/jar_ancient_debris_wing",
+  "realm": "nether"
  },
  {
   "id": "netherite_emperor",
@@ -4585,7 +5001,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "Nether Wart, crimson and warped fungus and roots, but seeds work best",
   "info": "Look for it in the Basalt Deltas. Charcoal wings flash violet when the light catches them. Its scales are said to be fireproof, which is why it can fly through flame unharmed.",
-  "icon": "textures/items/jars/jar_netherite_emperor"
+  "icon": "textures/items/jars/jar_netherite_emperor",
+  "realm": "nether"
  },
  {
   "id": "crimson_nylium",
@@ -4596,7 +5013,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "Nether Wart, crimson and warped fungus and roots, but seeds work best",
   "info": "A Crimson Forest native. Red wings are dusted with orange speckles. Its eggs are laid where the ground stays warm, and the caterpillars nibble Nether fungus.",
-  "icon": "textures/items/jars/jar_crimson_nylium"
+  "icon": "textures/items/jars/jar_crimson_nylium",
+  "realm": "nether"
  },
  {
   "id": "warped_nylium",
@@ -4607,7 +5025,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "Nether Wart, crimson and warped fungus and roots, but seeds work best",
   "info": "A Warped Forest native. Teal wings are dusted with green speckles. Its scales are said to be fireproof, which is why it can fly through flame unharmed.",
-  "icon": "textures/items/jars/jar_warped_nylium"
+  "icon": "textures/items/jars/jar_warped_nylium",
+  "realm": "nether"
  },
  {
   "id": "warped_fungus_wing",
@@ -4618,7 +5037,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "Nether Wart, crimson and warped fungus and roots, but seeds work best",
   "info": "Look for it in the Warped Forest. Teal wings carry big orange patches. Piglins have been seen chasing it, though nobody has seen one caught.",
-  "icon": "textures/items/jars/jar_warped_fungus_wing"
+  "icon": "textures/items/jars/jar_warped_fungus_wing",
+  "realm": "nether"
  },
  {
   "id": "crimson_fungus_wing",
@@ -4629,7 +5049,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "Nether Wart, crimson and warped fungus and roots, but seeds work best",
   "info": "Look for it in the Crimson Forest. Red wings carry big golden patches. It shrugs off fire and drinks the heat rising from lava.",
-  "icon": "textures/items/jars/jar_crimson_fungus_wing"
+  "icon": "textures/items/jars/jar_crimson_fungus_wing",
+  "realm": "nether"
  },
  {
   "id": "nether_wart_flutter",
@@ -4640,7 +5061,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "Nether Wart, crimson and warped fungus and roots, but seeds work best",
   "info": "A Crimson Forest native. Red wings are dotted with red spots. Its scales are said to be fireproof, which is why it can fly through flame unharmed.",
-  "icon": "textures/items/jars/jar_nether_wart_flutter"
+  "icon": "textures/items/jars/jar_nether_wart_flutter",
+  "realm": "nether"
  },
  {
   "id": "soul_lantern",
@@ -4651,7 +5073,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "Nether Wart, crimson and warped fungus and roots, but seeds work best",
   "info": "Black wings carry bold teal eyespots that startle anything trying to eat it. It never needs to land on water, since there is none to be found where it lives.",
-  "icon": "textures/items/jars/jar_soul_lantern"
+  "icon": "textures/items/jars/jar_soul_lantern",
+  "realm": "nether"
  },
  {
   "id": "soul_sand_skipper",
@@ -4662,7 +5085,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "Nether Wart, crimson and warped fungus and roots, but seeds work best",
   "info": "Look for it in the Soul Sand Valley. Brown marbling covers its brown underside. Its eggs are laid where the ground stays warm, and the caterpillars nibble Nether fungus.",
-  "icon": "textures/items/jars/jar_soul_sand_skipper"
+  "icon": "textures/items/jars/jar_soul_sand_skipper",
+  "realm": "nether"
  },
  {
   "id": "lava_lacewing",
@@ -4673,7 +5097,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "Nether Wart, crimson and warped fungus and roots, but seeds work best",
   "info": "Found in the Nether Wastes. Orange and black stripes make it look like a tiny zebra. It shrugs off fire and drinks the heat rising from lava.",
-  "icon": "textures/items/jars/jar_lava_lacewing"
+  "icon": "textures/items/jars/jar_lava_lacewing",
+  "realm": "nether"
  },
  {
   "id": "ember_tail",
@@ -4684,7 +5109,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "Nether Wart, crimson and warped fungus and roots, but seeds work best",
   "info": "Found in the Nether Wastes. Red wings flicker into red like a flame. It never needs to land on water, since there is none to be found where it lives.",
-  "icon": "textures/items/jars/jar_ember_tail"
+  "icon": "textures/items/jars/jar_ember_tail",
+  "realm": "nether"
  },
  {
   "id": "fire_charge",
@@ -4695,7 +5121,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "Nether Wart, crimson and warped fungus and roots, but seeds work best",
   "info": "Found in the Nether Wastes. Black wings glow orange close to the body. Its eggs are laid where the ground stays warm, and the caterpillars nibble Nether fungus.",
-  "icon": "textures/items/jars/jar_fire_charge"
+  "icon": "textures/items/jars/jar_fire_charge",
+  "realm": "nether"
  },
  {
   "id": "bastion_banner",
@@ -4706,7 +5133,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "Nether Wart, crimson and warped fungus and roots, but seeds work best",
   "info": "Look for it in the Basalt Deltas. Black wings are tiled with a golden chequerboard. Its scales are said to be fireproof, which is why it can fly through flame unharmed.",
-  "icon": "textures/items/jars/jar_bastion_banner"
+  "icon": "textures/items/jars/jar_bastion_banner",
+  "realm": "nether"
  },
  {
   "id": "glowstone_sulphur",
@@ -4717,7 +5145,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "Nether Wart, crimson and warped fungus and roots, but seeds work best",
   "info": "Found in the Nether Wastes. Golden wings wear a wide brown border. Its eggs are laid where the ground stays warm, and the caterpillars nibble Nether fungus.",
-  "icon": "textures/items/jars/jar_glowstone_sulphur"
+  "icon": "textures/items/jars/jar_glowstone_sulphur",
+  "realm": "nether"
  },
  {
   "id": "magma_cream",
@@ -4728,7 +5157,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "Nether Wart, crimson and warped fungus and roots, but seeds work best",
   "info": "Look for it in the Basalt Deltas. Its wings fade from orange to orange. Its eggs are laid where the ground stays warm, and the caterpillars nibble Nether fungus.",
-  "icon": "textures/items/jars/jar_magma_cream"
+  "icon": "textures/items/jars/jar_magma_cream",
+  "realm": "nether"
  },
  {
   "id": "wither_skeleton_skipper",
@@ -4739,7 +5169,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "Nether Wart, crimson and warped fungus and roots, but seeds work best",
   "info": "Found in the Soul Sand Valley. Black wings are dotted with charcoal spots. It shrugs off fire and drinks the heat rising from lava.",
-  "icon": "textures/items/jars/jar_wither_skeleton_skipper"
+  "icon": "textures/items/jars/jar_wither_skeleton_skipper",
+  "realm": "nether"
  },
  {
   "id": "piglin_brute",
@@ -4750,7 +5181,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "Nether Wart, crimson and warped fungus and roots, but seeds work best",
   "info": "Found in the Basalt Deltas. A bright golden band slashes across its brown wings. Its scales are said to be fireproof, which is why it can fly through flame unharmed.",
-  "icon": "textures/items/jars/jar_piglin_brute"
+  "icon": "textures/items/jars/jar_piglin_brute",
+  "realm": "nether"
  },
  {
   "id": "infernal_morpho",
@@ -4761,7 +5193,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "Nether Wart, crimson and warped fungus and roots, but seeds work best",
   "info": "Found in the Nether Wastes. Red wings flash red when the light catches them. It shrugs off fire and drinks the heat rising from lava.",
-  "icon": "textures/items/jars/jar_infernal_morpho"
+  "icon": "textures/items/jars/jar_infernal_morpho",
+  "realm": "nether"
  },
  {
   "id": "smoldering_leafwing",
@@ -4772,7 +5205,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "Nether Wart, crimson and warped fungus and roots, but seeds work best",
   "info": "Found in the Crimson Forest. Its wings fade from red to orange. Its scales are said to be fireproof, which is why it can fly through flame unharmed.",
-  "icon": "textures/items/jars/jar_smoldering_leafwing"
+  "icon": "textures/items/jars/jar_smoldering_leafwing",
+  "realm": "nether"
  },
  {
   "id": "cinder_hairstreak",
@@ -4783,7 +5217,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "Nether Wart, crimson and warped fungus and roots, but seeds work best",
   "info": "Charcoal wings are edged with orange crescents. It shrugs off fire and drinks the heat rising from lava.",
-  "icon": "textures/items/jars/jar_cinder_hairstreak"
+  "icon": "textures/items/jars/jar_cinder_hairstreak",
+  "realm": "nether"
  },
  {
   "id": "ash_ringlet",
@@ -4794,7 +5229,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "Nether Wart, crimson and warped fungus and roots, but seeds work best",
   "info": "A row of little orange eyespots lines its charcoal hindwings. Its scales are said to be fireproof, which is why it can fly through flame unharmed.",
-  "icon": "textures/items/jars/jar_ash_ringlet"
+  "icon": "textures/items/jars/jar_ash_ringlet",
+  "realm": "nether"
  },
  {
   "id": "soulflame_birdwing",
@@ -4805,7 +5241,8 @@ export const SPECIES = [
   "wingspan": "1.4 blocks",
   "food": "Nether Wart, crimson and warped fungus and roots, but seeds work best",
   "info": "Found in the Soul Sand Valley. Its forewings are black while its hindwings are teal. Piglins have been seen chasing it, though nobody has seen one caught.",
-  "icon": "textures/items/jars/jar_soulflame_birdwing"
+  "icon": "textures/items/jars/jar_soulflame_birdwing",
+  "realm": "nether"
  },
  {
   "id": "hellfire_birdwing",
@@ -4816,7 +5253,8 @@ export const SPECIES = [
   "wingspan": "1.4 blocks",
   "food": "Nether Wart, crimson and warped fungus and roots, but seeds work best",
   "info": "Its forewings are black while its hindwings are orange. It never needs to land on water, since there is none to be found where it lives.",
-  "icon": "textures/items/jars/jar_hellfire_birdwing"
+  "icon": "textures/items/jars/jar_hellfire_birdwing",
+  "realm": "nether"
  },
  {
   "id": "crying_obsidian_wing",
@@ -4827,7 +5265,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "Nether Wart, crimson and warped fungus and roots, but seeds work best",
   "info": "A Crimson Forest native. Its dusky violet wings are freckled with violet. It shrugs off fire and drinks the heat rising from lava.",
-  "icon": "textures/items/jars/jar_crying_obsidian_wing"
+  "icon": "textures/items/jars/jar_crying_obsidian_wing",
+  "realm": "nether"
  },
  {
   "id": "warped_wart_flutter",
@@ -4838,7 +5277,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "Nether Wart, crimson and warped fungus and roots, but seeds work best",
   "info": "Found in the Warped Forest. Teal wings glow green close to the body. Its eggs are laid where the ground stays warm, and the caterpillars nibble Nether fungus.",
-  "icon": "textures/items/jars/jar_warped_wart_flutter"
+  "icon": "textures/items/jars/jar_warped_wart_flutter",
+  "realm": "nether"
  },
  {
   "id": "zoglin_scourge",
@@ -4849,7 +5289,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "Nether Wart, crimson and warped fungus and roots, but seeds work best",
   "info": "A Crimson Forest native. Black rays run through its red wings. Piglins have been seen chasing it, though nobody has seen one caught.",
-  "icon": "textures/items/jars/jar_zoglin_scourge"
+  "icon": "textures/items/jars/jar_zoglin_scourge",
+  "realm": "nether"
  },
  {
   "id": "nether_brick_wing",
@@ -4860,7 +5301,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "Nether Wart, crimson and warped fungus and roots, but seeds work best",
   "info": "A Nether Wastes native. Red wings are tiled with a black chequerboard. It never needs to land on water, since there is none to be found where it lives.",
-  "icon": "textures/items/jars/jar_nether_brick_wing"
+  "icon": "textures/items/jars/jar_nether_brick_wing",
+  "realm": "nether"
  },
  {
   "id": "nether_gold_flake",
@@ -4871,7 +5313,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "Nether Wart, crimson and warped fungus and roots, but seeds work best",
   "info": "Found in the Nether Wastes. Red wings are dusted with golden speckles. Piglins have been seen chasing it, though nobody has seen one caught.",
-  "icon": "textures/items/jars/jar_nether_gold_flake"
+  "icon": "textures/items/jars/jar_nether_gold_flake",
+  "realm": "nether"
  },
  {
   "id": "crimson_kite",
@@ -4882,7 +5325,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "Nether Wart, crimson and warped fungus and roots, but seeds work best",
   "info": "A bright red band slashes across its red wings. Its eggs are laid where the ground stays warm, and the caterpillars nibble Nether fungus.",
-  "icon": "textures/items/jars/jar_crimson_kite"
+  "icon": "textures/items/jars/jar_crimson_kite",
+  "realm": "nether"
  },
  {
   "id": "warped_kite",
@@ -4893,7 +5337,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "Nether Wart, crimson and warped fungus and roots, but seeds work best",
   "info": "Found in the Warped Forest. A bright green band slashes across its sky-blue wings. Piglins have been seen chasing it, though nobody has seen one caught.",
-  "icon": "textures/items/jars/jar_warped_kite"
+  "icon": "textures/items/jars/jar_warped_kite",
+  "realm": "nether"
  },
  {
   "id": "respawn_anchor",
@@ -4904,7 +5349,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "Nether Wart, crimson and warped fungus and roots, but seeds work best",
   "info": "A Nether Wastes native. Black wings carry bold purple eyespots that startle anything trying to eat it. Piglins have been seen chasing it, though nobody has seen one caught.",
-  "icon": "textures/items/jars/jar_respawn_anchor"
+  "icon": "textures/items/jars/jar_respawn_anchor",
+  "realm": "nether"
  },
  {
   "id": "fiery_fritillary",
@@ -4915,7 +5361,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "Nether Wart, crimson and warped fungus and roots, but seeds work best",
   "info": "Found in the Nether Wastes. Orange wings are tiled with a red chequerboard. Its eggs are laid where the ground stays warm, and the caterpillars nibble Nether fungus.",
-  "icon": "textures/items/jars/jar_fiery_fritillary"
+  "icon": "textures/items/jars/jar_fiery_fritillary",
+  "realm": "nether"
  },
  {
   "id": "soul_torch_swallowtail",
@@ -4926,7 +5373,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "Nether Wart, crimson and warped fungus and roots, but seeds work best",
   "info": "A Soul Sand Valley native. Black wings wear a wide black border. Its scales are said to be fireproof, which is why it can fly through flame unharmed.",
-  "icon": "textures/items/jars/jar_soul_torch_swallowtail"
+  "icon": "textures/items/jars/jar_soul_torch_swallowtail",
+  "realm": "nether"
  },
  {
   "id": "ghastling_glider",
@@ -4937,7 +5385,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "Nether Wart, crimson and warped fungus and roots, but seeds work best",
   "info": "Found in the Soul Sand Valley. Its wings fade from white to white. Piglins have been seen chasing it, though nobody has seen one caught.",
-  "icon": "textures/items/jars/jar_ghastling_glider"
+  "icon": "textures/items/jars/jar_ghastling_glider",
+  "realm": "nether"
  },
  {
   "id": "magmaback_skipper",
@@ -4948,7 +5397,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "Nether Wart, crimson and warped fungus and roots, but seeds work best",
   "info": "Look for it in the Basalt Deltas. Black wings flicker into orange like a flame. Piglins have been seen chasing it, though nobody has seen one caught.",
-  "icon": "textures/items/jars/jar_magmaback_skipper"
+  "icon": "textures/items/jars/jar_magmaback_skipper",
+  "realm": "nether"
  },
  {
   "id": "chorus_flutter",
@@ -4959,7 +5409,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "Chorus Fruit and Chorus Flowers, but seeds work best",
   "info": "Violet wings are dusted with violet speckles. Shulkers ignore it completely, and it often rests on the walls of End cities.",
-  "icon": "textures/items/jars/jar_chorus_flutter"
+  "icon": "textures/items/jars/jar_chorus_flutter",
+  "realm": "end"
  },
  {
   "id": "chorus_bloom_swallowtail",
@@ -4970,7 +5421,8 @@ export const SPECIES = [
   "wingspan": "1.0 blocks",
   "food": "Chorus Fruit and Chorus Flowers, but seeds work best",
   "info": "Look for it in the The End. Its wings fade from violet to violet. It drifts over the void without fear, carried by currents nobody else can feel.",
-  "icon": "textures/items/jars/jar_chorus_bloom_swallowtail"
+  "icon": "textures/items/jars/jar_chorus_bloom_swallowtail",
+  "realm": "end"
  },
  {
   "id": "end_stone_skipper",
@@ -4981,7 +5433,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "Chorus Fruit and Chorus Flowers, but seeds work best",
   "info": "Found in the The End. Cream wings are dusted with golden speckles. It drifts over the void without fear, carried by currents nobody else can feel.",
-  "icon": "textures/items/jars/jar_end_stone_skipper"
+  "icon": "textures/items/jars/jar_end_stone_skipper",
+  "realm": "end"
  },
  {
   "id": "purpur_admiral",
@@ -4992,7 +5445,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "Chorus Fruit and Chorus Flowers, but seeds work best",
   "info": "A bright violet band slashes across its black wings. Its caterpillars feed on chorus plants and sometimes pop up somewhere unexpected.",
-  "icon": "textures/items/jars/jar_purpur_admiral"
+  "icon": "textures/items/jars/jar_purpur_admiral",
+  "realm": "end"
  },
  {
   "id": "shulker_shell",
@@ -5003,7 +5457,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "Chorus Fruit and Chorus Flowers, but seeds work best",
   "info": "Found in the The End. Violet wings glow violet close to the body. It seems to blink short distances when startled, much like an Enderman.",
-  "icon": "textures/items/jars/jar_shulker_shell"
+  "icon": "textures/items/jars/jar_shulker_shell",
+  "realm": "end"
  },
  {
   "id": "shulker_glimmer",
@@ -5014,7 +5469,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "Chorus Fruit and Chorus Flowers, but seeds work best",
   "info": "Violet wings flash violet when the light catches them. It drifts over the void without fear, carried by currents nobody else can feel.",
-  "icon": "textures/items/jars/jar_shulker_glimmer"
+  "icon": "textures/items/jars/jar_shulker_glimmer",
+  "realm": "end"
  },
  {
   "id": "void_drifter",
@@ -5025,7 +5481,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "Chorus Fruit and Chorus Flowers, but seeds work best",
   "info": "A The End native. Its wings are clear as glass, edged with blue. It seems to blink short distances when startled, much like an Enderman.",
-  "icon": "textures/items/jars/jar_void_drifter"
+  "icon": "textures/items/jars/jar_void_drifter",
+  "realm": "end"
  },
  {
   "id": "dragons_breath",
@@ -5036,7 +5493,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "Chorus Fruit and Chorus Flowers, but seeds work best",
   "info": "Found in the The End. Black wings flicker into purple like a flame. Its caterpillars feed on chorus plants and sometimes pop up somewhere unexpected.",
-  "icon": "textures/items/jars/jar_dragons_breath"
+  "icon": "textures/items/jars/jar_dragons_breath",
+  "realm": "end"
  },
  {
   "id": "ender_dragon_wing",
@@ -5047,7 +5505,8 @@ export const SPECIES = [
   "wingspan": "1.3 blocks",
   "food": "Chorus Fruit and Chorus Flowers, but seeds work best",
   "info": "Look for it in the The End. Black wings shimmer with violet like a gemstone. Shulkers ignore it completely, and it often rests on the walls of End cities.",
-  "icon": "textures/items/jars/jar_ender_dragon_wing"
+  "icon": "textures/items/jars/jar_ender_dragon_wing",
+  "realm": "end"
  },
  {
   "id": "elytra_glider",
@@ -5058,7 +5517,8 @@ export const SPECIES = [
   "wingspan": "1.0 blocks",
   "food": "Chorus Fruit and Chorus Flowers, but seeds work best",
   "info": "Found in the The End. Its wings fade from blue to blue. It seems to blink short distances when startled, much like an Enderman.",
-  "icon": "textures/items/jars/jar_elytra_glider"
+  "icon": "textures/items/jars/jar_elytra_glider",
+  "realm": "end"
  },
  {
   "id": "endermite_skipper",
@@ -5069,7 +5529,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "Chorus Fruit and Chorus Flowers, but seeds work best",
   "info": "Look for it in the The End. Violet wings are dotted with violet spots. It drifts over the void without fear, carried by currents nobody else can feel.",
-  "icon": "textures/items/jars/jar_endermite_skipper"
+  "icon": "textures/items/jars/jar_endermite_skipper",
+  "realm": "end"
  },
  {
   "id": "ender_pearl",
@@ -5080,7 +5541,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "Chorus Fruit and Chorus Flowers, but seeds work best",
   "info": "Teal wings carry bold green eyespots that startle anything trying to eat it. Shulkers ignore it completely, and it often rests on the walls of End cities.",
-  "icon": "textures/items/jars/jar_ender_pearl"
+  "icon": "textures/items/jars/jar_ender_pearl",
+  "realm": "end"
  },
  {
   "id": "eye_of_ender",
@@ -5091,7 +5553,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "Chorus Fruit and Chorus Flowers, but seeds work best",
   "info": "Look for it in the The End. Violet wings carry bold green eyespots that startle anything trying to eat it. It glows faintly in the dark, so it is easy to spot against the black sky.",
-  "icon": "textures/items/jars/jar_eye_of_ender"
+  "icon": "textures/items/jars/jar_eye_of_ender",
+  "realm": "end"
  },
  {
   "id": "end_gateway",
@@ -5102,7 +5565,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "Chorus Fruit and Chorus Flowers, but seeds work best",
   "info": "Found in the The End. Black wings are dusted with white speckles. Its caterpillars feed on chorus plants and sometimes pop up somewhere unexpected.",
-  "icon": "textures/items/jars/jar_end_gateway"
+  "icon": "textures/items/jars/jar_end_gateway",
+  "realm": "end"
  },
  {
   "id": "end_rod_glow",
@@ -5113,7 +5577,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "Chorus Fruit and Chorus Flowers, but seeds work best",
   "info": "Found in the The End. White wings wear a wide blue border. Shulkers ignore it completely, and it often rests on the walls of End cities.",
-  "icon": "textures/items/jars/jar_end_rod_glow"
+  "icon": "textures/items/jars/jar_end_rod_glow",
+  "realm": "end"
  },
  {
   "id": "purpur_pillar",
@@ -5124,7 +5589,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "Chorus Fruit and Chorus Flowers, but seeds work best",
   "info": "A The End native. Violet wings are striped with violet. Shulkers ignore it completely, and it often rests on the walls of End cities.",
-  "icon": "textures/items/jars/jar_purpur_pillar"
+  "icon": "textures/items/jars/jar_purpur_pillar",
+  "realm": "end"
  },
  {
   "id": "chorus_fruit",
@@ -5135,7 +5601,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "Chorus Fruit and Chorus Flowers, but seeds work best",
   "info": "Found in the The End. Violet wings carry big purple patches. Its caterpillars feed on chorus plants and sometimes pop up somewhere unexpected.",
-  "icon": "textures/items/jars/jar_chorus_fruit"
+  "icon": "textures/items/jars/jar_chorus_fruit",
+  "realm": "end"
  },
  {
   "id": "popped_chorus",
@@ -5146,7 +5613,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "Chorus Fruit and Chorus Flowers, but seeds work best",
   "info": "A The End native. Violet wings are tiled with a violet chequerboard. Its caterpillars feed on chorus plants and sometimes pop up somewhere unexpected.",
-  "icon": "textures/items/jars/jar_popped_chorus"
+  "icon": "textures/items/jars/jar_popped_chorus",
+  "realm": "end"
  },
  {
   "id": "end_city_banner",
@@ -5157,7 +5625,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "Chorus Fruit and Chorus Flowers, but seeds work best",
   "info": "Cream and violet stripes make it look like a tiny zebra. It drifts over the void without fear, carried by currents nobody else can feel.",
-  "icon": "textures/items/jars/jar_end_city_banner"
+  "icon": "textures/items/jars/jar_end_city_banner",
+  "realm": "end"
  },
  {
   "id": "starfield_morpho",
@@ -5168,7 +5637,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "Chorus Fruit and Chorus Flowers, but seeds work best",
   "info": "A The End native. Black wings are dusted with white speckles. It glows faintly in the dark, so it is easy to spot against the black sky.",
-  "icon": "textures/items/jars/jar_starfield_morpho"
+  "icon": "textures/items/jars/jar_starfield_morpho",
+  "realm": "end"
  },
  {
   "id": "outer_islands_kite",
@@ -5179,7 +5649,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "Chorus Fruit and Chorus Flowers, but seeds work best",
   "info": "A The End native. Its wings fade from violet to violet. Its caterpillars feed on chorus plants and sometimes pop up somewhere unexpected.",
-  "icon": "textures/items/jars/jar_outer_islands_kite"
+  "icon": "textures/items/jars/jar_outer_islands_kite",
+  "realm": "end"
  },
  {
   "id": "amethyst_void",
@@ -5190,7 +5661,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "Chorus Fruit and Chorus Flowers, but seeds work best",
   "info": "Found in the The End. Violet wings shimmer with violet like a gemstone. Its caterpillars feed on chorus plants and sometimes pop up somewhere unexpected.",
-  "icon": "textures/items/jars/jar_amethyst_void"
+  "icon": "textures/items/jars/jar_amethyst_void",
+  "realm": "end"
  },
  {
   "id": "levitation_wing",
@@ -5201,7 +5673,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "Chorus Fruit and Chorus Flowers, but seeds work best",
   "info": "Its wings are clear as glass, edged with violet. Its caterpillars feed on chorus plants and sometimes pop up somewhere unexpected.",
-  "icon": "textures/items/jars/jar_levitation_wing"
+  "icon": "textures/items/jars/jar_levitation_wing",
+  "realm": "end"
  },
  {
   "id": "dragon_egg",
@@ -5212,7 +5685,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "Chorus Fruit and Chorus Flowers, but seeds work best",
   "info": "Found in the The End. Black wings are dusted with violet speckles. It glows faintly in the dark, so it is easy to spot against the black sky.",
-  "icon": "textures/items/jars/jar_dragon_egg"
+  "icon": "textures/items/jars/jar_dragon_egg",
+  "realm": "end"
  },
  {
   "id": "obsidian_pillar",
@@ -5223,7 +5697,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "Chorus Fruit and Chorus Flowers, but seeds work best",
   "info": "Look for it in the The End. Violet rays run through its black wings. It seems to blink short distances when startled, much like an Enderman.",
-  "icon": "textures/items/jars/jar_obsidian_pillar"
+  "icon": "textures/items/jars/jar_obsidian_pillar",
+  "realm": "end"
  },
  {
   "id": "crystal_flame",
@@ -5234,7 +5709,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "Chorus Fruit and Chorus Flowers, but seeds work best",
   "info": "Found in the The End. Purple wings carry bold white eyespots that startle anything trying to eat it. Its caterpillars feed on chorus plants and sometimes pop up somewhere unexpected.",
-  "icon": "textures/items/jars/jar_crystal_flame"
+  "icon": "textures/items/jars/jar_crystal_flame",
+  "realm": "end"
  },
  {
   "id": "end_highlands_ringlet",
@@ -5245,7 +5721,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "Chorus Fruit and Chorus Flowers, but seeds work best",
   "info": "Found in the The End. A row of little violet eyespots lines its golden hindwings. It seems to blink short distances when startled, much like an Enderman.",
-  "icon": "textures/items/jars/jar_end_highlands_ringlet"
+  "icon": "textures/items/jars/jar_end_highlands_ringlet",
+  "realm": "end"
  },
  {
   "id": "midnight_purpur_hairstreak",
@@ -5256,7 +5733,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "Chorus Fruit and Chorus Flowers, but seeds work best",
   "info": "Violet wings are edged with violet crescents. Shulkers ignore it completely, and it often rests on the walls of End cities.",
-  "icon": "textures/items/jars/jar_midnight_purpur_hairstreak"
+  "icon": "textures/items/jars/jar_midnight_purpur_hairstreak",
+  "realm": "end"
  },
  {
   "id": "ender_blink",
@@ -5267,7 +5745,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "Chorus Fruit and Chorus Flowers, but seeds work best",
   "info": "Found in the The End. Black wings are dotted with violet spots. It glows faintly in the dark, so it is easy to spot against the black sky.",
-  "icon": "textures/items/jars/jar_ender_blink"
+  "icon": "textures/items/jars/jar_ender_blink",
+  "realm": "end"
  },
  {
   "id": "shulker_bullet",
@@ -5278,7 +5757,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "Chorus Fruit and Chorus Flowers, but seeds work best",
   "info": "Look for it in the The End. Cream wings wear a wide violet border. Its caterpillars feed on chorus plants and sometimes pop up somewhere unexpected.",
-  "icon": "textures/items/jars/jar_shulker_bullet"
+  "icon": "textures/items/jars/jar_shulker_bullet",
+  "realm": "end"
  },
  {
   "id": "void_swallowtail",
@@ -5289,7 +5769,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "Chorus Fruit and Chorus Flowers, but seeds work best",
   "info": "Found in the The End. Its dusky black wings are freckled with teal. It drifts over the void without fear, carried by currents nobody else can feel.",
-  "icon": "textures/items/jars/jar_void_swallowtail"
+  "icon": "textures/items/jars/jar_void_swallowtail",
+  "realm": "end"
  },
  {
   "id": "chorus_stem_skipper",
@@ -5300,7 +5781,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "Chorus Fruit and Chorus Flowers, but seeds work best",
   "info": "A The End native. Violet wings are striped with violet. Shulkers ignore it completely, and it often rests on the walls of End cities.",
-  "icon": "textures/items/jars/jar_chorus_stem_skipper"
+  "icon": "textures/items/jars/jar_chorus_stem_skipper",
+  "realm": "end"
  },
  {
   "id": "dragonfire_birdwing",
@@ -5311,7 +5793,8 @@ export const SPECIES = [
   "wingspan": "1.4 blocks",
   "food": "Chorus Fruit and Chorus Flowers, but seeds work best",
   "info": "A The End native. Black wings flicker into violet like a flame. It seems to blink short distances when startled, much like an Enderman.",
-  "icon": "textures/items/jars/jar_dragonfire_birdwing"
+  "icon": "textures/items/jars/jar_dragonfire_birdwing",
+  "realm": "end"
  },
  {
   "id": "eclipse_wing",
@@ -5322,7 +5805,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "Chorus Fruit and Chorus Flowers, but seeds work best",
   "info": "A The End native. Its wings fade from black to violet. It seems to blink short distances when startled, much like an Enderman.",
-  "icon": "textures/items/jars/jar_eclipse_wing"
+  "icon": "textures/items/jars/jar_eclipse_wing",
+  "realm": "end"
  },
  {
   "id": "astral_lacewing",
@@ -5333,7 +5817,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "Chorus Fruit and Chorus Flowers, but seeds work best",
   "info": "Black and violet stripes make it look like a tiny zebra. It seems to blink short distances when startled, much like an Enderman.",
-  "icon": "textures/items/jars/jar_astral_lacewing"
+  "icon": "textures/items/jars/jar_astral_lacewing",
+  "realm": "end"
  },
  {
   "id": "comet_tail",
@@ -5344,7 +5829,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "Chorus Fruit and Chorus Flowers, but seeds work best",
   "info": "Its wings are clear as glass, edged with blue. It drifts over the void without fear, carried by currents nobody else can feel.",
-  "icon": "textures/items/jars/jar_comet_tail"
+  "icon": "textures/items/jars/jar_comet_tail",
+  "realm": "end"
  },
  {
   "id": "nebula_admiral",
@@ -5355,7 +5841,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "Chorus Fruit and Chorus Flowers, but seeds work best",
   "info": "A The End native. Long black wings carry a purple band. It drifts over the void without fear, carried by currents nobody else can feel.",
-  "icon": "textures/items/jars/jar_nebula_admiral"
+  "icon": "textures/items/jars/jar_nebula_admiral",
+  "realm": "end"
  },
  {
   "id": "pale_end_sulphur",
@@ -5366,7 +5853,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "Chorus Fruit and Chorus Flowers, but seeds work best",
   "info": "Found in the The End. Cream wings are dipped in violet at the tips. Shulkers ignore it completely, and it often rests on the walls of End cities.",
-  "icon": "textures/items/jars/jar_pale_end_sulphur"
+  "icon": "textures/items/jars/jar_pale_end_sulphur",
+  "realm": "end"
  },
  {
   "id": "end_stone_brick",
@@ -5377,7 +5865,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "Chorus Fruit and Chorus Flowers, but seeds work best",
   "info": "Cream wings are tiled with a golden chequerboard. Its caterpillars feed on chorus plants and sometimes pop up somewhere unexpected.",
-  "icon": "textures/items/jars/jar_end_stone_brick"
+  "icon": "textures/items/jars/jar_end_stone_brick",
+  "realm": "end"
  },
  {
   "id": "purpur_slab_skipper",
@@ -5388,7 +5877,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "Chorus Fruit and Chorus Flowers, but seeds work best",
   "info": "Look for it in the The End. Violet wings wear a wide violet border. It glows faintly in the dark, so it is easy to spot against the black sky.",
-  "icon": "textures/items/jars/jar_purpur_slab_skipper"
+  "icon": "textures/items/jars/jar_purpur_slab_skipper",
+  "realm": "end"
  },
  {
   "id": "teleporting_tiger",
@@ -5399,7 +5889,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "Chorus Fruit and Chorus Flowers, but seeds work best",
   "info": "A The End native. Violet wings laced with black veins warn birds that it tastes awful. It glows faintly in the dark, so it is easy to spot against the black sky.",
-  "icon": "textures/items/jars/jar_teleporting_tiger"
+  "icon": "textures/items/jars/jar_teleporting_tiger",
+  "realm": "end"
  },
  {
   "id": "ender_chest_wing",
@@ -5410,7 +5901,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "Chorus Fruit and Chorus Flowers, but seeds work best",
   "info": "A The End native. Black wings glow green close to the body. Its caterpillars feed on chorus plants and sometimes pop up somewhere unexpected.",
-  "icon": "textures/items/jars/jar_ender_chest_wing"
+  "icon": "textures/items/jars/jar_ender_chest_wing",
+  "realm": "end"
  },
  {
   "id": "voidglass",
@@ -5421,7 +5913,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "Chorus Fruit and Chorus Flowers, but seeds work best",
   "info": "Look for it in the The End. Teal rays run through its black wings. It drifts over the void without fear, carried by currents nobody else can feel.",
-  "icon": "textures/items/jars/jar_voidglass"
+  "icon": "textures/items/jars/jar_voidglass",
+  "realm": "end"
  },
  {
   "id": "twilight_crescent",
@@ -5432,7 +5925,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "Chorus Fruit and Chorus Flowers, but seeds work best",
   "info": "Violet wings are edged with purple crescents. It glows faintly in the dark, so it is easy to spot against the black sky.",
-  "icon": "textures/items/jars/jar_twilight_crescent"
+  "icon": "textures/items/jars/jar_twilight_crescent",
+  "realm": "end"
  },
  {
   "id": "starlight_skipper",
@@ -5443,7 +5937,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "Chorus Fruit and Chorus Flowers, but seeds work best",
   "info": "A The End native. Black wings are dusted with cream speckles. Shulkers ignore it completely, and it often rests on the walls of End cities.",
-  "icon": "textures/items/jars/jar_starlight_skipper"
+  "icon": "textures/items/jars/jar_starlight_skipper",
+  "realm": "end"
  },
  {
   "id": "lunar_swallowtail",
@@ -5454,7 +5949,8 @@ export const SPECIES = [
   "wingspan": "1.0 blocks",
   "food": "Chorus Fruit and Chorus Flowers, but seeds work best",
   "info": "A The End native. Its forewings are white while its hindwings are blue. Its caterpillars feed on chorus plants and sometimes pop up somewhere unexpected.",
-  "icon": "textures/items/jars/jar_lunar_swallowtail"
+  "icon": "textures/items/jars/jar_lunar_swallowtail",
+  "realm": "end"
  },
  {
   "id": "galactic_peacock",
@@ -5465,7 +5961,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "Chorus Fruit and Chorus Flowers, but seeds work best",
   "info": "A The End native. A row of little teal eyespots lines its black hindwings. It seems to blink short distances when startled, much like an Enderman.",
-  "icon": "textures/items/jars/jar_galactic_peacock"
+  "icon": "textures/items/jars/jar_galactic_peacock",
+  "realm": "end"
  },
  {
   "id": "indigo_shulker",
@@ -5476,7 +5973,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "Chorus Fruit and Chorus Flowers, but seeds work best",
   "info": "Found in the The End. Blue wings flash blue when the light catches them. It drifts over the void without fear, carried by currents nobody else can feel.",
-  "icon": "textures/items/jars/jar_indigo_shulker"
+  "icon": "textures/items/jars/jar_indigo_shulker",
+  "realm": "end"
  },
  {
   "id": "elder_end_wing",
@@ -5487,7 +5985,8 @@ export const SPECIES = [
   "wingspan": "1.3 blocks",
   "food": "Chorus Fruit and Chorus Flowers, but seeds work best",
   "info": "Found in the The End. A row of little golden eyespots lines its black hindwings. Its caterpillars feed on chorus plants and sometimes pop up somewhere unexpected.",
-  "icon": "textures/items/jars/jar_elder_end_wing"
+  "icon": "textures/items/jars/jar_elder_end_wing",
+  "realm": "end"
  },
  {
   "id": "dragonhead_emperor",
@@ -5498,7 +5997,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "Chorus Fruit and Chorus Flowers, but seeds work best",
   "info": "Look for it in the The End. A bright violet band slashes across its black wings. It glows faintly in the dark, so it is easy to spot against the black sky.",
-  "icon": "textures/items/jars/jar_dragonhead_emperor"
+  "icon": "textures/items/jars/jar_dragonhead_emperor",
+  "realm": "end"
  },
  {
   "id": "australian_painted_lady",
@@ -5509,7 +6009,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Plains. Orange wings wear a wide black border. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_australian_painted_lady"
+  "icon": "textures/items/jars/jar_australian_painted_lady",
+  "realm": "overworld"
  },
  {
   "id": "kamehameha_lady",
@@ -5520,7 +6021,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Flower Forest native. A bright white band slashes across its orange wings. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_kamehameha_lady"
+  "icon": "textures/items/jars/jar_kamehameha_lady",
+  "realm": "overworld"
  },
  {
   "id": "indian_red_admiral",
@@ -5531,7 +6033,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Mountains. A bright orange band slashes across its black wings. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_indian_red_admiral"
+  "icon": "textures/items/jars/jar_indian_red_admiral",
+  "realm": "overworld"
  },
  {
   "id": "yellow_admiral",
@@ -5542,7 +6045,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Plains native. A bright golden band slashes across its black wings. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_yellow_admiral"
+  "icon": "textures/items/jars/jar_yellow_admiral",
+  "realm": "overworld"
  },
  {
   "id": "indian_tortoiseshell",
@@ -5553,7 +6057,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Mountains. Orange wings wear a wide black border. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_indian_tortoiseshell"
+  "icon": "textures/items/jars/jar_indian_tortoiseshell",
+  "realm": "overworld"
  },
  {
   "id": "large_wall_brown",
@@ -5564,7 +6069,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Mountains native. Orange wings carry bold black eyespots that startle anything trying to eat it. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_large_wall_brown"
+  "icon": "textures/items/jars/jar_large_wall_brown",
+  "realm": "overworld"
  },
  {
   "id": "chestnut_heath",
@@ -5575,7 +6081,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Meadow native. A row of little golden eyespots lines its orange hindwings. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_chestnut_heath"
+  "icon": "textures/items/jars/jar_chestnut_heath",
+  "realm": "overworld"
  },
  {
   "id": "pearly_heath",
@@ -5586,7 +6093,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A row of little white eyespots lines its orange hindwings. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_pearly_heath"
+  "icon": "textures/items/jars/jar_pearly_heath",
+  "realm": "overworld"
  },
  {
   "id": "dusky_meadow_brown",
@@ -5597,7 +6105,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Meadow. Brown wings carry bold orange eyespots that startle anything trying to eat it. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_dusky_meadow_brown"
+  "icon": "textures/items/jars/jar_dusky_meadow_brown",
+  "realm": "overworld"
  },
  {
   "id": "oriental_meadow_brown",
@@ -5608,7 +6117,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Brown wings carry big orange patches. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_oriental_meadow_brown"
+  "icon": "textures/items/jars/jar_oriental_meadow_brown",
+  "realm": "overworld"
  },
  {
   "id": "great_banded_grayling",
@@ -5619,7 +6129,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A bright white band slashes across its brown wings. It is most active in the hottest hours of the day.",
-  "icon": "textures/items/jars/jar_great_banded_grayling"
+  "icon": "textures/items/jars/jar_great_banded_grayling",
+  "realm": "overworld"
  },
  {
   "id": "hermit",
@@ -5630,7 +6141,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Desert. A row of little white eyespots lines its brown hindwings. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_hermit"
+  "icon": "textures/items/jars/jar_hermit",
+  "realm": "overworld"
  },
  {
   "id": "rock_grayling",
@@ -5641,7 +6153,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Mountains. Brown wings carry bold orange eyespots that startle anything trying to eat it. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_rock_grayling"
+  "icon": "textures/items/jars/jar_rock_grayling",
+  "realm": "overworld"
  },
  {
   "id": "dryad",
@@ -5652,7 +6165,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Meadow native. A row of little blue eyespots lines its brown hindwings. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_dryad"
+  "icon": "textures/items/jars/jar_dryad",
+  "realm": "overworld"
  },
  {
   "id": "great_sooty_satyr",
@@ -5663,7 +6177,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Mountains native. Black wings carry bold blue eyespots that startle anything trying to eat it. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_great_sooty_satyr"
+  "icon": "textures/items/jars/jar_great_sooty_satyr",
+  "realm": "overworld"
  },
  {
   "id": "black_satyr",
@@ -5674,7 +6189,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Mountains native. Black wings are dotted with white spots. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_black_satyr"
+  "icon": "textures/items/jars/jar_black_satyr",
+  "realm": "overworld"
  },
  {
   "id": "knapweed_fritillary",
@@ -5685,7 +6201,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Meadow. Orange wings are tiled with a black chequerboard. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_knapweed_fritillary"
+  "icon": "textures/items/jars/jar_knapweed_fritillary",
+  "realm": "overworld"
  },
  {
   "id": "spotted_fritillary",
@@ -5696,7 +6213,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Meadow. Orange wings are dotted with black spots. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_spotted_fritillary"
+  "icon": "textures/items/jars/jar_spotted_fritillary",
+  "realm": "overworld"
  },
  {
   "id": "weavers_fritillary",
@@ -5707,7 +6225,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Orange wings are tiled with a brown chequerboard. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_weavers_fritillary"
+  "icon": "textures/items/jars/jar_weavers_fritillary",
+  "realm": "overworld"
  },
  {
   "id": "niobe_fritillary",
@@ -5718,7 +6237,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Orange wings are tiled with a black chequerboard. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_niobe_fritillary"
+  "icon": "textures/items/jars/jar_niobe_fritillary",
+  "realm": "overworld"
  },
  {
   "id": "meadow_fritillary",
@@ -5729,7 +6249,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Meadow native. Orange wings are tiled with a brown chequerboard. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_meadow_fritillary"
+  "icon": "textures/items/jars/jar_meadow_fritillary",
+  "realm": "overworld"
  },
  {
   "id": "aphrodite_fritillary",
@@ -5740,7 +6261,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Meadow. Orange wings are tiled with a black chequerboard. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_aphrodite_fritillary"
+  "icon": "textures/items/jars/jar_aphrodite_fritillary",
+  "realm": "overworld"
  },
  {
   "id": "regal_fritillary",
@@ -5751,7 +6273,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Its forewings are orange while its hindwings are black. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_regal_fritillary"
+  "icon": "textures/items/jars/jar_regal_fritillary",
+  "realm": "overworld"
  },
  {
   "id": "variegated_fritillary",
@@ -5762,7 +6285,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Plains. Orange wings are tiled with a brown chequerboard. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_variegated_fritillary"
+  "icon": "textures/items/jars/jar_variegated_fritillary",
+  "realm": "overworld"
  },
  {
   "id": "pearl_crescent",
@@ -5773,7 +6297,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Meadow. Orange wings are edged with black crescents. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_pearl_crescent"
+  "icon": "textures/items/jars/jar_pearl_crescent",
+  "realm": "overworld"
  },
  {
   "id": "tawny_crescent",
@@ -5784,7 +6309,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Meadow. Orange wings are striped with black. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_tawny_crescent"
+  "icon": "textures/items/jars/jar_tawny_crescent",
+  "realm": "overworld"
  },
  {
   "id": "painted_crescent",
@@ -5795,7 +6321,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Orange wings wear a wide black border. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_painted_crescent"
+  "icon": "textures/items/jars/jar_painted_crescent",
+  "realm": "overworld"
  },
  {
   "id": "gorgone_checkerspot",
@@ -5806,7 +6333,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Plains native. Orange wings are tiled with a black chequerboard. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_gorgone_checkerspot"
+  "icon": "textures/items/jars/jar_gorgone_checkerspot",
+  "realm": "overworld"
  },
  {
   "id": "harris_checkerspot",
@@ -5817,7 +6345,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Meadow. Orange wings are tiled with a black chequerboard. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_harris_checkerspot"
+  "icon": "textures/items/jars/jar_harris_checkerspot",
+  "realm": "overworld"
  },
  {
   "id": "ediths_checkerspot",
@@ -5828,7 +6357,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Meadow. Black wings are tiled with a red chequerboard. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_ediths_checkerspot"
+  "icon": "textures/items/jars/jar_ediths_checkerspot",
+  "realm": "overworld"
  },
  {
   "id": "tropical_buckeye",
@@ -5839,7 +6369,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Brown wings carry bold orange eyespots that startle anything trying to eat it. It is most active in the hottest hours of the day.",
-  "icon": "textures/items/jars/jar_tropical_buckeye"
+  "icon": "textures/items/jars/jar_tropical_buckeye",
+  "realm": "overworld"
  },
  {
   "id": "american_lady",
@@ -5850,7 +6381,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Plains. A row of little sky-blue eyespots lines its orange hindwings. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_american_lady"
+  "icon": "textures/items/jars/jar_american_lady",
+  "realm": "overworld"
  },
  {
   "id": "common_brown",
@@ -5861,7 +6393,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Plains. Orange wings carry bold black eyespots that startle anything trying to eat it. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_common_brown"
+  "icon": "textures/items/jars/jar_common_brown",
+  "realm": "overworld"
  },
  {
   "id": "meadow_argus",
@@ -5872,7 +6405,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Brown wings carry bold orange eyespots that startle anything trying to eat it. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_meadow_argus"
+  "icon": "textures/items/jars/jar_meadow_argus",
+  "realm": "overworld"
  },
  {
   "id": "common_evening_brown",
@@ -5883,7 +6417,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Plains. Its dusky brown wings are freckled with orange. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_common_evening_brown"
+  "icon": "textures/items/jars/jar_common_evening_brown",
+  "realm": "overworld"
  },
  {
   "id": "common_bushbrown",
@@ -5894,7 +6429,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Plains native. A row of little orange eyespots lines its brown hindwings. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_common_bushbrown"
+  "icon": "textures/items/jars/jar_common_bushbrown",
+  "realm": "overworld"
  },
  {
   "id": "common_four_ring",
@@ -5905,7 +6441,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Plains. A row of little golden eyespots lines its brown hindwings. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_common_four_ring"
+  "icon": "textures/items/jars/jar_common_four_ring",
+  "realm": "overworld"
  },
  {
   "id": "common_five_ring",
@@ -5916,7 +6453,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Plains native. A row of little golden eyespots lines its orange hindwings. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_common_five_ring"
+  "icon": "textures/items/jars/jar_common_five_ring",
+  "realm": "overworld"
  },
  {
   "id": "danaid_eggfly",
@@ -5927,7 +6465,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Plains native. Orange wings laced with black veins warn birds that it tastes awful. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_danaid_eggfly"
+  "icon": "textures/items/jars/jar_danaid_eggfly",
+  "realm": "overworld"
  },
  {
   "id": "common_leopard",
@@ -5938,7 +6477,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Plains. Orange wings are dotted with black spots. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_common_leopard"
+  "icon": "textures/items/jars/jar_common_leopard",
+  "realm": "overworld"
  },
  {
   "id": "tawny_coster",
@@ -5949,7 +6489,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Plains native. Black rays run through its orange wings. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_tawny_coster"
+  "icon": "textures/items/jars/jar_tawny_coster",
+  "realm": "overworld"
  },
  {
   "id": "yellow_coster",
@@ -5960,7 +6501,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Plains native. Black rays run through its golden wings. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_yellow_coster"
+  "icon": "textures/items/jars/jar_yellow_coster",
+  "realm": "overworld"
  },
  {
   "id": "spanish_gatekeeper",
@@ -5971,7 +6513,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Badlands native. Orange wings carry bold black eyespots that startle anything trying to eat it. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_spanish_gatekeeper"
+  "icon": "textures/items/jars/jar_spanish_gatekeeper",
+  "realm": "overworld"
  },
  {
   "id": "southern_gatekeeper",
@@ -5982,7 +6525,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Meadow. Orange wings carry big black patches. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_southern_gatekeeper"
+  "icon": "textures/items/jars/jar_southern_gatekeeper",
+  "realm": "overworld"
  },
  {
   "id": "ox_eyed_satyr",
@@ -5993,7 +6537,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Meadow. Orange wings carry bold golden eyespots that startle anything trying to eat it. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_ox_eyed_satyr"
+  "icon": "textures/items/jars/jar_ox_eyed_satyr",
+  "realm": "overworld"
  },
  {
   "id": "mountain_swallowtail",
@@ -6004,7 +6549,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "Look for it in the Mountains. A bright golden band slashes across its black wings. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_mountain_swallowtail"
+  "icon": "textures/items/jars/jar_mountain_swallowtail",
+  "realm": "overworld"
  },
  {
   "id": "corsican_swallowtail",
@@ -6015,7 +6561,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "A Mountains native. Golden wings are striped with black. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_corsican_swallowtail"
+  "icon": "textures/items/jars/jar_corsican_swallowtail",
+  "realm": "overworld"
  },
  {
   "id": "southern_swallowtail",
@@ -6026,7 +6573,8 @@ export const SPECIES = [
   "wingspan": "1.0 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "A Meadow native. Golden wings are striped with black. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_southern_swallowtail"
+  "icon": "textures/items/jars/jar_southern_swallowtail",
+  "realm": "overworld"
  },
  {
   "id": "iberian_scarce_swallowtail",
@@ -6037,7 +6585,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "A Badlands native. White wings are striped with black. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_iberian_scarce_swallowtail"
+  "icon": "textures/items/jars/jar_iberian_scarce_swallowtail",
+  "realm": "overworld"
  },
  {
   "id": "victorine_swallowtail",
@@ -6048,7 +6597,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "A Jungle native. A bright golden band slashes across its black wings. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_victorine_swallowtail"
+  "icon": "textures/items/jars/jar_victorine_swallowtail",
+  "realm": "overworld"
  },
  {
   "id": "polydamas_swallowtail",
@@ -6059,7 +6609,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Jungle native. Black wings wear a wide black border. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_polydamas_swallowtail"
+  "icon": "textures/items/jars/jar_polydamas_swallowtail",
+  "realm": "overworld"
  },
  {
   "id": "ruby_spotted_cattleheart",
@@ -6070,7 +6621,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Jungle native. Black wings carry big pink patches. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_ruby_spotted_cattleheart"
+  "icon": "textures/items/jars/jar_ruby_spotted_cattleheart",
+  "realm": "overworld"
  },
  {
   "id": "pink_cattleheart",
@@ -6081,7 +6633,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Jungle native. Black wings carry big pink patches. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_pink_cattleheart"
+  "icon": "textures/items/jars/jar_pink_cattleheart",
+  "realm": "overworld"
  },
  {
   "id": "transandean_cattleheart",
@@ -6092,7 +6645,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Jungle native. Black wings carry big red patches. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_transandean_cattleheart"
+  "icon": "textures/items/jars/jar_transandean_cattleheart",
+  "realm": "overworld"
  },
  {
   "id": "black_and_white_kite",
@@ -6103,7 +6657,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "Look for it in the Jungle. White and black stripes make it look like a tiny zebra. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_black_and_white_kite"
+  "icon": "textures/items/jars/jar_black_and_white_kite",
+  "realm": "overworld"
  },
  {
   "id": "dark_kite_swallowtail",
@@ -6114,7 +6669,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "White wings are striped with black. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_dark_kite_swallowtail"
+  "icon": "textures/items/jars/jar_dark_kite_swallowtail",
+  "realm": "overworld"
  },
  {
   "id": "broad_banded_swallowtail",
@@ -6125,7 +6681,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "A Jungle native. A bright golden band slashes across its black wings. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_broad_banded_swallowtail"
+  "icon": "textures/items/jars/jar_broad_banded_swallowtail",
+  "realm": "overworld"
  },
  {
   "id": "ozark_swallowtail",
@@ -6136,7 +6693,8 @@ export const SPECIES = [
   "wingspan": "1.0 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "Look for it in the Forest. A bright golden band slashes across its black wings. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_ozark_swallowtail"
+  "icon": "textures/items/jars/jar_ozark_swallowtail",
+  "realm": "overworld"
  },
  {
   "id": "appalachian_tiger_swallowtail",
@@ -6147,7 +6705,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "Found in the Forest. Golden wings are striped with black. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_appalachian_tiger_swallowtail"
+  "icon": "textures/items/jars/jar_appalachian_tiger_swallowtail",
+  "realm": "overworld"
  },
  {
   "id": "canadian_tiger_swallowtail",
@@ -6158,7 +6717,8 @@ export const SPECIES = [
   "wingspan": "1.0 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "Found in the Taiga. Golden wings are striped with black. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_canadian_tiger_swallowtail"
+  "icon": "textures/items/jars/jar_canadian_tiger_swallowtail",
+  "realm": "overworld"
  },
  {
   "id": "noble_swallowtail",
@@ -6169,7 +6729,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "Its forewings are golden while its hindwings are black. It is most active in the hottest hours of the day.",
-  "icon": "textures/items/jars/jar_noble_swallowtail"
+  "icon": "textures/items/jars/jar_noble_swallowtail",
+  "realm": "overworld"
  },
  {
   "id": "christmas_swallowtail",
@@ -6180,7 +6741,8 @@ export const SPECIES = [
   "wingspan": "1.0 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "A Savanna native. Black wings are dotted with golden spots. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_christmas_swallowtail"
+  "icon": "textures/items/jars/jar_christmas_swallowtail",
+  "realm": "overworld"
  },
  {
   "id": "emperor_swallowtail",
@@ -6191,7 +6753,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "Look for it in the Savanna. A bright golden band slashes across its black wings. It is most active in the hottest hours of the day.",
-  "icon": "textures/items/jars/jar_emperor_swallowtail"
+  "icon": "textures/items/jars/jar_emperor_swallowtail",
+  "realm": "overworld"
  },
  {
   "id": "green_patch_swallowtail",
@@ -6202,7 +6765,8 @@ export const SPECIES = [
   "wingspan": "1.0 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "Black wings carry big lime patches. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_green_patch_swallowtail"
+  "icon": "textures/items/jars/jar_green_patch_swallowtail",
+  "realm": "overworld"
  },
  {
   "id": "constantines_swallowtail",
@@ -6213,7 +6777,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "Found in the Savanna. A bright golden band slashes across its black wings. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_constantines_swallowtail"
+  "icon": "textures/items/jars/jar_constantines_swallowtail",
+  "realm": "overworld"
  },
  {
   "id": "narrow_blue_banded_swallowtail",
@@ -6224,7 +6789,8 @@ export const SPECIES = [
   "wingspan": "1.0 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "A Jungle native. A bright sky-blue band slashes across its black wings. It is most active in the hottest hours of the day.",
-  "icon": "textures/items/jars/jar_narrow_blue_banded_swallowtail"
+  "icon": "textures/items/jars/jar_narrow_blue_banded_swallowtail",
+  "realm": "overworld"
  },
  {
   "id": "giant_african_swallowtail",
@@ -6235,7 +6801,8 @@ export const SPECIES = [
   "wingspan": "1.1 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "Look for it in the Jungle. Orange wings laced with black veins warn birds that it tastes awful. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_giant_african_swallowtail"
+  "icon": "textures/items/jars/jar_giant_african_swallowtail",
+  "realm": "overworld"
  },
  {
   "id": "mountain_green_banded_swallowtail",
@@ -6246,7 +6813,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "Found in the Mountains. A bright lime band slashes across its black wings. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_mountain_green_banded_swallowtail"
+  "icon": "textures/items/jars/jar_mountain_green_banded_swallowtail",
+  "realm": "overworld"
  },
  {
   "id": "chinese_windmill",
@@ -6257,7 +6825,8 @@ export const SPECIES = [
   "wingspan": "1.0 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "Found in the Bamboo Jungle. Black rays run through its black wings. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_chinese_windmill"
+  "icon": "textures/items/jars/jar_chinese_windmill",
+  "realm": "overworld"
  },
  {
   "id": "common_batwing",
@@ -6268,7 +6837,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Jungle. Black rays run through its black wings. It is most active in the hottest hours of the day.",
-  "icon": "textures/items/jars/jar_common_batwing"
+  "icon": "textures/items/jars/jar_common_batwing",
+  "realm": "overworld"
  },
  {
   "id": "great_windmill",
@@ -6279,7 +6849,8 @@ export const SPECIES = [
   "wingspan": "1.0 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "Look for it in the Jungle. Black rays run through its black wings. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_great_windmill"
+  "icon": "textures/items/jars/jar_great_windmill",
+  "realm": "overworld"
  },
  {
   "id": "common_windmill",
@@ -6290,7 +6861,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "Found in the Jungle. Black rays run through its black wings. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_common_windmill"
+  "icon": "textures/items/jars/jar_common_windmill",
+  "realm": "overworld"
  },
  {
   "id": "crimson_rose",
@@ -6301,7 +6873,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "Black wings carry big red patches. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_crimson_rose"
+  "icon": "textures/items/jars/jar_crimson_rose",
+  "realm": "overworld"
  },
  {
   "id": "common_clubtail",
@@ -6312,7 +6885,8 @@ export const SPECIES = [
   "wingspan": "1.0 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "A bright white band slashes across its black wings. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_common_clubtail"
+  "icon": "textures/items/jars/jar_common_clubtail",
+  "realm": "overworld"
  },
  {
   "id": "yellow_crested_spangle",
@@ -6323,7 +6897,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "A bright golden band slashes across its black wings. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_yellow_crested_spangle"
+  "icon": "textures/items/jars/jar_yellow_crested_spangle",
+  "realm": "overworld"
  },
  {
   "id": "spangle",
@@ -6334,7 +6909,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "Look for it in the Jungle. Black wings are dotted with sky-blue spots. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_spangle"
+  "icon": "textures/items/jars/jar_spangle",
+  "realm": "overworld"
  },
  {
   "id": "banded_swallowtail",
@@ -6345,7 +6921,8 @@ export const SPECIES = [
   "wingspan": "1.0 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "A Jungle native. A bright white band slashes across its black wings. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_banded_swallowtail"
+  "icon": "textures/items/jars/jar_banded_swallowtail",
+  "realm": "overworld"
  },
  {
   "id": "great_blue_mime",
@@ -6356,7 +6933,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Jungle. Black wings flash sky-blue when the light catches them. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_great_blue_mime"
+  "icon": "textures/items/jars/jar_great_blue_mime",
+  "realm": "overworld"
  },
  {
   "id": "common_raven",
@@ -6367,7 +6945,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Jungle. Black wings are striped with white. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_common_raven"
+  "icon": "textures/items/jars/jar_common_raven",
+  "realm": "overworld"
  },
  {
   "id": "green_dragontail",
@@ -6378,7 +6957,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "Look for it in the Jungle. Its wings are clear as glass, edged with black. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_green_dragontail"
+  "icon": "textures/items/jars/jar_green_dragontail",
+  "realm": "overworld"
  },
  {
   "id": "common_jay",
@@ -6389,7 +6969,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "A Jungle native. Black wings are dotted with sky-blue spots. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_common_jay"
+  "icon": "textures/items/jars/jar_common_jay",
+  "realm": "overworld"
  },
  {
   "id": "blue_triangle",
@@ -6400,7 +6981,8 @@ export const SPECIES = [
   "wingspan": "1.0 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "Found in the Jungle. A bright sky-blue band slashes across its black wings. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_blue_triangle"
+  "icon": "textures/items/jars/jar_blue_triangle",
+  "realm": "overworld"
  },
  {
   "id": "green_spotted_triangle",
@@ -6411,7 +6993,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "Found in the Jungle. Black wings are dotted with lime spots. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_green_spotted_triangle"
+  "icon": "textures/items/jars/jar_green_spotted_triangle",
+  "realm": "overworld"
  },
  {
   "id": "spotted_zebra",
@@ -6422,7 +7005,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "Look for it in the Jungle. White and black stripes make it look like a tiny zebra. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_spotted_zebra"
+  "icon": "textures/items/jars/jar_spotted_zebra",
+  "realm": "overworld"
  },
  {
   "id": "chain_swordtail",
@@ -6433,7 +7017,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "A Jungle native. White wings are striped with black. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_chain_swordtail"
+  "icon": "textures/items/jars/jar_chain_swordtail",
+  "realm": "overworld"
  },
  {
   "id": "lesser_zebra",
@@ -6444,7 +7029,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "A Jungle native. White and black stripes make it look like a tiny zebra. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_lesser_zebra"
+  "icon": "textures/items/jars/jar_lesser_zebra",
+  "realm": "overworld"
  },
  {
   "id": "southern_birdwing",
@@ -6455,7 +7041,8 @@ export const SPECIES = [
   "wingspan": "1.2 blocks",
   "food": "jungle leaves, but seeds work best",
   "info": "Its forewings are black while its hindwings are golden. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_southern_birdwing"
+  "icon": "textures/items/jars/jar_southern_birdwing",
+  "realm": "overworld"
  },
  {
   "id": "common_birdwing",
@@ -6466,7 +7053,8 @@ export const SPECIES = [
   "wingspan": "1.2 blocks",
   "food": "jungle leaves, but seeds work best",
   "info": "Its forewings are black while its hindwings are golden. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_common_birdwing"
+  "icon": "textures/items/jars/jar_common_birdwing",
+  "realm": "overworld"
  },
  {
   "id": "goliath_birdwing",
@@ -6477,7 +7065,8 @@ export const SPECIES = [
   "wingspan": "1.4 blocks",
   "food": "jungle leaves, but seeds work best",
   "info": "A Jungle native. Its forewings are black while its hindwings are lime. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_goliath_birdwing"
+  "icon": "textures/items/jars/jar_goliath_birdwing",
+  "realm": "overworld"
  },
  {
   "id": "paradise_birdwing",
@@ -6488,7 +7077,8 @@ export const SPECIES = [
   "wingspan": "1.5 blocks",
   "food": "jungle leaves, but seeds work best",
   "info": "A Jungle native. Black wings shimmer with green like a gemstone. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_paradise_birdwing"
+  "icon": "textures/items/jars/jar_paradise_birdwing",
+  "realm": "overworld"
  },
  {
   "id": "asian_comma",
@@ -6499,7 +7089,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Forest. Orange wings are dusted with brown speckles. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_asian_comma"
+  "icon": "textures/items/jars/jar_asian_comma",
+  "realm": "overworld"
  },
  {
   "id": "hoary_comma",
@@ -6510,7 +7101,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Taiga. Orange wings are dusted with brown speckles. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_hoary_comma"
+  "icon": "textures/items/jars/jar_hoary_comma",
+  "realm": "overworld"
  },
  {
   "id": "satyr_comma",
@@ -6521,7 +7113,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Orange wings are dusted with brown speckles. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_satyr_comma"
+  "icon": "textures/items/jars/jar_satyr_comma",
+  "realm": "overworld"
  },
  {
   "id": "false_comma",
@@ -6532,7 +7125,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Forest. Orange wings wear a wide black border. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_false_comma"
+  "icon": "textures/items/jars/jar_false_comma",
+  "realm": "overworld"
  },
  {
   "id": "yellow_legged_tortoiseshell",
@@ -6543,7 +7137,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Forest. Orange wings wear a wide black border. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_yellow_legged_tortoiseshell"
+  "icon": "textures/items/jars/jar_yellow_legged_tortoiseshell",
+  "realm": "overworld"
  },
  {
   "id": "short_tailed_admiral",
@@ -6554,7 +7149,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A bright orange band slashes across its brown wings. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_short_tailed_admiral"
+  "icon": "textures/items/jars/jar_short_tailed_admiral",
+  "realm": "overworld"
  },
  {
   "id": "weidemeyers_admiral",
@@ -6565,7 +7161,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Mountains. A bright white band slashes across its black wings. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_weidemeyers_admiral"
+  "icon": "textures/items/jars/jar_weidemeyers_admiral",
+  "realm": "overworld"
  },
  {
   "id": "lorquins_admiral",
@@ -6576,7 +7173,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A bright white band slashes across its black wings. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_lorquins_admiral"
+  "icon": "textures/items/jars/jar_lorquins_admiral",
+  "realm": "overworld"
  },
  {
   "id": "california_sister",
@@ -6587,7 +7185,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Forest native. A bright white band slashes across its black wings. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_california_sister"
+  "icon": "textures/items/jars/jar_california_sister",
+  "realm": "overworld"
  },
  {
   "id": "indian_white_admiral",
@@ -6598,7 +7197,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Forest native. A bright white band slashes across its black wings. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_indian_white_admiral"
+  "icon": "textures/items/jars/jar_indian_white_admiral",
+  "realm": "overworld"
  },
  {
   "id": "sordid_emperor",
@@ -6609,7 +7209,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Forest. Its wings fade from brown to orange. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_sordid_emperor"
+  "icon": "textures/items/jars/jar_sordid_emperor",
+  "realm": "overworld"
  },
  {
   "id": "japanese_emperor",
@@ -6620,7 +7221,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Blue wings flash violet when the light catches them. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_japanese_emperor"
+  "icon": "textures/items/jars/jar_japanese_emperor",
+  "realm": "overworld"
  },
  {
   "id": "white_emperor",
@@ -6631,7 +7233,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Forest. White wings are dipped in charcoal at the tips. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_white_emperor"
+  "icon": "textures/items/jars/jar_white_emperor",
+  "realm": "overworld"
  },
  {
   "id": "siberian_purple_emperor",
@@ -6642,7 +7245,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Taiga native. Black wings flash blue when the light catches them. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_siberian_purple_emperor"
+  "icon": "textures/items/jars/jar_siberian_purple_emperor",
+  "realm": "overworld"
  },
  {
   "id": "constable",
@@ -6653,7 +7257,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Forest. Its forewings are black while its hindwings are golden. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_constable"
+  "icon": "textures/items/jars/jar_constable",
+  "realm": "overworld"
  },
  {
   "id": "circe",
@@ -6664,7 +7269,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A bright white band slashes across its black wings. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_circe"
+  "icon": "textures/items/jars/jar_circe",
+  "realm": "overworld"
  },
  {
   "id": "creole_pearly_eye",
@@ -6675,7 +7281,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Forest. A row of little cream eyespots lines its orange hindwings. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_creole_pearly_eye"
+  "icon": "textures/items/jars/jar_creole_pearly_eye",
+  "realm": "overworld"
  },
  {
   "id": "southern_pearly_eye",
@@ -6686,7 +7293,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Forest. A row of little cream eyespots lines its brown hindwings. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_southern_pearly_eye"
+  "icon": "textures/items/jars/jar_southern_pearly_eye",
+  "realm": "overworld"
  },
  {
   "id": "gemmed_satyr",
@@ -6697,7 +7305,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Forest. A row of little white eyespots lines its brown hindwings. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_gemmed_satyr"
+  "icon": "textures/items/jars/jar_gemmed_satyr",
+  "realm": "overworld"
  },
  {
   "id": "carolina_satyr",
@@ -6708,7 +7317,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Brown wings carry bold orange eyespots that startle anything trying to eat it. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_carolina_satyr"
+  "icon": "textures/items/jars/jar_carolina_satyr",
+  "realm": "overworld"
  },
  {
   "id": "red_satyr",
@@ -6719,7 +7329,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Forest native. Brown wings carry big orange patches. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_red_satyr"
+  "icon": "textures/items/jars/jar_red_satyr",
+  "realm": "overworld"
  },
  {
   "id": "canyonland_satyr",
@@ -6730,7 +7341,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Badlands native. Brown wings carry bold orange eyespots that startle anything trying to eat it. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_canyonland_satyr"
+  "icon": "textures/items/jars/jar_canyonland_satyr",
+  "realm": "overworld"
  },
  {
   "id": "nabokovs_satyr",
@@ -6741,7 +7353,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Mountains. A row of little orange eyespots lines its brown hindwings. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_nabokovs_satyr"
+  "icon": "textures/items/jars/jar_nabokovs_satyr",
+  "realm": "overworld"
  },
  {
   "id": "woodland_skipper",
@@ -6752,7 +7365,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "A Forest native. Orange wings wear a wide brown border. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_woodland_skipper"
+  "icon": "textures/items/jars/jar_woodland_skipper",
+  "realm": "overworld"
  },
  {
   "id": "meads_wood_nymph",
@@ -6763,7 +7377,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Forest. Brown wings carry big orange patches. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_meads_wood_nymph"
+  "icon": "textures/items/jars/jar_meads_wood_nymph",
+  "realm": "overworld"
  },
  {
   "id": "northern_wall_brown",
@@ -6774,7 +7389,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Forest. Orange wings carry bold black eyespots that startle anything trying to eat it. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_northern_wall_brown"
+  "icon": "textures/items/jars/jar_northern_wall_brown",
+  "realm": "overworld"
  },
  {
   "id": "lattice_brown",
@@ -6785,7 +7401,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Brown wings are tiled with a brown chequerboard. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_lattice_brown"
+  "icon": "textures/items/jars/jar_lattice_brown",
+  "realm": "overworld"
  },
  {
   "id": "dull_forester",
@@ -6796,7 +7413,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Forest. A row of little golden eyespots lines its brown hindwings. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_dull_forester"
+  "icon": "textures/items/jars/jar_dull_forester",
+  "realm": "overworld"
  },
  {
   "id": "tailed_red_forester",
@@ -6807,7 +7425,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Forest. Its dusky brown wings are freckled with orange. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_tailed_red_forester"
+  "icon": "textures/items/jars/jar_tailed_red_forester",
+  "realm": "overworld"
  },
  {
   "id": "common_treebrown",
@@ -6818,7 +7437,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Forest native. Brown wings carry bold orange eyespots that startle anything trying to eat it. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_common_treebrown"
+  "icon": "textures/items/jars/jar_common_treebrown",
+  "realm": "overworld"
  },
  {
   "id": "bamboo_treebrown",
@@ -6829,7 +7449,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Bamboo Jungle. A row of little golden eyespots lines its orange hindwings. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_bamboo_treebrown"
+  "icon": "textures/items/jars/jar_bamboo_treebrown",
+  "realm": "overworld"
  },
  {
   "id": "straight_banded_treebrown",
@@ -6840,7 +7461,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Forest. A bright white band slashes across its brown wings. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_straight_banded_treebrown"
+  "icon": "textures/items/jars/jar_straight_banded_treebrown",
+  "realm": "overworld"
  },
  {
   "id": "malabar_tree_nymph",
@@ -6851,7 +7473,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Forest native. White wings are dotted with black spots. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_malabar_tree_nymph"
+  "icon": "textures/items/jars/jar_malabar_tree_nymph",
+  "realm": "overworld"
  },
  {
   "id": "staff_sergeant",
@@ -6862,7 +7485,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Forest. Black wings are striped with white. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_staff_sergeant"
+  "icon": "textures/items/jars/jar_staff_sergeant",
+  "realm": "overworld"
  },
  {
   "id": "commander",
@@ -6873,7 +7497,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Forest native. A bright white band slashes across its brown wings. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_commander"
+  "icon": "textures/items/jars/jar_commander",
+  "realm": "overworld"
  },
  {
   "id": "common_sergeant",
@@ -6884,7 +7509,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Forest. Black wings are striped with white. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_common_sergeant"
+  "icon": "textures/items/jars/jar_common_sergeant",
+  "realm": "overworld"
  },
  {
   "id": "hill_hedge_blue",
@@ -6895,7 +7521,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Forest. Sky-blue wings glow blue close to the body. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_hill_hedge_blue"
+  "icon": "textures/items/jars/jar_hill_hedge_blue",
+  "realm": "overworld"
  },
  {
   "id": "fourspot_sailer",
@@ -6906,7 +7533,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Forest. Black wings are dotted with white spots. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_fourspot_sailer"
+  "icon": "textures/items/jars/jar_fourspot_sailer",
+  "realm": "overworld"
  },
  {
   "id": "chestnut_streaked_sailer",
@@ -6917,7 +7545,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Forest native. Black wings are striped with orange. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_chestnut_streaked_sailer"
+  "icon": "textures/items/jars/jar_chestnut_streaked_sailer",
+  "realm": "overworld"
  },
  {
   "id": "short_banded_sailer",
@@ -6928,7 +7557,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Forest. A bright white band slashes across its black wings. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_short_banded_sailer"
+  "icon": "textures/items/jars/jar_short_banded_sailer",
+  "realm": "overworld"
  },
  {
   "id": "clouded_mother_of_pearl",
@@ -6939,7 +7569,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Forest. White wings flash violet when the light catches them. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_clouded_mother_of_pearl"
+  "icon": "textures/items/jars/jar_clouded_mother_of_pearl",
+  "realm": "overworld"
  },
  {
   "id": "mother_of_pearl",
@@ -6950,7 +7581,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Forest. Green wings flash violet when the light catches them. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_mother_of_pearl"
+  "icon": "textures/items/jars/jar_mother_of_pearl",
+  "realm": "overworld"
  },
  {
   "id": "forest_queen",
@@ -6961,7 +7593,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Its wings fade from orange to orange. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_forest_queen"
+  "icon": "textures/items/jars/jar_forest_queen",
+  "realm": "overworld"
  },
  {
   "id": "forest_mother_of_pearl",
@@ -6972,7 +7605,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Forest. White wings carry bold orange eyespots that startle anything trying to eat it. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_forest_mother_of_pearl"
+  "icon": "textures/items/jars/jar_forest_mother_of_pearl",
+  "realm": "overworld"
  },
  {
   "id": "indian_purple_emperor",
@@ -6983,7 +7617,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Forest native. Brown wings flash blue when the light catches them. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_indian_purple_emperor"
+  "icon": "textures/items/jars/jar_indian_purple_emperor",
+  "realm": "overworld"
  },
  {
   "id": "eros_blue",
@@ -6994,7 +7629,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Mountains. Sky-blue wings wear a wide blue border. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_eros_blue"
+  "icon": "textures/items/jars/jar_eros_blue",
+  "realm": "overworld"
  },
  {
   "id": "eschers_blue",
@@ -7005,7 +7641,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Meadow native. Sky-blue wings wear a wide blue border. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_eschers_blue"
+  "icon": "textures/items/jars/jar_eschers_blue",
+  "realm": "overworld"
  },
  {
   "id": "meleagers_blue",
@@ -7016,7 +7653,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Badlands. Sky-blue wings wear a wide blue border. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_meleagers_blue"
+  "icon": "textures/items/jars/jar_meleagers_blue",
+  "realm": "overworld"
  },
  {
   "id": "damon_blue",
@@ -7027,7 +7665,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Mountains native. Sky-blue wings are striped with blue. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_damon_blue"
+  "icon": "textures/items/jars/jar_damon_blue",
+  "realm": "overworld"
  },
  {
   "id": "riparts_anomalous_blue",
@@ -7038,7 +7677,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Mountains. Brown wings glow brown close to the body. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_riparts_anomalous_blue"
+  "icon": "textures/items/jars/jar_riparts_anomalous_blue",
+  "realm": "overworld"
  },
  {
   "id": "osiris_blue",
@@ -7049,7 +7689,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Mountains. Its wings fade from sky-blue to sky-blue. It is most active in the hottest hours of the day.",
-  "icon": "textures/items/jars/jar_osiris_blue"
+  "icon": "textures/items/jars/jar_osiris_blue",
+  "realm": "overworld"
  },
  {
   "id": "chapmans_blue",
@@ -7060,7 +7701,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Meadow. Charcoal wings glow sky-blue close to the body. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_chapmans_blue"
+  "icon": "textures/items/jars/jar_chapmans_blue",
+  "realm": "overworld"
  },
  {
   "id": "short_tailed_blue",
@@ -7071,7 +7713,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Blue wings glow blue close to the body. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_short_tailed_blue"
+  "icon": "textures/items/jars/jar_short_tailed_blue",
+  "realm": "overworld"
  },
  {
   "id": "provencal_short_tailed_blue",
@@ -7082,7 +7725,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Meadow. Blue wings glow blue close to the body. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_provencal_short_tailed_blue"
+  "icon": "textures/items/jars/jar_provencal_short_tailed_blue",
+  "realm": "overworld"
  },
  {
   "id": "odd_spot_blue",
@@ -7093,7 +7737,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Forest. Sky-blue wings glow blue close to the body. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_odd_spot_blue"
+  "icon": "textures/items/jars/jar_odd_spot_blue",
+  "realm": "overworld"
  },
  {
   "id": "false_baton_blue",
@@ -7104,7 +7749,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Meadow. Sky-blue wings glow lime close to the body. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_false_baton_blue"
+  "icon": "textures/items/jars/jar_false_baton_blue",
+  "realm": "overworld"
  },
  {
   "id": "alcon_blue",
@@ -7115,7 +7761,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Meadow. Sky-blue wings wear a wide sky-blue border. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_alcon_blue"
+  "icon": "textures/items/jars/jar_alcon_blue",
+  "realm": "overworld"
  },
  {
   "id": "scarce_large_blue",
@@ -7126,7 +7773,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Sky-blue wings are dotted with sky-blue spots. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_scarce_large_blue"
+  "icon": "textures/items/jars/jar_scarce_large_blue",
+  "realm": "overworld"
  },
  {
   "id": "dusky_large_blue",
@@ -7137,7 +7785,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Swamp. Its dusky blue wings are freckled with blue. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_dusky_large_blue"
+  "icon": "textures/items/jars/jar_dusky_large_blue",
+  "realm": "overworld"
  },
  {
   "id": "reverdins_blue",
@@ -7148,7 +7797,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Meadow. Sky-blue wings wear a wide blue border. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_reverdins_blue"
+  "icon": "textures/items/jars/jar_reverdins_blue",
+  "realm": "overworld"
  },
  {
   "id": "geranium_argus",
@@ -7159,7 +7809,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Brown wings are edged with white crescents. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_geranium_argus"
+  "icon": "textures/items/jars/jar_geranium_argus",
+  "realm": "overworld"
  },
  {
   "id": "mountain_argus",
@@ -7170,7 +7821,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Mountains. Brown wings are edged with orange crescents. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_mountain_argus"
+  "icon": "textures/items/jars/jar_mountain_argus",
+  "realm": "overworld"
  },
  {
   "id": "silvery_argus",
@@ -7181,7 +7833,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Mountains. Brown wings are edged with orange crescents. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_silvery_argus"
+  "icon": "textures/items/jars/jar_silvery_argus",
+  "realm": "overworld"
  },
  {
   "id": "dotted_blue",
@@ -7192,7 +7845,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Badlands. Sky-blue wings are dotted with black spots. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_dotted_blue"
+  "icon": "textures/items/jars/jar_dotted_blue",
+  "realm": "overworld"
  },
  {
   "id": "square_spotted_blue",
@@ -7203,7 +7857,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Badlands. Blue wings are dotted with black spots. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_square_spotted_blue"
+  "icon": "textures/items/jars/jar_square_spotted_blue",
+  "realm": "overworld"
  },
  {
   "id": "arrowhead_blue",
@@ -7214,7 +7869,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Mountains. Sky-blue wings glow blue close to the body. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_arrowhead_blue"
+  "icon": "textures/items/jars/jar_arrowhead_blue",
+  "realm": "overworld"
  },
  {
   "id": "acmon_blue",
@@ -7225,7 +7881,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Blue wings are edged with orange crescents. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_acmon_blue"
+  "icon": "textures/items/jars/jar_acmon_blue",
+  "realm": "overworld"
  },
  {
   "id": "lupine_blue",
@@ -7236,7 +7893,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Mountains native. Sky-blue wings are edged with orange crescents. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_lupine_blue"
+  "icon": "textures/items/jars/jar_lupine_blue",
+  "realm": "overworld"
  },
  {
   "id": "shasta_blue",
@@ -7247,7 +7905,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Sky-blue wings are striped with sky-blue. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_shasta_blue"
+  "icon": "textures/items/jars/jar_shasta_blue",
+  "realm": "overworld"
  },
  {
   "id": "greenish_blue",
@@ -7258,7 +7917,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Meadow native. Sky-blue wings glow green close to the body. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_greenish_blue"
+  "icon": "textures/items/jars/jar_greenish_blue",
+  "realm": "overworld"
  },
  {
   "id": "ceraunus_blue",
@@ -7269,7 +7929,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Beach native. Blue wings are dotted with black spots. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_ceraunus_blue"
+  "icon": "textures/items/jars/jar_ceraunus_blue",
+  "realm": "overworld"
  },
  {
   "id": "reakirts_blue",
@@ -7280,7 +7941,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Desert. Blue wings are dotted with black spots. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_reakirts_blue"
+  "icon": "textures/items/jars/jar_reakirts_blue",
+  "realm": "overworld"
  },
  {
   "id": "hawaiian_blue",
@@ -7291,7 +7953,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Flower Forest. Sky-blue wings flash sky-blue when the light catches them. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_hawaiian_blue"
+  "icon": "textures/items/jars/jar_hawaiian_blue",
+  "realm": "overworld"
  },
  {
   "id": "common_grass_blue",
@@ -7302,7 +7965,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Blue wings glow blue close to the body. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_common_grass_blue"
+  "icon": "textures/items/jars/jar_common_grass_blue",
+  "realm": "overworld"
  },
  {
   "id": "dark_grass_blue",
@@ -7313,7 +7977,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Plains. Its wings fade from blue to blue. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_dark_grass_blue"
+  "icon": "textures/items/jars/jar_dark_grass_blue",
+  "realm": "overworld"
  },
  {
   "id": "lesser_grass_blue",
@@ -7324,7 +7989,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Sky-blue wings glow blue close to the body. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_lesser_grass_blue"
+  "icon": "textures/items/jars/jar_lesser_grass_blue",
+  "realm": "overworld"
  },
  {
   "id": "pea_blue",
@@ -7335,7 +8001,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Plains. Blue wings are striped with violet. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_pea_blue"
+  "icon": "textures/items/jars/jar_pea_blue",
+  "realm": "overworld"
  },
  {
   "id": "zebra_blue",
@@ -7346,7 +8013,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Plains native. White and blue stripes make it look like a tiny zebra. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_zebra_blue"
+  "icon": "textures/items/jars/jar_zebra_blue",
+  "realm": "overworld"
  },
  {
   "id": "plains_cupid",
@@ -7357,7 +8025,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Blue wings are dotted with orange spots. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_plains_cupid"
+  "icon": "textures/items/jars/jar_plains_cupid",
+  "realm": "overworld"
  },
  {
   "id": "gram_blue",
@@ -7368,7 +8037,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Sky-blue wings are edged with orange crescents. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_gram_blue"
+  "icon": "textures/items/jars/jar_gram_blue",
+  "realm": "overworld"
  },
  {
   "id": "lime_blue",
@@ -7379,7 +8049,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Plains native. Sky-blue wings are striped with blue. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_lime_blue"
+  "icon": "textures/items/jars/jar_lime_blue",
+  "realm": "overworld"
  },
  {
   "id": "common_cerulean",
@@ -7390,7 +8061,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Plains. Its wings fade from sky-blue to sky-blue. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_common_cerulean"
+  "icon": "textures/items/jars/jar_common_cerulean",
+  "realm": "overworld"
  },
  {
   "id": "violet_copper",
@@ -7401,7 +8073,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Orange wings flash violet when the light catches them. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_violet_copper"
+  "icon": "textures/items/jars/jar_violet_copper",
+  "realm": "overworld"
  },
  {
   "id": "fiery_copper",
@@ -7412,7 +8085,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Meadow native. Its wings fade from orange to orange. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_fiery_copper"
+  "icon": "textures/items/jars/jar_fiery_copper",
+  "realm": "overworld"
  },
  {
   "id": "grecian_copper",
@@ -7423,7 +8097,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Badlands native. Orange wings wear a wide brown border. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_grecian_copper"
+  "icon": "textures/items/jars/jar_grecian_copper",
+  "realm": "overworld"
  },
  {
   "id": "balkan_copper",
@@ -7434,7 +8109,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Desert. Orange wings are dotted with black spots. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_balkan_copper"
+  "icon": "textures/items/jars/jar_balkan_copper",
+  "realm": "overworld"
  },
  {
   "id": "gorgon_copper",
@@ -7445,7 +8121,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Orange wings are dotted with black spots. It is most active in the hottest hours of the day.",
-  "icon": "textures/items/jars/jar_gorgon_copper"
+  "icon": "textures/items/jars/jar_gorgon_copper",
+  "realm": "overworld"
  },
  {
   "id": "blue_copper",
@@ -7456,7 +8133,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Mountains. Sky-blue wings flash sky-blue when the light catches them. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_blue_copper"
+  "icon": "textures/items/jars/jar_blue_copper",
+  "realm": "overworld"
  },
  {
   "id": "ediths_copper",
@@ -7467,7 +8145,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Brown wings are edged with orange crescents. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_ediths_copper"
+  "icon": "textures/items/jars/jar_ediths_copper",
+  "realm": "overworld"
  },
  {
   "id": "hermes_copper",
@@ -7478,7 +8157,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Badlands. Its wings fade from golden to cream. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_hermes_copper"
+  "icon": "textures/items/jars/jar_hermes_copper",
+  "realm": "overworld"
  },
  {
   "id": "bath_white",
@@ -7489,7 +8169,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Lime marbling covers its white underside. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_bath_white"
+  "icon": "textures/items/jars/jar_bath_white",
+  "realm": "overworld"
  },
  {
   "id": "eastern_bath_white",
@@ -7500,7 +8181,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Plains native. Lime marbling covers its white underside. It is most active in the hottest hours of the day.",
-  "icon": "textures/items/jars/jar_eastern_bath_white"
+  "icon": "textures/items/jars/jar_eastern_bath_white",
+  "realm": "overworld"
  },
  {
   "id": "peak_white",
@@ -7511,7 +8193,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Lime marbling covers its white underside. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_peak_white"
+  "icon": "textures/items/jars/jar_peak_white",
+  "realm": "overworld"
  },
  {
   "id": "mountain_small_white",
@@ -7522,7 +8205,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "White wings are dipped in charcoal at the tips. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_mountain_small_white"
+  "icon": "textures/items/jars/jar_mountain_small_white",
+  "realm": "overworld"
  },
  {
   "id": "southern_white",
@@ -7533,7 +8217,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Plains. White wings are dipped in charcoal at the tips. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_southern_white"
+  "icon": "textures/items/jars/jar_southern_white",
+  "realm": "overworld"
  },
  {
   "id": "western_white",
@@ -7544,7 +8229,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Meadow native. Lime marbling covers its white underside. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_western_white"
+  "icon": "textures/items/jars/jar_western_white",
+  "realm": "overworld"
  },
  {
   "id": "checkered_white",
@@ -7555,7 +8241,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Plains native. White wings are tiled with a charcoal chequerboard. It is most active in the hottest hours of the day.",
-  "icon": "textures/items/jars/jar_checkered_white"
+  "icon": "textures/items/jars/jar_checkered_white",
+  "realm": "overworld"
  },
  {
   "id": "mustard_white",
@@ -7566,7 +8253,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Forest. Yellow rays run through its white wings. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_mustard_white"
+  "icon": "textures/items/jars/jar_mustard_white",
+  "realm": "overworld"
  },
  {
   "id": "pine_white",
@@ -7577,7 +8265,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Taiga. Black rays run through its white wings. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_pine_white"
+  "icon": "textures/items/jars/jar_pine_white",
+  "realm": "overworld"
  },
  {
   "id": "beckers_white",
@@ -7588,7 +8277,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Desert. Lime marbling covers its white underside. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_beckers_white"
+  "icon": "textures/items/jars/jar_beckers_white",
+  "realm": "overworld"
  },
  {
   "id": "spring_white",
@@ -7599,7 +8289,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Lime marbling covers its white underside. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_spring_white"
+  "icon": "textures/items/jars/jar_spring_white",
+  "realm": "overworld"
  },
  {
   "id": "falcate_orangetip",
@@ -7610,7 +8301,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "Milkweed, Butterfly Bush and leaves, but seeds work best",
   "info": "Look for it in the Forest. White wings are dipped in orange at the tips. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_falcate_orangetip"
+  "icon": "textures/items/jars/jar_falcate_orangetip",
+  "realm": "overworld"
  },
  {
   "id": "gray_marble",
@@ -7621,7 +8313,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Grey marbling covers its white underside. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_gray_marble"
+  "icon": "textures/items/jars/jar_gray_marble",
+  "realm": "overworld"
  },
  {
   "id": "large_marble",
@@ -7632,7 +8325,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Meadow. Lime marbling covers its white underside. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_large_marble"
+  "icon": "textures/items/jars/jar_large_marble",
+  "realm": "overworld"
  },
  {
   "id": "olympia_marble",
@@ -7643,7 +8337,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Lime marbling covers its white underside. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_olympia_marble"
+  "icon": "textures/items/jars/jar_olympia_marble",
+  "realm": "overworld"
  },
  {
   "id": "greenish_black_tip",
@@ -7654,7 +8349,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Desert. White wings are dipped in black at the tips. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_greenish_black_tip"
+  "icon": "textures/items/jars/jar_greenish_black_tip",
+  "realm": "overworld"
  },
  {
   "id": "moroccan_orange_tip",
@@ -7665,7 +8361,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Desert. Cream wings are dipped in orange at the tips. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_moroccan_orange_tip"
+  "icon": "textures/items/jars/jar_moroccan_orange_tip",
+  "realm": "overworld"
  },
  {
   "id": "eastern_dappled_white",
@@ -7676,7 +8373,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Meadow. Lime marbling covers its white underside. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_eastern_dappled_white"
+  "icon": "textures/items/jars/jar_eastern_dappled_white",
+  "realm": "overworld"
  },
  {
   "id": "small_grass_yellow",
@@ -7687,7 +8385,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Plains native. Golden wings are dipped in black at the tips. It is most active in the hottest hours of the day.",
-  "icon": "textures/items/jars/jar_small_grass_yellow"
+  "icon": "textures/items/jars/jar_small_grass_yellow",
+  "realm": "overworld"
  },
  {
   "id": "common_grass_yellow",
@@ -7698,7 +8397,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Plains. Golden wings wear a wide black border. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_common_grass_yellow"
+  "icon": "textures/items/jars/jar_common_grass_yellow",
+  "realm": "overworld"
  },
  {
   "id": "broad_bordered_grass_yellow",
@@ -7709,7 +8409,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Plains native. Golden wings wear a wide black border. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_broad_bordered_grass_yellow"
+  "icon": "textures/items/jars/jar_broad_bordered_grass_yellow",
+  "realm": "overworld"
  },
  {
   "id": "three_spot_grass_yellow",
@@ -7720,7 +8421,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Golden wings are dotted with brown spots. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_three_spot_grass_yellow"
+  "icon": "textures/items/jars/jar_three_spot_grass_yellow",
+  "realm": "overworld"
  },
  {
   "id": "spotless_grass_yellow",
@@ -7731,7 +8433,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Plains native. Golden wings are dipped in black at the tips. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_spotless_grass_yellow"
+  "icon": "textures/items/jars/jar_spotless_grass_yellow",
+  "realm": "overworld"
  },
  {
   "id": "lemon_emigrant",
@@ -7742,7 +8445,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Plains native. Its wings fade from cream to golden. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_lemon_emigrant"
+  "icon": "textures/items/jars/jar_lemon_emigrant",
+  "realm": "overworld"
  },
  {
   "id": "mottled_emigrant",
@@ -7753,7 +8457,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Cream wings are dusted with golden speckles. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_mottled_emigrant"
+  "icon": "textures/items/jars/jar_mottled_emigrant",
+  "realm": "overworld"
  },
  {
   "id": "orange_emigrant",
@@ -7764,7 +8469,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Plains native. Its wings fade from cream to orange. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_orange_emigrant"
+  "icon": "textures/items/jars/jar_orange_emigrant",
+  "realm": "overworld"
  },
  {
   "id": "common_emigrant",
@@ -7775,7 +8481,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Savanna. Cream wings are dipped in yellow at the tips. It is most active in the hottest hours of the day.",
-  "icon": "textures/items/jars/jar_common_emigrant"
+  "icon": "textures/items/jars/jar_common_emigrant",
+  "realm": "overworld"
  },
  {
   "id": "yellow_orange_tip",
@@ -7786,7 +8493,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Savanna native. Golden wings are dipped in orange at the tips. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_yellow_orange_tip"
+  "icon": "textures/items/jars/jar_yellow_orange_tip",
+  "realm": "overworld"
  },
  {
   "id": "white_orange_tip",
@@ -7797,7 +8505,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Savanna native. White wings are dipped in orange at the tips. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_white_orange_tip"
+  "icon": "textures/items/jars/jar_white_orange_tip",
+  "realm": "overworld"
  },
  {
   "id": "great_orange_tip",
@@ -7808,7 +8517,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "Milkweed, Butterfly Bush and leaves, but seeds work best",
   "info": "Look for it in the Savanna. White wings are dipped in orange at the tips. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_great_orange_tip"
+  "icon": "textures/items/jars/jar_great_orange_tip",
+  "realm": "overworld"
  },
  {
   "id": "common_gull",
@@ -7819,7 +8529,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Plains native. White wings wear a wide black border. It is most active in the hottest hours of the day.",
-  "icon": "textures/items/jars/jar_common_gull"
+  "icon": "textures/items/jars/jar_common_gull",
+  "realm": "overworld"
  },
  {
   "id": "psyche",
@@ -7830,7 +8541,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Plains native. White wings are dipped in black at the tips. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_psyche"
+  "icon": "textures/items/jars/jar_psyche",
+  "realm": "overworld"
  },
  {
   "id": "pioneer_white",
@@ -7841,7 +8553,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "White wings are dotted with black spots. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_pioneer_white"
+  "icon": "textures/items/jars/jar_pioneer_white",
+  "realm": "overworld"
  },
  {
   "id": "painted_jezebel",
@@ -7852,7 +8565,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Forest. White wings carry big red patches. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_painted_jezebel"
+  "icon": "textures/items/jars/jar_painted_jezebel",
+  "realm": "overworld"
  },
  {
   "id": "red_base_jezebel",
@@ -7863,7 +8577,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "White wings glow red close to the body. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_red_base_jezebel"
+  "icon": "textures/items/jars/jar_red_base_jezebel",
+  "realm": "overworld"
  },
  {
   "id": "painted_sawtooth",
@@ -7874,7 +8589,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Jungle. Golden and black stripes make it look like a tiny zebra. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_painted_sawtooth"
+  "icon": "textures/items/jars/jar_painted_sawtooth",
+  "realm": "overworld"
  },
  {
   "id": "small_salmon_arab",
@@ -7885,7 +8601,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Desert. White wings are dipped in orange at the tips. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_small_salmon_arab"
+  "icon": "textures/items/jars/jar_small_salmon_arab",
+  "realm": "overworld"
  },
  {
   "id": "zebra_white",
@@ -7896,7 +8613,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Jungle. White and black stripes make it look like a tiny zebra. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_zebra_white"
+  "icon": "textures/items/jars/jar_zebra_white",
+  "realm": "overworld"
  },
  {
   "id": "lyside_sulphur",
@@ -7907,7 +8625,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Desert. Its wings fade from cream to golden. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_lyside_sulphur"
+  "icon": "textures/items/jars/jar_lyside_sulphur",
+  "realm": "overworld"
  },
  {
   "id": "tailed_sulphur",
@@ -7918,7 +8637,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Jungle. Golden wings wear a wide yellow border. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_tailed_sulphur"
+  "icon": "textures/items/jars/jar_tailed_sulphur",
+  "realm": "overworld"
  },
  {
   "id": "ruddy_hairstreak",
@@ -7929,7 +8649,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Forest native. Its wings fade from orange to orange. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_ruddy_hairstreak"
+  "icon": "textures/items/jars/jar_ruddy_hairstreak",
+  "realm": "overworld"
  },
  {
   "id": "sloe_hairstreak",
@@ -7940,7 +8661,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Forest. Brown wings are edged with orange crescents. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_sloe_hairstreak"
+  "icon": "textures/items/jars/jar_sloe_hairstreak",
+  "realm": "overworld"
  },
  {
   "id": "ilex_hairstreak",
@@ -7951,7 +8673,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Forest native. Brown wings are edged with orange crescents. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_ilex_hairstreak"
+  "icon": "textures/items/jars/jar_ilex_hairstreak",
+  "realm": "overworld"
  },
  {
   "id": "blue_spot_hairstreak",
@@ -7962,7 +8685,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Forest. Brown wings are edged with sky-blue crescents. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_blue_spot_hairstreak"
+  "icon": "textures/items/jars/jar_blue_spot_hairstreak",
+  "realm": "overworld"
  },
  {
   "id": "false_ilex_hairstreak",
@@ -7973,7 +8697,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Forest. Brown wings are edged with orange crescents. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_false_ilex_hairstreak"
+  "icon": "textures/items/jars/jar_false_ilex_hairstreak",
+  "realm": "overworld"
  },
  {
   "id": "spanish_purple_hairstreak",
@@ -7984,7 +8709,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Badlands. Blue wings flash sky-blue when the light catches them. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_spanish_purple_hairstreak"
+  "icon": "textures/items/jars/jar_spanish_purple_hairstreak",
+  "realm": "overworld"
  },
  {
   "id": "hickory_hairstreak",
@@ -7995,7 +8721,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Forest native. Brown wings are striped with black. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_hickory_hairstreak"
+  "icon": "textures/items/jars/jar_hickory_hairstreak",
+  "realm": "overworld"
  },
  {
   "id": "oak_hairstreak",
@@ -8006,7 +8733,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Forest. Brown wings are striped with black. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_oak_hairstreak"
+  "icon": "textures/items/jars/jar_oak_hairstreak",
+  "realm": "overworld"
  },
  {
   "id": "gray_hairstreak",
@@ -8017,7 +8745,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Plains. Grey wings are edged with orange crescents. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_gray_hairstreak"
+  "icon": "textures/items/jars/jar_gray_hairstreak",
+  "realm": "overworld"
  },
  {
   "id": "red_banded_hairstreak",
@@ -8028,7 +8757,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Forest. A bright orange band slashes across its charcoal wings. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_red_banded_hairstreak"
+  "icon": "textures/items/jars/jar_red_banded_hairstreak",
+  "realm": "overworld"
  },
  {
   "id": "white_m_hairstreak",
@@ -8039,7 +8769,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Forest. Sky-blue wings flash white when the light catches them. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_white_m_hairstreak"
+  "icon": "textures/items/jars/jar_white_m_hairstreak",
+  "realm": "overworld"
  },
  {
   "id": "great_blue_hairstreak",
@@ -8050,7 +8781,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Forest. Sky-blue wings flash sky-blue when the light catches them. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_great_blue_hairstreak"
+  "icon": "textures/items/jars/jar_great_blue_hairstreak",
+  "realm": "overworld"
  },
  {
   "id": "soapberry_hairstreak",
@@ -8061,7 +8793,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Desert. Brown wings are striped with black. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_soapberry_hairstreak"
+  "icon": "textures/items/jars/jar_soapberry_hairstreak",
+  "realm": "overworld"
  },
  {
   "id": "golden_hairstreak",
@@ -8072,7 +8805,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Its wings fade from orange to golden. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_golden_hairstreak"
+  "icon": "textures/items/jars/jar_golden_hairstreak",
+  "realm": "overworld"
  },
  {
   "id": "thicket_hairstreak",
@@ -8083,7 +8817,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Taiga native. A bright white band slashes across its brown wings. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_thicket_hairstreak"
+  "icon": "textures/items/jars/jar_thicket_hairstreak",
+  "realm": "overworld"
  },
  {
   "id": "bramble_hairstreak",
@@ -8094,7 +8829,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Its wings fade from lime to lime. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_bramble_hairstreak"
+  "icon": "textures/items/jars/jar_bramble_hairstreak",
+  "realm": "overworld"
  },
  {
   "id": "gold_hunters_hairstreak",
@@ -8105,7 +8841,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Mountains. Its wings fade from orange to orange. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_gold_hunters_hairstreak"
+  "icon": "textures/items/jars/jar_gold_hunters_hairstreak",
+  "realm": "overworld"
  },
  {
   "id": "hoary_elfin",
@@ -8116,7 +8853,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Taiga native. Brown wings are dusted with orange speckles. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_hoary_elfin"
+  "icon": "textures/items/jars/jar_hoary_elfin",
+  "realm": "overworld"
  },
  {
   "id": "frosted_elfin",
@@ -8127,7 +8865,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Brown wings are dusted with orange speckles. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_frosted_elfin"
+  "icon": "textures/items/jars/jar_frosted_elfin",
+  "realm": "overworld"
  },
  {
   "id": "brown_elfin",
@@ -8138,7 +8877,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Its wings fade from brown to orange. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_brown_elfin"
+  "icon": "textures/items/jars/jar_brown_elfin",
+  "realm": "overworld"
  },
  {
   "id": "bog_elfin",
@@ -8149,7 +8889,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Swamp native. Brown wings are striped with black. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_bog_elfin"
+  "icon": "textures/items/jars/jar_bog_elfin",
+  "realm": "overworld"
  },
  {
   "id": "western_pine_elfin",
@@ -8160,7 +8901,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Taiga. Brown wings are striped with brown. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_western_pine_elfin"
+  "icon": "textures/items/jars/jar_western_pine_elfin",
+  "realm": "overworld"
  },
  {
   "id": "silver_banded_hairstreak",
@@ -8171,7 +8913,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Jungle. A bright white band slashes across its charcoal wings. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_silver_banded_hairstreak"
+  "icon": "textures/items/jars/jar_silver_banded_hairstreak",
+  "realm": "overworld"
  },
  {
   "id": "fulvous_hairstreak",
@@ -8182,7 +8925,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Jungle. Orange wings are edged with brown crescents. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_fulvous_hairstreak"
+  "icon": "textures/items/jars/jar_fulvous_hairstreak",
+  "realm": "overworld"
  },
  {
   "id": "mallow_scrub_hairstreak",
@@ -8193,7 +8937,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Plains native. Grey wings are edged with orange crescents. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_mallow_scrub_hairstreak"
+  "icon": "textures/items/jars/jar_mallow_scrub_hairstreak",
+  "realm": "overworld"
  },
  {
   "id": "dusky_blue_groundstreak",
@@ -8204,7 +8949,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Jungle native. Grey wings glow blue close to the body. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_dusky_blue_groundstreak"
+  "icon": "textures/items/jars/jar_dusky_blue_groundstreak",
+  "realm": "overworld"
  },
  {
   "id": "common_tit",
@@ -8215,7 +8961,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Jungle. White wings are striped with brown. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_common_tit"
+  "icon": "textures/items/jars/jar_common_tit",
+  "realm": "overworld"
  },
  {
   "id": "silverline",
@@ -8226,7 +8973,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Jungle native. Orange wings are striped with brown. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_silverline"
+  "icon": "textures/items/jars/jar_silverline",
+  "realm": "overworld"
  },
  {
   "id": "common_silverline",
@@ -8237,7 +8985,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Jungle. Orange wings are striped with brown. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_common_silverline"
+  "icon": "textures/items/jars/jar_common_silverline",
+  "realm": "overworld"
  },
  {
   "id": "yamfly",
@@ -8248,7 +8997,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Jungle. Its wings fade from orange to orange. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_yamfly"
+  "icon": "textures/items/jars/jar_yamfly",
+  "realm": "overworld"
  },
  {
   "id": "common_guava_blue",
@@ -8259,7 +9009,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Jungle. Sky-blue wings flash sky-blue when the light catches them. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_common_guava_blue"
+  "icon": "textures/items/jars/jar_common_guava_blue",
+  "realm": "overworld"
  },
  {
   "id": "red_flash",
@@ -8270,7 +9021,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Jungle native. Brown wings glow red close to the body. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_red_flash"
+  "icon": "textures/items/jars/jar_red_flash",
+  "realm": "overworld"
  },
  {
   "id": "fluffy_tit",
@@ -8281,7 +9033,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "White wings are striped with brown. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_fluffy_tit"
+  "icon": "textures/items/jars/jar_fluffy_tit",
+  "realm": "overworld"
  },
  {
   "id": "purple_sapphire",
@@ -8292,7 +9045,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Jungle. Blue wings flash violet when the light catches them. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_purple_sapphire"
+  "icon": "textures/items/jars/jar_purple_sapphire",
+  "realm": "overworld"
  },
  {
   "id": "northern_metalmark",
@@ -8303,7 +9057,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Orange wings are tiled with a brown chequerboard. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_northern_metalmark"
+  "icon": "textures/items/jars/jar_northern_metalmark",
+  "realm": "overworld"
  },
  {
   "id": "little_metalmark",
@@ -8314,7 +9069,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Swamp. Orange wings are edged with grey crescents. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_little_metalmark"
+  "icon": "textures/items/jars/jar_little_metalmark",
+  "realm": "overworld"
  },
  {
   "id": "zela_metalmark",
@@ -8325,7 +9081,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Badlands. Brown wings are dotted with white spots. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_zela_metalmark"
+  "icon": "textures/items/jars/jar_zela_metalmark",
+  "realm": "overworld"
  },
  {
   "id": "red_bordered_metalmark",
@@ -8336,7 +9093,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Desert. Brown wings wear a wide orange border. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_red_bordered_metalmark"
+  "icon": "textures/items/jars/jar_red_bordered_metalmark",
+  "realm": "overworld"
  },
  {
   "id": "blue_metalmark",
@@ -8347,7 +9105,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Desert. Sky-blue wings flash sky-blue when the light catches them. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_blue_metalmark"
+  "icon": "textures/items/jars/jar_blue_metalmark",
+  "realm": "overworld"
  },
  {
   "id": "rawsons_metalmark",
@@ -8358,7 +9117,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Desert. Orange wings are tiled with a brown chequerboard. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_rawsons_metalmark"
+  "icon": "textures/items/jars/jar_rawsons_metalmark",
+  "realm": "overworld"
  },
  {
   "id": "ares_metalmark",
@@ -8369,7 +9129,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Desert. Orange wings are tiled with a brown chequerboard. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_ares_metalmark"
+  "icon": "textures/items/jars/jar_ares_metalmark",
+  "realm": "overworld"
  },
  {
   "id": "sword_tailed_beautymark",
@@ -8380,7 +9141,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "Look for it in the Jungle. White wings are striped with black. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_sword_tailed_beautymark"
+  "icon": "textures/items/jars/jar_sword_tailed_beautymark",
+  "realm": "overworld"
  },
  {
   "id": "punchinello",
@@ -8391,7 +9153,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Forest. Brown wings are dotted with white spots. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_punchinello"
+  "icon": "textures/items/jars/jar_punchinello",
+  "realm": "overworld"
  },
  {
   "id": "plum_judy",
@@ -8402,7 +9165,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Jungle. A bright white band slashes across its brown wings. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_plum_judy"
+  "icon": "textures/items/jars/jar_plum_judy",
+  "realm": "overworld"
  },
  {
   "id": "common_pierrot",
@@ -8413,7 +9177,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Jungle native. White wings are dotted with black spots. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_common_pierrot"
+  "icon": "textures/items/jars/jar_common_pierrot",
+  "realm": "overworld"
  },
  {
   "id": "mediterranean_skipper",
@@ -8424,7 +9189,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Look for it in the Badlands. Brown wings are dotted with white spots. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_mediterranean_skipper"
+  "icon": "textures/items/jars/jar_mediterranean_skipper",
+  "realm": "overworld"
  },
  {
   "id": "hammock_skipper",
@@ -8435,7 +9201,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Brown wings carry big white patches. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_hammock_skipper"
+  "icon": "textures/items/jars/jar_hammock_skipper",
+  "realm": "overworld"
  },
  {
   "id": "red_underwing_skipper",
@@ -8446,7 +9213,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Look for it in the Meadow. Its forewings are brown while its hindwings are black. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_red_underwing_skipper"
+  "icon": "textures/items/jars/jar_red_underwing_skipper",
+  "realm": "overworld"
  },
  {
   "id": "safflower_skipper",
@@ -8457,7 +9225,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Found in the Mountains. Charcoal wings are tiled with a white chequerboard. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_safflower_skipper"
+  "icon": "textures/items/jars/jar_safflower_skipper",
+  "realm": "overworld"
  },
  {
   "id": "olive_skipper",
@@ -8468,7 +9237,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Look for it in the Mountains. Yellow wings are tiled with a white chequerboard. It is most active in the hottest hours of the day.",
-  "icon": "textures/items/jars/jar_olive_skipper"
+  "icon": "textures/items/jars/jar_olive_skipper",
+  "realm": "overworld"
  },
  {
   "id": "oberthurs_grizzled_skipper",
@@ -8479,7 +9249,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "A Mountains native. Charcoal wings are tiled with a white chequerboard. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_oberthurs_grizzled_skipper"
+  "icon": "textures/items/jars/jar_oberthurs_grizzled_skipper",
+  "realm": "overworld"
  },
  {
   "id": "rosy_grizzled_skipper",
@@ -8490,7 +9261,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "A Badlands native. Red wings are tiled with a white chequerboard. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_rosy_grizzled_skipper"
+  "icon": "textures/items/jars/jar_rosy_grizzled_skipper",
+  "realm": "overworld"
  },
  {
   "id": "large_grizzled_skipper",
@@ -8501,7 +9273,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Look for it in the Meadow. Charcoal wings are tiled with a white chequerboard. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_large_grizzled_skipper"
+  "icon": "textures/items/jars/jar_large_grizzled_skipper",
+  "realm": "overworld"
  },
  {
   "id": "marbled_skipper",
@@ -8512,7 +9285,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "A Badlands native. Brown marbling covers its brown underside. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_marbled_skipper"
+  "icon": "textures/items/jars/jar_marbled_skipper",
+  "realm": "overworld"
  },
  {
   "id": "tufted_marbled_skipper",
@@ -8523,7 +9297,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Found in the Badlands. Brown marbling covers its orange underside. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_tufted_marbled_skipper"
+  "icon": "textures/items/jars/jar_tufted_marbled_skipper",
+  "realm": "overworld"
  },
  {
   "id": "dingy_skipper",
@@ -8534,7 +9309,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "A Meadow native. Its dusky brown wings are freckled with orange. It is most active in the hottest hours of the day.",
-  "icon": "textures/items/jars/jar_dingy_skipper"
+  "icon": "textures/items/jars/jar_dingy_skipper",
+  "realm": "overworld"
  },
  {
   "id": "pygmy_skipper",
@@ -8545,7 +9321,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Brown wings are dusted with brown speckles. It is most active in the hottest hours of the day.",
-  "icon": "textures/items/jars/jar_pygmy_skipper"
+  "icon": "textures/items/jars/jar_pygmy_skipper",
+  "realm": "overworld"
  },
  {
   "id": "small_checkered_skipper",
@@ -8556,7 +9333,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "A Meadow native. Brown wings are tiled with a orange chequerboard. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_small_checkered_skipper"
+  "icon": "textures/items/jars/jar_small_checkered_skipper",
+  "realm": "overworld"
  },
  {
   "id": "northern_chequered_skipper",
@@ -8567,7 +9345,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Look for it in the Taiga. Brown wings are tiled with a orange chequerboard. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_northern_chequered_skipper"
+  "icon": "textures/items/jars/jar_northern_chequered_skipper",
+  "realm": "overworld"
  },
  {
   "id": "large_chequered_skipper",
@@ -8578,7 +9357,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Brown wings are tiled with a golden chequerboard. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_large_chequered_skipper"
+  "icon": "textures/items/jars/jar_large_chequered_skipper",
+  "realm": "overworld"
  },
  {
   "id": "juvenals_duskywing",
@@ -8589,7 +9369,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Look for it in the Forest. Brown wings are dotted with white spots. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_juvenals_duskywing"
+  "icon": "textures/items/jars/jar_juvenals_duskywing",
+  "realm": "overworld"
  },
  {
   "id": "common_roadside_skipper",
@@ -8600,7 +9381,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Look for it in the Forest. Brown wings are dotted with white spots. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_common_roadside_skipper"
+  "icon": "textures/items/jars/jar_common_roadside_skipper",
+  "realm": "overworld"
  },
  {
   "id": "least_skipper",
@@ -8611,7 +9393,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "A Swamp native. Its wings fade from orange to orange. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_least_skipper"
+  "icon": "textures/items/jars/jar_least_skipper",
+  "realm": "overworld"
  },
  {
   "id": "delaware_skipper",
@@ -8622,7 +9405,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Look for it in the Meadow. Orange wings wear a wide brown border. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_delaware_skipper"
+  "icon": "textures/items/jars/jar_delaware_skipper",
+  "realm": "overworld"
  },
  {
   "id": "crossline_skipper",
@@ -8633,7 +9417,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "A Plains native. Orange wings wear a wide brown border. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_crossline_skipper"
+  "icon": "textures/items/jars/jar_crossline_skipper",
+  "realm": "overworld"
  },
  {
   "id": "leonards_skipper",
@@ -8644,7 +9429,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Found in the Meadow. Brown wings carry big cream patches. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_leonards_skipper"
+  "icon": "textures/items/jars/jar_leonards_skipper",
+  "realm": "overworld"
  },
  {
   "id": "indian_skipper",
@@ -8655,7 +9441,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Orange wings wear a wide brown border. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_indian_skipper"
+  "icon": "textures/items/jars/jar_indian_skipper",
+  "realm": "overworld"
  },
  {
   "id": "dun_skipper",
@@ -8666,7 +9453,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "A Meadow native. Its dusky brown wings are freckled with orange. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_dun_skipper"
+  "icon": "textures/items/jars/jar_dun_skipper",
+  "realm": "overworld"
  },
  {
   "id": "two_spotted_skipper",
@@ -8677,7 +9465,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Found in the Swamp. Brown wings are dotted with orange spots. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_two_spotted_skipper"
+  "icon": "textures/items/jars/jar_two_spotted_skipper",
+  "realm": "overworld"
  },
  {
   "id": "black_dash",
@@ -8688,7 +9477,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Look for it in the Swamp. A bright black band slashes across its orange wings. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_black_dash"
+  "icon": "textures/items/jars/jar_black_dash",
+  "realm": "overworld"
  },
  {
   "id": "long_dash",
@@ -8699,7 +9489,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Found in the Meadow. A bright brown band slashes across its orange wings. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_long_dash"
+  "icon": "textures/items/jars/jar_long_dash",
+  "realm": "overworld"
  },
  {
   "id": "arogos_skipper",
@@ -8710,7 +9501,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Look for it in the Plains. Orange wings wear a wide brown border. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_arogos_skipper"
+  "icon": "textures/items/jars/jar_arogos_skipper",
+  "realm": "overworld"
  },
  {
   "id": "dotted_skipper",
@@ -8721,7 +9513,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Found in the Plains. Brown wings are dotted with white spots. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_dotted_skipper"
+  "icon": "textures/items/jars/jar_dotted_skipper",
+  "realm": "overworld"
  },
  {
   "id": "swarthy_skipper",
@@ -8732,7 +9525,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "A Plains native. Its wings fade from brown to brown. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_swarthy_skipper"
+  "icon": "textures/items/jars/jar_swarthy_skipper",
+  "realm": "overworld"
  },
  {
   "id": "clouded_skipper",
@@ -8743,7 +9537,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Its dusky brown wings are freckled with orange. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_clouded_skipper"
+  "icon": "textures/items/jars/jar_clouded_skipper",
+  "realm": "overworld"
  },
  {
   "id": "eufala_skipper",
@@ -8754,7 +9549,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Found in the Plains. Brown wings are dotted with white spots. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_eufala_skipper"
+  "icon": "textures/items/jars/jar_eufala_skipper",
+  "realm": "overworld"
  },
  {
   "id": "common_banded_awl",
@@ -8765,7 +9561,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "A bright white band slashes across its brown wings. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_common_banded_awl"
+  "icon": "textures/items/jars/jar_common_banded_awl",
+  "realm": "overworld"
  },
  {
   "id": "orange_awlet",
@@ -8776,7 +9573,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Its wings fade from orange to orange. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_orange_awlet"
+  "icon": "textures/items/jars/jar_orange_awlet",
+  "realm": "overworld"
  },
  {
   "id": "brown_awl",
@@ -8787,7 +9585,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "A Jungle native. Its wings fade from brown to orange. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_brown_awl"
+  "icon": "textures/items/jars/jar_brown_awl",
+  "realm": "overworld"
  },
  {
   "id": "indian_palm_bob",
@@ -8798,7 +9597,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "A Jungle native. Brown wings carry big golden patches. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_indian_palm_bob"
+  "icon": "textures/items/jars/jar_indian_palm_bob",
+  "realm": "overworld"
  },
  {
   "id": "grass_demon",
@@ -8809,7 +9609,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "A Jungle native. Brown wings are dotted with golden spots. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_grass_demon"
+  "icon": "textures/items/jars/jar_grass_demon",
+  "realm": "overworld"
  },
  {
   "id": "chestnut_bob",
@@ -8820,7 +9621,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Look for it in the Jungle. Its wings fade from brown to orange. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_chestnut_bob"
+  "icon": "textures/items/jars/jar_chestnut_bob",
+  "realm": "overworld"
  },
  {
   "id": "pale_palm_dart",
@@ -8831,7 +9633,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Look for it in the Plains. Orange wings are striped with brown. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_pale_palm_dart"
+  "icon": "textures/items/jars/jar_pale_palm_dart",
+  "realm": "overworld"
  },
  {
   "id": "water_snow_flat",
@@ -8842,7 +9645,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "A Jungle native. Brown wings are dotted with white spots. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_water_snow_flat"
+  "icon": "textures/items/jars/jar_water_snow_flat",
+  "realm": "overworld"
  },
  {
   "id": "tricolour_pied_flat",
@@ -8853,7 +9657,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Look for it in the Jungle. Black wings carry big white patches. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_tricolour_pied_flat"
+  "icon": "textures/items/jars/jar_tricolour_pied_flat",
+  "realm": "overworld"
  },
  {
   "id": "common_morpho",
@@ -8864,7 +9669,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A bright sky-blue band slashes across its black wings. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_common_morpho"
+  "icon": "textures/items/jars/jar_common_morpho",
+  "realm": "overworld"
  },
  {
   "id": "godarts_morpho",
@@ -8875,7 +9681,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Jungle native. Sky-blue wings flash sky-blue when the light catches them. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_godarts_morpho"
+  "icon": "textures/items/jars/jar_godarts_morpho",
+  "realm": "overworld"
  },
  {
   "id": "deidamia_morpho",
@@ -8886,7 +9693,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A bright sky-blue band slashes across its brown wings. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_deidamia_morpho"
+  "icon": "textures/items/jars/jar_deidamia_morpho",
+  "realm": "overworld"
  },
  {
   "id": "hecuba_morpho",
@@ -8897,7 +9705,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Jungle. Its wings fade from orange to orange. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_hecuba_morpho"
+  "icon": "textures/items/jars/jar_hecuba_morpho",
+  "realm": "overworld"
  },
  {
   "id": "telemachus_morpho",
@@ -8908,7 +9717,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Jungle native. Sky-blue wings flash teal when the light catches them. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_telemachus_morpho"
+  "icon": "textures/items/jars/jar_telemachus_morpho",
+  "realm": "overworld"
  },
  {
   "id": "theseus_morpho",
@@ -8919,7 +9729,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Its wings fade from grey to grey. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_theseus_morpho"
+  "icon": "textures/items/jars/jar_theseus_morpho",
+  "realm": "overworld"
  },
  {
   "id": "helena_morpho",
@@ -8930,7 +9741,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Jungle native. A bright teal band slashes across its black wings. It is most active in the hottest hours of the day.",
-  "icon": "textures/items/jars/jar_helena_morpho"
+  "icon": "textures/items/jars/jar_helena_morpho",
+  "realm": "overworld"
  },
  {
   "id": "anaxibia_morpho",
@@ -8941,7 +9753,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Jungle. Sky-blue wings flash sky-blue when the light catches them. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_anaxibia_morpho"
+  "icon": "textures/items/jars/jar_anaxibia_morpho",
+  "realm": "overworld"
  },
  {
   "id": "pale_owl",
@@ -8952,7 +9765,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Jungle. A row of little white eyespots lines its orange hindwings. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_pale_owl"
+  "icon": "textures/items/jars/jar_pale_owl",
+  "realm": "overworld"
  },
  {
   "id": "idomeneus_giant_owl",
@@ -8963,7 +9777,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Jungle. Brown wings carry bold golden eyespots that startle anything trying to eat it. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_idomeneus_giant_owl"
+  "icon": "textures/items/jars/jar_idomeneus_giant_owl",
+  "realm": "overworld"
  },
  {
   "id": "atreus_owl",
@@ -8974,7 +9789,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Jungle. Violet wings carry bold golden eyespots that startle anything trying to eat it. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_atreus_owl"
+  "icon": "textures/items/jars/jar_atreus_owl",
+  "realm": "overworld"
  },
  {
   "id": "mexican_owl",
@@ -8985,7 +9801,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Brown wings carry bold golden eyespots that startle anything trying to eat it. It is most active in the hottest hours of the day.",
-  "icon": "textures/items/jars/jar_mexican_owl"
+  "icon": "textures/items/jars/jar_mexican_owl",
+  "realm": "overworld"
  },
  {
   "id": "pink_glasswing",
@@ -8996,7 +9813,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Jungle. Its wings are clear as glass, edged with pink. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_pink_glasswing"
+  "icon": "textures/items/jars/jar_pink_glasswing",
+  "realm": "overworld"
  },
  {
   "id": "amber_phantom",
@@ -9007,7 +9825,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Its wings are clear as glass, edged with brown. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_amber_phantom"
+  "icon": "textures/items/jars/jar_amber_phantom",
+  "realm": "overworld"
  },
  {
   "id": "blushing_phantom",
@@ -9018,7 +9837,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Jungle native. Its wings are clear as glass, edged with pink. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_blushing_phantom"
+  "icon": "textures/items/jars/jar_blushing_phantom",
+  "realm": "overworld"
  },
  {
   "id": "rusted_clearwing_satyr",
@@ -9029,7 +9849,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Jungle native. Its wings are clear as glass, edged with brown. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_rusted_clearwing_satyr"
+  "icon": "textures/items/jars/jar_rusted_clearwing_satyr",
+  "realm": "overworld"
  },
  {
   "id": "crystal_winged_satyr",
@@ -9040,7 +9861,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Jungle. Its wings are clear as glass, edged with sky-blue. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_crystal_winged_satyr"
+  "icon": "textures/items/jars/jar_crystal_winged_satyr",
+  "realm": "overworld"
  },
  {
   "id": "tiger_striped_leafwing",
@@ -9051,7 +9873,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Jungle. Orange wings laced with black veins warn birds that it tastes awful. It is most active in the hottest hours of the day.",
-  "icon": "textures/items/jars/jar_tiger_striped_leafwing"
+  "icon": "textures/items/jars/jar_tiger_striped_leafwing",
+  "realm": "overworld"
  },
  {
   "id": "angled_leafwing",
@@ -9062,7 +9885,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Jungle. Its wings fade from brown to orange. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_angled_leafwing"
+  "icon": "textures/items/jars/jar_angled_leafwing",
+  "realm": "overworld"
  },
  {
   "id": "blue_leafwing",
@@ -9073,7 +9897,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Jungle. Blue wings flash sky-blue when the light catches them. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_blue_leafwing"
+  "icon": "textures/items/jars/jar_blue_leafwing",
+  "realm": "overworld"
  },
  {
   "id": "purple_leafwing",
@@ -9084,7 +9909,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Violet wings flash violet when the light catches them. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_purple_leafwing"
+  "icon": "textures/items/jars/jar_purple_leafwing",
+  "realm": "overworld"
  },
  {
   "id": "florida_leafwing",
@@ -9095,7 +9921,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Swamp native. Its wings fade from orange to orange. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_florida_leafwing"
+  "icon": "textures/items/jars/jar_florida_leafwing",
+  "realm": "overworld"
  },
  {
   "id": "starry_night_cracker",
@@ -9106,7 +9933,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Jungle. Blue wings are dusted with sky-blue speckles. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_starry_night_cracker"
+  "icon": "textures/items/jars/jar_starry_night_cracker",
+  "realm": "overworld"
  },
  {
   "id": "glaucous_cracker",
@@ -9117,7 +9945,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Jungle. Sky-blue wings are dusted with black speckles. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_glaucous_cracker"
+  "icon": "textures/items/jars/jar_glaucous_cracker",
+  "realm": "overworld"
  },
  {
   "id": "gray_cracker",
@@ -9128,7 +9957,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Jungle native. Grey wings are dusted with black speckles. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_gray_cracker"
+  "icon": "textures/items/jars/jar_gray_cracker",
+  "realm": "overworld"
  },
  {
   "id": "variable_cracker",
@@ -9139,7 +9969,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Sky-blue wings are dusted with black speckles. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_variable_cracker"
+  "icon": "textures/items/jars/jar_variable_cracker",
+  "realm": "overworld"
  },
  {
   "id": "blomfilds_beauty",
@@ -9150,7 +9981,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A bright orange band slashes across its black wings. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_blomfilds_beauty"
+  "icon": "textures/items/jars/jar_blomfilds_beauty",
+  "realm": "overworld"
  },
  {
   "id": "smooth_banded_sister",
@@ -9161,7 +9993,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Jungle. A bright white band slashes across its brown wings. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_smooth_banded_sister"
+  "icon": "textures/items/jars/jar_smooth_banded_sister",
+  "realm": "overworld"
  },
  {
   "id": "waiter_daggerwing",
@@ -9172,7 +10005,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Jungle native. White wings are striped with brown. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_waiter_daggerwing"
+  "icon": "textures/items/jars/jar_waiter_daggerwing",
+  "realm": "overworld"
  },
  {
   "id": "orange_daggerwing",
@@ -9183,7 +10017,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Jungle. Orange wings are striped with brown. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_orange_daggerwing"
+  "icon": "textures/items/jars/jar_orange_daggerwing",
+  "realm": "overworld"
  },
  {
   "id": "tropical_leafwing",
@@ -9194,7 +10029,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Jungle native. Its wings fade from orange to orange. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_tropical_leafwing"
+  "icon": "textures/items/jars/jar_tropical_leafwing",
+  "realm": "overworld"
  },
  {
   "id": "golden_helicon",
@@ -9205,7 +10041,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Golden wings laced with black veins warn birds that it tastes awful. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_golden_helicon"
+  "icon": "textures/items/jars/jar_golden_helicon",
+  "realm": "overworld"
  },
  {
   "id": "wallaces_longwing",
@@ -9216,7 +10053,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Black wings flash sky-blue when the light catches them. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_wallaces_longwing"
+  "icon": "textures/items/jars/jar_wallaces_longwing",
+  "realm": "overworld"
  },
  {
   "id": "small_postman",
@@ -9227,7 +10065,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Jungle. Long black wings carry a red band. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_small_postman"
+  "icon": "textures/items/jars/jar_small_postman",
+  "realm": "overworld"
  },
  {
   "id": "sapho_longwing",
@@ -9238,7 +10077,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Jungle. Long black wings carry a white band. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_sapho_longwing"
+  "icon": "textures/items/jars/jar_sapho_longwing",
+  "realm": "overworld"
  },
  {
   "id": "hewitsons_longwing",
@@ -9249,7 +10089,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Black and golden stripes make it look like a tiny zebra. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_hewitsons_longwing"
+  "icon": "textures/items/jars/jar_hewitsons_longwing",
+  "realm": "overworld"
  },
  {
   "id": "hecuba_longwing",
@@ -9260,7 +10101,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Jungle. Long black wings carry a golden band. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_hecuba_longwing"
+  "icon": "textures/items/jars/jar_hecuba_longwing",
+  "realm": "overworld"
  },
  {
   "id": "ismenius_tiger",
@@ -9271,7 +10113,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Jungle. Orange wings laced with black veins warn birds that it tastes awful. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_ismenius_tiger"
+  "icon": "textures/items/jars/jar_ismenius_tiger",
+  "realm": "overworld"
  },
  {
   "id": "numata_longwing",
@@ -9282,7 +10125,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Jungle. Orange wings laced with black veins warn birds that it tastes awful. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_numata_longwing"
+  "icon": "textures/items/jars/jar_numata_longwing",
+  "realm": "overworld"
  },
  {
   "id": "hecalesia_longwing",
@@ -9293,7 +10137,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Jungle. Long red wings carry a red band. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_hecalesia_longwing"
+  "icon": "textures/items/jars/jar_hecalesia_longwing",
+  "realm": "overworld"
  },
  {
   "id": "small_flambeau",
@@ -9304,7 +10149,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Jungle. Its wings fade from orange to orange. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_small_flambeau"
+  "icon": "textures/items/jars/jar_small_flambeau",
+  "realm": "overworld"
  },
  {
   "id": "mexican_silverspot",
@@ -9315,7 +10161,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Jungle. Orange wings wear a wide black border. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_mexican_silverspot"
+  "icon": "textures/items/jars/jar_mexican_silverspot",
+  "realm": "overworld"
  },
  {
   "id": "ethilia_longwing",
@@ -9326,7 +10173,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Jungle. Orange wings are striped with black. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_ethilia_longwing"
+  "icon": "textures/items/jars/jar_ethilia_longwing",
+  "realm": "overworld"
  },
  {
   "id": "grecian_shoemaker",
@@ -9337,7 +10185,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Jungle. Black wings carry big sky-blue patches. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_grecian_shoemaker"
+  "icon": "textures/items/jars/jar_grecian_shoemaker",
+  "realm": "overworld"
  },
  {
   "id": "red_anartia",
@@ -9348,7 +10197,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Jungle. A bright red band slashes across its black wings. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_red_anartia"
+  "icon": "textures/items/jars/jar_red_anartia",
+  "realm": "overworld"
  },
  {
   "id": "blue_doctor",
@@ -9359,7 +10209,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Jungle. A bright sky-blue band slashes across its black wings. It is most active in the hottest hours of the day.",
-  "icon": "textures/items/jars/jar_blue_doctor"
+  "icon": "textures/items/jars/jar_blue_doctor",
+  "realm": "overworld"
  },
  {
   "id": "blue_frosted_catone",
@@ -9370,7 +10221,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Jungle native. Violet wings flash violet when the light catches them. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_blue_frosted_catone"
+  "icon": "textures/items/jars/jar_blue_frosted_catone",
+  "realm": "overworld"
  },
  {
   "id": "mosaic",
@@ -9381,7 +10233,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Jungle. A bright sky-blue band slashes across its black wings. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_mosaic"
+  "icon": "textures/items/jars/jar_mosaic",
+  "realm": "overworld"
  },
  {
   "id": "bamboo_page",
@@ -9392,7 +10245,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Jungle. Black wings carry big lime patches. It is most active in the hottest hours of the day.",
-  "icon": "textures/items/jars/jar_bamboo_page"
+  "icon": "textures/items/jars/jar_bamboo_page",
+  "realm": "overworld"
  },
  {
   "id": "rusty_page",
@@ -9403,7 +10257,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "Milkweed, Butterfly Bush and leaves, but seeds work best",
   "info": "Look for it in the Jungle. Orange wings are dipped in black at the tips. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_rusty_page"
+  "icon": "textures/items/jars/jar_rusty_page",
+  "realm": "overworld"
  },
  {
   "id": "silver_emperor",
@@ -9414,7 +10269,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Jungle. Grey wings flash white when the light catches them. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_silver_emperor"
+  "icon": "textures/items/jars/jar_silver_emperor",
+  "realm": "overworld"
  },
  {
   "id": "blue_banded_purplewing",
@@ -9425,7 +10281,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Jungle. A bright sky-blue band slashes across its black wings. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_blue_banded_purplewing"
+  "icon": "textures/items/jars/jar_blue_banded_purplewing",
+  "realm": "overworld"
  },
  {
   "id": "dirce_beauty",
@@ -9436,7 +10293,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Brown and golden stripes make it look like a tiny zebra. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_dirce_beauty"
+  "icon": "textures/items/jars/jar_dirce_beauty",
+  "realm": "overworld"
  },
  {
   "id": "orange_banded_shoemaker",
@@ -9447,7 +10305,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Jungle. A bright orange band slashes across its black wings. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_orange_banded_shoemaker"
+  "icon": "textures/items/jars/jar_orange_banded_shoemaker",
+  "realm": "overworld"
  },
  {
   "id": "cattleheart_white",
@@ -9458,7 +10317,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "White wings carry big red patches. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_cattleheart_white"
+  "icon": "textures/items/jars/jar_cattleheart_white",
+  "realm": "overworld"
  },
  {
   "id": "painted_courtesan",
@@ -9469,7 +10329,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Jungle native. Its forewings are orange while its hindwings are black. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_painted_courtesan"
+  "icon": "textures/items/jars/jar_painted_courtesan",
+  "realm": "overworld"
  },
  {
   "id": "banded_yeoman",
@@ -9480,7 +10341,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Jungle native. A bright white band slashes across its orange wings. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_banded_yeoman"
+  "icon": "textures/items/jars/jar_banded_yeoman",
+  "realm": "overworld"
  },
  {
   "id": "common_nawab",
@@ -9491,7 +10353,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A bright golden band slashes across its brown wings. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_common_nawab"
+  "icon": "textures/items/jars/jar_common_nawab",
+  "realm": "overworld"
  },
  {
   "id": "tawny_rajah",
@@ -9502,7 +10365,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Jungle. Its wings fade from orange to orange. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_tawny_rajah"
+  "icon": "textures/items/jars/jar_tawny_rajah",
+  "realm": "overworld"
  },
  {
   "id": "black_rajah",
@@ -9513,7 +10377,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A bright white band slashes across its black wings. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_black_rajah"
+  "icon": "textures/items/jars/jar_black_rajah",
+  "realm": "overworld"
  },
  {
   "id": "great_nawab",
@@ -9524,7 +10389,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Jungle native. Its forewings are golden while its hindwings are black. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_great_nawab"
+  "icon": "textures/items/jars/jar_great_nawab",
+  "realm": "overworld"
  },
  {
   "id": "common_map_butterfly",
@@ -9535,7 +10401,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "White wings are striped with black. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_common_map_butterfly"
+  "icon": "textures/items/jars/jar_common_map_butterfly",
+  "realm": "overworld"
  },
  {
   "id": "vagrant",
@@ -9546,7 +10413,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Jungle. Orange wings are dipped in black at the tips. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_vagrant"
+  "icon": "textures/items/jars/jar_vagrant",
+  "realm": "overworld"
  },
  {
   "id": "common_castor",
@@ -9557,7 +10425,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Jungle. Orange wings are striped with black. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_common_castor"
+  "icon": "textures/items/jars/jar_common_castor",
+  "realm": "overworld"
  },
  {
   "id": "angled_castor",
@@ -9568,7 +10437,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Jungle. Orange wings are striped with brown. It is most active in the hottest hours of the day.",
-  "icon": "textures/items/jars/jar_angled_castor"
+  "icon": "textures/items/jars/jar_angled_castor",
+  "realm": "overworld"
  },
  {
   "id": "small_leopard",
@@ -9579,7 +10449,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Jungle. Orange wings wear a wide black border. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_small_leopard"
+  "icon": "textures/items/jars/jar_small_leopard",
+  "realm": "overworld"
  },
  {
   "id": "common_duffer",
@@ -9590,7 +10461,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Jungle. Brown wings flash blue when the light catches them. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_common_duffer"
+  "icon": "textures/items/jars/jar_common_duffer",
+  "realm": "overworld"
  },
  {
   "id": "common_faun",
@@ -9601,7 +10473,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Jungle. A row of little white eyespots lines its orange hindwings. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_common_faun"
+  "icon": "textures/items/jars/jar_common_faun",
+  "realm": "overworld"
  },
  {
   "id": "jungle_queen",
@@ -9612,7 +10485,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Jungle. Its wings fade from blue to blue. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_jungle_queen"
+  "icon": "textures/items/jars/jar_jungle_queen",
+  "realm": "overworld"
  },
  {
   "id": "common_palmfly",
@@ -9623,7 +10497,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Jungle. Brown wings carry big orange patches. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_common_palmfly"
+  "icon": "textures/items/jars/jar_common_palmfly",
+  "realm": "overworld"
  },
  {
   "id": "white_banded_swallowtail",
@@ -9634,7 +10509,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "A bright white band slashes across its black wings. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_white_banded_swallowtail"
+  "icon": "textures/items/jars/jar_white_banded_swallowtail",
+  "realm": "overworld"
  },
  {
   "id": "green_veined_emperor",
@@ -9645,7 +10521,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Lime rays run through its cream wings. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_green_veined_emperor"
+  "icon": "textures/items/jars/jar_green_veined_emperor",
+  "realm": "overworld"
  },
  {
   "id": "white_barred_charaxes",
@@ -9656,7 +10533,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Savanna. A bright white band slashes across its brown wings. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_white_barred_charaxes"
+  "icon": "textures/items/jars/jar_white_barred_charaxes",
+  "realm": "overworld"
  },
  {
   "id": "flame_bordered_charaxes",
@@ -9667,7 +10545,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Brown wings wear a wide black border. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_flame_bordered_charaxes"
+  "icon": "textures/items/jars/jar_flame_bordered_charaxes",
+  "realm": "overworld"
  },
  {
   "id": "demon_charaxes",
@@ -9678,7 +10557,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Savanna native. Black wings flash sky-blue when the light catches them. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_demon_charaxes"
+  "icon": "textures/items/jars/jar_demon_charaxes",
+  "realm": "overworld"
  },
  {
   "id": "blue_spotted_charaxes",
@@ -9689,7 +10569,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Savanna. Black wings are dotted with sky-blue spots. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_blue_spotted_charaxes"
+  "icon": "textures/items/jars/jar_blue_spotted_charaxes",
+  "realm": "overworld"
  },
  {
   "id": "giant_charaxes",
@@ -9700,7 +10581,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Savanna. Its wings fade from orange to orange. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_giant_charaxes"
+  "icon": "textures/items/jars/jar_giant_charaxes",
+  "realm": "overworld"
  },
  {
   "id": "pearl_emperor",
@@ -9711,7 +10593,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Savanna native. Cream wings are edged with orange crescents. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_pearl_emperor"
+  "icon": "textures/items/jars/jar_pearl_emperor",
+  "realm": "overworld"
  },
  {
   "id": "guineafowl",
@@ -9722,7 +10605,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Savanna. Black wings are dotted with white spots. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_guineafowl"
+  "icon": "textures/items/jars/jar_guineafowl",
+  "realm": "overworld"
  },
  {
   "id": "african_joker",
@@ -9733,7 +10617,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Savanna native. Orange wings wear a wide black border. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_african_joker"
+  "icon": "textures/items/jars/jar_african_joker",
+  "realm": "overworld"
  },
  {
   "id": "bush_beauty",
@@ -9744,7 +10629,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A row of little white eyespots lines its orange hindwings. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_bush_beauty"
+  "icon": "textures/items/jars/jar_bush_beauty",
+  "realm": "overworld"
  },
  {
   "id": "brown_pansy",
@@ -9755,7 +10641,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A row of little orange eyespots lines its brown hindwings. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_brown_pansy"
+  "icon": "textures/items/jars/jar_brown_pansy",
+  "realm": "overworld"
  },
  {
   "id": "soldier_pansy",
@@ -9766,7 +10653,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Savanna native. A row of little orange eyespots lines its brown hindwings. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_soldier_pansy"
+  "icon": "textures/items/jars/jar_soldier_pansy",
+  "realm": "overworld"
  },
  {
   "id": "dark_blue_pansy",
@@ -9777,7 +10665,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Savanna. Black wings carry big sky-blue patches. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_dark_blue_pansy"
+  "icon": "textures/items/jars/jar_dark_blue_pansy",
+  "realm": "overworld"
  },
  {
   "id": "eyed_pansy",
@@ -9788,7 +10677,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Orange wings carry bold sky-blue eyespots that startle anything trying to eat it. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_eyed_pansy"
+  "icon": "textures/items/jars/jar_eyed_pansy",
+  "realm": "overworld"
  },
  {
   "id": "african_map",
@@ -9799,7 +10689,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "White wings are striped with black. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_african_map"
+  "icon": "textures/items/jars/jar_african_map",
+  "realm": "overworld"
  },
  {
   "id": "common_acraea",
@@ -9810,7 +10701,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Savanna. Orange wings are dotted with black spots. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_common_acraea"
+  "icon": "textures/items/jars/jar_common_acraea",
+  "realm": "overworld"
  },
  {
   "id": "garden_acraea",
@@ -9821,7 +10713,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Red wings are dotted with black spots. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_garden_acraea"
+  "icon": "textures/items/jars/jar_garden_acraea",
+  "realm": "overworld"
  },
  {
   "id": "dusky_veined_acraea",
@@ -9832,7 +10725,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Brown rays run through its orange wings. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_dusky_veined_acraea"
+  "icon": "textures/items/jars/jar_dusky_veined_acraea",
+  "realm": "overworld"
  },
  {
   "id": "clearwing_acraea",
@@ -9843,7 +10737,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Savanna. Its wings are clear as glass, edged with brown. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_clearwing_acraea"
+  "icon": "textures/items/jars/jar_clearwing_acraea",
+  "realm": "overworld"
  },
  {
   "id": "wandering_donkey_acraea",
@@ -9854,7 +10749,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Savanna. Brown rays run through its orange wings. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_wandering_donkey_acraea"
+  "icon": "textures/items/jars/jar_wandering_donkey_acraea",
+  "realm": "overworld"
  },
  {
   "id": "large_spotted_acraea",
@@ -9865,7 +10761,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Savanna. Orange wings are dotted with black spots. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_large_spotted_acraea"
+  "icon": "textures/items/jars/jar_large_spotted_acraea",
+  "realm": "overworld"
  },
  {
   "id": "golden_piper",
@@ -9876,7 +10773,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Savanna. A bright golden band slashes across its black wings. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_golden_piper"
+  "icon": "textures/items/jars/jar_golden_piper",
+  "realm": "overworld"
  },
  {
   "id": "novice",
@@ -9887,7 +10785,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "Milkweed, Butterfly Bush and leaves, but seeds work best",
   "info": "Black rays run through its orange wings. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_novice"
+  "icon": "textures/items/jars/jar_novice",
+  "realm": "overworld"
  },
  {
   "id": "friar",
@@ -9898,7 +10797,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "Milkweed, Butterfly Bush and leaves, but seeds work best",
   "info": "Look for it in the Savanna. A bright white band slashes across its brown wings. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_friar"
+  "icon": "textures/items/jars/jar_friar",
+  "realm": "overworld"
  },
  {
   "id": "layman",
@@ -9909,7 +10809,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "Milkweed, Butterfly Bush and leaves, but seeds work best",
   "info": "A Savanna native. Black rays run through its white wings. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_layman"
+  "icon": "textures/items/jars/jar_layman",
+  "realm": "overworld"
  },
  {
   "id": "desert_babul_blue",
@@ -9920,7 +10821,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Desert. Blue wings are striped with violet. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_desert_babul_blue"
+  "icon": "textures/items/jars/jar_desert_babul_blue",
+  "realm": "overworld"
  },
  {
   "id": "desert_grass_yellow",
@@ -9931,7 +10833,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Golden wings are dipped in yellow at the tips. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_desert_grass_yellow"
+  "icon": "textures/items/jars/jar_desert_grass_yellow",
+  "realm": "overworld"
  },
  {
   "id": "sooty_orange_tip",
@@ -9942,7 +10845,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Desert. White wings are dipped in red at the tips. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_sooty_orange_tip"
+  "icon": "textures/items/jars/jar_sooty_orange_tip",
+  "realm": "overworld"
  },
  {
   "id": "desert_white",
@@ -9953,7 +10857,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Desert. Lime marbling covers its white underside. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_desert_white"
+  "icon": "textures/items/jars/jar_desert_white",
+  "realm": "overworld"
  },
  {
   "id": "millet_skipper",
@@ -9964,7 +10869,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Look for it in the Desert. Brown wings are dusted with brown speckles. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_millet_skipper"
+  "icon": "textures/items/jars/jar_millet_skipper",
+  "realm": "overworld"
  },
  {
   "id": "sandy_grizzled_skipper",
@@ -9975,7 +10881,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "A Desert native. Brown wings are tiled with a white chequerboard. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_sandy_grizzled_skipper"
+  "icon": "textures/items/jars/jar_sandy_grizzled_skipper",
+  "realm": "overworld"
  },
  {
   "id": "mojave_sootywing",
@@ -9986,7 +10893,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "A Desert native. Black wings are dotted with white spots. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_mojave_sootywing"
+  "icon": "textures/items/jars/jar_mojave_sootywing",
+  "realm": "overworld"
  },
  {
   "id": "desert_checkered_skipper",
@@ -9997,7 +10905,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "A Desert native. Charcoal wings are tiled with a white chequerboard. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_desert_checkered_skipper"
+  "icon": "textures/items/jars/jar_desert_checkered_skipper",
+  "realm": "overworld"
  },
  {
   "id": "sonoran_blue",
@@ -10008,7 +10917,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Sky-blue wings carry big orange patches. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_sonoran_blue"
+  "icon": "textures/items/jars/jar_sonoran_blue",
+  "realm": "overworld"
  },
  {
   "id": "small_dotted_blue",
@@ -10019,7 +10929,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Blue wings are dotted with black spots. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_small_dotted_blue"
+  "icon": "textures/items/jars/jar_small_dotted_blue",
+  "realm": "overworld"
  },
  {
   "id": "arizona_hairstreak",
@@ -10030,7 +10941,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Desert. Its wings fade from lime to lime. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_arizona_hairstreak"
+  "icon": "textures/items/jars/jar_arizona_hairstreak",
+  "realm": "overworld"
  },
  {
   "id": "chiricahua_white",
@@ -10041,7 +10953,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Badlands. White wings wear a wide black border. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_chiricahua_white"
+  "icon": "textures/items/jars/jar_chiricahua_white",
+  "realm": "overworld"
  },
  {
   "id": "theona_checkerspot",
@@ -10052,7 +10965,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Desert native. Orange wings are tiled with a black chequerboard. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_theona_checkerspot"
+  "icon": "textures/items/jars/jar_theona_checkerspot",
+  "realm": "overworld"
  },
  {
   "id": "dotted_checkerspot",
@@ -10063,7 +10977,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Desert. Orange wings are dotted with black spots. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_dotted_checkerspot"
+  "icon": "textures/items/jars/jar_dotted_checkerspot",
+  "realm": "overworld"
  },
  {
   "id": "rocky_mountain_parnassian",
@@ -10074,7 +10989,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "White wings carry bold red eyespots that startle anything trying to eat it. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_rocky_mountain_parnassian"
+  "icon": "textures/items/jars/jar_rocky_mountain_parnassian",
+  "realm": "overworld"
  },
  {
   "id": "eversmanns_parnassian",
@@ -10085,7 +11001,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Mountains. White wings are dotted with red spots. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_eversmanns_parnassian"
+  "icon": "textures/items/jars/jar_eversmanns_parnassian",
+  "realm": "overworld"
  },
  {
   "id": "false_apollo",
@@ -10096,7 +11013,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Mountains native. White wings are dotted with orange spots. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_false_apollo"
+  "icon": "textures/items/jars/jar_false_apollo",
+  "realm": "overworld"
  },
  {
   "id": "arctic_white",
@@ -10107,7 +11025,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Mountains native. Charcoal marbling covers its white underside. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_arctic_white"
+  "icon": "textures/items/jars/jar_arctic_white",
+  "realm": "overworld"
  },
  {
   "id": "moorland_clouded_yellow",
@@ -10118,7 +11037,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Cream wings wear a wide lime border. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_moorland_clouded_yellow"
+  "icon": "textures/items/jars/jar_moorland_clouded_yellow",
+  "realm": "overworld"
  },
  {
   "id": "mariposa_copper",
@@ -10129,7 +11049,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Mountains. Orange wings wear a wide brown border. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_mariposa_copper"
+  "icon": "textures/items/jars/jar_mariposa_copper",
+  "realm": "overworld"
  },
  {
   "id": "alpine_heath",
@@ -10140,7 +11061,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Mountains native. A row of little golden eyespots lines its orange hindwings. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_alpine_heath"
+  "icon": "textures/items/jars/jar_alpine_heath",
+  "realm": "overworld"
  },
  {
   "id": "darwins_heath",
@@ -10151,7 +11073,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Mountains native. A row of little white eyespots lines its orange hindwings. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_darwins_heath"
+  "icon": "textures/items/jars/jar_darwins_heath",
+  "realm": "overworld"
  },
  {
   "id": "large_ringlet",
@@ -10162,7 +11085,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Mountains. A row of little orange eyespots lines its brown hindwings. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_large_ringlet"
+  "icon": "textures/items/jars/jar_large_ringlet",
+  "realm": "overworld"
  },
  {
   "id": "swiss_brassy_ringlet",
@@ -10173,7 +11097,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Mountains. A row of little orange eyespots lines its brown hindwings. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_swiss_brassy_ringlet"
+  "icon": "textures/items/jars/jar_swiss_brassy_ringlet",
+  "realm": "overworld"
  },
  {
   "id": "silky_ringlet",
@@ -10184,7 +11109,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Mountains. Brown wings carry bold orange eyespots that startle anything trying to eat it. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_silky_ringlet"
+  "icon": "textures/items/jars/jar_silky_ringlet",
+  "realm": "overworld"
  },
  {
   "id": "sooty_ringlet",
@@ -10195,7 +11121,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Its dusky black wings are freckled with orange. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_sooty_ringlet"
+  "icon": "textures/items/jars/jar_sooty_ringlet",
+  "realm": "overworld"
  },
  {
   "id": "arctic_woodland_ringlet",
@@ -10206,7 +11133,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Snowy Biomes. A row of little orange eyespots lines its brown hindwings. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_arctic_woodland_ringlet"
+  "icon": "textures/items/jars/jar_arctic_woodland_ringlet",
+  "realm": "overworld"
  },
  {
   "id": "alpine_grayling",
@@ -10217,7 +11145,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Mountains. Orange wings are dusted with brown speckles. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_alpine_grayling"
+  "icon": "textures/items/jars/jar_alpine_grayling",
+  "realm": "overworld"
  },
  {
   "id": "norse_grayling",
@@ -10228,7 +11157,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Orange wings carry bold orange eyespots that startle anything trying to eat it. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_norse_grayling"
+  "icon": "textures/items/jars/jar_norse_grayling",
+  "realm": "overworld"
  },
  {
   "id": "titanias_fritillary",
@@ -10239,7 +11169,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Orange wings are tiled with a black chequerboard. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_titanias_fritillary"
+  "icon": "textures/items/jars/jar_titanias_fritillary",
+  "realm": "overworld"
  },
  {
   "id": "cranberry_fritillary",
@@ -10250,7 +11181,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Swamp. Orange wings are tiled with a brown chequerboard. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_cranberry_fritillary"
+  "icon": "textures/items/jars/jar_cranberry_fritillary",
+  "realm": "overworld"
  },
  {
   "id": "thors_fritillary",
@@ -10261,7 +11193,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Snowy Biomes. Orange wings are tiled with a black chequerboard. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_thors_fritillary"
+  "icon": "textures/items/jars/jar_thors_fritillary",
+  "realm": "overworld"
  },
  {
   "id": "astarte_fritillary",
@@ -10272,7 +11205,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Orange wings are edged with black crescents. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_astarte_fritillary"
+  "icon": "textures/items/jars/jar_astarte_fritillary",
+  "realm": "overworld"
  },
  {
   "id": "greater_banded_apollo",
@@ -10283,7 +11217,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Its wings are clear as glass, edged with charcoal. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_greater_banded_apollo"
+  "icon": "textures/items/jars/jar_greater_banded_apollo",
+  "realm": "overworld"
  },
  {
   "id": "dorcas_copper",
@@ -10294,7 +11229,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Orange wings wear a wide black border. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_dorcas_copper"
+  "icon": "textures/items/jars/jar_dorcas_copper",
+  "realm": "overworld"
  },
  {
   "id": "swamp_tiger",
@@ -10305,7 +11241,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "Milkweed, Butterfly Bush and leaves, but seeds work best",
   "info": "Orange wings laced with black veins warn birds that it tastes awful. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_swamp_tiger"
+  "icon": "textures/items/jars/jar_swamp_tiger",
+  "realm": "overworld"
  },
  {
   "id": "mangrove_blue",
@@ -10316,7 +11253,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Mangrove Swamp. Blue wings glow blue close to the body. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_mangrove_blue"
+  "icon": "textures/items/jars/jar_mangrove_blue",
+  "realm": "overworld"
  },
  {
   "id": "disguised_scrub_hairstreak",
@@ -10327,7 +11265,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Mangrove Swamp native. Grey wings are edged with orange crescents. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_disguised_scrub_hairstreak"
+  "icon": "textures/items/jars/jar_disguised_scrub_hairstreak",
+  "realm": "overworld"
  },
  {
   "id": "great_copper",
@@ -10338,7 +11277,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Beach. Orange wings are edged with orange crescents. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_great_copper"
+  "icon": "textures/items/jars/jar_great_copper",
+  "realm": "overworld"
  },
  {
   "id": "coastal_green_hairstreak",
@@ -10349,7 +11289,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Beach native. Its wings fade from lime to lime. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_coastal_green_hairstreak"
+  "icon": "textures/items/jars/jar_coastal_green_hairstreak",
+  "realm": "overworld"
  },
  {
   "id": "yuma_skipper",
@@ -10360,7 +11301,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Found in the Beach. Orange wings are dusted with brown speckles. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_yuma_skipper"
+  "icon": "textures/items/jars/jar_yuma_skipper",
+  "realm": "overworld"
  },
  {
   "id": "mulberry_wing",
@@ -10371,7 +11313,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Look for it in the Swamp. Brown marbling covers its brown underside. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_mulberry_wing"
+  "icon": "textures/items/jars/jar_mulberry_wing",
+  "realm": "overworld"
  },
  {
   "id": "sedge_skipper",
@@ -10382,7 +11325,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "A Swamp native. Orange wings wear a wide brown border. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_sedge_skipper"
+  "icon": "textures/items/jars/jar_sedge_skipper",
+  "realm": "overworld"
  },
  {
   "id": "dukes_skipper",
@@ -10393,7 +11337,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Found in the Swamp. Its dusky brown wings are freckled with orange. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_dukes_skipper"
+  "icon": "textures/items/jars/jar_dukes_skipper",
+  "realm": "overworld"
  },
  {
   "id": "rare_skipper",
@@ -10404,7 +11349,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Found in the Swamp. Orange wings wear a wide brown border. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_rare_skipper"
+  "icon": "textures/items/jars/jar_rare_skipper",
+  "realm": "overworld"
  },
  {
   "id": "eyed_brown",
@@ -10415,7 +11361,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Swamp. A row of little white eyespots lines its orange hindwings. It is most active in the hottest hours of the day.",
-  "icon": "textures/items/jars/jar_eyed_brown"
+  "icon": "textures/items/jars/jar_eyed_brown",
+  "realm": "overworld"
  },
  {
   "id": "smoky_eyed_brown",
@@ -10426,7 +11373,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Swamp native. A row of little white eyespots lines its brown hindwings. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_smoky_eyed_brown"
+  "icon": "textures/items/jars/jar_smoky_eyed_brown",
+  "realm": "overworld"
  },
  {
   "id": "tree_grayling",
@@ -10437,7 +11385,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Swamp native. Brown wings carry bold orange eyespots that startle anything trying to eat it. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_tree_grayling"
+  "icon": "textures/items/jars/jar_tree_grayling",
+  "realm": "overworld"
  },
  {
   "id": "mimic",
@@ -10448,7 +11397,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Beach native. Orange wings laced with black veins warn birds that it tastes awful. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_mimic"
+  "icon": "textures/items/jars/jar_mimic",
+  "realm": "overworld"
  },
  {
   "id": "sunflower_sentinel",
@@ -10459,7 +11409,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Its wings fade from golden to golden. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_sunflower_sentinel"
+  "icon": "textures/items/jars/jar_sunflower_sentinel",
+  "realm": "overworld"
  },
  {
   "id": "dandelion_puff",
@@ -10470,7 +11421,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Plains. Golden wings are dusted with white speckles. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_dandelion_puff"
+  "icon": "textures/items/jars/jar_dandelion_puff",
+  "realm": "overworld"
  },
  {
   "id": "poppy_petal",
@@ -10481,7 +11433,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Red wings carry big black patches. It is most active in the hottest hours of the day.",
-  "icon": "textures/items/jars/jar_poppy_petal"
+  "icon": "textures/items/jars/jar_poppy_petal",
+  "realm": "overworld"
  },
  {
   "id": "cornflower_courier",
@@ -10492,7 +11445,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Flower Forest. Blue wings flash sky-blue when the light catches them. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_cornflower_courier"
+  "icon": "textures/items/jars/jar_cornflower_courier",
+  "realm": "overworld"
  },
  {
   "id": "allium_wisp",
@@ -10503,7 +11457,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Violet wings are dusted with violet speckles. It is most active in the hottest hours of the day.",
-  "icon": "textures/items/jars/jar_allium_wisp"
+  "icon": "textures/items/jars/jar_allium_wisp",
+  "realm": "overworld"
  },
  {
   "id": "oxeye_glider",
@@ -10514,7 +11469,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Plains. White wings are dipped in golden at the tips. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_oxeye_glider"
+  "icon": "textures/items/jars/jar_oxeye_glider",
+  "realm": "overworld"
  },
  {
   "id": "azure_bluet",
@@ -10525,7 +11481,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Plains. White wings glow sky-blue close to the body. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_azure_bluet"
+  "icon": "textures/items/jars/jar_azure_bluet",
+  "realm": "overworld"
  },
  {
   "id": "lily_of_the_valley",
@@ -10536,7 +11493,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Forest. Its wings are clear as glass, edged with lime. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_lily_of_the_valley"
+  "icon": "textures/items/jars/jar_lily_of_the_valley",
+  "realm": "overworld"
  },
  {
   "id": "blue_orchid_swallowtail",
@@ -10547,7 +11505,8 @@ export const SPECIES = [
   "wingspan": "1.0 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "A Swamp native. Its wings fade from sky-blue to sky-blue. It is most active in the hottest hours of the day.",
-  "icon": "textures/items/jars/jar_blue_orchid_swallowtail"
+  "icon": "textures/items/jars/jar_blue_orchid_swallowtail",
+  "realm": "overworld"
  },
  {
   "id": "peony_puff",
@@ -10558,7 +11517,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Forest. Its wings fade from pink to pink. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_peony_puff"
+  "icon": "textures/items/jars/jar_peony_puff",
+  "realm": "overworld"
  },
  {
   "id": "lilac_lacewing",
@@ -10569,7 +11529,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Forest. Violet wings are dusted with violet speckles. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_lilac_lacewing"
+  "icon": "textures/items/jars/jar_lilac_lacewing",
+  "realm": "overworld"
  },
  {
   "id": "rose_bush_swallowtail",
@@ -10580,7 +11541,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "Black wings carry big red patches. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_rose_bush_swallowtail"
+  "icon": "textures/items/jars/jar_rose_bush_swallowtail",
+  "realm": "overworld"
  },
  {
   "id": "sweet_berry_skipper",
@@ -10591,7 +11553,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Found in the Taiga. Lime wings are dotted with red spots. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_sweet_berry_skipper"
+  "icon": "textures/items/jars/jar_sweet_berry_skipper",
+  "realm": "overworld"
  },
  {
   "id": "glow_lichen_wing",
@@ -10602,7 +11565,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Lime wings are dusted with lime speckles. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_glow_lichen_wing"
+  "icon": "textures/items/jars/jar_glow_lichen_wing",
+  "realm": "overworld"
  },
  {
   "id": "big_dripleaf",
@@ -10613,7 +11577,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Lush Caves. Its wings fade from lime to lime. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_big_dripleaf"
+  "icon": "textures/items/jars/jar_big_dripleaf",
+  "realm": "overworld"
  },
  {
   "id": "hanging_root",
@@ -10624,7 +11589,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Brown rays run through its brown wings. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_hanging_root"
+  "icon": "textures/items/jars/jar_hanging_root",
+  "realm": "overworld"
  },
  {
   "id": "calcite_glimmer",
@@ -10635,7 +11601,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Mountains. Grey marbling covers its white underside. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_calcite_glimmer"
+  "icon": "textures/items/jars/jar_calcite_glimmer",
+  "realm": "overworld"
  },
  {
   "id": "tuff_skipper",
@@ -10646,7 +11613,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "A Mountains native. Charcoal wings are dusted with yellow speckles. It sips nectar from almost any flower it can find.",
-  "icon": "textures/items/jars/jar_tuff_skipper"
+  "icon": "textures/items/jars/jar_tuff_skipper",
+  "realm": "overworld"
  },
  {
   "id": "dripleaf_duskwing",
@@ -10657,7 +11625,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "A Lush Caves native. Its dusky lime wings are freckled with lime. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_dripleaf_duskwing"
+  "icon": "textures/items/jars/jar_dripleaf_duskwing",
+  "realm": "overworld"
  },
  {
   "id": "copper_bulb",
@@ -10668,7 +11637,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Mountains. Orange wings glow orange close to the body. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_copper_bulb"
+  "icon": "textures/items/jars/jar_copper_bulb",
+  "realm": "overworld"
  },
  {
   "id": "oxidized_copper_kite",
@@ -10679,7 +11649,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "Its wings fade from green to green. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_oxidized_copper_kite"
+  "icon": "textures/items/jars/jar_oxidized_copper_kite",
+  "realm": "overworld"
  },
  {
   "id": "trial_spawner_flame",
@@ -10690,7 +11661,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "Milkweed, Butterfly Bush and leaves, but seeds work best",
   "info": "Found in the Mountains. Black wings flicker into orange like a flame. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_trial_spawner_flame"
+  "icon": "textures/items/jars/jar_trial_spawner_flame",
+  "realm": "overworld"
  },
  {
   "id": "breeze_wing",
@@ -10701,7 +11673,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Mountains native. Sky-blue rays run through its sky-blue wings. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_breeze_wing"
+  "icon": "textures/items/jars/jar_breeze_wing",
+  "realm": "overworld"
  },
  {
   "id": "ominous_bottle",
@@ -10712,7 +11685,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Mountains native. Violet wings shimmer with green like a gemstone. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_ominous_bottle"
+  "icon": "textures/items/jars/jar_ominous_bottle",
+  "realm": "overworld"
  },
  {
   "id": "armadillo_scute",
@@ -10723,7 +11697,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Found in the Savanna. Orange wings are tiled with a brown chequerboard. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_armadillo_scute"
+  "icon": "textures/items/jars/jar_armadillo_scute",
+  "realm": "overworld"
  },
  {
   "id": "wolf_armor",
@@ -10734,7 +11709,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Grey wings wear a wide yellow border. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_wolf_armor"
+  "icon": "textures/items/jars/jar_wolf_armor",
+  "realm": "overworld"
  },
  {
   "id": "bee_nest_flutter",
@@ -10745,7 +11721,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Flower Forest. Golden wings are striped with black. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_bee_nest_flutter"
+  "icon": "textures/items/jars/jar_bee_nest_flutter",
+  "realm": "overworld"
  },
  {
   "id": "honey_bottle",
@@ -10756,7 +11733,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Flower Forest. Its wings fade from orange to golden. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_honey_bottle"
+  "icon": "textures/items/jars/jar_honey_bottle",
+  "realm": "overworld"
  },
  {
   "id": "axolotl_pink",
@@ -10767,7 +11745,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Pink wings glow orange close to the body. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_axolotl_pink"
+  "icon": "textures/items/jars/jar_axolotl_pink",
+  "realm": "overworld"
  },
  {
   "id": "glow_squid_ink",
@@ -10778,7 +11757,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Teal wings are dusted with green speckles. It folds its wings tight when it lands, hiding its colours from birds.",
-  "icon": "textures/items/jars/jar_glow_squid_ink"
+  "icon": "textures/items/jars/jar_glow_squid_ink",
+  "realm": "overworld"
  },
  {
   "id": "turtle_scute",
@@ -10789,7 +11769,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Beach. Lime wings are tiled with a lime chequerboard. It basks in the morning sun to warm up before it can fly.",
-  "icon": "textures/items/jars/jar_turtle_scute"
+  "icon": "textures/items/jars/jar_turtle_scute",
+  "realm": "overworld"
  },
  {
   "id": "coral_reef",
@@ -10800,7 +11781,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Beach. Pink wings carry big golden patches. Its caterpillars spin small silk shelters in the leaves.",
-  "icon": "textures/items/jars/jar_coral_reef"
+  "icon": "textures/items/jars/jar_coral_reef",
+  "realm": "overworld"
  },
  {
   "id": "tropical_fish",
@@ -10811,7 +11793,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Its forewings are orange while its hindwings are white. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_tropical_fish"
+  "icon": "textures/items/jars/jar_tropical_fish",
+  "realm": "overworld"
  },
  {
   "id": "nautilus_shell",
@@ -10822,7 +11805,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Cream wings are striped with orange. It is most active in the hottest hours of the day.",
-  "icon": "textures/items/jars/jar_nautilus_shell"
+  "icon": "textures/items/jars/jar_nautilus_shell",
+  "realm": "overworld"
  },
  {
   "id": "sea_pickle_glow",
@@ -10833,7 +11817,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Beach. Lime wings are dotted with yellow spots. It is most active in the hottest hours of the day.",
-  "icon": "textures/items/jars/jar_sea_pickle_glow"
+  "icon": "textures/items/jars/jar_sea_pickle_glow",
+  "realm": "overworld"
  },
  {
   "id": "kelp_drifter",
@@ -10844,7 +11829,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Beach. Lime wings are striped with lime. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_kelp_drifter"
+  "icon": "textures/items/jars/jar_kelp_drifter",
+  "realm": "overworld"
  },
  {
   "id": "mangrove_propagule",
@@ -10855,7 +11841,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Mangrove Swamp. Its wings fade from lime to yellow. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_mangrove_propagule"
+  "icon": "textures/items/jars/jar_mangrove_propagule",
+  "realm": "overworld"
  },
  {
   "id": "mud_brick",
@@ -10866,7 +11853,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Mangrove Swamp. Brown wings are tiled with a brown chequerboard. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_mud_brick"
+  "icon": "textures/items/jars/jar_mud_brick",
+  "realm": "overworld"
  },
  {
   "id": "frogspawn",
@@ -10877,7 +11865,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Found in the Swamp. Green wings are dotted with black spots. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_frogspawn"
+  "icon": "textures/items/jars/jar_frogspawn",
+  "realm": "overworld"
  },
  {
   "id": "froglight_glow",
@@ -10888,7 +11877,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Mangrove Swamp. Its wings fade from golden to cream. It patrols the same sunny spot day after day.",
-  "icon": "textures/items/jars/jar_froglight_glow"
+  "icon": "textures/items/jars/jar_froglight_glow",
+  "realm": "overworld"
  },
  {
   "id": "suspicious_sand",
@@ -10899,7 +11889,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A Desert native. Cream wings are dusted with golden speckles. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_suspicious_sand"
+  "icon": "textures/items/jars/jar_suspicious_sand",
+  "realm": "overworld"
  },
  {
   "id": "pottery_sherd",
@@ -10910,7 +11901,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "A bright black band slashes across its orange wings. It flies low and close to the ground.",
-  "icon": "textures/items/jars/jar_pottery_sherd"
+  "icon": "textures/items/jars/jar_pottery_sherd",
+  "realm": "overworld"
  },
  {
   "id": "sniffer_moss",
@@ -10921,7 +11913,8 @@ export const SPECIES = [
   "wingspan": "0.4 blocks",
   "food": "grass, leaves and Milkweed, but seeds work best",
   "info": "Lime wings are dusted with lime speckles. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_sniffer_moss"
+  "icon": "textures/items/jars/jar_sniffer_moss",
+  "realm": "overworld"
  },
  {
   "id": "pink_petals",
@@ -10932,7 +11925,8 @@ export const SPECIES = [
   "wingspan": "0.5 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "A Cherry Grove native. Pink wings are dusted with white speckles. Males often gather at damp mud to sip minerals.",
-  "icon": "textures/items/jars/jar_pink_petals"
+  "icon": "textures/items/jars/jar_pink_petals",
+  "realm": "overworld"
  },
  {
   "id": "cherry_leaf_swallowtail",
@@ -10943,7 +11937,8 @@ export const SPECIES = [
   "wingspan": "0.9 blocks",
   "food": "leaves, especially from jungle and oak trees, but seeds work best",
   "info": "Look for it in the Cherry Grove. Its wings fade from pink to white. It is most active in the hottest hours of the day.",
-  "icon": "textures/items/jars/jar_cherry_leaf_swallowtail"
+  "icon": "textures/items/jars/jar_cherry_leaf_swallowtail",
+  "realm": "overworld"
  },
  {
   "id": "snow_golem",
@@ -10954,7 +11949,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Snowy Biomes. White wings wear a wide grey border. In cool weather it can rest without moving for days.",
-  "icon": "textures/items/jars/jar_snow_golem"
+  "icon": "textures/items/jars/jar_snow_golem",
+  "realm": "overworld"
  },
  {
   "id": "powder_snow",
@@ -10965,7 +11961,8 @@ export const SPECIES = [
   "wingspan": "0.6 blocks",
   "food": "leaves and Coneflowers, but seeds work best",
   "info": "Look for it in the Snowy Biomes. Its wings are clear as glass, edged with sky-blue. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_powder_snow"
+  "icon": "textures/items/jars/jar_powder_snow",
+  "realm": "overworld"
  },
  {
   "id": "blue_ice",
@@ -10976,7 +11973,8 @@ export const SPECIES = [
   "wingspan": "0.7 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Look for it in the Snowy Biomes. Sky-blue wings flash sky-blue when the light catches them. Females test each leaf with their feet before laying an egg on it.",
-  "icon": "textures/items/jars/jar_blue_ice"
+  "icon": "textures/items/jars/jar_blue_ice",
+  "realm": "overworld"
  },
  {
   "id": "mooshroom_wing",
@@ -10987,7 +11985,8 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Mushroom Fields. Red wings are dotted with white spots. It is a fast, nervous flier that is hard to follow.",
-  "icon": "textures/items/jars/jar_mooshroom_wing"
+  "icon": "textures/items/jars/jar_mooshroom_wing",
+  "realm": "overworld"
  },
  {
   "id": "ancient_city_echo",
@@ -10998,65 +11997,108 @@ export const SPECIES = [
   "wingspan": "0.8 blocks",
   "food": "leaves, Coneflowers and Butterfly Bush, but seeds work best",
   "info": "Found in the Deep Dark. Black wings shimmer with teal like a gemstone. Several of them often roost together in the same tree.",
-  "icon": "textures/items/jars/jar_ancient_city_echo"
+  "icon": "textures/items/jars/jar_ancient_city_echo",
+  "realm": "overworld"
  }
 ];
 
 export const CATEGORIES = [
  {
   "name": "Meadows & Fields",
-  "icon": "textures/items/jars/jar_monarch"
+  "icon": "textures/items/jars/jar_monarch",
+  "wings": "butterflies:wings_meadows",
+  "wingsName": "Monarch Wings",
+  "wingsIcon": "textures/items/wings/wings_meadows"
  },
  {
   "name": "Swallowtails",
-  "icon": "textures/items/jars/jar_tiger_swallowtail"
+  "icon": "textures/items/jars/jar_tiger_swallowtail",
+  "wings": "butterflies:wings_swallowtails",
+  "wingsName": "Eastern Tiger Swallowtail Wings",
+  "wingsIcon": "textures/items/wings/wings_swallowtails"
  },
  {
   "name": "Woodland",
-  "icon": "textures/items/jars/jar_mourning_cloak"
+  "icon": "textures/items/jars/jar_mourning_cloak",
+  "wings": "butterflies:wings_woodland",
+  "wingsName": "Camberwell Beauty Wings",
+  "wingsIcon": "textures/items/wings/wings_woodland"
  },
  {
   "name": "Blues & Coppers",
-  "icon": "textures/items/jars/jar_common_blue"
+  "icon": "textures/items/jars/jar_common_blue",
+  "wings": "butterflies:wings_blues",
+  "wingsName": "Adonis Blue Wings",
+  "wingsIcon": "textures/items/wings/wings_blues"
  },
  {
   "name": "Whites & Sulphurs",
-  "icon": "textures/items/jars/jar_bath_white"
+  "icon": "textures/items/jars/jar_bath_white",
+  "wings": "butterflies:wings_whites",
+  "wingsName": "Painted Jezebel Wings",
+  "wingsIcon": "textures/items/wings/wings_whites"
  },
  {
   "name": "Hairstreaks & Metalmarks",
-  "icon": "textures/items/jars/jar_ruddy_hairstreak"
+  "icon": "textures/items/jars/jar_ruddy_hairstreak",
+  "wings": "butterflies:wings_hairstreaks",
+  "wingsName": "Purple Sapphire Wings",
+  "wingsIcon": "textures/items/wings/wings_hairstreaks"
  },
  {
   "name": "Skippers",
-  "icon": "textures/items/jars/jar_silver_spotted_skipper"
+  "icon": "textures/items/jars/jar_silver_spotted_skipper",
+  "wings": "butterflies:wings_skippers",
+  "wingsName": "Golden Banded-Skipper Wings",
+  "wingsIcon": "textures/items/wings/wings_skippers"
  },
  {
   "name": "Rainforest",
-  "icon": "textures/items/jars/jar_blue_morpho"
+  "icon": "textures/items/jars/jar_blue_morpho",
+  "wings": "butterflies:wings_rainforest",
+  "wingsName": "Blue Morpho Wings",
+  "wingsIcon": "textures/items/wings/wings_rainforest"
  },
  {
   "name": "Savanna & Desert",
-  "icon": "textures/items/jars/jar_plain_tiger"
+  "icon": "textures/items/jars/jar_plain_tiger",
+  "wings": "butterflies:wings_savanna",
+  "wingsName": "Two-tailed Pasha Wings",
+  "wingsIcon": "textures/items/wings/wings_savanna"
  },
  {
   "name": "Mountains & Tundra",
-  "icon": "textures/items/jars/jar_small_apollo"
+  "icon": "textures/items/jars/jar_small_apollo",
+  "wings": "butterflies:wings_mountains",
+  "wingsName": "Phoebus Apollo Wings",
+  "wingsIcon": "textures/items/wings/wings_mountains"
  },
  {
   "name": "Wetlands & Coasts",
-  "icon": "textures/items/jars/jar_mangrove_buckeye"
+  "icon": "textures/items/jars/jar_mangrove_buckeye",
+  "wings": "butterflies:wings_wetlands",
+  "wingsName": "Tidewater Admiral Wings",
+  "wingsIcon": "textures/items/wings/wings_wetlands"
  },
  {
   "name": "Wonders of the World",
-  "icon": "textures/items/jars/jar_cherry_blossom"
+  "icon": "textures/items/jars/jar_cherry_blossom",
+  "wings": "butterflies:wings_wonders",
+  "wingsName": "Cherry Blossom Wing Wings",
+  "wingsIcon": "textures/items/wings/wings_wonders"
  },
  {
   "name": "The Nether",
-  "icon": "textures/items/jars/jar_blaze_monarch"
+  "icon": "textures/items/jars/jar_blaze_monarch",
+  "wings": "butterflies:wings_nether",
+  "wingsName": "Hellfire Birdwing Wings",
+  "wingsIcon": "textures/items/wings/wings_nether"
  },
  {
   "name": "The End",
-  "icon": "textures/items/jars/jar_chorus_flutter"
+  "icon": "textures/items/jars/jar_chorus_flutter",
+  "wings": "butterflies:wings_end",
+  "wingsName": "Ender Dragon Wing Wings",
+  "wingsIcon": "textures/items/wings/wings_end"
  }
 ];

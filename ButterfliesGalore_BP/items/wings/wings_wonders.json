@@ -1,0 +1,24 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:item": {
+    "description": {
+      "identifier": "butterflies:wings_wonders",
+      "menu_category": {
+        "category": "equipment"
+      }
+    },
+    "components": {
+      "minecraft:icon": "butterflies_wings_wonders",
+      "minecraft:display_name": {
+        "value": "item.butterflies.wings_wonders.name"
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:wearable": {
+        "slot": "slot.armor.chest",
+        "protection": 2
+      },
+      "minecraft:glint": false,
+      "minecraft:rarity": "rare"
+    }
+  }
+}

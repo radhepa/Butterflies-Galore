@@ -1,0 +1,39 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "butterflies:terrarium"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "GGG",
+      "GFG",
+      "WMW"
+    ],
+    "key": {
+      "G": {
+        "item": "minecraft:glass"
+      },
+      "F": {
+        "item": "butterflies:butterfly_bush"
+      },
+      "M": {
+        "item": "minecraft:moss_block"
+      },
+      "W": {
+        "tag": "minecraft:planks"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:moss_block"
+      }
+    ],
+    "result": {
+      "item": "butterflies:terrarium",
+      "count": 1
+    }
+  }
+}

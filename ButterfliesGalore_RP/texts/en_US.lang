@@ -7010,3 +7010,25 @@ tile.butterflies:milkweed.name=Milkweed
 tile.butterflies:coneflower.name=Coneflower
 action.interact.butterflies.catch=Catch
 action.interact.butterflies.feed=Feed Nectar
+
+
+item.butterflies.wings_meadows.name=Monarch Wings
+item.butterflies.wings_swallowtails.name=Eastern Tiger Swallowtail Wings
+item.butterflies.wings_woodland.name=Camberwell Beauty Wings
+item.butterflies.wings_blues.name=Adonis Blue Wings
+item.butterflies.wings_whites.name=Painted Jezebel Wings
+item.butterflies.wings_hairstreaks.name=Purple Sapphire Wings
+item.butterflies.wings_skippers.name=Golden Banded-Skipper Wings
+item.butterflies.wings_rainforest.name=Blue Morpho Wings
+item.butterflies.wings_savanna.name=Two-tailed Pasha Wings
+item.butterflies.wings_mountains.name=Phoebus Apollo Wings
+item.butterflies.wings_wetlands.name=Tidewater Admiral Wings
+item.butterflies.wings_wonders.name=Cherry Blossom Wing Wings
+item.butterflies.wings_nether.name=Hellfire Birdwing Wings
+item.butterflies.wings_end.name=Ender Dragon Wing Wings
+item.butterflies.wings_rainbow.name=Rainbow Wings
+item.butterflies.wings_golden.name=Golden Wings
+tile.butterflies:display_jar.name=Display Jar
+tile.butterflies:terrarium.name=Butterfly Terrarium
+item.butterflies.field_notes.name=Field Notes
+item.butterflies.shiny_charm.name=Shiny Charm
