@@ -1,0 +1,31 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "butterflies:milkweed"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:wheat_seeds"
+      },
+      {
+        "item": "minecraft:pink_dye"
+      },
+      {
+        "item": "minecraft:white_dye"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:pink_dye"
+      }
+    ],
+    "result": {
+      "item": "butterflies:milkweed",
+      "count": 1
+    }
+  }
+}

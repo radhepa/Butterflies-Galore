@@ -1,0 +1,35 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "butterflies:giant_swallowtail",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/butterflies/giant_swallowtail"
+      },
+      "geometry": {
+        "default": "geometry.butterflies.butterfly"
+      },
+      "animations": {
+        "fly": "animation.butterflies.butterfly.fly"
+      },
+      "scripts": {
+        "initialize": [
+          "v.flap = 0.6;"
+        ],
+        "animate": [
+          "fly"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.butterflies.butterfly"
+      ],
+      "spawn_egg": {
+        "base_color": "#1D1912",
+        "overlay_color": "#F7D440"
+      }
+    }
+  }
+}

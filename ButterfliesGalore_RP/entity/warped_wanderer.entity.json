@@ -1,0 +1,35 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "butterflies:warped_wanderer",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/butterflies/warped_wanderer"
+      },
+      "geometry": {
+        "default": "geometry.butterflies.butterfly"
+      },
+      "animations": {
+        "fly": "animation.butterflies.butterfly.fly"
+      },
+      "scripts": {
+        "initialize": [
+          "v.flap = 0.9;"
+        ],
+        "animate": [
+          "fly"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.butterflies.butterfly"
+      ],
+      "spawn_egg": {
+        "base_color": "#146A69",
+        "overlay_color": "#1B857E"
+      }
+    }
+  }
+}

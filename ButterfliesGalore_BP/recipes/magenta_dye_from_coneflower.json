@@ -1,0 +1,25 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "butterflies:magenta_dye_from_coneflower"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "butterflies:coneflower"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "butterflies:coneflower"
+      }
+    ],
+    "result": {
+      "item": "minecraft:magenta_dye",
+      "count": 2
+    }
+  }
+}

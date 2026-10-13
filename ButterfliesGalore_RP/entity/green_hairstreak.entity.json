@@ -1,0 +1,35 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "butterflies:green_hairstreak",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/butterflies/green_hairstreak"
+      },
+      "geometry": {
+        "default": "geometry.butterflies.butterfly"
+      },
+      "animations": {
+        "fly": "animation.butterflies.butterfly.fly"
+      },
+      "scripts": {
+        "initialize": [
+          "v.flap = 1.5;"
+        ],
+        "animate": [
+          "fly"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.butterflies.butterfly"
+      ],
+      "spawn_egg": {
+        "base_color": "#72AF4C",
+        "overlay_color": "#3A6B2A"
+      }
+    }
+  }
+}

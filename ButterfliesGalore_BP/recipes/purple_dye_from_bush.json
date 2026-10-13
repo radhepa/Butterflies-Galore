@@ -1,0 +1,25 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "butterflies:purple_dye_from_bush"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "butterflies:butterfly_bush"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "butterflies:butterfly_bush"
+      }
+    ],
+    "result": {
+      "item": "minecraft:purple_dye",
+      "count": 2
+    }
+  }
+}

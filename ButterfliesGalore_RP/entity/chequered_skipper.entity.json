@@ -1,0 +1,35 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "butterflies:chequered_skipper",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/butterflies/chequered_skipper"
+      },
+      "geometry": {
+        "default": "geometry.butterflies.butterfly"
+      },
+      "animations": {
+        "fly": "animation.butterflies.butterfly.fly"
+      },
+      "scripts": {
+        "initialize": [
+          "v.flap = 1.8;"
+        ],
+        "animate": [
+          "fly"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.butterflies.butterfly"
+      ],
+      "spawn_egg": {
+        "base_color": "#3A2A1A",
+        "overlay_color": "#E3B448"
+      }
+    }
+  }
+}

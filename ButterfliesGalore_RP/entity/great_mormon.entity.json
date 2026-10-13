@@ -1,0 +1,35 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "butterflies:great_mormon",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/butterflies/great_mormon"
+      },
+      "geometry": {
+        "default": "geometry.butterflies.butterfly"
+      },
+      "animations": {
+        "fly": "animation.butterflies.butterfly.fly"
+      },
+      "scripts": {
+        "initialize": [
+          "v.flap = 0.7;"
+        ],
+        "animate": [
+          "fly"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.butterflies.butterfly"
+      ],
+      "spawn_egg": {
+        "base_color": "#10100F",
+        "overlay_color": "#6E1E1B"
+      }
+    }
+  }
+}

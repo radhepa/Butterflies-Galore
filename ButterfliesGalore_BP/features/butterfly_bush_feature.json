@@ -1,0 +1,18 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:single_block_feature": {
+    "description": {
+      "identifier": "butterflies:butterfly_bush_feature"
+    },
+    "places_block": "butterflies:butterfly_bush",
+    "enforce_placement_rules": true,
+    "enforce_survival_rules": true,
+    "may_attach_to": {
+      "bottom": [
+        "minecraft:grass_block",
+        "minecraft:dirt",
+        "minecraft:podzol"
+      ]
+    }
+  }
+}

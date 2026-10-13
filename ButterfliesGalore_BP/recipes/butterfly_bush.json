@@ -1,0 +1,31 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "butterflies:butterfly_bush"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:oak_sapling"
+      },
+      {
+        "item": "minecraft:purple_dye"
+      },
+      {
+        "item": "minecraft:purple_dye"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:purple_dye"
+      }
+    ],
+    "result": {
+      "item": "butterflies:butterfly_bush",
+      "count": 1
+    }
+  }
+}

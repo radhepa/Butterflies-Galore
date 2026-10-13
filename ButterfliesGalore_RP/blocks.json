@@ -1,0 +1,15 @@
+{
+  "format_version": "1.21.40",
+  "butterflies:butterfly_bush": {
+    "sound": "grass"
+  },
+  "butterflies:milkweed": {
+    "sound": "grass"
+  },
+  "butterflies:coneflower": {
+    "sound": "grass"
+  },
+  "butterflies:chrysalis": {
+    "sound": "grass"
+  }
+}

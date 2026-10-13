@@ -1,0 +1,312 @@
+{
+  "resource_pack_name": "butterflies_galore",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "butterflies_jar_monarch": {
+      "textures": "textures/items/jars/jar_monarch"
+    },
+    "butterflies_jar_viceroy": {
+      "textures": "textures/items/jars/jar_viceroy"
+    },
+    "butterflies_jar_painted_lady": {
+      "textures": "textures/items/jars/jar_painted_lady"
+    },
+    "butterflies_jar_red_admiral": {
+      "textures": "textures/items/jars/jar_red_admiral"
+    },
+    "butterflies_jar_peacock": {
+      "textures": "textures/items/jars/jar_peacock"
+    },
+    "butterflies_jar_common_buckeye": {
+      "textures": "textures/items/jars/jar_common_buckeye"
+    },
+    "butterflies_jar_cabbage_white": {
+      "textures": "textures/items/jars/jar_cabbage_white"
+    },
+    "butterflies_jar_orange_tip": {
+      "textures": "textures/items/jars/jar_orange_tip"
+    },
+    "butterflies_jar_brimstone": {
+      "textures": "textures/items/jars/jar_brimstone"
+    },
+    "butterflies_jar_clouded_yellow": {
+      "textures": "textures/items/jars/jar_clouded_yellow"
+    },
+    "butterflies_jar_tiger_swallowtail": {
+      "textures": "textures/items/jars/jar_tiger_swallowtail"
+    },
+    "butterflies_jar_black_swallowtail": {
+      "textures": "textures/items/jars/jar_black_swallowtail"
+    },
+    "butterflies_jar_zebra_swallowtail": {
+      "textures": "textures/items/jars/jar_zebra_swallowtail"
+    },
+    "butterflies_jar_pipevine_swallowtail": {
+      "textures": "textures/items/jars/jar_pipevine_swallowtail"
+    },
+    "butterflies_jar_giant_swallowtail": {
+      "textures": "textures/items/jars/jar_giant_swallowtail"
+    },
+    "butterflies_jar_old_world_swallowtail": {
+      "textures": "textures/items/jars/jar_old_world_swallowtail"
+    },
+    "butterflies_jar_scarce_swallowtail": {
+      "textures": "textures/items/jars/jar_scarce_swallowtail"
+    },
+    "butterflies_jar_spicebush_swallowtail": {
+      "textures": "textures/items/jars/jar_spicebush_swallowtail"
+    },
+    "butterflies_jar_mourning_cloak": {
+      "textures": "textures/items/jars/jar_mourning_cloak"
+    },
+    "butterflies_jar_question_mark": {
+      "textures": "textures/items/jars/jar_question_mark"
+    },
+    "butterflies_jar_comma": {
+      "textures": "textures/items/jars/jar_comma"
+    },
+    "butterflies_jar_small_tortoiseshell": {
+      "textures": "textures/items/jars/jar_small_tortoiseshell"
+    },
+    "butterflies_jar_red_spotted_purple": {
+      "textures": "textures/items/jars/jar_red_spotted_purple"
+    },
+    "butterflies_jar_white_admiral": {
+      "textures": "textures/items/jars/jar_white_admiral"
+    },
+    "butterflies_jar_great_spangled_fritillary": {
+      "textures": "textures/items/jars/jar_great_spangled_fritillary"
+    },
+    "butterflies_jar_pearl_bordered_fritillary": {
+      "textures": "textures/items/jars/jar_pearl_bordered_fritillary"
+    },
+    "butterflies_jar_gulf_fritillary": {
+      "textures": "textures/items/jars/jar_gulf_fritillary"
+    },
+    "butterflies_jar_baltimore_checkerspot": {
+      "textures": "textures/items/jars/jar_baltimore_checkerspot"
+    },
+    "butterflies_jar_marsh_fritillary": {
+      "textures": "textures/items/jars/jar_marsh_fritillary"
+    },
+    "butterflies_jar_common_blue": {
+      "textures": "textures/items/jars/jar_common_blue"
+    },
+    "butterflies_jar_adonis_blue": {
+      "textures": "textures/items/jars/jar_adonis_blue"
+    },
+    "butterflies_jar_holly_blue": {
+      "textures": "textures/items/jars/jar_holly_blue"
+    },
+    "butterflies_jar_karner_blue": {
+      "textures": "textures/items/jars/jar_karner_blue"
+    },
+    "butterflies_jar_small_copper": {
+      "textures": "textures/items/jars/jar_small_copper"
+    },
+    "butterflies_jar_large_copper": {
+      "textures": "textures/items/jars/jar_large_copper"
+    },
+    "butterflies_jar_purple_hairstreak": {
+      "textures": "textures/items/jars/jar_purple_hairstreak"
+    },
+    "butterflies_jar_green_hairstreak": {
+      "textures": "textures/items/jars/jar_green_hairstreak"
+    },
+    "butterflies_jar_apollo": {
+      "textures": "textures/items/jars/jar_apollo"
+    },
+    "butterflies_jar_silver_spotted_skipper": {
+      "textures": "textures/items/jars/jar_silver_spotted_skipper"
+    },
+    "butterflies_jar_large_skipper": {
+      "textures": "textures/items/jars/jar_large_skipper"
+    },
+    "butterflies_jar_fiery_skipper": {
+      "textures": "textures/items/jars/jar_fiery_skipper"
+    },
+    "butterflies_jar_long_tailed_skipper": {
+      "textures": "textures/items/jars/jar_long_tailed_skipper"
+    },
+    "butterflies_jar_checkered_skipper": {
+      "textures": "textures/items/jars/jar_checkered_skipper"
+    },
+    "butterflies_jar_blue_morpho": {
+      "textures": "textures/items/jars/jar_blue_morpho"
+    },
+    "butterflies_jar_sunset_morpho": {
+      "textures": "textures/items/jars/jar_sunset_morpho"
+    },
+    "butterflies_jar_white_morpho": {
+      "textures": "textures/items/jars/jar_white_morpho"
+    },
+    "butterflies_jar_owl_butterfly": {
+      "textures": "textures/items/jars/jar_owl_butterfly"
+    },
+    "butterflies_jar_glasswing": {
+      "textures": "textures/items/jars/jar_glasswing"
+    },
+    "butterflies_jar_postman": {
+      "textures": "textures/items/jars/jar_postman"
+    },
+    "butterflies_jar_zebra_longwing": {
+      "textures": "textures/items/jars/jar_zebra_longwing"
+    },
+    "butterflies_jar_julia": {
+      "textures": "textures/items/jars/jar_julia"
+    },
+    "butterflies_jar_tiger_longwing": {
+      "textures": "textures/items/jars/jar_tiger_longwing"
+    },
+    "butterflies_jar_doris_longwing": {
+      "textures": "textures/items/jars/jar_doris_longwing"
+    },
+    "butterflies_jar_sara_longwing": {
+      "textures": "textures/items/jars/jar_sara_longwing"
+    },
+    "butterflies_jar_malachite": {
+      "textures": "textures/items/jars/jar_malachite"
+    },
+    "butterflies_jar_rajah_brooke_birdwing": {
+      "textures": "textures/items/jars/jar_rajah_brooke_birdwing"
+    },
+    "butterflies_jar_queen_alexandra_birdwing": {
+      "textures": "textures/items/jars/jar_queen_alexandra_birdwing"
+    },
+    "butterflies_jar_golden_birdwing": {
+      "textures": "textures/items/jars/jar_golden_birdwing"
+    },
+    "butterflies_jar_great_mormon": {
+      "textures": "textures/items/jars/jar_great_mormon"
+    },
+    "butterflies_jar_emerald_swallowtail": {
+      "textures": "textures/items/jars/jar_emerald_swallowtail"
+    },
+    "butterflies_jar_ulysses": {
+      "textures": "textures/items/jars/jar_ulysses"
+    },
+    "butterflies_jar_common_rose": {
+      "textures": "textures/items/jars/jar_common_rose"
+    },
+    "butterflies_jar_five_bar_swordtail": {
+      "textures": "textures/items/jars/jar_five_bar_swordtail"
+    },
+    "butterflies_jar_tailed_jay": {
+      "textures": "textures/items/jars/jar_tailed_jay"
+    },
+    "butterflies_jar_common_bluebottle": {
+      "textures": "textures/items/jars/jar_common_bluebottle"
+    },
+    "butterflies_jar_leopard_lacewing": {
+      "textures": "textures/items/jars/jar_leopard_lacewing"
+    },
+    "butterflies_jar_purple_emperor": {
+      "textures": "textures/items/jars/jar_purple_emperor"
+    },
+    "butterflies_jar_dead_leaf": {
+      "textures": "textures/items/jars/jar_dead_leaf"
+    },
+    "butterflies_jar_great_eggfly": {
+      "textures": "textures/items/jars/jar_great_eggfly"
+    },
+    "butterflies_jar_plain_tiger": {
+      "textures": "textures/items/jars/jar_plain_tiger"
+    },
+    "butterflies_jar_blue_tiger": {
+      "textures": "textures/items/jars/jar_blue_tiger"
+    },
+    "butterflies_jar_common_jezebel": {
+      "textures": "textures/items/jars/jar_common_jezebel"
+    },
+    "butterflies_jar_yellow_pansy": {
+      "textures": "textures/items/jars/jar_yellow_pansy"
+    },
+    "butterflies_jar_blue_pansy": {
+      "textures": "textures/items/jars/jar_blue_pansy"
+    },
+    "butterflies_jar_lime_swallowtail": {
+      "textures": "textures/items/jars/jar_lime_swallowtail"
+    },
+    "butterflies_jar_cloudless_sulphur": {
+      "textures": "textures/items/jars/jar_cloudless_sulphur"
+    },
+    "butterflies_jar_dogface": {
+      "textures": "textures/items/jars/jar_dogface"
+    },
+    "butterflies_jar_desert_marble": {
+      "textures": "textures/items/jars/jar_desert_marble"
+    },
+    "butterflies_jar_pygmy_blue": {
+      "textures": "textures/items/jars/jar_pygmy_blue"
+    },
+    "butterflies_jar_two_tailed_pasha": {
+      "textures": "textures/items/jars/jar_two_tailed_pasha"
+    },
+    "butterflies_jar_cherry_blossom": {
+      "textures": "textures/items/jars/jar_cherry_blossom"
+    },
+    "butterflies_jar_azalea_flutter": {
+      "textures": "textures/items/jars/jar_azalea_flutter"
+    },
+    "butterflies_jar_glowberry": {
+      "textures": "textures/items/jars/jar_glowberry"
+    },
+    "butterflies_jar_sculk_wisp": {
+      "textures": "textures/items/jars/jar_sculk_wisp"
+    },
+    "butterflies_jar_crimson_ember": {
+      "textures": "textures/items/jars/jar_crimson_ember"
+    },
+    "butterflies_jar_warped_wanderer": {
+      "textures": "textures/items/jars/jar_warped_wanderer"
+    },
+    "butterflies_jar_ender_wing": {
+      "textures": "textures/items/jars/jar_ender_wing"
+    },
+    "butterflies_jar_amethyst_wing": {
+      "textures": "textures/items/jars/jar_amethyst_wing"
+    },
+    "butterflies_jar_prismarine_flutter": {
+      "textures": "textures/items/jars/jar_prismarine_flutter"
+    },
+    "butterflies_jar_frost_wing": {
+      "textures": "textures/items/jars/jar_frost_wing"
+    },
+    "butterflies_jar_marbled_white": {
+      "textures": "textures/items/jars/jar_marbled_white"
+    },
+    "butterflies_jar_ringlet": {
+      "textures": "textures/items/jars/jar_ringlet"
+    },
+    "butterflies_jar_meadow_brown": {
+      "textures": "textures/items/jars/jar_meadow_brown"
+    },
+    "butterflies_jar_speckled_wood": {
+      "textures": "textures/items/jars/jar_speckled_wood"
+    },
+    "butterflies_jar_wall_brown": {
+      "textures": "textures/items/jars/jar_wall_brown"
+    },
+    "butterflies_jar_camberwell_beauty": {
+      "textures": "textures/items/jars/jar_camberwell_beauty"
+    },
+    "butterflies_jar_map_butterfly": {
+      "textures": "textures/items/jars/jar_map_butterfly"
+    },
+    "butterflies_jar_chequered_skipper": {
+      "textures": "textures/items/jars/jar_chequered_skipper"
+    },
+    "butterflies_jar_palamedes_swallowtail": {
+      "textures": "textures/items/jars/jar_palamedes_swallowtail"
+    },
+    "butterflies_jar_banded_orange": {
+      "textures": "textures/items/jars/jar_banded_orange"
+    },
+    "butterflies_butterfly_jar": {
+      "textures": "textures/items/butterfly_jar"
+    },
+    "butterflies_nectar_bottle": {
+      "textures": "textures/items/nectar_bottle"
+    }
+  }
+}
