@@ -12,23 +12,23 @@
       "geometry": {
         "default": "geometry.butterflies.butterfly"
       },
+      "render_controllers": [
+        "controller.render.butterflies.default"
+      ],
       "animations": {
-        "fly": "animation.butterflies.butterfly.fly"
+        "main": "animation.butterflies.butterfly.fly"
       },
       "scripts": {
+        "animate": [
+          "main"
+        ],
         "initialize": [
           "v.flap = 0.45;"
-        ],
-        "animate": [
-          "fly"
         ]
       },
-      "render_controllers": [
-        "controller.render.butterflies.butterfly"
-      ],
       "spawn_egg": {
-        "base_color": "#1A1E2A",
-        "overlay_color": "#191717"
+        "base_color": "#191E2D",
+        "overlay_color": "#35C0D7"
       }
     }
   }

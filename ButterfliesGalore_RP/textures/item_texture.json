@@ -307,6 +307,9 @@
     },
     "butterflies_nectar_bottle": {
       "textures": "textures/items/nectar_bottle"
+    },
+    "butterflies_handbook": {
+      "textures": "textures/items/handbook"
     }
   }
 }

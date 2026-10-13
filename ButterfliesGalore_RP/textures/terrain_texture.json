@@ -12,9 +12,6 @@
     },
     "butterflies_coneflower": {
       "textures": "textures/blocks/coneflower"
-    },
-    "butterflies_chrysalis": {
-      "textures": "textures/blocks/chrysalis"
     }
   }
 }

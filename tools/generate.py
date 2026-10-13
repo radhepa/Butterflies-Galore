@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 """Builds the Butterflies Galore behavior pack, resource pack and .mcaddon.
 
-Every butterfly texture, item icon, block texture, model, spawn rule and
-language entry is generated from the species table below, so adding or
-tweaking a species is a one-line change followed by:
+Every texture, model, mob, spawn rule, handbook entry and language string is
+generated from the species table below, so adding or tweaking a species is a
+one-line change followed by:
 
     python3 tools/generate.py
 """
+import colorsys
 import json
 import math
 import os
@@ -14,7 +15,7 @@ import random
 import shutil
 import uuid
 import zipfile
-from collections import Counter, deque
+from collections import deque
 
 from PIL import Image, ImageDraw
 
@@ -24,8 +25,8 @@ RP = os.path.join(ROOT, "ButterfliesGalore_RP")
 DIST = os.path.join(ROOT, "dist")
 DOCS = os.path.join(ROOT, "docs")
 NS = "butterflies"
-VERSION = [1, 0, 0]
-MIN_ENGINE = [1, 21, 40]
+VERSION = [1, 1, 0]
+MIN_ENGINE = [1, 21, 90]
 UUID_NS = uuid.UUID("6f1d2c4e-8a8b-4f0e-9a51-0b7e0c1d2a33")
 
 
@@ -38,47 +39,108 @@ def uid(name):
 # ---------------------------------------------------------------------------
 
 def rgb(c):
+    if isinstance(c, tuple):
+        return c[:3]
     c = c.lstrip("#")
     return tuple(int(c[i:i + 2], 16) for i in (0, 2, 4))
 
 
 def mix(a, b, t):
+    a, b = rgb(a), rgb(b)
     return tuple(round(a[i] + (b[i] - a[i]) * t) for i in range(3))
 
 
 def shade(c, f):
-    return tuple(max(0, min(255, round(v * f))) for v in c)
+    return tuple(max(0, min(255, round(v * f))) for v in rgb(c))
 
 
 def hexc(c):
     return "#%02X%02X%02X" % c
 
 
+def vivid(c, sat_f=1.2, val_f=1.04):
+    h, s, v = colorsys.rgb_to_hsv(*(x / 255 for x in c))
+    if s > 0.15:
+        s = min(1.0, s * sat_f)
+    v = min(1.0, v * val_f)
+    return tuple(round(x * 255) for x in colorsys.hsv_to_rgb(h, s, v))
+
+
+def lum(c):
+    return 0.3 * c[0] + 0.59 * c[1] + 0.11 * c[2]
+
+
+def sat(c):
+    return colorsys.rgb_to_hsv(*(x / 255 for x in c[:3]))[1]
+
+
 # ---------------------------------------------------------------------------
 # Wing painter
 # ---------------------------------------------------------------------------
-# A wing is painted on a 10 x 14 grid. u runs from the body (0) to the wing
-# tip (9); v runs from the leading edge (0) to the rear (13). Rows 0-6 are the
-# forewing and rows 7-13 the hindwing.
+# A wing is painted on a 16 x 22 grid. u runs from the body (0) to the wing tip
+# (15); v runs from the leading edge (0) to the rear (21). Wing outlines are
+# polygons, so the forewing and hindwing are separate shapes.
+#
+# Species patterns are written in a compact 10 x 14 "design space" and scaled
+# onto the grid by T() / R(), which keeps the species table short and readable.
 
-WW, WH = 10, 14
+WW, WH = 16, 22
 
-SHAPES = {
-    "classic":     [(0, 6), (0, 8), (0, 9), (0, 9), (0, 8), (0, 7), (0, 6), (0, 7), (0, 8), (0, 8), (0, 7), (0, 6), (1, 4), None],
-    "pointed":     [(0, 7), (0, 9), (0, 9), (0, 8), (0, 7), (0, 6), (0, 5), (0, 7), (0, 7), (0, 7), (0, 6), (0, 5), (1, 3), None],
-    "rounded":     [(0, 5), (0, 7), (0, 8), (0, 8), (0, 8), (0, 7), (0, 6), (0, 7), (0, 7), (0, 7), (0, 6), (0, 5), (1, 3), None],
-    "swallowtail": [(0, 7), (0, 9), (0, 9), (0, 8), (0, 7), (0, 6), (0, 5), (0, 6), (0, 7), (0, 7), (1, 6), (2, 5), (4, 5), (5, 5)],
-    "kite":        [(0, 7), (0, 9), (0, 9), (0, 8), (0, 7), (0, 6), (0, 5), (0, 6), (0, 6), (0, 6), (1, 5), (2, 4), (4, 4), (4, 4)],
-    "longwing":    [(0, 7), (0, 9), (0, 9), (0, 9), (0, 8), (0, 6), (0, 4), (0, 5), (0, 6), (0, 5), (0, 5), (0, 4), (1, 2), None],
-    "leaf":        [(0, 8), (0, 9), (0, 8), (0, 8), (0, 8), (0, 7), (0, 7), (0, 7), (0, 7), (0, 7), (0, 6), (0, 5), (1, 4), (2, 3)],
-    "scalloped":   [(0, 6), (0, 8), (0, 9), (0, 7), (0, 9), (0, 7), (0, 5), (0, 7), (0, 8), (0, 6), (0, 7), (0, 5), (1, 4), (2, 2)],
-    "skipper":     [(0, 5), (0, 7), (0, 8), (0, 8), (0, 7), (0, 6), (0, 5), (0, 5), (0, 6), (0, 6), (0, 5), (0, 4), (1, 2), None],
-    "birdwing":    [(0, 8), (0, 9), (0, 9), (0, 9), (0, 8), (0, 7), (0, 6), (0, 6), (0, 7), (0, 7), (0, 7), (0, 6), (0, 4), (1, 2)],
-    "hairstreak":  [(0, 5), (0, 7), (0, 8), (0, 8), (0, 7), (0, 6), (0, 5), (0, 6), (0, 7), (0, 7), (0, 6), (1, 5), (3, 4), (4, 4)],
+
+def T(p):
+    return (p[0] * 1.5 + 0.4, p[1] * 1.5 + 0.8)
+
+
+def R(r):
+    return r * 1.5
+
+
+ROUND_FORE = [(0, 2), (4, 1), (9, 1.5), (12.5, 3.5), (13.5, 6.5), (12, 9.5), (8, 11), (0, 10.5)]
+POLYS = {
+    "classic": ([(0, 1.5), (4, 0.8), (9, 1), (13, 2), (14.6, 3.5), (14, 6), (12, 9), (9, 11), (0, 10.5)],
+                [(0, 9), (6, 9.5), (10, 10.5), (12, 13), (11.5, 16), (9.5, 18.5), (6.5, 20), (3, 20), (1, 18)]),
+    "pointed": ([(0, 1.5), (5, 0.8), (10, 1.2), (14.6, 2.5), (14, 5), (11.5, 8), (8, 10), (0, 10)],
+                [(0, 9), (7, 9.5), (10.5, 11), (11.5, 14), (10.5, 17), (8, 19), (4.5, 19.8), (1.5, 18.5)]),
+    "rounded": (ROUND_FORE,
+                [(0, 9.5), (7, 10), (11, 11.5), (12.5, 14.5), (11.5, 17.5), (8.5, 19.5), (4, 19.8), (1, 18)]),
+    "swallowtail": ([(0, 1.5), (5, 0.8), (10, 1.2), (14.6, 2.5), (14, 5.5), (11, 9), (7, 10.5), (0, 10)],
+                    [(0, 9), (7, 9.5), (10, 11), (10.5, 14), (9, 16.5), (7.9, 17), (7.7, 21.5), (6.3, 21.5),
+                     (6.1, 17.5), (4, 18.5), (1.5, 17.5)]),
+    "kite": ([(0, 1.5), (5, 0.8), (10, 1.2), (14.6, 2.5), (14, 5.5), (11, 9), (7, 10.5), (0, 10)],
+             [(0, 9), (6.5, 9.5), (9, 11), (9, 14), (7.4, 16), (6.7, 21.5), (5.5, 21.5), (5.3, 16.5), (3, 17.5),
+              (1, 16)]),
+    "longwing": ([(0, 1.5), (6, 0.8), (11, 1), (14.6, 2.2), (14, 4.5), (11, 7), (6, 9), (0, 9.5)],
+                 [(0, 8.5), (6, 9), (9.5, 10.5), (10, 13), (8, 15.5), (4.5, 16.5), (1.5, 15.5)]),
+    "leaf": ([(0, 1.5), (6, 0.6), (11, 0.8), (14.9, 0.3), (13.6, 3), (13.6, 6), (12, 10), (0, 10.5)],
+             [(0, 9.5), (8, 10), (11.5, 12), (11, 16), (8, 19), (4.8, 21.6), (3.6, 21.6), (1, 18)]),
+    "scalloped": ([(0, 1.5), (5, 0.8), (10, 1.2), (14.5, 2.5), (13, 4.5), (14.2, 6), (12, 8), (12.6, 9.5),
+                   (9, 11), (0, 10.5)],
+                  [(0, 9), (7, 9.5), (11, 10.5), (12.6, 12.5), (11.5, 14), (12.2, 15.5), (10.5, 17), (10.2, 18.5),
+                   (7.5, 19.5), (6.6, 21), (5, 19.6), (3, 20.6), (1, 18)]),
+    "skipper": ([(0, 2), (4, 1.2), (8.5, 1.5), (12.5, 3), (13.2, 5.5), (11, 8.5), (6, 10), (0, 10)],
+                [(0, 9), (6, 9.5), (9.5, 11), (10, 14), (8.5, 16.5), (5, 17.5), (1.5, 16.5)]),
+    "birdwing": ([(0, 1.2), (6, 0.5), (11.5, 0.8), (14.9, 2), (14.7, 5), (13, 8.5), (9, 11), (0, 10.5)],
+                 [(0, 9), (7, 9.5), (11, 11), (12.5, 14), (11.5, 17.5), (8.5, 20), (4.5, 20.6), (1.5, 19)]),
+    "hairstreak": (ROUND_FORE,
+                   [(0, 9.5), (7, 10), (11, 11.5), (12.5, 14.5), (11.5, 17), (9.2, 18.5), (8.9, 21.6),
+                    (7.9, 21.6), (7.7, 19), (4, 19.8), (1, 18)]),
 }
+TAILED = {"swallowtail", "kite", "hairstreak", "leaf"}
 
 VEIN_BASE = (0.0, 5.0)
 VEIN_TIPS = [(9, 1), (9, 3), (8, 5), (5, 6), (7, 8), (7, 10), (5, 12), (2, 12)]
+
+
+def inside(poly, x, y):
+    hit = False
+    j = len(poly) - 1
+    for i in range(len(poly)):
+        xi, yi = poly[i]
+        xj, yj = poly[j]
+        if (yi > y) != (yj > y) and x < (xj - xi) * (y - yi) / (yj - yi) + xi:
+            hit = not hit
+        j = i
+    return hit
 
 
 def seg_dist(p, a, b):
@@ -91,13 +153,23 @@ def seg_dist(p, a, b):
     return math.hypot(px - (ax + t * dx), py - (ay + t * dy))
 
 
+def design(p):
+    """Grid pixel -> nearest design-space cell (for lattice patterns)."""
+    return round((p[0] - 0.4) / 1.5), round((p[1] - 0.8) / 1.5)
+
+
 class Wing:
     def __init__(self, shape):
-        self.mask = set()
-        for v, row in enumerate(SHAPES[shape]):
-            if row:
-                for u in range(row[0], row[1] + 1):
-                    self.mask.add((u, v))
+        fore_poly, hind_poly = POLYS[shape]
+        self.fore, self.hind = set(), set()
+        for u in range(WW - 1):
+            for v in range(WH):
+                if inside(fore_poly, u + 0.5, v + 0.5):
+                    self.fore.add((u, v))
+                elif inside(hind_poly, u + 0.5, v + 0.5):
+                    self.hind.add((u, v))
+        self.mask = self.fore | self.hind
+        self.tail = {p for p in self.hind if shape in TAILED and p[1] >= 17 and p[0] >= 5}
         # Distance (in pixels) from the outer margin. The body side is not a margin.
         self.dist = {}
         q = deque()
@@ -119,24 +191,17 @@ class Wing:
         self.rowmax = {}
         for u, v in self.mask:
             self.rowmax[v] = max(self.rowmax.get(v, 0), u)
-        self.apex = max((p for p in self.mask if p[1] <= 4), key=lambda p: p[0] - 0.3 * p[1])
+        self.apex = max((p for p in self.fore if p[1] <= 9), key=lambda p: p[0] - 0.3 * p[1])
 
     def region(self, name):
-        if name == "all":
-            return set(self.mask)
-        if name == "fore":
-            return {p for p in self.mask if p[1] <= 6}
-        if name == "hind":
-            return {p for p in self.mask if p[1] >= 7}
-        if name == "tail":
-            return {p for p in self.mask if p[1] >= 11 and p[0] >= 3}
         if name == "inner":
             return {p for p in self.mask if self.dist[p] >= 1}
-        raise ValueError(name)
+        return {"all": self.mask, "fore": self.fore, "hind": self.hind, "tail": self.tail}[name]
 
     def put(self, p, c, t=1.0):
         if p not in self.mask:
             return
+        c = rgb(c)
         old = self.px[p]
         if old[3] == 0 or t >= 1:
             self.px[p] = (*c, 255)
@@ -147,70 +212,65 @@ class Wing:
 # Feature builders. Each returns a function that paints onto a Wing.
 
 def fill(c, region="all"):
-    c = rgb(c)
     return lambda w: [w.put(p, c) for p in w.region(region)]
 
 
 def grad(c, s=0.6, region="all"):
-    c = rgb(c)
     return lambda w: [w.put(p, c, s * p[0] / max(1, w.rowmax[p[1]])) for p in w.region(region)]
 
 
 def basal(c, n=2, region="all"):
-    c = rgb(c)
+    edge = n * 1.5
 
     def f(w):
         for p in w.region(region):
-            if p[0] < n - 1:
+            if p[0] < edge - 1:
                 w.put(p, c)
-            elif p[0] == n - 1:
+            elif p[0] < edge:
                 w.put(p, c, 0.55)
     return f
 
 
 def border(c, width=1, region="all"):
-    c = rgb(c)
-    return lambda w: [w.put(p, c) for p in w.region(region) if w.dist[p] < width]
+    wpx = max(1, int(width * 1.2 + 0.5))
+    return lambda w: [w.put(p, c) for p in w.region(region) if w.dist[p] < wpx]
 
 
 def ring(c, k=1, region="all", spaced=True):
-    c = rgb(c)
+    kpx = k * 3 // 2
+    period = 2 if kpx == 0 else 3
     return lambda w: [w.put(p, c) for p in w.region(region)
-                      if w.dist[p] == k and (not spaced or (p[0] + p[1]) % 2 == 0)]
+                      if w.dist[p] == kpx and (not spaced or (p[0] + p[1]) % period == 0)]
 
 
 def veins(c, width=0.9, region="all"):
-    c = rgb(c)
+    base = T(VEIN_BASE)
+    tips = [T(t) for t in VEIN_TIPS]
 
     def f(w):
-        reg = w.region(region)
-        for p in reg:
-            for tip in VEIN_TIPS:
-                if seg_dist(p, VEIN_BASE, tip) <= width / 2:
-                    w.put(p, c)
-                    break
+        for p in w.region(region):
+            if any(seg_dist(p, base, tip) <= width * 0.6 for tip in tips):
+                w.put(p, c)
     return f
 
 
 def apex(c, r=2.0):
-    c = rgb(c)
-
     def f(w):
         ax, ay = w.apex
-        for p in w.region("fore"):
-            if math.hypot(p[0] - ax, p[1] - ay) <= r:
+        for p in w.fore:
+            if math.hypot(p[0] - ax, p[1] - ay) <= R(r):
                 w.put(p, c)
     return f
 
 
 def line(c, a, b, width=1.0, region="all"):
-    c = rgb(c)
-    return lambda w: [w.put(p, c) for p in w.region(region) if seg_dist(p, a, b) <= width * 0.6]
+    a, b = T(a), T(b)
+    return lambda w: [w.put(p, c) for p in w.region(region) if seg_dist(p, a, b) <= width * 0.9]
 
 
 def circle(c, pos, r=1.0, region="all"):
-    c = rgb(c)
-    return lambda w: [w.put(p, c) for p in w.region(region) if math.hypot(p[0] - pos[0], p[1] - pos[1]) <= r]
+    pos = T(pos)
+    return lambda w: [w.put(p, c) for p in w.region(region) if math.hypot(p[0] - pos[0], p[1] - pos[1]) <= R(r)]
 
 
 def eye(pos, layers):
@@ -219,20 +279,26 @@ def eye(pos, layers):
 
 
 def spots(c, pts):
-    c = rgb(c)
-    return lambda w: [w.put(p, c) for p in pts]
+    pts = [T(p) for p in pts]
+    return lambda w: [w.put(p, c) for p in w.mask for q in pts if math.hypot(p[0] - q[0], p[1] - q[1]) <= 0.85]
 
 
 def checker(c, region="all"):
-    c = rgb(c)
-    return lambda w: [w.put(p, c) for p in w.region(region)
-                      if w.dist[p] >= 1 and (p[0] + 2 * p[1]) % 4 == 0]
+    def f(w):
+        for p in w.region(region):
+            du, dv = design(p)
+            if w.dist[p] >= 1 and (du + 2 * dv) % 4 == 0:
+                w.put(p, c)
+    return f
 
 
 def stripes(c, period=3, phase=0, region="all", slope=1):
-    c = rgb(c)
-    return lambda w: [w.put(p, c) for p in w.region(region)
-                      if (p[0] + slope * p[1]) % period == phase]
+    def f(w):
+        for p in w.region(region):
+            du, dv = design(p)
+            if (du + slope * dv) % period == phase:
+                w.put(p, c)
+    return f
 
 
 def clear(region="all"):
@@ -244,14 +310,11 @@ def clear(region="all"):
 
 
 def sheen(c, s=0.6, region="all"):
-    c = rgb(c)
     return lambda w: [w.put(p, c, s) for p in w.region(region)
-                      if w.dist[p] >= 1 and p[0] >= 2 and (p[0] * 3 + p[1] * 5) % 7 in (0, 3)]
+                      if w.dist[p] >= 1 and p[0] >= 3 and (p[0] * 3 + p[1] * 5) % 7 in (0, 3)]
 
 
 def speckle(c, density=0.2, region="all", seed=7):
-    c = rgb(c)
-
     def f(w):
         r = random.Random(seed)
         for p in sorted(w.region(region)):
@@ -263,6 +326,12 @@ def speckle(c, density=0.2, region="all", seed=7):
 # ---------------------------------------------------------------------------
 # Species table
 # ---------------------------------------------------------------------------
+_section = ["Meadows & Fields"]
+
+
+def SECTION(name):
+    _section[0] = name
+
 
 K = "#1A1612"   # soot black
 W = "#F4F2EA"   # wing white
@@ -271,16 +340,18 @@ RARITY = {"common": 10, "uncommon": 6, "rare": 3, "legendary": 1}
 
 class Species:
     def __init__(self, id, name, shape, habitat, scale, flap, rarity, feats,
-                 body="#1E1A16", accent=None):
+                 body="#1E1A16", accent=None, category=None):
         self.id, self.name, self.shape = id, name, shape
-        self.habitat, self.scale, self.flap = habitat, scale, flap
+        # Scales were tuned for the original 22-pixel wingspan; the model is now 35 pixels wide.
+        self.habitat, self.scale, self.flap = habitat, round(scale * 0.75, 3), flap
         self.rarity, self.feats = rarity, feats
-        self.body, self.accent = rgb(body), rgb(accent) if accent else None
+        self.body, self.accent = body, accent
+        self.category = category or _section[0]
 
 
 S = Species
 SPECIES = [
-    # --- Meadows, plains & flower fields -----------------------------------
+    SECTION("Meadows & Fields"),
     S("monarch", "Monarch", "pointed", ["plains", "meadow", "flower_forest", "savanna"], 0.5, 0.9, "common",
       [fill("#E8761C"), grad("#F4A23C", 0.45), basal("#B4500F", 1), veins(K), border(K, 2), ring(W, 1),
        spots(W, [(7, 1), (8, 2), (6, 1), (5, 0)])], accent=W),
@@ -313,7 +384,7 @@ SPECIES = [
     S("clouded_yellow", "Clouded Yellow", "classic", ["plains", "meadow", "savanna"], 0.4, 1.3, "common",
       [fill("#F4B832"), grad("#F8D060", 0.3), border("#3A2A1A", 2, "fore"), border("#3A2A1A", 1, "hind"),
        ring("#F4D060", 1, "fore"), spots(K, [(4, 3)]), spots("#F07A1E", [(4, 9)])]),
-    # --- Swallowtails -------------------------------------------------------
+    SECTION("Swallowtails"),
     S("tiger_swallowtail", "Eastern Tiger Swallowtail", "swallowtail", ["forest", "flower_forest", "birch"], 0.6, 0.8, "common",
       [fill("#F5D33A"), grad("#F8E27A", 0.3), line(K, (2, 0), (1, 6), 0.9), line(K, (4, 0), (3, 4), 0.9),
        line(K, (6, 0), (5, 3), 0.9), line(K, (0, 7), (3, 10), 0.9), border(K, 2), ring("#F5D33A", 1, "fore"),
@@ -339,7 +410,7 @@ SPECIES = [
     S("spicebush_swallowtail", "Spicebush Swallowtail", "swallowtail", ["forest", "roofed"], 0.55, 0.8, "uncommon",
       [fill("#161616"), ring("#C8E0B8", 1, "fore"), grad("#4E8E9A", 0.7, "hind"), ring("#B8D8E8", 1, "hind"),
        spots("#E8902A", [(1, 11), (6, 9)])]),
-    # --- Woodland brush-foots ----------------------------------------------
+    SECTION("Woodland"),
     S("mourning_cloak", "Mourning Cloak", "scalloped", ["taiga", "forest", "birch"], 0.55, 0.9, "uncommon",
       [fill("#4A2219"), grad("#6A3424", 0.3), border("#E8D9A0", 1), ring("#3C6CC0", 1, "all", True)]),
     S("question_mark", "Question Mark", "scalloped", ["forest", "roofed"], 0.48, 1.0, "common",
@@ -370,7 +441,7 @@ SPECIES = [
        spots("#E86A1E", [(1, 1), (2, 2)])]),
     S("marsh_fritillary", "Marsh Fritillary", "rounded", ["swamp", "meadow"], 0.38, 1.2, "uncommon",
       [fill("#C76A2A"), checker("#F0CE6E"), veins("#4A2410"), border("#3A1A0A", 1), ring("#F0CE6E", 1, "hind")]),
-    # --- Blues, coppers & hairstreaks --------------------------------------
+    SECTION("Blues & Coppers"),
     S("common_blue", "Common Blue", "rounded", ["plains", "meadow"], 0.3, 1.5, "common",
       [fill("#7EA6F2"), grad("#A8C4F8", 0.3), basal("#5A80D8", 2), border("#2A2A3A", 1), ring(W, 0)], body="#3A3A4A"),
     S("adonis_blue", "Adonis Blue", "rounded", ["meadow", "mountains"], 0.3, 1.5, "uncommon",
@@ -393,7 +464,7 @@ SPECIES = [
       [fill("#F0EEE6"), grad("#D8D8D0", 0.4, "fore"), spots(K, [(4, 2), (6, 3), (3, 4)]),
        eye((3, 9), [(1.5, K), (1.0, "#D8302A"), (0.3, W)]), eye((5, 10), [(1.3, K), (0.8, "#D8302A")]),
        border("#9A9A94", 1, "fore"), basal("#4A4A44", 1)]),
-    # --- Skippers -----------------------------------------------------------
+    SECTION("Skippers"),
     S("silver_spotted_skipper", "Silver-spotted Skipper", "skipper", ["plains", "forest"], 0.3, 1.8, "common",
       [fill("#5A4228"), spots("#E8B84A", [(5, 1), (4, 3), (6, 2), (3, 3)]), circle(W, (3, 9), 1.2),
        border("#3A2A18", 1)], body="#4A3820"),
@@ -408,7 +479,7 @@ SPECIES = [
        fill("#2A2018", "tail")], body="#3A8A8A"),
     S("checkered_skipper", "Checkered Skipper", "skipper", ["plains", "savanna"], 0.26, 1.8, "common",
       [fill("#2A2A2A"), checker("#F0F0F0"), stripes("#F0F0F0", 4, 1, "all", 2), ring(W, 0)], body="#4A4A54"),
-    # --- Rainforest giants ---------------------------------------------------
+    SECTION("Rainforest"),
     S("blue_morpho", "Blue Morpho", "birdwing", ["jungle"], 0.68, 0.55, "rare",
       [fill("#2E8CF0"), sheen("#8FD4FF", 0.7), basal("#1E5AC0", 1), border(K, 2), ring(W, 1, "fore", True)]),
     S("sunset_morpho", "Sunset Morpho", "birdwing", ["jungle"], 0.7, 0.55, "rare",
@@ -481,7 +552,7 @@ SPECIES = [
     S("great_eggfly", "Great Eggfly", "classic", ["jungle", "savanna"], 0.5, 0.9, "uncommon",
       [fill("#121214"), eye((4, 3), [(1.8, "#6A5AD8"), (1.2, "#F0F0F8")]), eye((3, 9), [(2.0, "#6A5AD8"), (1.4, "#F0F0F8")]),
        spots(W, [(7, 1), (8, 2)])]),
-    # --- Savanna, desert & badlands -----------------------------------------
+    SECTION("Savanna & Desert"),
     S("plain_tiger", "Plain Tiger", "pointed", ["savanna", "desert"], 0.48, 0.9, "common",
       [fill("#E89A4A"), grad("#F2BA7A", 0.3), apex(K, 3.0), line(W, (5, 1), (8, 3), 0.9), border(K, 1, "hind"),
        ring(W, 0, "hind"), spots(K, [(3, 8), (4, 9)])], accent=W),
@@ -509,7 +580,7 @@ SPECIES = [
     S("two_tailed_pasha", "Two-tailed Pasha", "swallowtail", ["savanna", "mesa"], 0.55, 0.8, "rare",
       [fill("#2A1E18"), line("#F2E2B8", (5, 0), (3, 13), 1.2), border("#E8902A", 1), ring("#4A8AD0", 1, "hind", True),
        fill("#2A1E18", "tail")]),
-    # --- Minecraft-world specialties ---------------------------------------
+    SECTION("Wonders of the World"),
     S("cherry_blossom", "Cherry Blossom Wing", "classic", ["cherry_grove"], 0.42, 1.0, "common",
       [fill("#F6BCD6"), grad("#FFF0F6", 0.5), speckle(W, 0.18, "all", 4), border("#E07AA8", 1), basal("#D06A98", 1)],
       body="#5A2A3A"),
@@ -542,38 +613,147 @@ SPECIES = [
 SPECIES += [
     S("marbled_white", "Marbled White", "classic", ["meadow", "plains"], 0.42, 1.1, "common",
       [fill("#F4F2EA"), checker("#2A2A2A"), stripes("#2A2A2A", 4, 0, "inner", 1), basal("#2A2A2A", 2), border("#2A2A2A", 1),
-       ring(W, 0)]),
+       ring(W, 0)], category="Meadows & Fields"),
     S("ringlet", "Ringlet", "rounded", ["forest", "meadow"], 0.38, 1.2, "common",
       [fill("#3A2E28"), eye((5, 3), [(1.0, "#E8C87A"), (0.5, K)]), eye((4, 9), [(1.0, "#E8C87A"), (0.5, K)]),
-       eye((5, 11), [(0.9, "#E8C87A"), (0.4, K)]), ring("#C8B8A0", 0)]),
+       eye((5, 11), [(0.9, "#E8C87A"), (0.4, K)]), ring("#C8B8A0", 0)], category="Meadows & Fields"),
     S("meadow_brown", "Meadow Brown", "classic", ["plains", "meadow"], 0.42, 1.2, "common",
-      [fill("#6A5040"), circle("#E8A04A", (5, 3), 1.6), eye((6, 2), [(0.8, K), (0.3, W)]), border("#4A3828", 1)]),
+      [fill("#6A5040"), circle("#E8A04A", (5, 3), 1.6), eye((6, 2), [(0.8, K), (0.3, W)]), border("#4A3828", 1)], category="Meadows & Fields"),
     S("speckled_wood", "Speckled Wood", "classic", ["forest", "roofed", "taiga"], 0.4, 1.1, "common",
       [fill("#4A3A2A"), speckle("#E8D07A", 0.35, "inner", 31), eye((7, 2), [(0.8, K), (0.3, W)]),
-       eye((5, 10), [(0.9, K), (0.3, W)]), border("#2A2018", 1)]),
+       eye((5, 10), [(0.9, K), (0.3, W)]), border("#2A2018", 1)], category="Woodland"),
     S("wall_brown", "Wall Brown", "classic", ["mountains", "mesa"], 0.4, 1.2, "common",
       [fill("#D8902A"), stripes("#5A3A18", 3, 0, "inner", 1), eye((7, 2), [(1.0, K), (0.4, W)]),
-       eye((5, 10), [(0.8, K), (0.3, W)]), border("#4A2A10", 1)]),
+       eye((5, 10), [(0.8, K), (0.3, W)]), border("#4A2A10", 1)], category="Meadows & Fields"),
     S("camberwell_beauty", "Camberwell Beauty", "scalloped", ["taiga", "birch"], 0.55, 0.9, "rare",
-      [fill("#3A1A20"), border("#F2E2A0", 2), ring("#4A7AD8", 2, "all", True), spots("#F2E2A0", [(6, 0), (7, 1)])]),
+      [fill("#3A1A20"), border("#F2E2A0", 2), ring("#4A7AD8", 2, "all", True), spots("#F2E2A0", [(6, 0), (7, 1)])], category="Woodland"),
     S("map_butterfly", "Map Butterfly", "classic", ["forest", "taiga"], 0.38, 1.2, "uncommon",
       [fill("#1E1612"), line("#F2EEE0", (4, 1), (2, 6), 0.8), line("#F2EEE0", (2, 7), (4, 11), 0.9),
-       line("#E8822A", (1, 9), (6, 9), 0.6), spots(W, [(7, 1), (8, 2)]), border("#120E0A", 1)]),
+       line("#E8822A", (1, 9), (6, 9), 0.6), spots(W, [(7, 1), (8, 2)]), border("#120E0A", 1)], category="Woodland"),
     S("chequered_skipper", "Chequered Skipper", "skipper", ["birch", "taiga"], 0.27, 1.8, "uncommon",
-      [fill("#3A2A1A"), checker("#E8B84A"), stripes("#E8B84A", 4, 2, "inner", 2), ring("#E8B84A", 0)], body="#3A2A1A"),
+      [fill("#3A2A1A"), checker("#E8B84A"), stripes("#E8B84A", 4, 2, "inner", 2), ring("#E8B84A", 0)], body="#3A2A1A", category="Skippers"),
     S("palamedes_swallowtail", "Palamedes Swallowtail", "swallowtail", ["swamp", "mangrove_swamp"], 0.6, 0.8, "uncommon",
       [fill("#1A1610"), line("#F2D84A", (1, 2), (1, 12), 1.1), ring("#F2D84A", 1, "all", False),
-       ring("#5A7AD0", 2, "hind", True), fill(K, "tail")]),
+       ring("#5A7AD0", 2, "hind", True), fill(K, "tail")], category="Swallowtails"),
     S("banded_orange", "Banded Orange Heliconian", "longwing", ["jungle", "savanna"], 0.44, 1.0, "common",
       [fill("#F08A2A"), line(K, (2, 1), (8, 1), 0.7), line(K, (3, 3), (8, 3), 0.7), line(K, (1, 9), (5, 9), 0.7),
-       border("#3A1A0A", 1)]),
+       border("#3A1A0A", 1)], category="Rainforest"),
 ]
 
+
+SPECIES = [s for s in SPECIES if s is not None]
 assert len(SPECIES) == 100, len(SPECIES)
 assert len({s.id for s in SPECIES}) == 100
 
+CATEGORIES = ["Meadows & Fields", "Swallowtails", "Woodland", "Blues & Coppers", "Skippers", "Rainforest",
+              "Savanna & Desert", "Wonders of the World"]
+
+INFO = {
+    "monarch": "Famous for flying thousands of kilometres on its yearly migration. Its caterpillars eat only milkweed, which makes the adults taste terrible to birds.",
+    "viceroy": "Looks almost exactly like a Monarch, but the black line across its hindwings gives it away.",
+    "painted_lady": "One of the most widespread butterflies on Earth. Huge swarms migrate between continents every year.",
+    "red_admiral": "A bold black-and-red flier that loves sipping juice from fallen, overripe fruit.",
+    "peacock": "Flashes the big eyespots on its wings to startle hungry birds, and can even hiss by rubbing its wings together.",
+    "common_buckeye": "Its eyespots stare back at predators. Males perch on bare ground and chase anything that flies past.",
+    "cabbage_white": "One of the most common garden butterflies. Its caterpillars love cabbage leaves.",
+    "orange_tip": "Only the males have bright orange wing tips. Its mottled green underside hides it among flowers.",
+    "brimstone": "Its butter-yellow, leaf-shaped wings may be where the word 'butterfly' comes from.",
+    "clouded_yellow": "A strong migrant that arrives from the south in warm summers and races over clover fields.",
+    "tiger_swallowtail": "A large yellow swallowtail with tiger stripes. Its caterpillars have fake eyespots that look like a snake's eyes.",
+    "black_swallowtail": "Its caterpillars eat carrot, parsley and dill, and push out a smelly orange 'horn' when threatened.",
+    "zebra_swallowtail": "Its long, sword-like tails and zebra stripes make it one of the most elegant butterflies.",
+    "pipevine_swallowtail": "Its caterpillars eat poisonous pipevine plants, so the shimmering blue adults are toxic to predators.",
+    "giant_swallowtail": "One of the largest butterflies in North America. Its caterpillars look just like bird droppings!",
+    "old_world_swallowtail": "A striking yellow-and-black swallowtail found from Europe to Japan, often gliding over mountain tops.",
+    "scarce_swallowtail": "Despite its name it is fairly widespread. It glides gracefully with its long tails trailing behind.",
+    "spicebush_swallowtail": "Its hindwings shimmer blue-green. The caterpillars hide inside rolled-up leaves during the day.",
+    "mourning_cloak": "One of the longest-lived butterflies, surviving up to a year by hibernating through winter.",
+    "question_mark": "Named after the tiny silver question mark on the underside of its hindwings.",
+    "comma": "Its ragged wings look like a dead leaf when closed, marked with a small white comma.",
+    "small_tortoiseshell": "A cheerful garden butterfly that often wanders into houses to spend the winter.",
+    "red_spotted_purple": "It copies the colours of the toxic Pipevine Swallowtail to fool predators.",
+    "white_admiral": "A graceful woodland glider with a bold white band across its dark wings.",
+    "great_spangled_fritillary": "Its underside is decorated with shiny silver spots, like spangles on a costume.",
+    "pearl_bordered_fritillary": "A small fritillary named for the row of pearl-white spots along its wing edges.",
+    "gulf_fritillary": "Bright orange above with brilliant silver patches underneath. Its caterpillars feed on passion vines.",
+    "baltimore_checkerspot": "Wears the orange and black colours of Lord Baltimore's coat of arms.",
+    "marsh_fritillary": "Its caterpillars live together in silk webs, basking in the sun in big black clusters.",
+    "common_blue": "Males are bright sky blue while females are mostly brown. Ants guard its caterpillars.",
+    "adonis_blue": "Possibly the brightest blue butterfly in Europe, found on sunny chalk grassland.",
+    "holly_blue": "Usually the first blue butterfly of spring, fluttering high around holly and ivy.",
+    "karner_blue": "A tiny, endangered blue that depends on wild lupine plants to survive.",
+    "small_copper": "A feisty little butterfly that defends its sunny patch against much bigger insects.",
+    "large_copper": "A glowing copper-orange butterfly of wetlands that has become very rare in the wild.",
+    "purple_hairstreak": "Lives high in oak treetops and drinks sweet honeydew instead of nectar.",
+    "green_hairstreak": "The underside of its wings is bright green, so it vanishes when it lands on a leaf.",
+    "apollo": "A mountain butterfly with red eyespots and almost see-through wings, built for cold, thin air.",
+    "silver_spotted_skipper": "A speedy skipper with a bold silver patch on its hindwing.",
+    "large_skipper": "Basks with its wings held like a tiny fighter jet, then zips away in a flash.",
+    "fiery_skipper": "A bright orange skipper common on lawns. Its caterpillars eat grass.",
+    "long_tailed_skipper": "A skipper with long tails and a shimmering blue-green body.",
+    "checkered_skipper": "Covered in a checkerboard of white spots, it darts low over open ground.",
+    "blue_morpho": "Its wings are not actually blue: tiny scales bend the light to create the dazzling colour.",
+    "sunset_morpho": "A giant morpho with warm amber wings that glides slowly through the rainforest canopy.",
+    "white_morpho": "A ghostly pearl-white morpho that drifts through jungle clearings.",
+    "owl_butterfly": "The huge eyespots on its hindwings look just like an owl's eyes.",
+    "glasswing": "Its wings are clear like glass, making it nearly invisible in flight.",
+    "postman": "It visits the same flowers every day along a set route, just like a postman.",
+    "zebra_longwing": "Sleeps in groups, returning to the same roost every evening. It can live for months.",
+    "julia": "A fast, bright orange flier that sometimes drinks the tears of caimans for salt!",
+    "tiger_longwing": "Its tiger pattern warns birds that it is poisonous to eat.",
+    "doris_longwing": "Its hindwings can have blue, green or red rays depending on where it lives.",
+    "sara_longwing": "A small longwing with a blue sheen that lays its eggs in neat clusters.",
+    "malachite": "Named after the green gemstone because of its bright green wing windows.",
+    "rajah_brooke_birdwing": "Named after Rajah James Brooke. Its emerald bands look like the feathers of a bird.",
+    "queen_alexandra_birdwing": "The largest butterfly in the world, with wings up to 28 cm (11 inches) across!",
+    "golden_birdwing": "A giant whose glowing golden hindwings shine in the sunlight.",
+    "great_mormon": "Females come in many different colour forms, some copying poisonous butterflies.",
+    "emerald_swallowtail": "Its glittering green bands are made by tiny bowl-shaped scales that mix light.",
+    "ulysses": "Its electric blue wings can be seen flashing from far across the forest.",
+    "common_rose": "Its bright red body warns predators that it is poisonous to eat.",
+    "five_bar_swordtail": "Has incredibly long tails and black bars like a striped flag.",
+    "tailed_jay": "A fast, restless flier covered in bright green spots.",
+    "common_bluebottle": "A speedy swallowtail with a glowing blue-green band. Males gather at puddles to drink.",
+    "leopard_lacewing": "Spotted like a leopard on top, with delicate lace patterns underneath.",
+    "purple_emperor": "Its wings flash purple only at certain angles. It prefers tree sap to flowers.",
+    "dead_leaf": "With its wings closed it looks exactly like a dry dead leaf, complete with vein and stalk.",
+    "great_eggfly": "Males have glowing white-and-violet patches like eggs on their dark wings.",
+    "plain_tiger": "Also called the African Monarch. It is toxic to predators, and other butterflies copy its colours.",
+    "blue_tiger": "Its pale blue streaks are a warning sign. It migrates in huge swarms.",
+    "common_jezebel": "Its bright red and yellow markings warn birds that it tastes bad.",
+    "yellow_pansy": "Big yellow patches and a small blue spot make it easy to recognise.",
+    "blue_pansy": "Males have shining blue hindwings and love to bask on bare, sunny ground.",
+    "lime_swallowtail": "A speckled swallowtail with no tails, often found in citrus orchards.",
+    "cloudless_sulphur": "A big lemon-yellow butterfly that flies fast and straight across open fields.",
+    "dogface": "The yellow pattern on each forewing looks like the head of a poodle.",
+    "desert_marble": "Its marbled green underside helps it hide among desert plants.",
+    "pygmy_blue": "One of the smallest butterflies in the world, barely 1.5 cm across.",
+    "two_tailed_pasha": "A powerful flier with two tails on each hindwing that loves fermenting fruit.",
+    "cherry_blossom": "Found only in Cherry Groves, where its pink wings blend into the falling petals.",
+    "azalea_flutter": "Lives in Lush Caves and sips nectar from flowering azalea.",
+    "glowberry": "Its spots glow like the glow berries that hang in Lush Caves.",
+    "sculk_wisp": "A silent flier of the Deep Dark. Its glowing veins pulse like sculk.",
+    "crimson_ember": "Born in the Crimson Forest. Its wings shimmer like embers and it never burns.",
+    "warped_wanderer": "Drifts through Warped Forests, unbothered by the Nether's heat.",
+    "ender_wing": "A mysterious butterfly of the End, speckled like the night sky.",
+    "amethyst_wing": "Its wings sparkle like amethyst crystals. It is rarely seen in mountain meadows.",
+    "prismarine_flutter": "Found along beaches, its scales shine like prismarine.",
+    "frost_wing": "Survives the coldest snowy biomes, with icy veins that glitter in the sun.",
+    "marbled_white": "Despite looking like a white, it is actually a member of the brown butterfly family.",
+    "ringlet": "Named for the small rings on its wings. It even flies on cloudy, drizzly days.",
+    "meadow_brown": "One of the most common grassland butterflies, flying even in dull weather.",
+    "speckled_wood": "Loves dappled sunlight in woods, where its spots match the light on the ground.",
+    "wall_brown": "Loves to bask on walls and stony paths, soaking up the warmth.",
+    "camberwell_beauty": "A rare visitor with deep maroon wings and a creamy border.",
+    "map_butterfly": "The lines on its underside look like a map. Its spring and summer forms look completely different.",
+    "chequered_skipper": "A tiny dark skipper covered in golden chequers.",
+    "palamedes_swallowtail": "A large swamp swallowtail that lives where red bay trees grow.",
+    "banded_orange": "A bright orange longwing with dark bands, common in tropical forests.",
+}
+assert set(INFO) == {s.id for s in SPECIES}, set(INFO) ^ {s.id for s in SPECIES}
+
 # ---------------------------------------------------------------------------
-# Habitat -> spawn conditions
+# Habitats, life-cycle styles
 # ---------------------------------------------------------------------------
 UNDERGROUND = {"lush_caves", "deep_dark"}
 NETHER = {"crimson_forest", "warped_forest"}
@@ -584,6 +764,23 @@ HABITAT_LABEL = {
     "mangrove_swamp": "Mangrove Swamp", "mesa": "Badlands", "beach": "Beach", "cherry_grove": "Cherry Grove",
     "lush_caves": "Lush Caves", "deep_dark": "Deep Dark", "crimson_forest": "Crimson Forest",
     "warped_forest": "Warped Forest", "the_end": "The End", "frozen": "Snowy Biomes",
+}
+
+# Caterpillar look by wing family.
+LARVA_STYLE = {
+    "pointed": "banded", "swallowtail": "swallow", "kite": "swallow", "birdwing": "tubercle",
+    "classic": "spiny", "scalloped": "spiny", "leaf": "spiny", "longwing": "spiny",
+    "rounded": "slug", "hairstreak": "slug", "skipper": "skipper",
+}
+LARVA_GEO = {"banded": "filament", "swallow": "smooth", "tubercle": "tubercle", "spiny": "spiky",
+             "slug": "smooth", "skipper": "smooth"}
+FOOD = {
+    "banded": "Milkweed, Butterfly Bush and leaves",
+    "swallow": "leaves, especially from jungle and oak trees",
+    "tubercle": "jungle leaves",
+    "spiny": "leaves, Coneflowers and Butterfly Bush",
+    "slug": "leaves and Coneflowers",
+    "skipper": "grass, leaves and Milkweed",
 }
 
 # ---------------------------------------------------------------------------
@@ -611,39 +808,91 @@ def save_png(img, path):
 # ---------------------------------------------------------------------------
 # Butterfly textures
 # ---------------------------------------------------------------------------
+K = rgb("#1A1612")
+
 
 def paint_wing(sp):
     w = Wing(sp.shape)
     for f in sp.feats:
         f(w)
     r = random.Random(sp.id)
+    # Fore/hind wing separation line.
+    for p in w.hind:
+        c = w.px[p]
+        if c[3] and any(n in w.fore for n in ((p[0], p[1] - 1), (p[0] + 1, p[1] - 1), (p[0] - 1, p[1] - 1))):
+            w.px[p] = (*shade(c[:3], 0.68), 255)
+    # Light from the front, shadow at the body, punchier colour and a touch of grain.
     for p in sorted(w.mask):
         c = w.px[p]
-        if c[3]:
-            f = 1 + (r.random() - 0.5) * 0.12
-            if p[0] == 0:
-                f *= 0.86  # soft shadow where the wing meets the body
-            w.px[p] = (*shade(c[:3], f), 255)
+        if not c[3]:
+            continue
+        f = 1.07 - 0.12 * p[1] / WH
+        if p[0] == 0:
+            f *= 0.8
+        elif p[0] == 1:
+            f *= 0.92
+        if w.dist[p] == 0 and lum(c) > 60:
+            f *= 1.06
+        f *= 1 + (r.random() - 0.5) * 0.06
+        w.px[p] = (*vivid(shade(c[:3], f)), 255)
+    # Dark outline around the whole wing (but not along the body).
+    outline = {}
+    for u in range(WW):
+        for v in range(WH):
+            if (u, v) in w.mask:
+                continue
+            nb = [w.px[n] for n in ((u + du, v + dv) for du in (-1, 0, 1) for dv in (-1, 0, 1))
+                  if n in w.mask and w.px[n][3]]
+            if nb:
+                darkest = min(nb, key=lum)
+                outline[(u, v)] = (*mix(shade(darkest[:3], 0.35), K, 0.55), 255)
+    w.px.update(outline)
     return w
 
 
-def body_colors(sp, wing):
-    body = sp.body
-    accent = sp.accent or mix(body, dominant_colors(wing)[0], 0.35)
-    return body, accent
-
-
 def dominant_colors(wing, n=3):
-    # Group similar colours (the texture is dithered) and rank the groups by area.
+    # Group similar colours (the texture is shaded) and rank the groups by area.
     groups = {}
-    for c in (c[:3] for c in wing.px.values() if c[3]):
-        key = tuple(v // 40 for v in c)
-        groups.setdefault(key, []).append(c)
+    for p in wing.mask:
+        c = wing.px.get(p, (0, 0, 0, 0))
+        if c[3]:
+            groups.setdefault(tuple(v // 40 for v in c[:3]), []).append(c[:3])
     ranked = sorted(groups.values(), key=len, reverse=True)
     out = [tuple(round(sum(c[i] for c in g) / len(g)) for i in range(3)) for g in ranked[:n]]
     while len(out) < n:
         out.append(out[-1] if out else (128, 128, 128))
     return out
+
+
+def palette(wing):
+    cols = dominant_colors(wing, 5)
+    bright = max(cols, key=lambda c: sat(c) * 2 + lum(c) / 255)
+    dark = min(cols, key=lum)
+    light = max(cols, key=lum)
+    return bright, dark, light
+
+
+def body_colors(sp, wing):
+    body = rgb(sp.body)
+    accent = rgb(sp.accent) if sp.accent else mix(body, palette(wing)[0], 0.45)
+    return body, accent
+
+
+def put_box(px, uv, size, color_fn):
+    """Paint every texel of a box-UV layout. color_fn(face, a, b, fw, fh) -> rgb(a) or None."""
+    U, V = uv
+    w, h, d = (max(1, math.ceil(s - 1e-6)) if s > 0 else 0 for s in size)
+    faces = {
+        "up": (U + d, V, w, d), "down": (U + d + w, V, w, d),
+        "east": (U, V + d, d, h), "north": (U + d, V + d, w, h),
+        "west": (U + d + w, V + d, d, h), "south": (U + 2 * d + w, V + d, w, h),
+    }
+    for face, (x0, y0, fw, fh) in faces.items():
+        for a in range(fw):
+            for b in range(fh):
+                c = color_fn(face, a, b, fw, fh)
+                if c is not None:
+                    px[x0 + a, y0 + b] = c if len(c) == 4 else (*c, 255)
 
 
 def entity_texture(sp, wing):
@@ -657,56 +906,208 @@ def entity_texture(sp, wing):
             left = wing.px.get((WW - 1 - x, v))
             right = wing.px.get((x, v))
             if left and left[3]:
-                px[14 + x, 0 + y] = left
+                px[22 + x, y] = left
             if right and right[3]:
-                px[14 + x, 14 + y] = right
-    # Body: box UV [2, 2, 10] at (0, 28).
+                px[22 + x, 22 + y] = right
     body, accent = body_colors(sp, wing)
     r = random.Random(sp.id + "body")
-    for x in range(24):
-        for y in range(28, 40):
-            if (y < 38 and 10 <= x < 14) or (y >= 38):
-                c = shade(body, 1 + (r.random() - 0.5) * 0.18)
-                px[x, y] = (*c, 255)
-    # Fuzzy thorax on the back and a dotted abdomen.
-    for y in range(28, 38):
-        for x in (10, 11):
-            if y >= 34:
-                px[x, y] = (*mix(body, accent, 0.55), 255)
-            elif (x + y) % 3 == 0:
-                px[x, y] = (*mix(body, accent, 0.4), 255)
-    for x in list(range(0, 10)) + list(range(12, 22)):
-        for y in (38, 39):
-            if (x + y) % 3 == 0:
-                px[x, y] = (*mix(body, accent, 0.5), 255)
-    for x in range(24):
-        if x not in range(10, 14):
-            for y in range(28, 38):
-                px[x, y] = (0, 0, 0, 0)
-    # Antennae: solid patch used by every antenna cube.
-    ant = shade(body, 0.8)
-    for x in range(40, 56):
-        for y in range(40, 50):
-            px[x, y] = (*ant, 255)
+
+    def grain(c, amt=0.16):
+        return shade(c, 1 + (r.random() - 0.5) * amt)
+
+    # Head [2,2,2] at (0,44): dark with big compound eyes.
+    eye_c = mix(shade(body, 0.6), (40, 40, 60), 0.5)
+    put_box(px, (0, 44), (2, 2, 2), lambda f, a, b, fw, fh:
+            eye_c if f in ("east", "west") and b == 0 else grain(shade(body, 0.9)))
+    # Thorax [3,3,6] at (10,44): fuzzy.
+    put_box(px, (10, 44), (3, 3, 6), lambda f, a, b, fw, fh:
+            grain(mix(body, accent, 0.5 if (a + b) % 2 == 0 else 0.2), 0.25))
+
+    # Abdomen [2,2,10] at (30,44): ringed.
+    def abdomen(f, a, b, fw, fh):
+        k = b if f in ("up", "down") else a
+        return grain(mix(body, accent, 0.45) if k % 3 == 1 else body)
+    put_box(px, (30, 44), (2, 2, 10), abdomen)
+    # Antennae and their clubs.
+    ant = shade(body, 0.75)
+    for x in range(56, 64):
+        for y in range(44, 56):
+            px[x, y] = (*(ant if y < 52 else mix(ant, accent, 0.4)), 255)
     return img
 
 
 def top_view(wing, sp, scale=1):
     """Full butterfly seen from above, for icons and previews."""
-    w, h = WW * 2 + 2, WH
+    off = 7
+    w, h = WW * 2 + 3, WH + off
     img = Image.new("RGBA", (w, h), (0, 0, 0, 0))
     px = img.load()
     for (u, v), c in wing.px.items():
         if c[3]:
-            px[WW - 1 - u, v] = c
-            px[WW + 2 + u, v] = c
+            px[WW - 1 - u, v + off] = c
+            px[WW + 3 + u, v + off] = c
     body, accent = body_colors(sp, wing)
-    for v in range(0, 11):
-        for x in (WW, WW + 1):
-            px[x, v] = (*(mix(body, accent, 0.4) if v < 4 else body), 255)
+    cx = WW
+    for v in range(0, 18):
+        for x in range(cx, cx + 3):
+            if v < 2:
+                c = shade(body, 0.9) if x == cx + 1 else mix(shade(body, 0.6), (40, 40, 60), 0.5)
+            elif v < 8:
+                c = mix(body, accent, 0.45 if (x + v) % 2 else 0.2)
+            elif x == cx + 1 or v < 15:
+                c = mix(body, accent, 0.4) if v % 3 == 1 else body
+            else:
+                continue
+            px[x, v + off] = (*c, 255)
+    ant = (*shade(body, 0.75), 255)
+    for i in range(7):
+        px[cx - (i // 3), off - 1 - i] = ant
+        px[cx + 2 + (i // 3), off - 1 - i] = ant
     if scale != 1:
         img = img.resize((w * scale, h * scale), Image.NEAREST)
     return img
+
+
+# ---------------------------------------------------------------------------
+# Life-cycle textures (egg, caterpillar and chrysalis share one texture)
+# ---------------------------------------------------------------------------
+
+def larva_palette(sp, wing):
+    bright, dark, light = palette(wing)
+    style = LARVA_STYLE[sp.shape]
+    yellow = rgb("#F2D03A")
+    seed = sum(map(ord, sp.id))
+    if style == "banded":
+        p = {"base": "#F4F2EA", "band": "#141414", "band2": mix(bright, yellow, 0.6), "head": "#141414",
+             "spine": "#141414", "pod": "#4FC072", "pod_mark": "#E8C23A", "egg": "#F4EED0"}
+    elif style == "swallow":
+        green = mix("#6CC04A", bright, 0.15)
+        p = {"base": green, "band": shade(green, 0.55), "band2": mix(bright, yellow, 0.4), "head": shade(green, 0.8),
+             "spine": "#F28A2A", "pod": mix("#9AC86A", "#A88A5A", 0.5 * (seed % 2)),
+             "pod_mark": "#E8E0A0", "egg": "#E8E890"}
+    elif style == "tubercle":
+        p = {"base": mix(dark, "#5A1A2A", 0.6), "band": "#F2F0E6", "band2": mix(dark, "#3A0E18", 0.5),
+             "head": "#1A0A0A", "spine": mix(bright, "#E0302A", 0.6), "pod": "#C88A4A", "pod_mark": "#5A3418",
+             "egg": "#F2C870"}
+    elif style == "spiny":
+        base = mix(dark, bright, 0.25)
+        p = {"base": base, "band": mix(bright, "#F2F0E6", 0.3), "band2": shade(base, 0.7),
+             "head": shade(dark, 0.8), "spine": mix(bright, "#F2F0E6", 0.2), "pod": mix("#8A7A6A", bright, 0.25),
+             "pod_mark": "#E8D8A0", "egg": mix(light, "#C8E0A0", 0.5)}
+    elif style == "slug":
+        green = mix("#8AC85A", bright, 0.3)
+        p = {"base": green, "band": shade(green, 0.7), "band2": mix(green, "#F2F0E6", 0.4), "head": "#2A2A1A",
+             "spine": green, "pod": "#A08A6A", "pod_mark": "#5A4A3A", "egg": mix(light, "#F2F2F2", 0.6)}
+    else:  # skipper
+        base = mix("#A8D06A", light, 0.2)
+        p = {"base": base, "band": shade(base, 0.8), "band2": mix(base, "#F2F0E6", 0.4), "head": shade(dark, 0.8),
+             "spine": base, "pod": "#B8A888", "pod_mark": "#6A5A48", "egg": "#F2E8C0"}
+    if sp.category == "Wonders of the World":
+        p.update({"base": mix(bright, dark, 0.35), "band": shade(dark, 0.8), "band2": bright, "spine": bright,
+                  "pod": mix(bright, dark, 0.45), "pod_mark": mix(bright, "#FFFFFF", 0.35),
+                  "egg": mix(bright, "#FFFFFF", 0.4)})
+    return style, {k: rgb(v) for k, v in p.items()}
+
+
+def larva_texture(sp, wing):
+    style, p = larva_palette(sp, wing)
+    img = Image.new("RGBA", (64, 64), (0, 0, 0, 0))
+    px = img.load()
+    r = random.Random(sp.id + "larva")
+
+    def g(c, amt=0.1):
+        return vivid(shade(c, 1 + (r.random() - 0.5) * amt), 1.1, 1.0)
+
+    def segment(thorax):
+        def f(face, a, b, fw, fh):
+            z = b if face in ("up", "down") else a
+            if face in ("north", "south"):
+                return g(p["base"])
+            if face == "down":
+                return g(shade(p["base"], 0.75))
+            side = face in ("east", "west")
+            if style == "banded":
+                return g([p["band"], p["base"], p["band2"]][z % 3])
+            if style == "swallow":
+                if thorax and face == "up" and z == 1:
+                    return (20, 20, 20) if a in (1, 2) else g(p["band2"])
+                if z == 1 and face == "up":
+                    return g(p["band"]) if a in (0, 3) else g(p["base"])
+                if side and b == fh - 1:
+                    return g(mix(p["base"], "#F2F0E6", 0.45))
+                return g(p["band2"]) if (side and b == 1 and z == 1) else g(p["base"])
+            if style == "tubercle":
+                return g(p["band"]) if (not thorax and z == 1 and face == "up") else g(p["base"])
+            if style == "spiny":
+                if side and b == 2:
+                    return g(p["band"])
+                return g(p["band2"]) if z == 1 else g(p["base"])
+            if style == "slug":
+                if face == "up" and a in (1, 2):
+                    return g(p["band"])
+                return g(p["band2"]) if side and b == fh - 1 else g(p["base"])
+            return g(p["band"]) if (face == "up" and a in (1, 2)) else g(p["base"])
+        return f
+
+    def head(face, a, b, fw, fh):
+        if face == "north":
+            if b == 1 and a in (0, 2):
+                return (250, 250, 240)
+            if style == "banded" and b % 2 == 0:
+                return g(p["base"])
+        if style == "banded":
+            return g(p["band"] if (a + b) % 2 else p["band2"])
+        return g(p["head"])
+
+    put_box(px, (0, 0), (3, 3, 2), head)
+    put_box(px, (16, 0), (4, 4, 3), segment(True))
+    put_box(px, (32, 0), (4, 4, 3), segment(False))
+    put_box(px, (48, 0), (3, 3, 3), segment(False))
+    for x in range(0, 8):
+        for y in range(8, 16):
+            px[x, y] = (*g(p["spine"]), 255)
+    # Twig the chrysalis hangs from.
+    for x in range(16, 32):
+        for y in range(8, 24):
+            px[x, y] = (*g(rgb("#6B4A2B"), 0.25), 255)
+    pod, mark = p["pod"], p["pod_mark"]
+
+    def chrysalis(face, a, b, fw, fh):
+        if face in ("up", "down"):
+            return g(pod)
+        if style == "banded":
+            if b == 1:
+                return (20, 20, 20) if a % 2 else g(mark)
+            if b == 2 and a % 3 == 1:
+                return g(mark)
+            return g(mix(pod, "#FFFFFF", 0.25)) if a % 5 == 2 else g(pod)
+        if style == "spiny":
+            if (a + b) % 4 == 0:
+                return g(mark)
+            return g(shade(pod, 0.8)) if (a * 7 + b * 3) % 5 == 0 else g(pod)
+        if style in ("swallow", "tubercle"):
+            return g(mark) if a % 5 == 2 else g(pod)
+        return g(mark) if r.random() < 0.18 else g(pod)
+
+    put_box(px, (0, 24), (5, 6, 5), chrysalis)
+    put_box(px, (20, 24), (3, 1.5, 3), lambda *a: g(shade(pod, 0.9)))
+    put_box(px, (32, 24), (2, 1.5, 2), lambda *a: g(shade(pod, 0.75)))
+    put_box(px, (40, 24), (1, 2, 1), lambda *a: (236, 232, 220))
+    # Leaf with an egg cluster: leaf [8,0.5,8] at (0,40), eggs at (34,40).
+    leaf_c = rgb("#5DAA3C")
+    for a in range(8):
+        for b in range(8):
+            if abs(a - 3.5) / 4 + abs(b - 3.5) / 4.2 <= 1.05:
+                c = g(rgb("#4A8A30")) if a in (3, 4) else g(leaf_c)
+                px[8 + a, 40 + b] = (*c, 255)
+                px[16 + a, 40 + b] = (*shade(c, 0.8), 255)
+    # Leaf edges stay transparent so only the leaf outline shows.
+    for x in range(34, 42):
+        for y in range(40, 44):
+            px[x, y] = (*g(shade(p["egg"], 0.85 if y == 43 else 1.0), 0.05), 255)
+    for x, y in ((36, 40), (37, 41), (38, 42)):
+        px[x, y] = (*mix(p["egg"], "#FFFFFF", 0.6), 255)
+    return img, style, p
 
 
 # ---------------------------------------------------------------------------
@@ -727,9 +1128,8 @@ def jar_base():
         px[x, 2] = LID
     px[5, 2] = LID_DK
     px[10, 2] = LID_DK
-    for y in (3,):
-        px[5, y] = GLASS_DK
-        px[10, y] = GLASS_DK
+    px[5, 3] = GLASS_DK
+    px[10, 3] = GLASS_DK
     for x in (4, 11):
         px[x, 4] = GLASS_DK
     for y in range(5, 14):
@@ -742,7 +1142,6 @@ def jar_base():
     for y in range(6, 10):
         px[4, y] = GLASS_HI
     px[5, 5] = GLASS_HI
-    # faint glass tint inside
     for x in range(4, 12):
         for y in range(5, 14):
             if px[x, y][3] == 0:
@@ -760,15 +1159,9 @@ def jar_icon(sp, wing):
     a = bright[0]
     b = next((c for c in cols if c != a), shade(a, 0.6))
     body, _ = body_colors(sp, wing)
-    sprite = [
-        "XX...XX",
-        "XPXbXPX",
-        "XXXbXXX",
-        ".QQbQQ.",
-        ".QQ.QQ.",
-    ]
-    hind_cols = [wing.px[p][:3] for p in wing.mask if p[1] >= 9 and wing.px[p][3]]
-    q = Counter(hind_cols).most_common(1)[0][0] if hind_cols else a
+    sprite = ["XX...XX", "XPXbXPX", "XXXbXXX", ".QQbQQ.", ".QQ.QQ."]
+    hind = [wing.px[p][:3] for p in wing.hind if wing.px[p][3] and wing.dist[p] >= 1]
+    q = max(set(hind), key=hind.count) if hind else a
     cmap = {"X": a, "P": b, "Q": mix(q, a, 0.3) if q != a else shade(a, 0.85), "b": body}
     for y, row in enumerate(sprite):
         for x, ch in enumerate(row):
@@ -793,6 +1186,45 @@ def nectar_icon():
     return img
 
 
+def handbook_icon():
+    img = Image.new("RGBA", (16, 16), (0, 0, 0, 0))
+    px = img.load()
+    cover, cover_dk, page = rgb("#2E8A6A"), rgb("#1E5A46"), rgb("#F2EAD0")
+    for x in range(2, 14):
+        for y in range(1, 15):
+            px[x, y] = (*cover, 255)
+    for y in range(1, 15):
+        px[2, y] = (*cover_dk, 255)
+        px[3, y] = (*cover_dk, 255)
+        px[13, y] = (*page, 255)
+    for x in range(3, 14):
+        px[x, 14] = (*page, 255)
+        px[x, 1] = (*shade(cover, 1.15), 255)
+    gold, orange = rgb("#F2C23A"), rgb("#F07A1E")
+    for y, row in enumerate(["O.O.O", "OOOOO", ".OgO.", "OO.OO"]):
+        for x, ch in enumerate(row):
+            if ch != ".":
+                px[6 + x, 5 + y] = (*(gold if ch == "g" else orange), 255)
+    for x in range(5, 12):
+        px[x, 11] = (*gold, 255)
+    return img
+
+
+def unknown_icon():
+    img = Image.new("RGBA", (16, 16), (0, 0, 0, 0))
+    px = img.load()
+    shape = ["..XXX......XXX..", ".XXXXX....XXXXX.", ".XXXXXX..XXXXXX.", ".XXXXXXXXXXXXXX.",
+             "..XXXXXXXXXXXX..", "...XXXXXXXXXX...", "....XXXXXXXX....", "...XXXXXXXXXX...",
+             "..XXXXX..XXXXX..", "..XXXX....XXXX..", "...XX......XX..."]
+    for y, row in enumerate(shape):
+        for x, ch in enumerate(row):
+            if ch == "X":
+                px[x, y + 3] = (70, 74, 82, 255)
+    for x, y in ((7, 4), (8, 4), (9, 5), (8, 6), (8, 8)):
+        px[x, y] = (210, 214, 222, 255)
+    return img
+
+
 def plant_texture(kind):
     img = Image.new("RGBA", (16, 16), (0, 0, 0, 0))
     px = img.load()
@@ -808,11 +1240,11 @@ def plant_texture(kind):
                 put(sx, y, "#4E7A3A")
             for i in range(6):
                 y = top + i
-                half = 0 if i == 0 else (1 if i < 4 else 1)
+                half = 0 if i == 0 else 1
                 for x in range(sx - half, sx + half + 1):
-                    put(x, y, r.choice(["#8E4FC8", "#B47AE0", "#6A2FA0", "#A060D8"]))
+                    put(x, y, r.choice(["#9A4FE0", "#C07AF0", "#7A2FC0", "#B060F0"]))
                 if r.random() < 0.5:
-                    put(sx + r.choice([-1, 1]), y, "#F2A33A")
+                    put(sx + r.choice([-1, 1]), y, "#F8A83A")
         for lx, ly, d in ((2, 11, -1), (9, 12, 1), (6, 13, -1), (13, 10, 1), (10, 8, -1)):
             for i in range(3):
                 put(lx + d * i, ly - i // 2, "#6E9A52" if i else "#5E8A4A")
@@ -822,47 +1254,27 @@ def plant_texture(kind):
             put(8, y, "#4A7A2E")
         for ly, d in ((8, -1), (10, 1), (12, -1), (13, 1)):
             for i in range(1, 5):
-                put(7 + d * i if d < 0 else 8 + d * i, ly - (i // 3), "#6AA048")
-                put(7 + d * i if d < 0 else 8 + d * i, ly + 1 - (i // 3), "#5A8A3A")
+                x = 7 + d * i if d < 0 else 8 + d * i
+                put(x, ly - (i // 3), "#6AA048")
+                put(x, ly + 1 - (i // 3), "#5A8A3A")
         for cx, cy in ((5, 3), (10, 4), (8, 1)):
             for dx in range(-2, 3):
                 for dy in range(-1, 2):
                     if abs(dx) + abs(dy) <= 2:
-                        put(cx + dx, cy + dy, r.choice(["#E07AA0", "#F2A6C2", "#C85A88"]))
+                        put(cx + dx, cy + dy, r.choice(["#F07AA8", "#FFA6C8", "#D85A90"]))
     elif kind == "coneflower":
         for sx, top in ((4, 4), (11, 2), (8, 7)):
             for y in range(top + 2, 16):
                 put(sx, y, "#4E7A3A")
             put(sx, top, "#8A4A1A")
-            put(sx, top + 1, "#C8602A")
+            put(sx, top + 1, "#D8682A")
             put(sx - 1, top, "#A0521E")
             put(sx + 1, top, "#A0521E")
             for dx, dy in ((-2, 1), (2, 1), (-2, 2), (2, 2), (-1, 2), (1, 2), (-3, 2), (3, 2)):
-                put(sx + dx, top + dy, r.choice(["#D65AA8", "#E07AB8", "#C04A98"]))
+                put(sx + dx, top + dy, r.choice(["#E85AB8", "#F07AC8", "#D04AA8"]))
         for lx, ly in ((3, 12), (12, 11), (6, 14)):
             put(lx, ly, "#6A9A4A")
             put(lx + 1, ly - 1, "#6A9A4A")
-    return img
-
-
-def chrysalis_texture():
-    img = Image.new("RGBA", (16, 16), (0, 0, 0, 0))
-    px = img.load()
-    r = random.Random("chrysalis")
-    for x in range(16):
-        for y in range(16):
-            px[x, y] = (*shade(rgb("#4FB86A"), 1 + (r.random() - 0.5) * 0.15), 255)
-    # gold dots and a dark band near the top of each side face
-    for x in range(0, 16, 2):
-        px[x, 5] = (*rgb("#E8C23A"), 255)
-        px[x + 1 if x + 1 < 16 else x, 6] = (*rgb("#1A2A1A"), 255)
-    for x in range(1, 16, 4):
-        px[x, 8] = (*rgb("#E8C23A"), 255)
-        px[x, 12] = (*rgb("#8ADC9A"), 255)
-    # stalk region
-    for x in range(0, 4):
-        for y in range(10, 14):
-            px[x, y] = (*rgb("#2A2A1E"), 255)
     return img
 
 
@@ -870,23 +1282,163 @@ def pack_icon(featured):
     img = Image.new("RGBA", (128, 128), (0, 0, 0, 255))
     d = ImageDraw.Draw(img)
     for y in range(128):
-        c = mix(rgb("#8FD0F2"), rgb("#D8F0FA"), y / 127)
+        c = mix(rgb("#7FC8F2"), rgb("#FFF2C8"), y / 127)
         d.line([(0, y), (127, y)], fill=(*c, 255))
     for x in range(128):
         h = 104 + int(3 * math.sin(x / 7))
-        d.line([(x, h), (x, 127)], fill=(*rgb("#5DAA3C"), 255))
-        d.line([(x, h + 8), (x, 127)], fill=(*rgb("#4A8A30"), 255))
-    big = featured[0]
-    view = top_view(big[1], big[0], 4)
-    img.alpha_composite(view, ((128 - view.width) // 2, 22))
-    for i, (sp, wing) in enumerate(featured[1:3]):
-        v = top_view(wing, sp, 2)
-        img.alpha_composite(v, (6 + i * 74, 84))
+        d.line([(x, h), (x, 127)], fill=(*rgb("#5DBA3C"), 255))
+        d.line([(x, h + 8), (x, 127)], fill=(*rgb("#4A9A30"), 255))
+    view = top_view(featured[0][1], featured[0][0], 3)
+    img.alpha_composite(view, ((128 - view.width) // 2, 6))
+    for (sp, wing), x in zip(featured[1:3], (4, 89)):
+        img.alpha_composite(top_view(wing, sp, 1), (x, 92))
     return img
 
 
 # ---------------------------------------------------------------------------
-# Pack content
+# Models & animations
+# ---------------------------------------------------------------------------
+
+def geo(identifier, bones, tw=64, th=64, vb=(2, 1.5, 0.5)):
+    return {
+        "format_version": "1.12.0",
+        "minecraft:geometry": [{
+            "description": {"identifier": identifier, "texture_width": tw, "texture_height": th,
+                            "visible_bounds_width": vb[0], "visible_bounds_height": vb[1],
+                            "visible_bounds_offset": [0, vb[2], 0]},
+            "bones": bones,
+        }],
+    }
+
+
+def cube(o, s, uv):
+    return {"origin": list(o), "size": list(s), "uv": list(uv)}
+
+
+ANT, CLUB = (56, 44), (56, 52)
+BUTTERFLY_GEO = geo("geometry.butterflies.butterfly", [
+    {"name": "root", "pivot": [0, 0, 0]},
+    {"name": "body", "parent": "root", "pivot": [0, 2.5, -5], "cubes": [
+        cube((-1, 1.5, -10), (2, 2, 2), (0, 44)),
+        cube((-1.5, 1, -8), (3, 3, 6), (10, 44)),
+        cube((-1, 1.5, -2), (2, 2, 10), (30, 44)),
+    ]},
+    {"name": "antennae", "parent": "body", "pivot": [0, 3.5, -10], "cubes": [
+        cube((-1.0, 3.2, -12.5), (0.5, 0.5, 2.5), ANT), cube((-1.4, 3.8, -15), (0.5, 0.5, 2.5), ANT),
+        cube((-1.9, 4.4, -16.5), (1, 1, 1.5), CLUB),
+        cube((0.5, 3.2, -12.5), (0.5, 0.5, 2.5), ANT), cube((0.9, 3.8, -15), (0.5, 0.5, 2.5), ANT),
+        cube((0.9, 4.4, -16.5), (1, 1, 1.5), CLUB),
+    ]},
+    {"name": "wing_left", "parent": "body", "pivot": [-1.5, 3.5, -5],
+     "cubes": [cube((-17.5, 3.5, -10), (16, 0, 22), (0, 0))]},
+    {"name": "wing_right", "parent": "body", "pivot": [1.5, 3.5, -5],
+     "cubes": [cube((1.5, 3.5, -10), (16, 0, 22), (0, 22))]},
+], vb=(3, 2, 0.5))
+
+
+def caterpillar_geo(kind):
+    segs = [("seg0", -9, (16, 0)), ("seg1", -6, (32, 0)), ("seg2", -3, (32, 0)), ("seg3", 0, (32, 0)),
+            ("seg4", 3, (32, 0))]
+    spine = (0, 8)
+    bones = [{"name": "root", "pivot": [0, 0, 0]},
+             {"name": "head", "parent": "root", "pivot": [0, 1.5, -9],
+              "cubes": [cube((-1.5, 0, -11), (3, 3, 2), (0, 0))]}]
+    for name, z, uv in segs:
+        cubes = [cube((-2, 0, z), (4, 4, 3), uv)]
+        if kind == "spiky":
+            cubes += [cube((-1.6, 4, z + 1.2), (0.5, 2.5, 0.5), spine), cube((1.1, 4, z + 1.2), (0.5, 2.5, 0.5), spine),
+                      cube((-3.8, 2.6, z + 1.2), (1.8, 0.5, 0.5), spine), cube((2, 2.6, z + 1.2), (1.8, 0.5, 0.5), spine)]
+        elif kind == "tubercle":
+            cubes += [cube((-1.8, 4, z + 1), (1, 1.5, 1), spine), cube((0.8, 4, z + 1), (1, 1.5, 1), spine),
+                      cube((-2.8, 1.2, z + 1), (1, 1, 1), spine), cube((1.8, 1.2, z + 1), (1, 1, 1), spine)]
+        bones.append({"name": name, "parent": "root", "pivot": [0, 0, z + 1.5], "cubes": cubes})
+    tail = [cube((-1.5, 0, 6), (3, 3, 3), (48, 0))]
+    if kind == "spiky":
+        tail.append(cube((-0.25, 3, 7.2), (0.5, 2, 0.5), spine))
+    bones.append({"name": "tail", "parent": "root", "pivot": [0, 0, 7.5], "cubes": tail})
+    if kind == "filament":
+        bones[1]["cubes"] += [cube((-1.4, 2.6, -13), (0.5, 0.5, 2), spine), cube((-1.7, 3.1, -14.5), (0.5, 0.5, 1.5), spine),
+                              cube((0.9, 2.6, -13), (0.5, 0.5, 2), spine), cube((1.2, 3.1, -14.5), (0.5, 0.5, 1.5), spine)]
+        bones[-1]["cubes"] += [cube((-1.2, 2.6, 9), (0.5, 0.5, 2), spine), cube((0.7, 2.6, 9), (0.5, 0.5, 2), spine)]
+    return geo(f"geometry.butterflies.caterpillar_{kind}", bones, vb=(2, 1.2, 0.3))
+
+
+CHRYSALIS_GEO = geo("geometry.butterflies.chrysalis", [
+    {"name": "root", "pivot": [0, 0, 0]},
+    {"name": "twig", "parent": "root", "pivot": [4, 0, 0], "cubes": [
+        cube((3.5, 0, -0.5), (1, 12, 1), (16, 8)), cube((-0.5, 11, -0.5), (5, 1, 1), (20, 8))]},
+    {"name": "pod", "parent": "root", "pivot": [0, 11, 0], "cubes": [
+        cube((-0.5, 9, -0.5), (1, 2, 1), (40, 24)),
+        cube((-1.5, 7.5, -1.5), (3, 1.5, 3), (20, 24)),
+        cube((-2.5, 1.5, -2.5), (5, 6, 5), (0, 24)),
+        cube((-1, 0, -1), (2, 1.5, 2), (32, 24))]},
+], vb=(1.5, 1.5, 0.5))
+
+EGG_GEO = geo("geometry.butterflies.egg_cluster", [
+    {"name": "root", "pivot": [0, 0, 0], "cubes": [cube((-4, 0, -4), (8, 0.5, 8), (0, 40))] + [
+        cube((x - 0.75, 0.5, z - 0.75), (1.5, 2, 1.5), (34, 40))
+        for x, z in ((-1.4, -1.2), (0.4, -1.8), (1.8, -0.4), (-0.4, 0.4), (1.2, 1.4), (-1.8, 1.4))]},
+], vb=(1, 0.5, 0))
+
+FLAP = ("(q.is_on_ground ? math.sin(q.life_time * 90) * 15 : "
+        "math.sin(q.life_time * 1500 * v.flap) * (math.sin(q.life_time * 37) > 0.8 ? 12 : 55))")
+CRAWL = "math.max(0, math.sin(q.life_time * 320 - {}))  * math.clamp(q.modified_move_speed * 8, 0.15, 1.0) * 1.2"
+ANIMATIONS = {
+    "format_version": "1.8.0",
+    "animations": {
+        "animation.butterflies.butterfly.fly": {
+            "loop": True,
+            "bones": {
+                "wing_left": {"rotation": [0, 0, FLAP]},
+                "wing_right": {"rotation": [0, 0, "-" + FLAP]},
+                "root": {"position": [0, "q.is_on_ground ? 0 : math.sin(q.life_time * 400 * v.flap) * 0.8", 0]},
+                "antennae": {"rotation": ["math.sin(q.life_time * 150) * 4", 0, 0]},
+            },
+        },
+        "animation.butterflies.caterpillar.crawl": {
+            "loop": True,
+            "bones": {
+                **{b: {"position": [0, CRAWL.format(i * 55), 0]}
+                   for i, b in enumerate(["seg0", "seg1", "seg2", "seg3", "seg4", "tail"], 1)},
+                "head": {"position": [0, CRAWL.format(0), 0],
+                         "rotation": ["math.sin(q.life_time * 160) * 6", "math.sin(q.life_time * 70) * 10", 0]},
+            },
+        },
+        "animation.butterflies.chrysalis.sway": {
+            "loop": True,
+            "bones": {"pod": {"rotation": [
+                "math.sin(q.life_time * 33) * 2", 0,
+                "math.sin(q.life_time * 45) * 4 + (math.sin(q.life_time * 7) > 0.97 ? math.sin(q.life_time * 900) * 6 : 0)"]}},
+        },
+    },
+}
+
+RENDER_CONTROLLER = {
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.butterflies.default": {
+            "geometry": "Geometry.default",
+            "materials": [{"*": "Material.default"}],
+            "textures": ["Texture.default"],
+        }
+    },
+}
+
+CROSS_GEO = {
+    "format_version": "1.12.0",
+    "minecraft:geometry": [{
+        "description": {"identifier": "geometry.butterflies.cross", "texture_width": 16, "texture_height": 16},
+        "bones": [{"name": "plant", "pivot": [0, 0, 0], "cubes": [
+            {"origin": [-8, 0, 0], "size": [16, 16, 0], "pivot": [0, 0, 0], "rotation": [0, 45, 0],
+             "uv": {"north": {"uv": [0, 0], "uv_size": [16, 16]}}},
+            {"origin": [-8, 0, 0], "size": [16, 16, 0], "pivot": [0, 0, 0], "rotation": [0, -45, 0],
+             "uv": {"north": {"uv": [0, 0], "uv_size": [16, 16]}}},
+        ]}],
+    }],
+}
+
+# ---------------------------------------------------------------------------
+# Behaviour
 # ---------------------------------------------------------------------------
 FLOWER_BLOCKS = ["butterfly_bush", "milkweed", "coneflower"]
 VANILLA_FLOWERS = [
@@ -896,24 +1448,43 @@ VANILLA_FLOWERS = [
     "minecraft:lilac", "minecraft:rose_bush", "minecraft:peony", "minecraft:pink_petals", "minecraft:torchflower",
     "minecraft:flowering_azalea",
 ]
+LEAVES = ["minecraft:oak_leaves", "minecraft:birch_leaves", "minecraft:jungle_leaves", "minecraft:spruce_leaves",
+          "minecraft:acacia_leaves", "minecraft:dark_oak_leaves", "minecraft:mangrove_leaves",
+          "minecraft:cherry_leaves", "minecraft:azalea_leaves"]
+CATERPILLAR_FOOD = LEAVES + [f"{NS}:{b}" for b in FLOWER_BLOCKS] + ["minecraft:short_grass", "minecraft:fern"]
 SOIL = ["minecraft:grass_block", "minecraft:dirt", "minecraft:coarse_dirt", "minecraft:podzol",
         "minecraft:rooted_dirt", "minecraft:moss_block", "minecraft:mycelium", "minecraft:farmland"]
 
 
-def entity_behavior(sp):
-    fire = any(h in NETHER for h in sp.habitat)
+def player_holding(item_id):
+    return {"all_of": [
+        {"test": "is_family", "subject": "other", "value": "player"},
+        {"test": "has_equipment", "domain": "hand", "subject": "other", "value": item_id},
+    ]}
+
+
+def base_components(sp, family, health):
     comps = {
-        "minecraft:type_family": {"family": ["butterfly", "arthropod", "mob"]},
-        "minecraft:collision_box": {"width": 0.6, "height": 0.5},
-        "minecraft:scale": {"value": sp.scale},
-        "minecraft:health": {"value": 3, "max": 3},
+        "minecraft:type_family": {"family": family + ["butterfly_lifecycle", "arthropod", "mob"]},
+        "minecraft:health": {"value": health, "max": health},
         "minecraft:breathable": {"total_supply": 15, "suffocate_time": 0},
         "minecraft:damage_sensor": {"triggers": [{"cause": "fall", "deals_damage": "no"}]},
         "minecraft:nameable": {},
         "minecraft:physics": {},
+        "minecraft:conditional_bandwidth_optimization": {},
+    }
+    if any(h in NETHER for h in sp.habitat):
+        comps["minecraft:fire_immune"] = {}
+    return comps
+
+
+def adult_behavior(sp):
+    comps = base_components(sp, ["butterfly"], 3)
+    comps.update({
+        "minecraft:collision_box": {"width": 0.9, "height": 0.6},
+        "minecraft:scale": {"value": sp.scale},
         "minecraft:pushable": {"is_pushable": True, "is_pushable_by_piston": True},
         "minecraft:despawn": {"despawn_from_distance": {}},
-        "minecraft:conditional_bandwidth_optimization": {},
         "minecraft:can_fly": {},
         "minecraft:movement": {"value": 0.25},
         "minecraft:flying_speed": {"value": round(0.09 + 0.03 * sp.flap, 3)},
@@ -937,39 +1508,118 @@ def entity_behavior(sp):
         "minecraft:behavior.random_hover": {
             "priority": 12, "xz_dist": 8, "y_dist": 6, "y_offset": -1, "interval": 1, "hover_height": [1, 4],
         },
-        "minecraft:interact": {"interactions": [{
-            "on_interact": {
-                "filters": {"all_of": [
-                    {"test": "is_family", "subject": "other", "value": "player"},
-                    {"test": "has_equipment", "domain": "hand", "subject": "other", "value": f"{NS}:butterfly_jar"},
-                ]},
-                "event": f"{NS}:caught", "target": "self",
+        "minecraft:interact": {"interactions": [
+            {
+                "on_interact": {"filters": player_holding(f"{NS}:butterfly_jar"), "event": f"{NS}:caught", "target": "self"},
+                "use_item": True, "transform_to_item": f"{NS}:jar_{sp.id}", "swing": True,
+                "interact_text": "action.interact.butterflies.catch",
             },
-            "use_item": True,
-            "transform_to_item": f"{NS}:jar_{sp.id}",
-            "swing": True,
-            "interact_text": "action.interact.butterflies.catch",
-        }]},
-    }
-    if fire:
-        comps["minecraft:fire_immune"] = {}
+            {
+                "on_interact": {"filters": player_holding(f"{NS}:nectar_bottle"), "event": f"{NS}:lay_egg", "target": "self"},
+                "use_item": True, "transform_to_item": "minecraft:glass_bottle", "swing": True, "cooldown": 30,
+                "interact_text": "action.interact.butterflies.feed",
+            },
+        ]},
+    })
     return {
         "format_version": "1.21.0",
         "minecraft:entity": {
             "description": {"identifier": f"{NS}:{sp.id}", "is_spawnable": True, "is_summonable": True},
-            "component_groups": {f"{NS}:caught": {"minecraft:instant_despawn": {}}},
+            "component_groups": {
+                f"{NS}:caught": {"minecraft:instant_despawn": {}},
+                f"{NS}:laying": {
+                    "minecraft:spawn_entity": {"entities": [{
+                        "min_wait_time": 1, "max_wait_time": 3, "spawn_entity": f"{NS}:{sp.id}_egg",
+                        "single_use": True, "num_to_spawn": 1, "spawn_sound": "plop"}]},
+                    "minecraft:timer": {"time": 5, "looping": False,
+                                        "time_down_event": {"event": f"{NS}:laid", "target": "self"}},
+                },
+            },
             "components": comps,
-            "events": {f"{NS}:caught": {"add": {"component_groups": [f"{NS}:caught"]}}},
+            "events": {
+                f"{NS}:caught": {"add": {"component_groups": [f"{NS}:caught"]}},
+                f"{NS}:lay_egg": {"add": {"component_groups": [f"{NS}:laying"]}},
+                f"{NS}:laid": {"remove": {"component_groups": [f"{NS}:laying"]}},
+            },
         },
     }
 
 
+def stage_entity(identifier, comps, next_id, event, spawnable=False):
+    return {
+        "format_version": "1.21.0",
+        "minecraft:entity": {
+            "description": {"identifier": identifier, "is_spawnable": spawnable, "is_summonable": True},
+            "component_groups": {f"{NS}:transform": {"minecraft:transformation": {"into": next_id}}},
+            "components": comps,
+            "events": {event: {"add": {"component_groups": [f"{NS}:transform"]}}},
+        },
+    }
 
-def spawn_rules(sp):
+
+def larva_scale(sp):
+    return round(0.32 + 0.25 * sp.scale, 3)
+
+
+def egg_behavior(sp):
+    comps = base_components(sp, ["butterfly_egg"], 1)
+    comps.update({
+        "minecraft:collision_box": {"width": 0.4, "height": 0.15},
+        "minecraft:scale": {"value": 0.7},
+        "minecraft:knockback_resistance": {"value": 1.0},
+        "minecraft:pushable": {"is_pushable": False, "is_pushable_by_piston": True},
+        "minecraft:timer": {"time": [90, 150], "looping": False,
+                            "time_down_event": {"event": f"{NS}:hatch", "target": "self"}},
+    })
+    return stage_entity(f"{NS}:{sp.id}_egg", comps, f"{NS}:{sp.id}_caterpillar", f"{NS}:hatch")
+
+
+def caterpillar_behavior(sp):
+    comps = base_components(sp, ["caterpillar"], 4)
+    comps.update({
+        "minecraft:collision_box": {"width": 0.5, "height": 0.3},
+        "minecraft:scale": {"value": larva_scale(sp)},
+        "minecraft:pushable": {"is_pushable": True, "is_pushable_by_piston": True},
+        "minecraft:movement": {"value": 0.08},
+        "minecraft:movement.basic": {},
+        "minecraft:jump.static": {},
+        "minecraft:navigation.walk": {"avoid_water": True, "avoid_damage_blocks": True, "can_walk": True},
+        "minecraft:behavior.float": {"priority": 0},
+        "minecraft:behavior.tempt": {"priority": 3, "speed_multiplier": 1.3, "within_radius": 6,
+                                     "items": CATERPILLAR_FOOD},
+        "minecraft:behavior.random_stroll": {"priority": 6, "speed_multiplier": 1.0, "xz_dist": 4, "y_dist": 2},
+        "minecraft:behavior.look_at_player": {"priority": 8, "look_distance": 4, "probability": 0.05},
+        "minecraft:behavior.random_look_around": {"priority": 9},
+        "minecraft:ageable": {
+            "duration": 420,
+            "feed_items": [{"item": i, "growth": 0.15} for i in CATERPILLAR_FOOD],
+            "grow_up": {"event": f"{NS}:pupate", "target": "self"},
+        },
+        "minecraft:timer": {"time": [480, 600], "looping": False,
+                            "time_down_event": {"event": f"{NS}:pupate", "target": "self"}},
+    })
+    return stage_entity(f"{NS}:{sp.id}_caterpillar", comps, f"{NS}:{sp.id}_chrysalis", f"{NS}:pupate", True)
+
+
+def chrysalis_behavior(sp):
+    comps = base_components(sp, ["chrysalis"], 6)
+    comps.update({
+        "minecraft:collision_box": {"width": 0.4, "height": 0.6},
+        "minecraft:scale": {"value": round(larva_scale(sp) * 1.25, 3)},
+        "minecraft:knockback_resistance": {"value": 1.0},
+        "minecraft:pushable": {"is_pushable": False, "is_pushable_by_piston": True},
+        "minecraft:timer": {"time": [150, 240], "looping": False,
+                            "time_down_event": {"event": f"{NS}:emerge", "target": "self"}},
+    })
+    return stage_entity(f"{NS}:{sp.id}_chrysalis", comps, f"{NS}:{sp.id}", f"{NS}:emerge")
+
+
+def spawn_rules(identifier, sp, weight_scale=1.0, herd=None):
     tags = sp.habitat
     biome = {"any_of": [{"test": "has_biome_tag", "operator": "==", "value": t} for t in tags]}
-    cond = {"minecraft:weight": {"default": RARITY[sp.rarity]},
-            "minecraft:herd": {"min_size": 1, "max_size": 2 if sp.rarity in ("common", "uncommon") else 1},
+    weight = max(1, round(RARITY[sp.rarity] * weight_scale))
+    cond = {"minecraft:weight": {"default": weight},
+            "minecraft:herd": {"min_size": 1, "max_size": herd or (2 if sp.rarity in ("common", "uncommon") else 1)},
             "minecraft:biome_filter": biome}
     if any(t in UNDERGROUND for t in tags):
         cond["minecraft:spawns_underground"] = {}
@@ -988,28 +1638,28 @@ def spawn_rules(sp):
     return {
         "format_version": "1.8.0",
         "minecraft:spawn_rules": {
-            "description": {"identifier": f"{NS}:{sp.id}", "population_control": "ambient"},
+            "description": {"identifier": identifier, "population_control": "ambient"},
             "conditions": [cond],
         },
     }
 
 
-def client_entity(sp, egg):
-    return {
-        "format_version": "1.10.0",
-        "minecraft:client_entity": {
-            "description": {
-                "identifier": f"{NS}:{sp.id}",
-                "materials": {"default": "entity_alphatest"},
-                "textures": {"default": f"textures/entity/butterflies/{sp.id}"},
-                "geometry": {"default": "geometry.butterflies.butterfly"},
-                "animations": {"fly": "animation.butterflies.butterfly.fly"},
-                "scripts": {"initialize": [f"v.flap = {sp.flap};"], "animate": ["fly"]},
-                "render_controllers": ["controller.render.butterflies.butterfly"],
-                "spawn_egg": {"base_color": hexc(egg[0]), "overlay_color": hexc(egg[1])},
-            }
-        },
+def client_entity(identifier, texture, geometry, anim, egg=None, init=None):
+    desc = {
+        "identifier": identifier,
+        "materials": {"default": "entity_alphatest"},
+        "textures": {"default": texture},
+        "geometry": {"default": geometry},
+        "render_controllers": ["controller.render.butterflies.default"],
     }
+    if anim:
+        desc["animations"] = {"main": anim}
+        desc["scripts"] = {"animate": ["main"]}
+        if init:
+            desc["scripts"]["initialize"] = init
+    if egg:
+        desc["spawn_egg"] = {"base_color": hexc(egg[0]), "overlay_color": hexc(egg[1])}
+    return {"format_version": "1.10.0", "minecraft:client_entity": {"description": desc}}
 
 
 def item(identifier, icon, lang_key, comps=None, category="items"):
@@ -1045,109 +1695,8 @@ def plant_block(name, height):
     }
 
 
-def chrysalis_block():
-    return {
-        "format_version": "1.21.40",
-        "minecraft:block": {
-            "description": {"identifier": f"{NS}:chrysalis", "menu_category": {"category": "nature"}},
-            "components": {
-                "minecraft:geometry": "geometry.butterflies.chrysalis",
-                "minecraft:material_instances": {"*": {
-                    "texture": f"{NS}_chrysalis", "render_method": "alpha_test", "ambient_occlusion": False}},
-                "minecraft:collision_box": False,
-                "minecraft:selection_box": {"origin": [-3, 5, -3], "size": [6, 11, 6]},
-                "minecraft:destructible_by_mining": {"seconds_to_destroy": 0.2},
-                "minecraft:light_dampening": 0,
-                "minecraft:map_color": "#4FB86A",
-            },
-        },
-    }
-
-
-CROSS_GEO = {
-    "format_version": "1.12.0",
-    "minecraft:geometry": [{
-        "description": {"identifier": "geometry.butterflies.cross", "texture_width": 16, "texture_height": 16},
-        "bones": [{"name": "plant", "pivot": [0, 0, 0], "cubes": [
-            {"origin": [-8, 0, 0], "size": [16, 16, 0], "pivot": [0, 0, 0], "rotation": [0, 45, 0],
-             "uv": {"north": {"uv": [0, 0], "uv_size": [16, 16]}}},
-            {"origin": [-8, 0, 0], "size": [16, 16, 0], "pivot": [0, 0, 0], "rotation": [0, -45, 0],
-             "uv": {"north": {"uv": [0, 0], "uv_size": [16, 16]}}},
-        ]}],
-    }],
-}
-
-CHRYSALIS_GEO = {
-    "format_version": "1.12.0",
-    "minecraft:geometry": [{
-        "description": {"identifier": "geometry.butterflies.chrysalis", "texture_width": 16, "texture_height": 16},
-        "bones": [{"name": "chrysalis", "pivot": [0, 16, 0], "cubes": [
-            {"origin": [-0.5, 13, -0.5], "size": [1, 3, 1], "uv": [0, 10]},
-            {"origin": [-2, 7, -2], "size": [4, 6, 4], "uv": [0, 0]},
-            {"origin": [-1, 5, -1], "size": [2, 2, 2], "uv": [4, 10]},
-        ]}],
-    }],
-}
-
-BUTTERFLY_GEO = {
-    "format_version": "1.12.0",
-    "minecraft:geometry": [{
-        "description": {
-            "identifier": "geometry.butterflies.butterfly", "texture_width": 64, "texture_height": 64,
-            "visible_bounds_width": 2, "visible_bounds_height": 1.5, "visible_bounds_offset": [0, 0.25, 0],
-        },
-        "bones": [
-            {"name": "root", "pivot": [0, 0, 0]},
-            {"name": "body", "parent": "root", "pivot": [0, 2, 0],
-             "cubes": [{"origin": [-1, 1, -5], "size": [2, 2, 10], "uv": [0, 28]}]},
-            {"name": "antennae", "parent": "body", "pivot": [0, 3, -5], "cubes": [
-                {"origin": [-0.9, 3, -7], "size": [0.5, 0.5, 2], "uv": [40, 40]},
-                {"origin": [-1.1, 3.5, -9], "size": [0.5, 0.5, 2], "uv": [40, 40]},
-                {"origin": [-1.5, 4, -10], "size": [1, 1, 1], "uv": [40, 40]},
-                {"origin": [0.4, 3, -7], "size": [0.5, 0.5, 2], "uv": [40, 40]},
-                {"origin": [0.6, 3.5, -9], "size": [0.5, 0.5, 2], "uv": [40, 40]},
-                {"origin": [0.5, 4, -10], "size": [1, 1, 1], "uv": [40, 40]},
-            ]},
-            {"name": "wing_left", "parent": "body", "pivot": [-1, 2.5, 0],
-             "cubes": [{"origin": [-11, 2.5, -5.5], "size": [10, 0, 14], "uv": [0, 0]}]},
-            {"name": "wing_right", "parent": "body", "pivot": [1, 2.5, 0],
-             "cubes": [{"origin": [1, 2.5, -5.5], "size": [10, 0, 14], "uv": [0, 14]}]},
-        ],
-    }],
-}
-
-FLAP = ("(q.is_on_ground ? math.sin(q.life_time * 90) * 15 : "
-        "math.sin(q.life_time * 1500 * v.flap) * (math.sin(q.life_time * 37) > 0.8 ? 12 : 55))")
-ANIMATION = {
-    "format_version": "1.8.0",
-    "animations": {
-        "animation.butterflies.butterfly.fly": {
-            "loop": True,
-            "bones": {
-                "wing_left": {"rotation": [0, 0, FLAP]},
-                "wing_right": {"rotation": [0, 0, "-" + FLAP]},
-                "root": {"position": [0, "q.is_on_ground ? 0 : math.sin(q.life_time * 400 * v.flap) * 0.6", 0]},
-                "antennae": {"rotation": ["math.sin(q.life_time * 150) * 4", 0, 0]},
-            },
-        }
-    },
-}
-
-RENDER_CONTROLLER = {
-    "format_version": "1.8.0",
-    "render_controllers": {
-        "controller.render.butterflies.butterfly": {
-            "geometry": "Geometry.default",
-            "materials": [{"*": "Material.default"}],
-            "textures": ["Texture.default"],
-        }
-    },
-}
-
-
 def recipes():
-    out = {}
-    out["butterfly_jar"] = {
+    out = {"butterfly_jar": {
         "format_version": "1.20.10",
         "minecraft:recipe_shaped": {
             "description": {"identifier": f"{NS}:butterfly_jar"},
@@ -1157,7 +1706,7 @@ def recipes():
             "unlock": [{"item": "minecraft:glass"}],
             "result": {"item": f"{NS}:butterfly_jar", "count": 3},
         },
-    }
+    }}
 
     def shapeless(name, ingredients, result, count=1, unlock="minecraft:sugar"):
         out[name] = {
@@ -1171,6 +1720,7 @@ def recipes():
             },
         }
 
+    shapeless("handbook", ["minecraft:book", f"{NS}:butterfly_jar"], f"{NS}:handbook", 1, "minecraft:book")
     shapeless("nectar_bottle_from_dandelion", ["minecraft:glass_bottle", "minecraft:sugar", "minecraft:dandelion"],
               f"{NS}:nectar_bottle")
     shapeless("nectar_bottle_from_bush", ["minecraft:glass_bottle", "minecraft:sugar", f"{NS}:butterfly_bush"],
@@ -1183,9 +1733,6 @@ def recipes():
               f"{NS}:milkweed", 1, "minecraft:pink_dye")
     shapeless("coneflower", ["minecraft:wheat_seeds", "minecraft:magenta_dye", "minecraft:brown_dye"],
               f"{NS}:coneflower", 1, "minecraft:magenta_dye")
-    shapeless("chrysalis", ["minecraft:string", "minecraft:green_dye", "minecraft:gold_nugget"],
-              f"{NS}:chrysalis", 1, "minecraft:string")
-    # Purple and pink dye from the new flowers.
     shapeless("purple_dye_from_bush", [f"{NS}:butterfly_bush"], "minecraft:purple_dye", 2, f"{NS}:butterfly_bush")
     shapeless("pink_dye_from_milkweed", [f"{NS}:milkweed"], "minecraft:pink_dye", 2, f"{NS}:milkweed")
     shapeless("magenta_dye_from_coneflower", [f"{NS}:coneflower"], "minecraft:magenta_dye", 2, f"{NS}:coneflower")
@@ -1235,67 +1782,103 @@ def features():
 
 def manifest(kind):
     is_bp = kind == "bp"
-    own = "bp" if is_bp else "rp"
-    other = "rp" if is_bp else "bp"
+    own, other = ("bp", "rp") if is_bp else ("rp", "bp")
+    modules = [{"type": "data" if is_bp else "resources", "uuid": uid(f"{own}-module"), "version": VERSION}]
+    deps = [{"uuid": uid(f"{other}-header"), "version": VERSION}]
+    if is_bp:
+        modules.append({"type": "script", "language": "javascript", "uuid": uid("bp-script"),
+                        "version": VERSION, "entry": "scripts/main.js"})
+        deps += [{"module_name": "@minecraft/server", "version": "2.0.0"},
+                 {"module_name": "@minecraft/server-ui", "version": "2.0.0"}]
     return {
         "format_version": 2,
-        "header": {
-            "name": "pack.name",
-            "description": "pack.description",
-            "uuid": uid(f"{own}-header"),
-            "version": VERSION,
-            "min_engine_version": MIN_ENGINE,
-        },
-        "modules": [{
-            "type": "data" if is_bp else "resources",
-            "uuid": uid(f"{own}-module"),
-            "version": VERSION,
-        }],
-        "dependencies": [{"uuid": uid(f"{other}-header"), "version": VERSION}],
+        "header": {"name": "pack.name", "description": "pack.description", "uuid": uid(f"{own}-header"),
+                   "version": VERSION, "min_engine_version": MIN_ENGINE},
+        "modules": modules,
+        "dependencies": deps,
         "metadata": {"authors": ["Butterflies Galore"]},
     }
 
 
-def clean(path):
-    if os.path.isdir(path):
-        shutil.rmtree(path)
+def handbook_data(painted):
+    rows = []
+    for sp, _ in painted:
+        rows.append({
+            "id": sp.id, "name": sp.name, "category": sp.category, "rarity": sp.rarity.title(),
+            "habitat": ", ".join(HABITAT_LABEL[h] for h in sp.habitat),
+            "wingspan": f"{35 * sp.scale / 16:.1f} blocks",
+            "food": FOOD[LARVA_STYLE[sp.shape]],
+            "info": INFO[sp.id],
+            "icon": f"textures/items/jars/jar_{sp.id}",
+        })
+    cats = []
+    for c in CATEGORIES:
+        first = next(sp for sp, _ in painted if sp.category == c)
+        cats.append({"name": c, "icon": f"textures/items/jars/jar_{first.id}"})
+    return ("// Generated by tools/generate.py from the species table. Do not edit by hand.\n"
+            f"export const SPECIES = {json.dumps(rows, indent=1)};\n\n"
+            f"export const CATEGORIES = {json.dumps(cats, indent=1)};\n")
 
+
+# ---------------------------------------------------------------------------
+# Build
+# ---------------------------------------------------------------------------
 
 def build():
     for p in (BP, RP):
-        clean(p)
+        if os.path.isdir(p):
+            shutil.rmtree(p)
     painted = [(sp, paint_wing(sp)) for sp in SPECIES]
+    by_id = {sp.id: (sp, w) for sp, w in painted}
 
-    # --- Manifests, icons & pack language ---------------------------------
     write_json(os.path.join(BP, "manifest.json"), manifest("bp"))
     write_json(os.path.join(RP, "manifest.json"), manifest("rp"))
-    by_id = dict((sp.id, (sp, w)) for sp, w in painted)
     icon = pack_icon([by_id["monarch"], by_id["blue_morpho"], by_id["peacock"]])
     save_png(icon, os.path.join(BP, "pack_icon.png"))
     save_png(icon, os.path.join(RP, "pack_icon.png"))
-    desc = "100 hand-crafted butterflies to discover, catch and collect."
+    desc = "100 butterflies to discover, raise from egg to wing, catch and record in your handbook."
     for p, label in ((BP, "Behavior Pack"), (RP, "Resource Pack")):
         write_json(os.path.join(p, "texts", "languages.json"), ["en_US"])
         write_text(os.path.join(p, "texts", "en_US.lang"),
                    f"pack.name=Butterflies Galore {label}\npack.description={desc}\n")
 
-    # --- Shared client assets ---------------------------------------------
-    write_json(os.path.join(RP, "models", "entity", "butterfly.geo.json"), BUTTERFLY_GEO)
+    models = os.path.join(RP, "models", "entity")
+    write_json(os.path.join(models, "butterfly.geo.json"), BUTTERFLY_GEO)
+    for kind in ("smooth", "filament", "spiky", "tubercle"):
+        write_json(os.path.join(models, f"caterpillar_{kind}.geo.json"), caterpillar_geo(kind))
+    write_json(os.path.join(models, "chrysalis.geo.json"), CHRYSALIS_GEO)
+    write_json(os.path.join(models, "egg_cluster.geo.json"), EGG_GEO)
     write_json(os.path.join(RP, "models", "blocks", "cross.geo.json"), CROSS_GEO)
-    write_json(os.path.join(RP, "models", "blocks", "chrysalis.geo.json"), CHRYSALIS_GEO)
-    write_json(os.path.join(RP, "animations", "butterfly.animation.json"), ANIMATION)
-    write_json(os.path.join(RP, "render_controllers", "butterfly.render_controllers.json"), RENDER_CONTROLLER)
+    write_json(os.path.join(RP, "animations", "butterflies.animation.json"), ANIMATIONS)
+    write_json(os.path.join(RP, "render_controllers", "butterflies.render_controllers.json"), RENDER_CONTROLLER)
 
-    lang = [f"pack.name=Butterflies Galore Resource Pack", f"pack.description={desc}", "",
-            "## Butterflies"]
+    lang = ["pack.name=Butterflies Galore Resource Pack", f"pack.description={desc}", ""]
     item_tex = {}
     for sp, wing in painted:
-        save_png(entity_texture(sp, wing), os.path.join(RP, "textures", "entity", "butterflies", f"{sp.id}.png"))
-        egg = dominant_colors(wing, 2)
-        write_json(os.path.join(RP, "entity", f"{sp.id}.entity.json"), client_entity(sp, egg))
-        write_json(os.path.join(BP, "entities", f"{sp.id}.json"), entity_behavior(sp))
-        write_json(os.path.join(BP, "spawn_rules", f"{sp.id}.json"), spawn_rules(sp))
-        # Jar item
+        tex = f"textures/entity/butterflies/{sp.id}"
+        ltex = f"textures/entity/butterflies/larva/{sp.id}"
+        save_png(entity_texture(sp, wing), os.path.join(RP, tex + ".png"))
+        limg, style, lp = larva_texture(sp, wing)
+        save_png(limg, os.path.join(RP, ltex + ".png"))
+        write_json(os.path.join(RP, "entity", f"{sp.id}.entity.json"), client_entity(
+            f"{NS}:{sp.id}", tex, "geometry.butterflies.butterfly", "animation.butterflies.butterfly.fly",
+            dominant_colors(wing, 2), [f"v.flap = {sp.flap};"]))
+        write_json(os.path.join(RP, "entity", "larva", f"{sp.id}_egg.entity.json"), client_entity(
+            f"{NS}:{sp.id}_egg", ltex, "geometry.butterflies.egg_cluster", None))
+        write_json(os.path.join(RP, "entity", "larva", f"{sp.id}_caterpillar.entity.json"), client_entity(
+            f"{NS}:{sp.id}_caterpillar", ltex, f"geometry.butterflies.caterpillar_{LARVA_GEO[style]}",
+            "animation.butterflies.caterpillar.crawl", (lp["base"], lp["band2"] if style == "banded" else lp["band"])))
+        write_json(os.path.join(RP, "entity", "larva", f"{sp.id}_chrysalis.entity.json"), client_entity(
+            f"{NS}:{sp.id}_chrysalis", ltex, "geometry.butterflies.chrysalis", "animation.butterflies.chrysalis.sway"))
+
+        write_json(os.path.join(BP, "entities", f"{sp.id}.json"), adult_behavior(sp))
+        write_json(os.path.join(BP, "entities", "larva", f"{sp.id}_egg.json"), egg_behavior(sp))
+        write_json(os.path.join(BP, "entities", "larva", f"{sp.id}_caterpillar.json"), caterpillar_behavior(sp))
+        write_json(os.path.join(BP, "entities", "larva", f"{sp.id}_chrysalis.json"), chrysalis_behavior(sp))
+        write_json(os.path.join(BP, "spawn_rules", f"{sp.id}.json"), spawn_rules(f"{NS}:{sp.id}", sp))
+        write_json(os.path.join(BP, "spawn_rules", "larva", f"{sp.id}_caterpillar.json"),
+                   spawn_rules(f"{NS}:{sp.id}_caterpillar", sp, 0.5, 1))
+
         save_png(jar_icon(sp, wing), os.path.join(RP, "textures", "items", "jars", f"jar_{sp.id}.png"))
         item_tex[f"{NS}_jar_{sp.id}"] = {"textures": f"textures/items/jars/jar_{sp.id}"}
         write_json(os.path.join(BP, "items", "jars", f"jar_{sp.id}.json"),
@@ -1304,17 +1887,25 @@ def build():
                        "minecraft:entity_placer": {"entity": f"{NS}:{sp.id}"},
                    }))
         lang += [f"entity.{NS}:{sp.id}.name={sp.name}",
+                 f"entity.{NS}:{sp.id}_egg.name={sp.name} Eggs",
+                 f"entity.{NS}:{sp.id}_caterpillar.name={sp.name} Caterpillar",
+                 f"entity.{NS}:{sp.id}_chrysalis.name={sp.name} Chrysalis",
                  f"item.spawn_egg.entity.{NS}:{sp.id}.name=Spawn {sp.name}",
+                 f"item.spawn_egg.entity.{NS}:{sp.id}_caterpillar.name=Spawn {sp.name} Caterpillar",
                  f"item.{NS}.jar_{sp.id}.name={sp.name} in a Jar"]
 
-    # --- Utility items -----------------------------------------------------
-    save_png(jar_base(), os.path.join(RP, "textures", "items", "butterfly_jar.png"))
-    save_png(nectar_icon(), os.path.join(RP, "textures", "items", "nectar_bottle.png"))
-    item_tex[f"{NS}_butterfly_jar"] = {"textures": "textures/items/butterfly_jar"}
-    item_tex[f"{NS}_nectar_bottle"] = {"textures": "textures/items/nectar_bottle"}
+    for name, img in (("butterfly_jar", jar_base()), ("nectar_bottle", nectar_icon()), ("handbook", handbook_icon())):
+        save_png(img, os.path.join(RP, "textures", "items", f"{name}.png"))
+        item_tex[f"{NS}_{name}"] = {"textures": f"textures/items/{name}"}
+    save_png(unknown_icon(), os.path.join(RP, "textures", "ui", "butterflies", "unknown.png"))
     write_json(os.path.join(BP, "items", "butterfly_jar.json"),
                item(f"{NS}:butterfly_jar", f"{NS}_butterfly_jar", f"item.{NS}.butterfly_jar.name",
                     {"minecraft:max_stack_size": 64}, "equipment"))
+    write_json(os.path.join(BP, "items", "handbook.json"),
+               item(f"{NS}:handbook", f"{NS}_handbook", f"item.{NS}.handbook.name", {
+                   "minecraft:max_stack_size": 1,
+                   "minecraft:cooldown": {"category": f"{NS}_handbook", "duration": 0.5},
+               }, "equipment"))
     write_json(os.path.join(BP, "items", "nectar_bottle.json"),
                item(f"{NS}:nectar_bottle", f"{NS}_nectar_bottle", f"item.{NS}.nectar_bottle.name", {
                    "minecraft:max_stack_size": 16,
@@ -1326,7 +1917,6 @@ def build():
     write_json(os.path.join(RP, "textures", "item_texture.json"),
                {"resource_pack_name": "butterflies_galore", "texture_name": "atlas.items", "texture_data": item_tex})
 
-    # --- Blocks -------------------------------------------------------------
     terrain = {}
     blocks_json = {"format_version": "1.21.40"}
     for name, height in (("butterfly_bush", 15), ("milkweed", 14), ("coneflower", 12)):
@@ -1334,37 +1924,129 @@ def build():
         terrain[f"{NS}_{name}"] = {"textures": f"textures/blocks/{name}"}
         write_json(os.path.join(BP, "blocks", f"{name}.json"), plant_block(name, height))
         blocks_json[f"{NS}:{name}"] = {"sound": "grass"}
-    save_png(chrysalis_texture(), os.path.join(RP, "textures", "blocks", "chrysalis.png"))
-    terrain[f"{NS}_chrysalis"] = {"textures": "textures/blocks/chrysalis"}
-    write_json(os.path.join(BP, "blocks", "chrysalis.json"), chrysalis_block())
-    blocks_json[f"{NS}:chrysalis"] = {"sound": "grass"}
     write_json(os.path.join(RP, "textures", "terrain_texture.json"),
                {"resource_pack_name": "butterflies_galore", "texture_name": "atlas.terrain", "padding": 8,
                 "num_mip_levels": 4, "texture_data": terrain})
     write_json(os.path.join(RP, "blocks.json"), blocks_json)
 
-    lang += ["", "## Items & blocks",
+    lang += ["",
              f"item.{NS}.butterfly_jar.name=Butterfly Jar",
              f"item.{NS}.nectar_bottle.name=Bottle of Nectar",
+             f"item.{NS}.handbook.name=Butterfly Handbook",
              f"tile.{NS}:butterfly_bush.name=Butterfly Bush",
              f"tile.{NS}:milkweed.name=Milkweed",
              f"tile.{NS}:coneflower.name=Coneflower",
-             f"tile.{NS}:chrysalis.name=Chrysalis",
-             f"action.interact.butterflies.catch=Catch", ""]
+             "action.interact.butterflies.catch=Catch",
+             "action.interact.butterflies.feed=Feed Nectar", ""]
     write_text(os.path.join(RP, "texts", "en_US.lang"), "\n".join(lang))
 
     for name, data in recipes().items():
         write_json(os.path.join(BP, "recipes", f"{name}.json"), data)
     for rel, data in features().items():
         write_json(os.path.join(BP, rel), data)
+    write_text(os.path.join(BP, "scripts", "species.js"), handbook_data(painted))
+    shutil.copy(os.path.join(ROOT, "tools", "handbook.js"), os.path.join(BP, "scripts", "main.js"))
 
     build_preview(painted)
-    build_readme_table(painted)
+    build_lifecycle(by_id)
+    build_field_guide(painted)
     build_mcaddon()
 
 
+# ---------------------------------------------------------------------------
+# Docs: previews rendered straight from the pack's models and textures
+# ---------------------------------------------------------------------------
+
+def box_texel_quads(cube_def, tex):
+    """Yield (corners, colour, face) for every opaque texel of a box-UV cube."""
+    (x0, y0, z0), (w, h, d), (U, V) = cube_def["origin"], cube_def["size"], cube_def["uv"]
+    x1, y1, z1 = x0 + w, y0 + h, z0 + d
+    tw, th, td = (max(1, math.ceil(s - 1e-6)) if s > 0 else 0 for s in (w, h, d))
+    px = tex.load()
+
+    def col(x, y):
+        if 0 <= x < tex.width and 0 <= y < tex.height:
+            c = px[x, y]
+            return c if c[3] else None
+        return None
+
+    def lerp(a, b, t):
+        return a + (b - a) * t
+
+    faces = []
+    if tw and td:
+        for i in range(tw):
+            for j in range(td):
+                xa, xb = lerp(x0, x1, i / tw), lerp(x0, x1, (i + 1) / tw)
+                za, zb = lerp(z1, z0, j / td), lerp(z1, z0, (j + 1) / td)
+                faces.append(("up", col(U + td + i, V + j), [(xa, y1, za), (xb, y1, za), (xb, y1, zb), (xa, y1, zb)]))
+                if th:
+                    faces.append(("down", col(U + td + tw + i, V + j),
+                                  [(xa, y0, za), (xb, y0, za), (xb, y0, zb), (xa, y0, zb)]))
+    if th:
+        for j in range(th):
+            ya, yb = lerp(y1, y0, j / th), lerp(y1, y0, (j + 1) / th)
+            for i in range(td):
+                za, zb = lerp(z1, z0, i / td), lerp(z1, z0, (i + 1) / td)
+                faces.append(("side", col(U + i, V + td + j), [(x0, ya, za), (x0, ya, zb), (x0, yb, zb), (x0, yb, za)]))
+                za, zb = lerp(z0, z1, i / td), lerp(z0, z1, (i + 1) / td)
+                faces.append(("side", col(U + td + tw + i, V + td + j),
+                              [(x1, ya, za), (x1, ya, zb), (x1, yb, zb), (x1, yb, za)]))
+            for i in range(tw):
+                xa, xb = lerp(x0, x1, i / tw), lerp(x0, x1, (i + 1) / tw)
+                faces.append(("end", col(U + td + i, V + td + j), [(xa, ya, z0), (xb, ya, z0), (xb, yb, z0), (xa, yb, z0)]))
+                xa, xb = lerp(x1, x0, i / tw), lerp(x1, x0, (i + 1) / tw)
+                faces.append(("end", col(U + 2 * td + tw + i, V + td + j),
+                              [(xa, ya, z1), (xb, ya, z1), (xb, yb, z1), (xa, yb, z1)]))
+    for face, c, pts in faces:
+        if c is not None:
+            yield pts, c, face
+
+
+def render_model(geometry, tex, pose=None, yaw=200, pitch=30, size=240):
+    pose = pose or {}
+    bones = {b["name"]: b for b in geometry["minecraft:geometry"][0]["bones"]}
+
+    def transform(name, p):
+        b = bones[name]
+        rz = math.radians(pose.get(name, 0))
+        if rz:
+            px_, py_ = b["pivot"][0], b["pivot"][1]
+            dx, dy = p[0] - px_, p[1] - py_
+            p = (px_ + dx * math.cos(rz) - dy * math.sin(rz), py_ + dx * math.sin(rz) + dy * math.cos(rz), p[2])
+        return transform(b["parent"], p) if b.get("parent") else p
+
+    polys = []
+    cy, sy = math.cos(math.radians(yaw)), math.sin(math.radians(yaw))
+    cp, spp = math.cos(math.radians(pitch)), math.sin(math.radians(pitch))
+    light = {"up": 1.0, "down": 0.55, "side": 0.78, "end": 0.88}
+    for name, b in bones.items():
+        for c in b.get("cubes", []):
+            for pts, col, face in box_texel_quads(c, tex):
+                out = []
+                for p in pts:
+                    x, y, z = transform(name, p)
+                    x, z = x * cy - z * sy, x * sy + z * cy
+                    y, z = y * cp + z * spp, -y * spp + z * cp
+                    out.append((x, y, z))
+                polys.append((sum(q[2] for q in out) / 4, out, shade(col[:3], light[face])))
+    img = Image.new("RGBA", (size, size), (0, 0, 0, 0))
+    if not polys:
+        return img
+    xs = [q[0] for _, o, _ in polys for q in o]
+    ys = [q[1] for _, o, _ in polys for q in o]
+    span = max(max(xs) - min(xs), max(ys) - min(ys)) or 1
+    zoom = size * 0.82 / span
+    ox, oy = (max(xs) + min(xs)) / 2, (max(ys) + min(ys)) / 2
+    d = ImageDraw.Draw(img)
+    for _, o, c in sorted(polys, key=lambda q: -q[0]):
+        pts = [(size / 2 + (q[0] - ox) * zoom, size / 2 - (q[1] - oy) * zoom) for q in o]
+        d.polygon(pts, fill=(*c, 255), outline=(*c, 255))
+    return img
+
+
 def build_preview(painted):
-    cols, cell_w, cell_h = 10, 112, 84
+    cols, cell_w, cell_h = 10, 124, 112
     rows = (len(painted) + cols - 1) // cols
     img = Image.new("RGBA", (cols * cell_w, rows * cell_h), (*rgb("#EAF4E4"), 255))
     d = ImageDraw.Draw(img)
@@ -1372,20 +2054,43 @@ def build_preview(painted):
         x0, y0 = (i % cols) * cell_w, (i // cols) * cell_h
         if (i // cols + i % cols) % 2:
             d.rectangle([x0, y0, x0 + cell_w - 1, y0 + cell_h - 1], fill=(*rgb("#DDEBD6"), 255))
-        v = top_view(wing, sp, 4)
-        img.alpha_composite(v, (x0 + (cell_w - v.width) // 2, y0 + 6))
-        label = sp.name if len(sp.name) <= 18 else sp.name[:17] + "."
-        tw = d.textlength(label)
-        d.text((x0 + (cell_w - tw) / 2, y0 + cell_h - 16), label, fill=(40, 48, 36, 255))
+        v = top_view(wing, sp, 3)
+        img.alpha_composite(v, (x0 + (cell_w - v.width) // 2, y0 + 4))
+        label = sp.name if len(sp.name) <= 19 else sp.name[:18] + "."
+        d.text((x0 + (cell_w - d.textlength(label)) / 2, y0 + cell_h - 16), label, fill=(40, 48, 36, 255))
     os.makedirs(DOCS, exist_ok=True)
     img.convert("RGB").save(os.path.join(DOCS, "preview.png"))
 
 
-def build_readme_table(painted):
-    lines = ["| # | Butterfly | Where to find it | Rarity |", "|---|---|---|---|"]
+def build_lifecycle(by_id):
+    picks = ["monarch", "tiger_swallowtail", "blue_morpho", "peacock", "sculk_wisp"]
+    cell = 220
+    img = Image.new("RGBA", (cell * 4, 30 + cell * len(picks)), (*rgb("#E4F2FA"), 255))
+    d = ImageDraw.Draw(img)
+    for i, lab in enumerate(["Eggs", "Caterpillar", "Chrysalis", "Butterfly"]):
+        d.text((i * cell + cell / 2 - d.textlength(lab) / 2, 10), lab, fill=(30, 40, 50, 255))
+    for r, sid in enumerate(picks):
+        sp, _ = by_id[sid]
+        ltex = Image.open(os.path.join(RP, "textures", "entity", "butterflies", "larva", f"{sid}.png")).convert("RGBA")
+        atex = Image.open(os.path.join(RP, "textures", "entity", "butterflies", f"{sid}.png")).convert("RGBA")
+        cat = caterpillar_geo(LARVA_GEO[LARVA_STYLE[sp.shape]])
+        shots = [
+            render_model(EGG_GEO, ltex, yaw=210, pitch=40, size=cell),
+            render_model(cat, ltex, yaw=235, pitch=25, size=cell),
+            render_model(CHRYSALIS_GEO, ltex, yaw=215, pitch=15, size=cell),
+            render_model(BUTTERFLY_GEO, atex, {"wing_left": -28, "wing_right": 28}, yaw=200, pitch=35, size=cell),
+        ]
+        for c, shot in enumerate(shots):
+            img.alpha_composite(shot, (c * cell, 30 + r * cell))
+        d.text((6, 30 + r * cell + 4), sp.name, fill=(30, 40, 50, 255))
+    img.convert("RGB").save(os.path.join(DOCS, "lifecycle.png"))
+
+
+def build_field_guide(painted):
+    lines = ["| # | Butterfly | Group | Where to find it | Rarity |", "|---|---|---|---|---|"]
     for i, (sp, _) in enumerate(painted, 1):
         where = ", ".join(HABITAT_LABEL[h] for h in sp.habitat)
-        lines.append(f"| {i} | {sp.name} | {where} | {sp.rarity.title()} |")
+        lines.append(f"| {i} | {sp.name} | {sp.category} | {where} | {sp.rarity.title()} |")
     write_text(os.path.join(DOCS, "species.md"), "# Butterfly Field Guide\n\n" + "\n".join(lines) + "\n")
 
 
@@ -1403,4 +2108,4 @@ def build_mcaddon():
 
 if __name__ == "__main__":
     build()
-    print(f"Built {len(SPECIES)} butterflies.")
+    print(f"Built {len(SPECIES)} butterflies with full life cycles.")
