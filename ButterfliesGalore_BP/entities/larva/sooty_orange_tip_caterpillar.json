@@ -1,0 +1,220 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "butterflies:sooty_orange_tip_caterpillar",
+      "is_spawnable": true,
+      "is_summonable": true
+    },
+    "component_groups": {
+      "butterflies:transform": {
+        "minecraft:transformation": {
+          "into": "butterflies:sooty_orange_tip_chrysalis"
+        }
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "caterpillar",
+          "butterfly_lifecycle",
+          "arthropod",
+          "mob"
+        ]
+      },
+      "minecraft:health": {
+        "value": 4,
+        "max": 4
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "fall",
+            "deals_damage": "no"
+          }
+        ]
+      },
+      "minecraft:nameable": {},
+      "minecraft:physics": {},
+      "minecraft:conditional_bandwidth_optimization": {},
+      "minecraft:collision_box": {
+        "width": 0.5,
+        "height": 0.3
+      },
+      "minecraft:scale": {
+        "value": 0.395
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:movement": {
+        "value": 0.08
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
+      "minecraft:navigation.walk": {
+        "avoid_water": true,
+        "avoid_damage_blocks": true,
+        "can_walk": true
+      },
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:behavior.tempt": {
+        "priority": 3,
+        "speed_multiplier": 1.3,
+        "within_radius": 6,
+        "items": [
+          "minecraft:wheat_seeds",
+          "minecraft:melon_seeds",
+          "minecraft:pumpkin_seeds",
+          "minecraft:beetroot_seeds",
+          "minecraft:torchflower_seeds",
+          "minecraft:pitcher_pod",
+          "minecraft:oak_leaves",
+          "minecraft:birch_leaves",
+          "minecraft:jungle_leaves",
+          "minecraft:spruce_leaves",
+          "minecraft:acacia_leaves",
+          "minecraft:dark_oak_leaves",
+          "minecraft:mangrove_leaves",
+          "minecraft:cherry_leaves",
+          "minecraft:azalea_leaves",
+          "butterflies:butterfly_bush",
+          "butterflies:milkweed",
+          "butterflies:coneflower",
+          "minecraft:short_grass",
+          "minecraft:fern"
+        ]
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 6,
+        "speed_multiplier": 1.0,
+        "xz_dist": 4,
+        "y_dist": 2
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 8,
+        "look_distance": 4,
+        "probability": 0.05
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 9
+      },
+      "minecraft:ageable": {
+        "duration": 2400,
+        "feed_items": [
+          {
+            "item": "minecraft:wheat_seeds",
+            "growth": 0.08
+          },
+          {
+            "item": "minecraft:melon_seeds",
+            "growth": 0.08
+          },
+          {
+            "item": "minecraft:pumpkin_seeds",
+            "growth": 0.08
+          },
+          {
+            "item": "minecraft:beetroot_seeds",
+            "growth": 0.08
+          },
+          {
+            "item": "minecraft:torchflower_seeds",
+            "growth": 0.08
+          },
+          {
+            "item": "minecraft:pitcher_pod",
+            "growth": 0.08
+          },
+          {
+            "item": "minecraft:oak_leaves",
+            "growth": 0.03
+          },
+          {
+            "item": "minecraft:birch_leaves",
+            "growth": 0.03
+          },
+          {
+            "item": "minecraft:jungle_leaves",
+            "growth": 0.03
+          },
+          {
+            "item": "minecraft:spruce_leaves",
+            "growth": 0.03
+          },
+          {
+            "item": "minecraft:acacia_leaves",
+            "growth": 0.03
+          },
+          {
+            "item": "minecraft:dark_oak_leaves",
+            "growth": 0.03
+          },
+          {
+            "item": "minecraft:mangrove_leaves",
+            "growth": 0.03
+          },
+          {
+            "item": "minecraft:cherry_leaves",
+            "growth": 0.03
+          },
+          {
+            "item": "minecraft:azalea_leaves",
+            "growth": 0.03
+          },
+          {
+            "item": "butterflies:butterfly_bush",
+            "growth": 0.03
+          },
+          {
+            "item": "butterflies:milkweed",
+            "growth": 0.03
+          },
+          {
+            "item": "butterflies:coneflower",
+            "growth": 0.03
+          },
+          {
+            "item": "minecraft:short_grass",
+            "growth": 0.03
+          },
+          {
+            "item": "minecraft:fern",
+            "growth": 0.03
+          }
+        ],
+        "grow_up": {
+          "event": "butterflies:pupate",
+          "target": "self"
+        }
+      },
+      "minecraft:timer": {
+        "time": [
+          3000,
+          3600
+        ],
+        "looping": false,
+        "time_down_event": {
+          "event": "butterflies:pupate",
+          "target": "self"
+        }
+      }
+    },
+    "events": {
+      "butterflies:pupate": {
+        "add": {
+          "component_groups": [
+            "butterflies:transform"
+          ]
+        }
+      }
+    }
+  }
+}

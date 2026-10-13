@@ -1,12 +1,12 @@
 # Butterflies Galore
 
-A Minecraft Bedrock Edition add-on that fills the world with **500 unique butterflies**: 397 in the Overworld, 52 in the Nether and 51 in the End. Each one has its own vibrant, hand-designed wing pattern, wing shape, size, flight rhythm and home biome. Every species also has a complete life cycle, from egg to caterpillar to chrysalis to butterfly, and a **Butterfly Handbook** lets you record them all.
+A Minecraft Bedrock Edition add-on that fills the world with **1,000 unique butterflies**: 897 in the Overworld, 52 in the Nether and 51 in the End. Each one has its own vibrant, hand-designed wing pattern, wing shape, size, flight rhythm and home biome. Every species also has a complete life cycle, from egg to caterpillar to chrysalis to butterfly, and a **Butterfly Handbook** lets you record them all.
 
-![All 500 butterflies](docs/preview.png)
+![All 1,000 butterflies](docs/preview.png)
 
 ## Features
 
-- **500 butterfly species in 12 groups.** Hundreds of real-world favorites like the Monarch, Blue Morpho, Peacock, Zebra Longwing, Apollo and Queen Alexandra's Birdwing, plus Minecraft-native species such as the Cherry Blossom Wing, Sculk Wisp and Pale Garden Ghost.
+- **1,000 butterfly species in 14 handbook chapters.** Hundreds of real-world species from every continent, like the Monarch, Blue Morpho, Peacock, Zebra Longwing, Apollo, Goliath Birdwing and Queen Alexandra's Birdwing, plus Minecraft-inspired species such as the Cherry Blossom Wing, Sculk Wisp, Pale Garden Ghost, Breeze Wing and Mooshroom Wing.
   - **The Nether (50):** fire-proof butterflies of the crimson and warped forests, soul sand valleys, basalt deltas and Nether wastes, like the Blaze Monarch, Soulfire Wisp and Netherite Emperor.
   - **The End (50):** void-drifting butterflies such as the Chorus Flutter, Shulker Glimmer, Elytra Glider and the legendary Ender Dragon Wing.
 - **Full life cycle for every species.**
@@ -14,7 +14,7 @@ A Minecraft Bedrock Edition add-on that fills the world with **500 unique butter
   - **Caterpillars:** they hatch, crawl and munch. Left alone they take about 40 minutes to grow up. **Seeds** (wheat, melon, pumpkin, beetroot, torchflower, pitcher pods) are their favourite food and speed growth up a lot; leaves, grass and flowers help a little. Nether caterpillars also eat fungus and Nether Wart, End caterpillars eat Chorus Fruit. Each species has its own caterpillar: banded Monarchs, green swallowtails with eyespots, spiky brush-foots, fleshy birdwings and more.
   - **Chrysalis:** a fully grown caterpillar hangs up as a chrysalis that sways and twitches before a new butterfly emerges.
   - Wild caterpillars also appear in each species' home biome.
-- **Butterfly Handbook.** Every player gets one on first join. Walk up to any egg, caterpillar, chrysalis or butterfly to record it. Browse 12 chapters of entries with habitat, rarity, wingspan, caterpillar food and a fun fact, and complete all four life stages of each species.
+- **Butterfly Handbook.** Every player gets one on first join. Walk up to any egg, caterpillar, chrysalis or butterfly to record it. Browse 14 chapters of entries with habitat, rarity, wingspan, caterpillar food and a fun fact, and complete all four life stages of each species.
 - **Natural spawning by biome.** Meadows, forests, jungles, deserts, badlands, swamps, beaches, snowy biomes, mountains, the pale garden, lush caves, the deep dark, every Nether biome and the End all have their own species, from common to legendary.
 - **Lifelike flight.** Butterflies flutter, glide and bob through the air. They visit flowers, flee when hurt and never take fall damage.
 - **Catch & release.** Use a **Butterfly Jar** on a butterfly to catch it. Every species has its own jar. Use a filled jar on a block to release the butterfly.
@@ -51,12 +51,13 @@ ButterfliesGalore_BP/   behavior pack (mobs, spawn rules, items, blocks, recipes
 ButterfliesGalore_RP/   resource pack (models, animations, textures, language)
 tools/generate.py       builds both packs, the preview images and the .mcaddon
 tools/species_more.py   400 more species, one line each
+tools/species_world.py  500 more Overworld species, one line each
 tools/handbook.js       source of the Butterfly Handbook script
 docs/                   preview images and field guide
 dist/                   ready-to-install .mcaddon
 ```
 
-All packs, textures and docs are generated from the species tables in `tools/generate.py` and `tools/species_more.py`. To add or change a butterfly, edit its entry and run:
+All packs, textures and docs are generated from the species tables in `tools/generate.py`, `tools/species_more.py` and `tools/species_world.py`. To add or change a butterfly, edit its entry and run:
 
 ```
 pip install pillow

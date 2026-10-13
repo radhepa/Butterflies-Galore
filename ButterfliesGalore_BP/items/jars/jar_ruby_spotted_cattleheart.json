@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:item": {
+    "description": {
+      "identifier": "butterflies:jar_ruby_spotted_cattleheart",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "butterflies_jar_ruby_spotted_cattleheart",
+      "minecraft:display_name": {
+        "value": "item.butterflies.jar_ruby_spotted_cattleheart.name"
+      },
+      "minecraft:max_stack_size": 16,
+      "minecraft:entity_placer": {
+        "entity": "butterflies:ruby_spotted_cattleheart"
+      }
+    }
+  }
+}

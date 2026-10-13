@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:item": {
+    "description": {
+      "identifier": "butterflies:jar_dusky_blue_groundstreak",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "butterflies_jar_dusky_blue_groundstreak",
+      "minecraft:display_name": {
+        "value": "item.butterflies.jar_dusky_blue_groundstreak.name"
+      },
+      "minecraft:max_stack_size": 16,
+      "minecraft:entity_placer": {
+        "entity": "butterflies:dusky_blue_groundstreak"
+      }
+    }
+  }
+}

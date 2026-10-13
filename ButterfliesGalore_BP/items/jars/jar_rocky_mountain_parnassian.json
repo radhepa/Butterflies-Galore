@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:item": {
+    "description": {
+      "identifier": "butterflies:jar_rocky_mountain_parnassian",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "butterflies_jar_rocky_mountain_parnassian",
+      "minecraft:display_name": {
+        "value": "item.butterflies.jar_rocky_mountain_parnassian.name"
+      },
+      "minecraft:max_stack_size": 16,
+      "minecraft:entity_placer": {
+        "entity": "butterflies:rocky_mountain_parnassian"
+      }
+    }
+  }
+}

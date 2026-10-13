@@ -433,8 +433,9 @@ Dragonhead Emperor|scalloped|the_end|band|1A1018 0A080C B03AD8 F4F0D0|r
 
 
 def rows():
+    import species_world
     section = None
-    for raw in TABLE.strip().splitlines():
+    for raw in (TABLE + species_world.TABLE).strip().splitlines():
         raw = raw.strip()
         if not raw:
             continue

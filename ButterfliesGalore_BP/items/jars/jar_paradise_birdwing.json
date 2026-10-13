@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:item": {
+    "description": {
+      "identifier": "butterflies:jar_paradise_birdwing",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "butterflies_jar_paradise_birdwing",
+      "minecraft:display_name": {
+        "value": "item.butterflies.jar_paradise_birdwing.name"
+      },
+      "minecraft:max_stack_size": 16,
+      "minecraft:entity_placer": {
+        "entity": "butterflies:paradise_birdwing"
+      }
+    }
+  }
+}

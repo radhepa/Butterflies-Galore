@@ -502,3 +502,503 @@
 | 498 | Indigo Shulker | The End | The End | Uncommon |
 | 499 | Elder End Wing | The End | The End | Rare |
 | 500 | Dragonhead Emperor | The End | The End | Rare |
+| 501 | Australian Painted Lady | Meadows & Fields | Plains, Meadow | Common |
+| 502 | Kamehameha Lady | Meadows & Fields | Flower Forest, Meadow | Rare |
+| 503 | Indian Red Admiral | Meadows & Fields | Mountains, Meadow | Uncommon |
+| 504 | Yellow Admiral | Meadows & Fields | Plains, Meadow | Uncommon |
+| 505 | Indian Tortoiseshell | Meadows & Fields | Mountains, Meadow | Uncommon |
+| 506 | Large Wall Brown | Meadows & Fields | Mountains, Meadow | Common |
+| 507 | Chestnut Heath | Meadows & Fields | Meadow | Uncommon |
+| 508 | Pearly Heath | Meadows & Fields | Meadow, Forest | Common |
+| 509 | Dusky Meadow Brown | Meadows & Fields | Meadow, Mountains | Common |
+| 510 | Oriental Meadow Brown | Meadows & Fields | Plains, Meadow | Uncommon |
+| 511 | Great Banded Grayling | Meadows & Fields | Meadow, Forest | Uncommon |
+| 512 | Hermit | Meadows & Fields | Desert, Badlands | Rare |
+| 513 | Rock Grayling | Meadows & Fields | Mountains, Badlands | Uncommon |
+| 514 | Dryad | Meadows & Fields | Meadow, Forest | Uncommon |
+| 515 | Great Sooty Satyr | Meadows & Fields | Mountains, Meadow | Uncommon |
+| 516 | Black Satyr | Meadows & Fields | Mountains | Rare |
+| 517 | Knapweed Fritillary | Meadows & Fields | Meadow | Uncommon |
+| 518 | Spotted Fritillary | Meadows & Fields | Meadow, Mountains | Uncommon |
+| 519 | Weaver's Fritillary | Meadows & Fields | Meadow, Forest | Uncommon |
+| 520 | Niobe Fritillary | Meadows & Fields | Meadow, Mountains | Uncommon |
+| 521 | Meadow Fritillary | Meadows & Fields | Meadow, Plains | Common |
+| 522 | Aphrodite Fritillary | Meadows & Fields | Meadow, Forest | Uncommon |
+| 523 | Regal Fritillary | Meadows & Fields | Plains, Meadow | Rare |
+| 524 | Variegated Fritillary | Meadows & Fields | Plains, Meadow | Common |
+| 525 | Pearl Crescent | Meadows & Fields | Meadow, Plains | Common |
+| 526 | Tawny Crescent | Meadows & Fields | Meadow | Uncommon |
+| 527 | Painted Crescent | Meadows & Fields | Plains, Desert | Common |
+| 528 | Gorgone Checkerspot | Meadows & Fields | Plains | Uncommon |
+| 529 | Harris' Checkerspot | Meadows & Fields | Meadow, Swamp | Uncommon |
+| 530 | Edith's Checkerspot | Meadows & Fields | Meadow, Mountains | Uncommon |
+| 531 | Tropical Buckeye | Meadows & Fields | Plains, Savanna | Common |
+| 532 | American Lady | Meadows & Fields | Plains, Meadow | Common |
+| 533 | Common Brown | Meadows & Fields | Plains, Forest | Common |
+| 534 | Meadow Argus | Meadows & Fields | Plains, Meadow | Common |
+| 535 | Common Evening Brown | Meadows & Fields | Plains, Forest | Common |
+| 536 | Common Bushbrown | Meadows & Fields | Plains, Forest | Common |
+| 537 | Common Four-ring | Meadows & Fields | Plains | Common |
+| 538 | Common Five-ring | Meadows & Fields | Plains, Forest | Common |
+| 539 | Danaid Eggfly | Meadows & Fields | Plains, Savanna | Uncommon |
+| 540 | Common Leopard | Meadows & Fields | Plains, Meadow | Common |
+| 541 | Tawny Coster | Meadows & Fields | Plains, Savanna | Common |
+| 542 | Yellow Coster | Meadows & Fields | Plains | Common |
+| 543 | Spanish Gatekeeper | Meadows & Fields | Badlands, Meadow | Uncommon |
+| 544 | Southern Gatekeeper | Meadows & Fields | Meadow | Common |
+| 545 | Ox-eyed Satyr | Meadows & Fields | Meadow, Plains | Uncommon |
+| 546 | Mountain Swallowtail | Swallowtails | Mountains, Forest | Uncommon |
+| 547 | Corsican Swallowtail | Swallowtails | Mountains, Meadow | Rare |
+| 548 | Southern Swallowtail | Swallowtails | Meadow, Badlands | Uncommon |
+| 549 | Iberian Scarce Swallowtail | Swallowtails | Badlands, Meadow | Uncommon |
+| 550 | Victorine Swallowtail | Swallowtails | Jungle, Savanna | Uncommon |
+| 551 | Polydamas Swallowtail | Swallowtails | Jungle, Savanna | Common |
+| 552 | Ruby-spotted Cattleheart | Swallowtails | Jungle | Uncommon |
+| 553 | Pink Cattleheart | Swallowtails | Jungle | Uncommon |
+| 554 | Transandean Cattleheart | Swallowtails | Jungle | Rare |
+| 555 | Black-and-white Kite | Swallowtails | Jungle, River | Uncommon |
+| 556 | Dark Kite Swallowtail | Swallowtails | Jungle | Uncommon |
+| 557 | Broad-banded Swallowtail | Swallowtails | Jungle | Uncommon |
+| 558 | Ozark Swallowtail | Swallowtails | Forest | Rare |
+| 559 | Appalachian Tiger Swallowtail | Swallowtails | Forest, Mountains | Uncommon |
+| 560 | Canadian Tiger Swallowtail | Swallowtails | Taiga, Birch Forest | Common |
+| 561 | Noble Swallowtail | Swallowtails | Savanna, Forest | Rare |
+| 562 | Christmas Swallowtail | Swallowtails | Savanna, Jungle | Uncommon |
+| 563 | Emperor Swallowtail | Swallowtails | Savanna, Forest | Rare |
+| 564 | Green-patch Swallowtail | Swallowtails | Savanna, Jungle | Uncommon |
+| 565 | Constantine's Swallowtail | Swallowtails | Savanna | Uncommon |
+| 566 | Narrow Blue-banded Swallowtail | Swallowtails | Jungle | Uncommon |
+| 567 | Giant African Swallowtail | Swallowtails | Jungle | Legendary |
+| 568 | Mountain Green-banded Swallowtail | Swallowtails | Mountains, Jungle | Rare |
+| 569 | Chinese Windmill | Swallowtails | Bamboo Jungle, Forest | Uncommon |
+| 570 | Common Batwing | Swallowtails | Jungle | Uncommon |
+| 571 | Great Windmill | Swallowtails | Jungle, Mountains | Rare |
+| 572 | Common Windmill | Swallowtails | Jungle | Uncommon |
+| 573 | Crimson Rose | Swallowtails | Jungle, Savanna | Uncommon |
+| 574 | Common Clubtail | Swallowtails | Jungle, Bamboo Jungle | Rare |
+| 575 | Yellow-crested Spangle | Swallowtails | Jungle | Uncommon |
+| 576 | Spangle | Swallowtails | Jungle, Mountains | Uncommon |
+| 577 | Banded Swallowtail | Swallowtails | Jungle | Common |
+| 578 | Great Blue Mime | Swallowtails | Jungle | Rare |
+| 579 | Common Raven | Swallowtails | Jungle | Uncommon |
+| 580 | Green Dragontail | Swallowtails | Jungle, River | Rare |
+| 581 | Common Jay | Swallowtails | Jungle | Common |
+| 582 | Blue Triangle | Swallowtails | Jungle, Bamboo Jungle | Common |
+| 583 | Green-spotted Triangle | Swallowtails | Jungle | Uncommon |
+| 584 | Spotted Zebra | Swallowtails | Jungle | Uncommon |
+| 585 | Chain Swordtail | Swallowtails | Jungle | Uncommon |
+| 586 | Lesser Zebra | Swallowtails | Jungle | Uncommon |
+| 587 | Southern Birdwing | Swallowtails | Jungle | Rare |
+| 588 | Common Birdwing | Swallowtails | Jungle, Bamboo Jungle | Rare |
+| 589 | Goliath Birdwing | Swallowtails | Jungle | Legendary |
+| 590 | Paradise Birdwing | Swallowtails | Jungle | Legendary |
+| 591 | Asian Comma | Woodland | Forest, Taiga | Common |
+| 592 | Hoary Comma | Woodland | Taiga, Mountains | Uncommon |
+| 593 | Satyr Comma | Woodland | Forest, River | Uncommon |
+| 594 | False Comma | Woodland | Forest | Rare |
+| 595 | Yellow-legged Tortoiseshell | Woodland | Forest, Birch Forest | Rare |
+| 596 | Short-tailed Admiral | Woodland | Forest, Mountains | Uncommon |
+| 597 | Weidemeyer's Admiral | Woodland | Mountains, Forest | Uncommon |
+| 598 | Lorquin's Admiral | Woodland | Forest, River | Uncommon |
+| 599 | California Sister | Woodland | Forest | Uncommon |
+| 600 | Indian White Admiral | Woodland | Forest, Mountains | Uncommon |
+| 601 | Sordid Emperor | Woodland | Forest | Uncommon |
+| 602 | Japanese Emperor | Woodland | Forest, Mountains | Rare |
+| 603 | White Emperor | Woodland | Forest | Rare |
+| 604 | Siberian Purple Emperor | Woodland | Taiga, Forest | Rare |
+| 605 | Constable | Woodland | Forest, Dark Forest | Rare |
+| 606 | Circe | Woodland | Forest, River | Uncommon |
+| 607 | Creole Pearly-eye | Woodland | Forest | Common |
+| 608 | Southern Pearly-eye | Woodland | Forest, Swamp | Common |
+| 609 | Gemmed Satyr | Woodland | Forest | Uncommon |
+| 610 | Carolina Satyr | Woodland | Forest | Common |
+| 611 | Red Satyr | Woodland | Forest, Badlands | Uncommon |
+| 612 | Canyonland Satyr | Woodland | Badlands, Forest | Uncommon |
+| 613 | Nabokov's Satyr | Woodland | Mountains, Forest | Rare |
+| 614 | Woodland Skipper | Woodland | Forest | Common |
+| 615 | Mead's Wood-Nymph | Woodland | Forest, Badlands | Uncommon |
+| 616 | Northern Wall Brown | Woodland | Forest | Uncommon |
+| 617 | Lattice Brown | Woodland | Forest, Dark Forest | Uncommon |
+| 618 | Dull Forester | Woodland | Forest | Common |
+| 619 | Tailed Red Forester | Woodland | Forest | Uncommon |
+| 620 | Common Treebrown | Woodland | Forest, Dark Forest | Common |
+| 621 | Bamboo Treebrown | Woodland | Bamboo Jungle, Forest | Uncommon |
+| 622 | Straight-banded Treebrown | Woodland | Forest | Uncommon |
+| 623 | Malabar Tree Nymph | Woodland | Forest | Uncommon |
+| 624 | Staff Sergeant | Woodland | Forest | Common |
+| 625 | Commander | Woodland | Forest | Uncommon |
+| 626 | Common Sergeant | Woodland | Forest | Common |
+| 627 | Hill Hedge Blue | Woodland | Forest | Common |
+| 628 | Fourspot Sailer | Woodland | Forest | Uncommon |
+| 629 | Chestnut-streaked Sailer | Woodland | Forest | Uncommon |
+| 630 | Short-banded Sailer | Woodland | Forest | Common |
+| 631 | Clouded Mother-of-pearl | Woodland | Forest, Jungle | Uncommon |
+| 632 | Mother-of-pearl | Woodland | Forest, Jungle | Uncommon |
+| 633 | Forest Queen | Woodland | Forest, Jungle | Rare |
+| 634 | Forest Mother-of-pearl | Woodland | Forest | Uncommon |
+| 635 | Indian Purple Emperor | Woodland | Forest, Mountains | Rare |
+| 636 | Eros Blue | Blues & Coppers | Mountains, Meadow | Uncommon |
+| 637 | Escher's Blue | Blues & Coppers | Meadow, Mountains | Uncommon |
+| 638 | Meleager's Blue | Blues & Coppers | Badlands, Meadow | Rare |
+| 639 | Damon Blue | Blues & Coppers | Mountains | Rare |
+| 640 | Ripart's Anomalous Blue | Blues & Coppers | Mountains, Badlands | Rare |
+| 641 | Osiris Blue | Blues & Coppers | Mountains | Uncommon |
+| 642 | Chapman's Blue | Blues & Coppers | Meadow | Common |
+| 643 | Short-tailed Blue | Blues & Coppers | Meadow, Plains | Uncommon |
+| 644 | Provencal Short-tailed Blue | Blues & Coppers | Meadow, Badlands | Uncommon |
+| 645 | Odd-spot Blue | Blues & Coppers | Forest | Common |
+| 646 | False Baton Blue | Blues & Coppers | Meadow | Uncommon |
+| 647 | Alcon Blue | Blues & Coppers | Meadow, Swamp | Uncommon |
+| 648 | Scarce Large Blue | Blues & Coppers | Swamp, Meadow | Rare |
+| 649 | Dusky Large Blue | Blues & Coppers | Swamp, Meadow | Rare |
+| 650 | Reverdin's Blue | Blues & Coppers | Meadow | Uncommon |
+| 651 | Geranium Argus | Blues & Coppers | Mountains | Uncommon |
+| 652 | Mountain Argus | Blues & Coppers | Mountains | Uncommon |
+| 653 | Silvery Argus | Blues & Coppers | Mountains, Meadow | Uncommon |
+| 654 | Dotted Blue | Blues & Coppers | Badlands, Desert | Uncommon |
+| 655 | Square-spotted Blue | Blues & Coppers | Badlands, Meadow | Uncommon |
+| 656 | Arrowhead Blue | Blues & Coppers | Mountains, Meadow | Uncommon |
+| 657 | Acmon Blue | Blues & Coppers | Meadow, Desert | Common |
+| 658 | Lupine Blue | Blues & Coppers | Mountains, Meadow | Common |
+| 659 | Shasta Blue | Blues & Coppers | Mountains | Uncommon |
+| 660 | Greenish Blue | Blues & Coppers | Meadow, Swamp | Uncommon |
+| 661 | Ceraunus Blue | Blues & Coppers | Beach, Desert | Common |
+| 662 | Reakirt's Blue | Blues & Coppers | Desert, Badlands | Common |
+| 663 | Hawaiian Blue | Blues & Coppers | Flower Forest | Rare |
+| 664 | Common Grass Blue | Blues & Coppers | Plains, Meadow | Common |
+| 665 | Dark Grass Blue | Blues & Coppers | Plains | Common |
+| 666 | Lesser Grass Blue | Blues & Coppers | Plains | Common |
+| 667 | Pea Blue | Blues & Coppers | Plains, Meadow | Common |
+| 668 | Zebra Blue | Blues & Coppers | Plains, Savanna | Uncommon |
+| 669 | Plains Cupid | Blues & Coppers | Plains, Savanna | Common |
+| 670 | Gram Blue | Blues & Coppers | Plains | Common |
+| 671 | Lime Blue | Blues & Coppers | Plains, Savanna | Common |
+| 672 | Common Cerulean | Blues & Coppers | Plains, Forest | Common |
+| 673 | Violet Copper | Blues & Coppers | Swamp, Meadow | Rare |
+| 674 | Fiery Copper | Blues & Coppers | Meadow, Mountains | Uncommon |
+| 675 | Grecian Copper | Blues & Coppers | Badlands, Mountains | Uncommon |
+| 676 | Balkan Copper | Blues & Coppers | Desert | Uncommon |
+| 677 | Gorgon Copper | Blues & Coppers | Mountains, Badlands | Uncommon |
+| 678 | Blue Copper | Blues & Coppers | Mountains, Meadow | Uncommon |
+| 679 | Edith's Copper | Blues & Coppers | Mountains | Uncommon |
+| 680 | Hermes Copper | Blues & Coppers | Badlands, Desert | Rare |
+| 681 | Bath White | Whites & Sulphurs | Plains, Meadow | Uncommon |
+| 682 | Eastern Bath White | Whites & Sulphurs | Plains, Desert | Uncommon |
+| 683 | Peak White | Whites & Sulphurs | Mountains, Snowy Biomes | Rare |
+| 684 | Mountain Small White | Whites & Sulphurs | Mountains | Uncommon |
+| 685 | Southern White | Whites & Sulphurs | Plains, Savanna | Common |
+| 686 | Western White | Whites & Sulphurs | Meadow, Mountains | Common |
+| 687 | Checkered White | Whites & Sulphurs | Plains, Desert | Common |
+| 688 | Mustard White | Whites & Sulphurs | Forest, Taiga | Uncommon |
+| 689 | Pine White | Whites & Sulphurs | Taiga, Old Growth Taiga | Uncommon |
+| 690 | Becker's White | Whites & Sulphurs | Desert, Badlands | Uncommon |
+| 691 | Spring White | Whites & Sulphurs | Desert, Mountains | Uncommon |
+| 692 | Falcate Orangetip | Whites & Sulphurs | Forest, Meadow | Uncommon |
+| 693 | Gray Marble | Whites & Sulphurs | Mountains, Desert | Uncommon |
+| 694 | Large Marble | Whites & Sulphurs | Meadow, Plains | Common |
+| 695 | Olympia Marble | Whites & Sulphurs | Plains, Meadow | Uncommon |
+| 696 | Greenish Black-tip | Whites & Sulphurs | Desert | Rare |
+| 697 | Moroccan Orange Tip | Whites & Sulphurs | Desert, Badlands | Rare |
+| 698 | Eastern Dappled White | Whites & Sulphurs | Meadow | Uncommon |
+| 699 | Small Grass Yellow | Whites & Sulphurs | Plains, Savanna | Common |
+| 700 | Common Grass Yellow | Whites & Sulphurs | Plains, Savanna | Common |
+| 701 | Broad-bordered Grass Yellow | Whites & Sulphurs | Plains | Common |
+| 702 | Three-spot Grass Yellow | Whites & Sulphurs | Plains, Forest | Common |
+| 703 | Spotless Grass Yellow | Whites & Sulphurs | Plains | Common |
+| 704 | Lemon Emigrant | Whites & Sulphurs | Plains, Savanna | Common |
+| 705 | Mottled Emigrant | Whites & Sulphurs | Plains, Savanna | Common |
+| 706 | Orange Emigrant | Whites & Sulphurs | Plains, Savanna | Uncommon |
+| 707 | Common Emigrant | Whites & Sulphurs | Savanna | Common |
+| 708 | Yellow Orange Tip | Whites & Sulphurs | Savanna, Plains | Uncommon |
+| 709 | White Orange Tip | Whites & Sulphurs | Savanna, Desert | Uncommon |
+| 710 | Great Orange Tip | Whites & Sulphurs | Savanna, Jungle | Uncommon |
+| 711 | Common Gull | Whites & Sulphurs | Plains, Savanna | Common |
+| 712 | Psyche | Whites & Sulphurs | Plains, Forest | Common |
+| 713 | Pioneer White | Whites & Sulphurs | Savanna, Desert | Common |
+| 714 | Painted Jezebel | Whites & Sulphurs | Forest, Plains | Uncommon |
+| 715 | Red-base Jezebel | Whites & Sulphurs | Forest | Uncommon |
+| 716 | Painted Sawtooth | Whites & Sulphurs | Jungle, Forest | Rare |
+| 717 | Small Salmon Arab | Whites & Sulphurs | Desert, Savanna | Uncommon |
+| 718 | Zebra White | Whites & Sulphurs | Jungle | Uncommon |
+| 719 | Lyside Sulphur | Whites & Sulphurs | Desert, Beach | Common |
+| 720 | Tailed Sulphur | Whites & Sulphurs | Jungle, Savanna | Uncommon |
+| 721 | Ruddy Hairstreak | Hairstreaks & Metalmarks | Forest | Uncommon |
+| 722 | Sloe Hairstreak | Hairstreaks & Metalmarks | Forest, Meadow | Uncommon |
+| 723 | Ilex Hairstreak | Hairstreaks & Metalmarks | Forest | Uncommon |
+| 724 | Blue-spot Hairstreak | Hairstreaks & Metalmarks | Forest | Uncommon |
+| 725 | False Ilex Hairstreak | Hairstreaks & Metalmarks | Forest, Badlands | Rare |
+| 726 | Spanish Purple Hairstreak | Hairstreaks & Metalmarks | Badlands, Forest | Rare |
+| 727 | Hickory Hairstreak | Hairstreaks & Metalmarks | Forest | Uncommon |
+| 728 | Oak Hairstreak | Hairstreaks & Metalmarks | Forest | Uncommon |
+| 729 | Gray Hairstreak | Hairstreaks & Metalmarks | Plains, Meadow | Common |
+| 730 | Red-banded Hairstreak | Hairstreaks & Metalmarks | Forest, Swamp | Common |
+| 731 | White M Hairstreak | Hairstreaks & Metalmarks | Forest | Uncommon |
+| 732 | Great Blue Hairstreak | Hairstreaks & Metalmarks | Forest | Uncommon |
+| 733 | Soapberry Hairstreak | Hairstreaks & Metalmarks | Desert, Plains | Uncommon |
+| 734 | Golden Hairstreak | Hairstreaks & Metalmarks | Mountains, Forest | Rare |
+| 735 | Thicket Hairstreak | Hairstreaks & Metalmarks | Taiga, Mountains | Uncommon |
+| 736 | Bramble Hairstreak | Hairstreaks & Metalmarks | Meadow, Badlands | Common |
+| 737 | Gold-hunter's Hairstreak | Hairstreaks & Metalmarks | Mountains, Forest | Rare |
+| 738 | Hoary Elfin | Hairstreaks & Metalmarks | Taiga, Mountains | Uncommon |
+| 739 | Frosted Elfin | Hairstreaks & Metalmarks | Meadow, Forest | Rare |
+| 740 | Brown Elfin | Hairstreaks & Metalmarks | Taiga, Forest | Common |
+| 741 | Bog Elfin | Hairstreaks & Metalmarks | Swamp, Taiga | Rare |
+| 742 | Western Pine Elfin | Hairstreaks & Metalmarks | Taiga | Uncommon |
+| 743 | Silver-banded Hairstreak | Hairstreaks & Metalmarks | Jungle | Uncommon |
+| 744 | Fulvous Hairstreak | Hairstreaks & Metalmarks | Jungle, Savanna | Uncommon |
+| 745 | Mallow Scrub-Hairstreak | Hairstreaks & Metalmarks | Plains, Desert | Common |
+| 746 | Dusky-blue Groundstreak | Hairstreaks & Metalmarks | Jungle, Savanna | Common |
+| 747 | Common Tit | Hairstreaks & Metalmarks | Jungle | Uncommon |
+| 748 | Silverline | Hairstreaks & Metalmarks | Jungle, Forest | Uncommon |
+| 749 | Common Silverline | Hairstreaks & Metalmarks | Jungle, Plains | Common |
+| 750 | Yamfly | Hairstreaks & Metalmarks | Jungle | Uncommon |
+| 751 | Common Guava Blue | Hairstreaks & Metalmarks | Jungle, Plains | Uncommon |
+| 752 | Red Flash | Hairstreaks & Metalmarks | Jungle | Rare |
+| 753 | Fluffy Tit | Hairstreaks & Metalmarks | Jungle | Uncommon |
+| 754 | Purple Sapphire | Hairstreaks & Metalmarks | Jungle | Rare |
+| 755 | Northern Metalmark | Hairstreaks & Metalmarks | Forest, Meadow | Uncommon |
+| 756 | Little Metalmark | Hairstreaks & Metalmarks | Swamp, Plains | Uncommon |
+| 757 | Zela Metalmark | Hairstreaks & Metalmarks | Badlands, Desert | Uncommon |
+| 758 | Red-bordered Metalmark | Hairstreaks & Metalmarks | Desert, Badlands | Uncommon |
+| 759 | Blue Metalmark | Hairstreaks & Metalmarks | Desert, Badlands | Rare |
+| 760 | Rawson's Metalmark | Hairstreaks & Metalmarks | Desert | Uncommon |
+| 761 | Ares Metalmark | Hairstreaks & Metalmarks | Desert, Badlands | Rare |
+| 762 | Sword-tailed Beautymark | Hairstreaks & Metalmarks | Jungle | Rare |
+| 763 | Punchinello | Hairstreaks & Metalmarks | Forest | Uncommon |
+| 764 | Plum Judy | Hairstreaks & Metalmarks | Jungle, Forest | Uncommon |
+| 765 | Common Pierrot | Hairstreaks & Metalmarks | Jungle, Savanna | Common |
+| 766 | Mediterranean Skipper | Skippers | Badlands, Meadow | Uncommon |
+| 767 | Hammock Skipper | Skippers | Jungle, Beach | Uncommon |
+| 768 | Red-underwing Skipper | Skippers | Meadow, Mountains | Uncommon |
+| 769 | Safflower Skipper | Skippers | Mountains, Meadow | Uncommon |
+| 770 | Olive Skipper | Skippers | Mountains, Meadow | Uncommon |
+| 771 | Oberthur's Grizzled Skipper | Skippers | Mountains | Uncommon |
+| 772 | Rosy Grizzled Skipper | Skippers | Badlands, Meadow | Rare |
+| 773 | Large Grizzled Skipper | Skippers | Meadow, Mountains | Uncommon |
+| 774 | Marbled Skipper | Skippers | Badlands, Meadow | Uncommon |
+| 775 | Tufted Marbled Skipper | Skippers | Badlands | Uncommon |
+| 776 | Dingy Skipper | Skippers | Meadow | Common |
+| 777 | Pygmy Skipper | Skippers | Badlands, Desert | Common |
+| 778 | Small Checkered Skipper | Skippers | Meadow | Uncommon |
+| 779 | Northern Chequered Skipper | Skippers | Taiga, Swamp | Uncommon |
+| 780 | Large Chequered Skipper | Skippers | Swamp, Meadow | Rare |
+| 781 | Juvenal's Duskywing | Skippers | Forest | Common |
+| 782 | Common Roadside-Skipper | Skippers | Forest | Common |
+| 783 | Least Skipper | Skippers | Swamp, River | Common |
+| 784 | Delaware Skipper | Skippers | Meadow, Swamp | Common |
+| 785 | Crossline Skipper | Skippers | Plains, Meadow | Common |
+| 786 | Leonard's Skipper | Skippers | Meadow | Uncommon |
+| 787 | Indian Skipper | Skippers | Meadow, Mountains | Uncommon |
+| 788 | Dun Skipper | Skippers | Meadow, River | Common |
+| 789 | Two-spotted Skipper | Skippers | Swamp | Uncommon |
+| 790 | Black Dash | Skippers | Swamp | Uncommon |
+| 791 | Long Dash | Skippers | Meadow, Taiga | Uncommon |
+| 792 | Arogos Skipper | Skippers | Plains | Rare |
+| 793 | Dotted Skipper | Skippers | Plains, Savanna | Rare |
+| 794 | Swarthy Skipper | Skippers | Plains, Meadow | Common |
+| 795 | Clouded Skipper | Skippers | Forest, Swamp | Common |
+| 796 | Eufala Skipper | Skippers | Plains, Desert | Common |
+| 797 | Common Banded Awl | Skippers | Jungle, Forest | Common |
+| 798 | Orange Awlet | Skippers | Jungle | Uncommon |
+| 799 | Brown Awl | Skippers | Jungle | Common |
+| 800 | Indian Palm Bob | Skippers | Jungle, Bamboo Jungle | Common |
+| 801 | Grass Demon | Skippers | Jungle, Plains | Common |
+| 802 | Chestnut Bob | Skippers | Jungle | Common |
+| 803 | Pale Palm Dart | Skippers | Plains, Jungle | Common |
+| 804 | Water Snow Flat | Skippers | Jungle, River | Uncommon |
+| 805 | Tricolour Pied Flat | Skippers | Jungle, Forest | Uncommon |
+| 806 | Common Morpho | Rainforest | Jungle | Common |
+| 807 | Godart's Morpho | Rainforest | Jungle | Rare |
+| 808 | Deidamia Morpho | Rainforest | Jungle | Uncommon |
+| 809 | Hecuba Morpho | Rainforest | Jungle | Legendary |
+| 810 | Telemachus Morpho | Rainforest | Jungle | Rare |
+| 811 | Theseus Morpho | Rainforest | Jungle, Mountains | Uncommon |
+| 812 | Helena Morpho | Rainforest | Jungle | Legendary |
+| 813 | Anaxibia Morpho | Rainforest | Jungle | Rare |
+| 814 | Pale Owl | Rainforest | Jungle | Uncommon |
+| 815 | Idomeneus Giant Owl | Rainforest | Jungle, Dark Forest | Uncommon |
+| 816 | Atreus Owl | Rainforest | Jungle | Rare |
+| 817 | Mexican Owl | Rainforest | Jungle | Uncommon |
+| 818 | Pink Glasswing | Rainforest | Jungle | Uncommon |
+| 819 | Amber Phantom | Rainforest | Jungle | Rare |
+| 820 | Blushing Phantom | Rainforest | Jungle | Rare |
+| 821 | Rusted Clearwing Satyr | Rainforest | Jungle | Uncommon |
+| 822 | Crystal-winged Satyr | Rainforest | Jungle, Dark Forest | Rare |
+| 823 | Tiger-striped Leafwing | Rainforest | Jungle | Uncommon |
+| 824 | Angled Leafwing | Rainforest | Jungle | Uncommon |
+| 825 | Blue Leafwing | Rainforest | Jungle | Uncommon |
+| 826 | Purple Leafwing | Rainforest | Jungle | Rare |
+| 827 | Florida Leafwing | Rainforest | Swamp, Jungle | Rare |
+| 828 | Starry Night Cracker | Rainforest | Jungle | Uncommon |
+| 829 | Glaucous Cracker | Rainforest | Jungle | Common |
+| 830 | Gray Cracker | Rainforest | Jungle, Savanna | Common |
+| 831 | Variable Cracker | Rainforest | Jungle | Common |
+| 832 | Blomfild's Beauty | Rainforest | Jungle | Rare |
+| 833 | Smooth-banded Sister | Rainforest | Jungle | Uncommon |
+| 834 | Waiter Daggerwing | Rainforest | Jungle | Uncommon |
+| 835 | Orange Daggerwing | Rainforest | Jungle | Uncommon |
+| 836 | Tropical Leafwing | Rainforest | Jungle, Savanna | Common |
+| 837 | Golden Helicon | Rainforest | Jungle | Uncommon |
+| 838 | Wallace's Longwing | Rainforest | Jungle | Uncommon |
+| 839 | Small Postman | Rainforest | Jungle | Common |
+| 840 | Sapho Longwing | Rainforest | Jungle | Uncommon |
+| 841 | Hewitson's Longwing | Rainforest | Jungle | Common |
+| 842 | Hecuba Longwing | Rainforest | Jungle, Mountains | Uncommon |
+| 843 | Ismenius Tiger | Rainforest | Jungle | Common |
+| 844 | Numata Longwing | Rainforest | Jungle | Uncommon |
+| 845 | Hecalesia Longwing | Rainforest | Jungle | Uncommon |
+| 846 | Small Flambeau | Rainforest | Jungle | Uncommon |
+| 847 | Mexican Silverspot | Rainforest | Jungle, Savanna | Common |
+| 848 | Ethilia Longwing | Rainforest | Jungle | Uncommon |
+| 849 | Grecian Shoemaker | Rainforest | Jungle | Rare |
+| 850 | Red Anartia | Rainforest | Jungle | Uncommon |
+| 851 | Blue Doctor | Rainforest | Jungle | Uncommon |
+| 852 | Blue-frosted Catone | Rainforest | Jungle | Uncommon |
+| 853 | Mosaic | Rainforest | Jungle | Rare |
+| 854 | Bamboo Page | Rainforest | Jungle, Bamboo Jungle | Uncommon |
+| 855 | Rusty Page | Rainforest | Jungle | Common |
+| 856 | Silver Emperor | Rainforest | Jungle | Rare |
+| 857 | Blue-banded Purplewing | Rainforest | Jungle | Common |
+| 858 | Dirce Beauty | Rainforest | Jungle | Uncommon |
+| 859 | Orange-banded Shoemaker | Rainforest | Jungle | Uncommon |
+| 860 | Cattleheart White | Rainforest | Jungle | Uncommon |
+| 861 | Painted Courtesan | Rainforest | Jungle | Uncommon |
+| 862 | Banded Yeoman | Rainforest | Jungle | Common |
+| 863 | Common Nawab | Rainforest | Jungle, Forest | Uncommon |
+| 864 | Tawny Rajah | Rainforest | Jungle | Uncommon |
+| 865 | Black Rajah | Rainforest | Jungle | Uncommon |
+| 866 | Great Nawab | Rainforest | Jungle, Mountains | Rare |
+| 867 | Common Map Butterfly | Rainforest | Jungle | Common |
+| 868 | Vagrant | Rainforest | Jungle | Common |
+| 869 | Common Castor | Rainforest | Jungle | Common |
+| 870 | Angled Castor | Rainforest | Jungle | Common |
+| 871 | Small Leopard | Rainforest | Jungle | Common |
+| 872 | Common Duffer | Rainforest | Jungle, Bamboo Jungle | Uncommon |
+| 873 | Common Faun | Rainforest | Jungle, Bamboo Jungle | Uncommon |
+| 874 | Jungle Queen | Rainforest | Jungle | Rare |
+| 875 | Common Palmfly | Rainforest | Jungle | Common |
+| 876 | White-banded Swallowtail | Savanna & Desert | Savanna, Jungle | Uncommon |
+| 877 | Green-veined Emperor | Savanna & Desert | Savanna | Rare |
+| 878 | White-barred Charaxes | Savanna & Desert | Savanna | Uncommon |
+| 879 | Flame-bordered Charaxes | Savanna & Desert | Savanna | Rare |
+| 880 | Demon Charaxes | Savanna & Desert | Savanna | Rare |
+| 881 | Blue-spotted Charaxes | Savanna & Desert | Savanna, Jungle | Uncommon |
+| 882 | Giant Charaxes | Savanna & Desert | Savanna | Rare |
+| 883 | Pearl Emperor | Savanna & Desert | Savanna | Uncommon |
+| 884 | Guineafowl | Savanna & Desert | Savanna, Jungle | Common |
+| 885 | African Joker | Savanna & Desert | Savanna | Common |
+| 886 | Bush Beauty | Savanna & Desert | Savanna | Common |
+| 887 | Brown Pansy | Savanna & Desert | Savanna | Common |
+| 888 | Soldier Pansy | Savanna & Desert | Savanna | Common |
+| 889 | Dark Blue Pansy | Savanna & Desert | Savanna | Uncommon |
+| 890 | Eyed Pansy | Savanna & Desert | Savanna, Jungle | Common |
+| 891 | African Map | Savanna & Desert | Savanna | Uncommon |
+| 892 | Common Acraea | Savanna & Desert | Savanna | Common |
+| 893 | Garden Acraea | Savanna & Desert | Savanna, Plains | Common |
+| 894 | Dusky-veined Acraea | Savanna & Desert | Savanna | Common |
+| 895 | Clearwing Acraea | Savanna & Desert | Savanna | Uncommon |
+| 896 | Wandering Donkey Acraea | Savanna & Desert | Savanna | Common |
+| 897 | Large Spotted Acraea | Savanna & Desert | Savanna, Desert | Uncommon |
+| 898 | Golden Piper | Savanna & Desert | Savanna | Uncommon |
+| 899 | Novice | Savanna & Desert | Savanna, Jungle | Common |
+| 900 | Friar | Savanna & Desert | Savanna | Uncommon |
+| 901 | Layman | Savanna & Desert | Savanna, Jungle | Uncommon |
+| 902 | Desert Babul Blue | Savanna & Desert | Desert, Savanna | Common |
+| 903 | Desert Grass Yellow | Savanna & Desert | Desert | Common |
+| 904 | Sooty Orange Tip | Savanna & Desert | Desert, Savanna | Rare |
+| 905 | Desert White | Savanna & Desert | Desert | Uncommon |
+| 906 | Millet Skipper | Savanna & Desert | Desert | Common |
+| 907 | Sandy Grizzled Skipper | Savanna & Desert | Desert, Badlands | Uncommon |
+| 908 | Mojave Sootywing | Savanna & Desert | Desert, Badlands | Uncommon |
+| 909 | Desert Checkered Skipper | Savanna & Desert | Desert | Common |
+| 910 | Sonoran Blue | Savanna & Desert | Desert, Badlands | Rare |
+| 911 | Small Dotted Blue | Savanna & Desert | Desert | Uncommon |
+| 912 | Arizona Hairstreak | Savanna & Desert | Desert, Badlands | Uncommon |
+| 913 | Chiricahua White | Savanna & Desert | Badlands, Mountains | Rare |
+| 914 | Theona Checkerspot | Savanna & Desert | Desert, Badlands | Uncommon |
+| 915 | Dotted Checkerspot | Savanna & Desert | Desert, Plains | Uncommon |
+| 916 | Rocky Mountain Parnassian | Mountains & Tundra | Mountains | Rare |
+| 917 | Eversmann's Parnassian | Mountains & Tundra | Mountains, Snowy Biomes | Rare |
+| 918 | False Apollo | Mountains & Tundra | Mountains, Badlands | Rare |
+| 919 | Arctic White | Mountains & Tundra | Mountains | Uncommon |
+| 920 | Moorland Clouded Yellow | Mountains & Tundra | Swamp, Mountains | Rare |
+| 921 | Mariposa Copper | Mountains & Tundra | Mountains | Uncommon |
+| 922 | Alpine Heath | Mountains & Tundra | Mountains | Uncommon |
+| 923 | Darwin's Heath | Mountains & Tundra | Mountains | Uncommon |
+| 924 | Large Ringlet | Mountains & Tundra | Mountains, Groves | Uncommon |
+| 925 | Swiss Brassy Ringlet | Mountains & Tundra | Mountains | Rare |
+| 926 | Silky Ringlet | Mountains & Tundra | Mountains, Groves | Uncommon |
+| 927 | Sooty Ringlet | Mountains & Tundra | Mountains | Uncommon |
+| 928 | Arctic Woodland Ringlet | Mountains & Tundra | Snowy Biomes, Groves | Uncommon |
+| 929 | Alpine Grayling | Mountains & Tundra | Mountains, Snowy Biomes | Rare |
+| 930 | Norse Grayling | Mountains & Tundra | Taiga, Snowy Biomes | Rare |
+| 931 | Titania's Fritillary | Mountains & Tundra | Mountains, Groves | Uncommon |
+| 932 | Cranberry Fritillary | Mountains & Tundra | Swamp, Snowy Biomes | Rare |
+| 933 | Thor's Fritillary | Mountains & Tundra | Snowy Biomes, Mountains | Rare |
+| 934 | Astarte Fritillary | Mountains & Tundra | Mountains, Snowy Biomes | Rare |
+| 935 | Greater Banded Apollo | Mountains & Tundra | Mountains, Snowy Biomes | Legendary |
+| 936 | Dorcas Copper | Wetlands & Coasts | Swamp | Rare |
+| 937 | Swamp Tiger | Wetlands & Coasts | Swamp, Mangrove Swamp | Uncommon |
+| 938 | Mangrove Blue | Wetlands & Coasts | Mangrove Swamp, Beach | Uncommon |
+| 939 | Disguised Scrub-Hairstreak | Wetlands & Coasts | Mangrove Swamp | Uncommon |
+| 940 | Great Copper | Wetlands & Coasts | Beach, Swamp | Uncommon |
+| 941 | Coastal Green Hairstreak | Wetlands & Coasts | Beach | Uncommon |
+| 942 | Yuma Skipper | Wetlands & Coasts | Beach, Desert | Common |
+| 943 | Mulberry Wing | Wetlands & Coasts | Swamp | Uncommon |
+| 944 | Sedge Skipper | Wetlands & Coasts | Swamp, River | Uncommon |
+| 945 | Duke's Skipper | Wetlands & Coasts | Swamp, River | Rare |
+| 946 | Rare Skipper | Wetlands & Coasts | Swamp, Mangrove Swamp | Rare |
+| 947 | Eyed Brown | Wetlands & Coasts | Swamp, River | Common |
+| 948 | Smoky Eyed Brown | Wetlands & Coasts | Swamp | Uncommon |
+| 949 | Tree Grayling | Wetlands & Coasts | Swamp, Beach | Uncommon |
+| 950 | Mimic | Wetlands & Coasts | Beach, Savanna | Uncommon |
+| 951 | Sunflower Sentinel | Wonders of the World | Plains | Uncommon |
+| 952 | Dandelion Puff | Wonders of the World | Plains, Meadow | Common |
+| 953 | Poppy Petal | Wonders of the World | Plains, Flower Forest | Common |
+| 954 | Cornflower Courier | Wonders of the World | Flower Forest, Meadow | Uncommon |
+| 955 | Allium Wisp | Wonders of the World | Flower Forest | Uncommon |
+| 956 | Oxeye Glider | Wonders of the World | Plains, Meadow | Common |
+| 957 | Azure Bluet | Wonders of the World | Plains | Common |
+| 958 | Lily of the Valley | Wonders of the World | Forest, Flower Forest | Uncommon |
+| 959 | Blue Orchid Swallowtail | Wonders of the World | Swamp | Uncommon |
+| 960 | Peony Puff | Wonders of the World | Forest, Flower Forest | Uncommon |
+| 961 | Lilac Lacewing | Wonders of the World | Forest, Flower Forest | Uncommon |
+| 962 | Rose Bush Swallowtail | Wonders of the World | Forest, Plains | Uncommon |
+| 963 | Sweet Berry Skipper | Wonders of the World | Taiga | Common |
+| 964 | Glow Lichen Wing | Wonders of the World | Lush Caves, Deep Dark | Uncommon |
+| 965 | Big Dripleaf | Wonders of the World | Lush Caves | Common |
+| 966 | Hanging Root | Wonders of the World | Lush Caves | Common |
+| 967 | Calcite Glimmer | Wonders of the World | Mountains | Uncommon |
+| 968 | Tuff Skipper | Wonders of the World | Mountains | Common |
+| 969 | Dripleaf Duskwing | Wonders of the World | Lush Caves | Uncommon |
+| 970 | Copper Bulb | Wonders of the World | Mountains | Rare |
+| 971 | Oxidized Copper Kite | Wonders of the World | Mountains, River | Rare |
+| 972 | Trial Spawner Flame | Wonders of the World | Mountains | Rare |
+| 973 | Breeze Wing | Wonders of the World | Mountains | Rare |
+| 974 | Ominous Bottle | Wonders of the World | Mountains | Rare |
+| 975 | Armadillo Scute | Wonders of the World | Savanna, Badlands | Uncommon |
+| 976 | Wolf Armor | Wonders of the World | Taiga, Forest | Uncommon |
+| 977 | Bee Nest Flutter | Wonders of the World | Flower Forest, Plains | Common |
+| 978 | Honey Bottle | Wonders of the World | Flower Forest | Uncommon |
+| 979 | Axolotl Pink | Wonders of the World | Lush Caves | Uncommon |
+| 980 | Glow Squid Ink | Wonders of the World | River, Deep Dark | Rare |
+| 981 | Turtle Scute | Wonders of the World | Beach | Uncommon |
+| 982 | Coral Reef | Wonders of the World | Beach | Rare |
+| 983 | Tropical Fish | Wonders of the World | Beach | Uncommon |
+| 984 | Nautilus Shell | Wonders of the World | Beach | Uncommon |
+| 985 | Sea Pickle Glow | Wonders of the World | Beach | Common |
+| 986 | Kelp Drifter | Wonders of the World | Beach, River | Common |
+| 987 | Mangrove Propagule | Wonders of the World | Mangrove Swamp | Common |
+| 988 | Mud Brick | Wonders of the World | Mangrove Swamp | Common |
+| 989 | Frogspawn | Wonders of the World | Swamp, Mangrove Swamp | Common |
+| 990 | Froglight Glow | Wonders of the World | Mangrove Swamp, Swamp | Rare |
+| 991 | Suspicious Sand | Wonders of the World | Desert, Beach | Uncommon |
+| 992 | Pottery Sherd | Wonders of the World | Desert, Badlands | Uncommon |
+| 993 | Sniffer Moss | Wonders of the World | Flower Forest, Meadow | Uncommon |
+| 994 | Pink Petals | Wonders of the World | Cherry Grove | Common |
+| 995 | Cherry Leaf Swallowtail | Wonders of the World | Cherry Grove | Uncommon |
+| 996 | Snow Golem | Wonders of the World | Snowy Biomes, Groves | Uncommon |
+| 997 | Powder Snow | Wonders of the World | Snowy Biomes, Groves | Rare |
+| 998 | Blue Ice | Wonders of the World | Snowy Biomes | Rare |
+| 999 | Mooshroom Wing | Wonders of the World | Mushroom Fields | Rare |
+| 1000 | Ancient City Echo | Wonders of the World | Deep Dark | Legendary |

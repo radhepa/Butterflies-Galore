@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "butterflies:ancient_city_echo_chrysalis",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/butterflies/larva/ancient_city_echo"
+      },
+      "geometry": {
+        "default": "geometry.butterflies.chrysalis"
+      },
+      "render_controllers": [
+        "controller.render.butterflies.default"
+      ],
+      "animations": {
+        "main": "animation.butterflies.chrysalis.sway"
+      },
+      "scripts": {
+        "animate": [
+          "main"
+        ]
+      }
+    }
+  }
+}

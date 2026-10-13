@@ -1,0 +1,38 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:spawn_rules": {
+    "description": {
+      "identifier": "butterflies:white_emperor_caterpillar",
+      "population_control": "ambient"
+    },
+    "conditions": [
+      {
+        "minecraft:weight": {
+          "default": 2
+        },
+        "minecraft:herd": {
+          "min_size": 1,
+          "max_size": 1
+        },
+        "minecraft:biome_filter": {
+          "any_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "forest"
+            }
+          ]
+        },
+        "minecraft:spawns_on_surface": {},
+        "minecraft:brightness_filter": {
+          "min": 10,
+          "max": 15,
+          "adjust_for_weather": true
+        },
+        "minecraft:density_limit": {
+          "surface": 3
+        }
+      }
+    ]
+  }
+}

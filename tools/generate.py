@@ -647,7 +647,8 @@ SPECIES += [
 SPECIES = [s for s in SPECIES if s is not None]
 assert len(SPECIES) == 100, len(SPECIES)
 
-CATEGORIES = ["Meadows & Fields", "Swallowtails", "Woodland", "Blues & Coppers", "Skippers", "Rainforest",
+CATEGORIES = ["Meadows & Fields", "Swallowtails", "Woodland", "Blues & Coppers", "Whites & Sulphurs",
+              "Hairstreaks & Metalmarks", "Skippers", "Rainforest",
               "Savanna & Desert", "Mountains & Tundra", "Wetlands & Coasts", "Wonders of the World",
               "The Nether", "The End"]
 
@@ -962,7 +963,7 @@ def slug(name):
 
 EXTRA_HABITATS = {
     "grove": "Groves", "mega": "Old Growth Taiga", "pale_garden": "Pale Garden",
-    "soulsand_valley": "Soul Sand Valley", "basalt_deltas": "Basalt Deltas", "nether_wastes": "Nether Wastes",
+    "mooshroom_island": "Mushroom Fields", "soulsand_valley": "Soul Sand Valley", "basalt_deltas": "Basalt Deltas", "nether_wastes": "Nether Wastes",
 }
 
 
@@ -999,8 +1000,8 @@ HABITAT_LABEL.update(EXTRA_HABITATS)
 NETHER |= {"soulsand_valley", "basalt_deltas", "nether_wastes"}
 
 SPECIES += second_wave()
-assert len(SPECIES) == 500, len(SPECIES)
-assert len({s.id for s in SPECIES}) == 500, [s.id for s in SPECIES if [t.id for t in SPECIES].count(s.id) > 1]
+assert len(SPECIES) == 1000, len(SPECIES)
+assert len({s.id for s in SPECIES}) == 1000, [s.id for s in SPECIES if [t.id for t in SPECIES].count(s.id) > 1]
 assert set(INFO) == {s.id for s in SPECIES}
 assert all(s.category in CATEGORIES for s in SPECIES)
 
