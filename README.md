@@ -1,6 +1,6 @@
 # Butterflies Galore
 
-A Minecraft Bedrock Edition add-on that fills the world with **500 unique butterflies**: 400 in the Overworld, 50 in the Nether and 50 in the End. Each one has its own vibrant, hand-designed wing pattern, wing shape, size, flight rhythm and home biome. Every species also has a complete life cycle, from egg to caterpillar to chrysalis to butterfly, and a **Butterfly Handbook** lets you record them all.
+A Minecraft Bedrock Edition add-on that fills the world with **500 unique butterflies**: 397 in the Overworld, 52 in the Nether and 51 in the End. Each one has its own vibrant, hand-designed wing pattern, wing shape, size, flight rhythm and home biome. Every species also has a complete life cycle, from egg to caterpillar to chrysalis to butterfly, and a **Butterfly Handbook** lets you record them all.
 
 ![All 500 butterflies](docs/preview.png)
 
